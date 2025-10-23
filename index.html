@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Reymart Añabieza - AI Automation Specialist Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Results Highlight Box */
+        .results-box {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .results-box h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .result-item {
+            padding: 10px;
+        }
+
+        .result-item strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 35px 0;
+        }
+
+        .section-title {
+            font-size: 1.6em;
+            color: #1e3a8a;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Performance Profile */
+        .profile-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            padding: 20px;
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            border-radius: 4px;
+        }
+
+        /* Core Competencies */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .competency-item {
+            padding: 12px 15px;
+            background: #f1f5f9;
+            border-radius: 5px;
+            border-left: 3px solid #2563eb;
+        }
+
+        .competency-item strong {
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Work Experience */
+        .job {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 5px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        .job-date {
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .job-company {
+            color: #475569;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .job ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            padding: 20px;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            border-color: #2563eb;
+        }
+
+        .service-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .service-card ul {
+            margin-left: 20px;
+            font-size: 0.95em;
+        }
+
+        .service-card li {
+            margin-bottom: 5px;
+        }
+
+        .service-timeline {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        /* Case Studies */
+        .case-study {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #fff;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+
+        .case-study h3 {
+            color: #1e3a8a;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .case-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .case-meta span {
+            background: #dbeafe;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #1e40af;
+        }
+
+        .case-section {
+            margin: 15px 0;
+        }
+
+        .case-section h4 {
+            color: #475569;
+            font-size: 1em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .case-section p {
+            line-height: 1.7;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0fdf4;
+            border-radius: 5px;
+            border-left: 4px solid #10b981;
+        }
+
+        .metric-item {
+            font-weight: 500;
+            color: #065f46;
+        }
+
+        .metric-item::before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Education & Certificates */
+        .education-item, .cert-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 5px;
+        }
+
+        .education-item h3, .cert-item h3 {
+            color: #1e3a8a;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .education-item p, .cert-item p {
+            color: #475569;
+        }
+
+        .awards {
+            margin-top: 8px;
+            font-size: 0.95em;
+            color: #059669;
+        }
+
+        /* CTA Section */
+        .cta-box {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+            padding: 35px;
+            margin: 40px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .cta-contact {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .cta-contact strong {
+            margin-right: 5px;
+        }
+
+        .quick-wins {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .quick-wins h3 {
+            margin-bottom: 10px;
+        }
+
+        .quick-wins ul {
+            list-style: none;
+        }
+
+        .quick-wins li {
+            margin-bottom: 5px;
+        }
+
+        .quick-wins li::before {
+            content: "⚡ ";
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .case-study, .job, .section {
+                page-break-inside: avoid;
+            }
+            
+            .service-card:hover {
+                transform: none;
+            }
+        }
+
+        /* Divider */
+        .divider {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #2563eb, transparent);
+            margin: 30px 0;
+        }
+
+        /* Emphasis styling */
+        strong {
+            color: #1e3a8a;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>KEN REYMART T. AÑABIEZA</h1>
+        <p style="font-size: 1.1em; color: #2563eb; margin: 10px 0;">AI Automation Developer & AI Integration Specialist</p>
+        <div class="contact-info">
+            <span>📍 Manolo Fortich, Bukidnon, Philippines</span>
+            <span>📱 +63 928 934 6203</span>
+            <span>✉️ anabieza.acc@gmail.com</span>
+        </div>
+        <div class="contact-info" style="margin-top: 10px;">
+            <span>💼 LinkedIn: linkedin.com/in/kenanabieza</span>
+        </div>
+    </div>
+
+    <!-- Signature Results -->
+    <div class="results-box">
+        <h2>🏆 PROVEN RESULTS ACROSS 15+ BUSINESSES</h2>
+        <div class="results-grid">
+            <div class="result-item">
+                <strong>90% Reduction</strong>
+                in manual scheduling
+            </div>
+            <div class="result-item">
+                <strong>34% Increase</strong>
+                in conversion rates
+            </div>
+            <div class="result-item">
+                <strong>63% Fewer</strong>
+                internal support requests
+            </div>
+            <div class="result-item">
+                <strong>10+ Hours</strong>
+                saved per week per client
+            </div>
+            <div class="result-item">
+                <strong>95% Accuracy</strong>
+                in automated data extraction
+            </div>
+            <div class="result-item">
+                <strong>&lt;1 Minute</strong>
+                response time on inquiries
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance Profile -->
+    <div class="section">
+        <h2 class="section-title">Performance Profile</h2>
+        <div class="profile-text">
+            I help fast-growing businesses <strong>eliminate manual work and scale operations</strong> through AI-powered automation. Using n8n, Make, and custom AI agents, I've saved clients <strong>80+ hours per week</strong>, increased conversion rates by <strong>34%</strong>, and reduced operational costs by up to <strong>90%</strong>. 
+            <br><br>
+            Whether you're drowning in emails, losing leads to slow follow-up, or burning money on repetitive tasks, I build systems that work 24/7 so you don't have to. With expertise in <strong>50+ automated workflows</strong> across various industries, I specialize in turning your operational chaos into streamlined efficiency.
+        </div>
+    </div>
+
+    <!-- Core Competencies -->
+    <div class="section">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="competencies-grid">
+            <div class="competency-item">
+                <strong>🛠️ Automation Platforms</strong>
+                n8n (Advanced) • Make • Zapier
+            </div>
+            <div class="competency-item">
+                <strong>🤖 AI Integration</strong>
+                OpenAI API • VAPI • Custom RAG Systems • Pinecone • Vector Databases
+            </div>
+            <div class="competency-item">
+                <strong>🔌 APIs & Webhooks</strong>
+                REST • GraphQL • WebSocket • Custom API Development
+            </div>
+            <div class="competency-item">
+                <strong>💾 Database & Storage</strong>
+                Airtable • Google Sheets • Supabase • PostgreSQL
+            </div>
+            <div class="competency-item">
+                <strong>💬 Communication Channels</strong>
+                WhatsApp API • Slack • Telegram • Email (SMTP/IMAP)
+            </div>
+            <div class="competency-item">
+                <strong>📊 Business Tools</strong>
+                Google Workspace • Cal.com • HubSpot • Notion • CRM Systems
+            </div>
+        </div>
+        <div style="margin-top: 20px; padding: 15px; background: #dbeafe; border-radius: 5px;">
+            <strong>🎯 Specializations:</strong> AI Voice Agents • Lead Qualification Systems • Email Automation • Knowledge Management (RAG) • Invoice Processing • Customer Journey Automation
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Work Experience -->
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Automations Specialist | AI Agents & AI Voice Developer</div>
+                    <div class="job-company">Freelance / OLJ (Projects & Solutions)</div>
+                </div>
+                <div class="job-date">January 2023 - Present</div>
+            </div>
+            <ul>
+                <li>Designed and deployed <strong>50+ custom n8n workflows</strong> to streamline internal operations and client systems, enabling scalable and self-hosted automation solutions that saved clients an average of <strong>15 hours per week</strong></li>
+                <li>Built modular workflows using webhooks, CRON triggers, and API nodes (REST, GraphQL) to integrate tools like Airtable, Slack, and Google Workspace with sophisticated conditional logic and comprehensive error handling</li>
+                <li>Prototyped locally hosted n8n instances for clients requiring full control over data pipelines, security, and workflow customization, reducing operational costs by up to <strong>80% compared to SaaS alternatives</strong></li>
+                <li>Developed complex data transformation workflows leveraging n8n's JavaScript and Function nodes to manipulate payloads, filter datasets, and sync systems without external dependencies</li>
+                <li>Created comprehensive documentation and training materials to empower non-technical teams to maintain and adapt n8n workflows independently, resulting in <strong>95% client satisfaction</strong> ratings</li>
+                <li>Specialized in <strong>AI voice agent development</strong> using VAPI and OpenAI, delivering 24/7 automated booking systems that increased client appointment rates by <strong>40%</strong></li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">QA Analyst | Process Optimization Specialist</div>
+                    <div class="job-company">Contract / Project-Based (ESL & Data Quality)</div>
+                </div>
+                <div class="job-date">June 2016 - June 2024</div>
+            </div>
+            <ul>
+                <li>Analyzed and validated <strong>10,000+ data points</strong> with <strong>99.8% accuracy</strong> across multiple projects, developing systematic quality assurance processes that reduced error rates by 40%</li>
+                <li>Identified repetitive manual processes and documented <strong>25+ workflow optimization opportunities</strong>, laying the foundation for future automation implementations</li>
+                <li>Trained and mentored <strong>10+ team members</strong> on quality standards, documentation best practices, and efficient data handling procedures</li>
+                <li>Developed detailed process documentation and SOPs that improved team productivity by <strong>30%</strong> and reduced onboarding time for new team members by half</li>
+                <li>Collaborated with cross-functional teams to streamline communication workflows, implementing feedback loops that improved project delivery times by <strong>25%</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Services & Packages -->
+    <div class="section">
+        <h2 class="section-title">What I Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>AI Voice Agents</h3>
+                <ul>
+                    <li>Appointment booking automation</li>
+                    <li>Customer service & support</li>
+                    <li>Lead qualification calls</li>
+                    <li>VAPI, ElevenLabs integration</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: 1-2 weeks</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Workflow Automation</h3>
+                <ul>
+                    <li>Connect your tools seamlessly</li>
+                    <li>Eliminate manual tasks</li>
+                    <li>Scale operations efficiently</li>
+                    <li>n8n, Make, Zapier expertise</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: 1-3 weeks</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧠</div>
+                <h3>AI Knowledge Assistants</h3>
+                <ul>
+                    <li>RAG-powered company assistant</li>
+                    <li>Trained on your docs & SOPs</li>
+                    <li>Slack, WhatsApp, Telegram integration</li>
+                    <li>24/7 instant answers</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: 2-3 weeks</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📧</div>
+                <h3>AI Email & Lead Management</h3>
+                <ul>
+                    <li>Auto-respond to inquiries</li>
+                    <li>Qualify & score leads</li>
+                    <li>Schedule automatically</li>
+                    <li>CRM & calendar integration</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: 1-2 weeks</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h3>Custom Integrations</h3>
+                <ul>
+                    <li>API development</li>
+                    <li>Complex multi-system workflows</li>
+                    <li>Strategy consulting sessions</li>
+                    <li>Tailored solutions</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: Custom</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Ongoing Support & Retainer</h3>
+                <ul>
+                    <li>Monthly optimization</li>
+                    <li>Workflow maintenance</li>
+                    <li>New feature additions</li>
+                    <li>Priority support</li>
+                </ul>
+                <div class="service-timeline">⏱️ Timeline: Ongoing</div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <!-- Case Studies Portfolio -->
+    <div class="section">
+        <h2 class="section-title">Case Studies Portfolio</h2>
+
+        <!-- Case Study 1 -->
+        <div class="case-study">
+            <h3>🎙️ AI Voice Booking Agent – VAPI, n8n, OpenAI & Google Calendar</h3>
+            <div class="case-meta">
+                <span>📋 Industry: Appointment-Based Services</span>
+                <span>👥 Client Type: Salons, Clinics, Consultants</span>
+            </div>
+
+            <div class="case-section">
+                <h4>💔 The Pain</h4>
+                <p>Service businesses were bleeding revenue through missed calls and manual booking chaos. Staff spent 20+ hours weekly playing phone tag with clients. After-hours calls went straight to voicemail, and frustrated customers booked with competitors instead. The team was exhausted, overworked, and constantly playing catch-up with scheduling conflicts.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>⚠️ The Stakes</h4>
+                <p>Without a solution, the business faced losing their best staff to burnout, continued revenue loss from missed bookings, and growing reputation damage from poor customer experience. They were at risk of being outcompeted by more tech-savvy competitors offering instant booking.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>✅ The Solution</h4>
+                <p>Built an AI-powered voice booking system that handles calls 24/7. When customers call, VAPI's natural voice AI greets them, checks real-time availability in Google Calendar, answers questions about services, and books appointments instantly, all without human intervention. The system integrates with n8n to trigger confirmations via SMS and email, sync with the CRM, and handle cancellations or reschedules.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>🎯 The Transformation</h4>
+                <div class="metrics">
+                    <div class="metric-item">90-100% reduction in manual scheduling work</div>
+                    <div class="metric-item">24/7 booking availability increased revenue by 28%</div>
+                    <div class="metric-item">Zero missed calls - every inquiry converted</div>
+                    <div class="metric-item">Customer satisfaction scores jumped from 3.2 to 4.7 stars</div>
+                    <div class="metric-item">20+ hours per week freed for high-value client work</div>
+                    <div class="metric-item">ROI achieved in 3 weeks</div>
+                </div>
+            </div>
+
+            <div class="case-section" style="margin-top: 15px;">
+                <h4>📦 What the Client Got</h4>
+                <p>• Fully configured VAPI voice agent with custom script<br>
+                • n8n workflow connecting phone, calendar, CRM, and notifications<br>
+• 30-minute training video for staff<br>
+                • Documentation for managing scripts and settings<br>
+                • 30 days of adjustment support</p>
+            </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="case-study">
+            <h3>🎯 AI Lead Qualification & Engagement System (n8n + WhatsApp + Cal.com)</h3>
+            <div class="case-meta">
+                <span>📋 Industry: B2B Services</span>
+                <span>👥 Client Type: 15-Person Sales Team</span>
+            </div>
+
+            <div class="case-section">
+                <h4>💔 The Pain</h4>
+                <p>The sales team was drowning in unqualified leads and wasting 60% of their time on tire-kickers. Calendar slots filled up with low-intent prospects while hot leads fell through the cracks. Sales reps felt frustrated and demotivated, burning out from endless discovery calls that went nowhere. The company was at risk of losing their top performers.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>⚠️ The Stakes</h4>
+                <p>With sales costs skyrocketing and conversion rates plummeting, the business faced missing quarterly targets for the third time in a row. They were on track to lose their two best salespeople to competitors offering better quality leads.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>✅ The Solution</h4>
+                <p>Created an automated lead engagement system that activates the moment someone books a call via Cal.com. The n8n workflow immediately launches a WhatsApp conversation powered by OpenAI, asking structured qualification questions about budget, timeline, decision-making authority, and pain points. The AI scores responses, enriches the lead profile with company data from LinkedIn and other sources, and only schedules qualified leads with sales reps. Unqualified leads receive helpful resources and nurture sequences instead.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>🎯 The Transformation</h4>
+                <div class="metrics">
+                    <div class="metric-item">100% of booked leads engaged within 2 minutes</div>
+                    <div class="metric-item">Sales team only speaks with qualified, high-intent prospects</div>
+                    <div class="metric-item">Booking-to-conversion rate improved by 34% in 45 days</div>
+                    <div class="metric-item">Sales cycle shortened from 28 days to 19 days average</div>
+                    <div class="metric-item">60 hours per week saved across the sales team</div>
+                    <div class="metric-item">Lead quality score increased from 4.2 to 8.1 out of 10</div>
+                </div>
+            </div>
+
+            <div class="case-section" style="margin-top: 15px;">
+                <h4>📦 What the Client Got</h4>
+                <p>• Plug-and-play n8n workflow with AI qualification logic<br>
+                • WhatsApp Business API integration<br>
+                • Custom scoring algorithm tailored to their ICP<br>
+                • CRM sync (HubSpot) with auto-enrichment<br>
+                • Training session for sales leadership<br>
+                • Packaged as a ready-to-sell solution requiring minimal customization</p>
+            </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="case-study">
+            <h3>📧 AI-Powered Email Management System (n8n + OpenAI)</h3>
+            <div class="case-meta">
+                <span>📋 Industry: Professional Services</span>
+                <span>👥 Client Type: 30-Person Remote Team</span>
+            </div>
+
+            <div class="case-section">
+                <h4>💔 The Pain</h4>
+                <p>The team was buried under 500+ emails daily, leading to 6-hour response times, missed client follow-ups, and inconsistent communication quality. Customer satisfaction was declining, and the team felt overwhelmed and reactive rather than proactive. Critical client emails were getting lost in overflowing inboxes.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>⚠️ The Stakes</h4>
+                <p>Two major clients had already complained about slow responses, putting $180K in annual contracts at risk. Employee morale was at an all-time low, with team members working late nights just to keep up with email.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>✅ The Solution</h4>
+                <p>Deployed a team of specialized AI agents within n8n, each trained to handle a specific email category: client inquiries, follow-ups, meeting requests, support tickets, and general correspondence. Using OpenAI, the system analyzes incoming emails, categorizes them, drafts context-aware responses, and either sends them automatically or flags complex cases for human review. The system learns from approved responses to improve over time.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>🎯 The Transformation</h4>
+                <div class="metrics">
+                    <div class="metric-item">Response time reduced from 6 hours to under 30 minutes</div>
+                    <div class="metric-item">85% of inbound emails handled without human involvement</div>
+                    <div class="metric-item">Client satisfaction scores improved by 19% in first month</div>
+                    <div class="metric-item">Team members reclaimed 12+ hours per week each</div>
+                    <div class="metric-item">Zero missed critical client communications</div>
+                    <div class="metric-item">Template now deployed across 3 departments</div>
+                </div>
+            </div>
+
+            <div class="case-section" style="margin-top: 15px;">
+                <h4>📦 What the Client Got</h4>
+                <p>• Multi-agent n8n workflow with category-specific AI responses<br>
+                • Gmail integration with advanced filtering<br>
+                • Human review queue for edge cases<br>
+                • Response approval workflow for first 30 days<br>
+                • Department-specific customization guide<br>
+                • Monthly optimization reports</p>
+            </div>
+        </div>
+
+        <!-- Case Study 4 -->
+        <div class="case-study">
+            <h3>🧠 Multichannel AI Knowledge RAG Agent (n8n + OpenAI + Pinecone + Slack/WhatsApp/Telegram)</h3>
+            <div class="case-meta">
+                <span>📋 Industry: Remote Teams</span>
+                <span>👥 Client Type: 50+ Distributed Team Members</span>
+            </div>
+
+            <div class="case-section">
+                <h4>💔 The Pain</h4>
+                <p>Team members couldn't find accurate information scattered across Google Drive, Notion, Confluence, and email threads. They wasted 25+ minutes per query tracking down the right person or document. The same questions were asked repeatedly in Slack, creating noise and interrupting focused work. Onboarding new team members took 4-6 weeks because knowledge wasn't centralized.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>⚠️ The Stakes</h4>
+                <p>Productivity was suffering across the organization, with an estimated 500+ hours wasted monthly on knowledge-seeking. New hires were frustrated and slower to contribute, increasing turnover risk and onboarding costs.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>✅ The Solution</h4>
+                <p>Built a Retrieval-Augmented Generation (RAG) agent using Pinecone as the vector database to store and search company knowledge. The AI agent, powered by OpenAI and orchestrated through n8n, was integrated with Slack, WhatsApp, and Telegram. Team members can now ask questions in natural language from any platform, and the agent retrieves accurate answers from the centralized knowledge base, complete with source citations. The system continuously ingests new documents and learns from usage patterns.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>🎯 The Transformation</h4>
+                <div class="metrics">
+                    <div class="metric-item">Internal support requests reduced by 63%</div>
+                    <div class="metric-item">Query resolution time dropped from 25 minutes to under 1 minute</div>
+                    <div class="metric-item">System adopted company-wide within 2 weeks</div>
+                    <div class="metric-item">Onboarding time cut from 6 weeks to 3 weeks</div>
+                    <div class="metric-item">500+ hours saved monthly across the organization</div>
+                    <div class="metric-item">Easily extended to client and partner channels</div>
+                </div>
+            </div>
+
+            <div class="case-section" style="margin-top: 15px;">
+                <h4>📦 What the Client Got</h4>
+                <p>• Complete RAG system with Pinecone vector database<br>
+                • Multi-channel integration (Slack, WhatsApp, Telegram)<br>
+                • Automated document ingestion pipeline<br>
+                • Admin dashboard for knowledge base management<br>
+                • Usage analytics and insights<br>
+                • Quarterly knowledge base optimization</p>
+            </div>
+        </div>
+
+        <!-- Case Study 5 -->
+        <div class="case-study">
+            <h3>💰 Automated Invoice Extraction System (n8n + Gmail + OpenAI + Airtable + Google Drive)</h3>
+            <div class="case-meta">
+                <span>📋 Industry: Finance & Operations</span>
+                <span>👥 Client Type: SMB with High Invoice Volume</span>
+            </div>
+
+            <div class="case-section">
+                <h4>💔 The Pain</h4>
+                <p>The finance team manually processed 200+ invoices monthly, spending 10+ hours per week on data entry. Human errors in amounts and due dates led to late payments, damaged vendor relationships, and lost early payment discounts worth thousands annually. Documents were scattered across email and folders, making audits a nightmare.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>⚠️ The Stakes</h4>
+                <p>Late payment penalties were costing $3,000+ annually. The company was missing out on 2% early payment discounts worth $12,000 per year. The finance manager was considering hiring an additional staff member ($40K+ annually) just to handle invoice processing.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>✅ The Solution</h4>
+                <p>Created an automated invoice extraction workflow that monitors Gmail for incoming invoice PDFs. When an invoice arrives, n8n triggers OpenAI to extract key data: vendor name, invoice number, amount, due date, line items, and payment terms. The structured data is automatically logged in Airtable with timestamp and status tracking, while the original PDF is uploaded to Google Drive in an organized folder structure. The system flags anomalies and sends payment reminders based on due dates.</p>
+            </div>
+
+            <div class="case-section">
+                <h4>🎯 The Transformation</h4>
+                <div class="metrics">
+                    <div class="metric-item">Invoice processing time cut by 80%</div>
+                    <div class="metric-item">95% accuracy in data extraction (vs 87% manual)</div>
+                    <div class="metric-item">Real-time financial tracking via Airtable dashboards</div>
+                    <div class="metric-item">10+ hours per week freed for strategic finance work</div>
+                    <div class="metric-item">Zero late payment penalties in 6 months post-launch</div>
+                    <div class="metric-item">Captured $11,400 in early payment discounts in year 1</div>
+                </div>
+            </div>
+
+            <div class="case-section" style="margin-top: 15px;">
+                <h4>📦 What the Client Got</h4>
+                <p>• Automated invoice monitoring and extraction workflow<br>
+                • Airtable base with custom views and filters<br>
+                • Google Drive organization with auto-filing<br>
+                • Payment reminder automation<br>
+                • Anomaly detection and flagging<br>
+                • Monthly accuracy and savings reports</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Education -->
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <h3>Xavier University – Ateneo de Cagayan</h3>
+            <p><strong>Bachelor of Science in Chemistry, cum laude</strong></p>
+            <p class="awards">🏆 Awards: BPI-DOST Science Award (2016) • Academic Excellence Award (2016)</p>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="section">
+        <h2 class="section-title">Professional Certifications</h2>
+        <div class="cert-item">
+            <h3>Digital Marketing</h3>
+            <p>HubSpot Academy, 2024</p>
+        </div>
+        <div class="cert-item">
+            <h3>Business Intelligence with Power BI Desktop</h3>
+            <p>Technical Intensive with Capstone Project - Data Analytics Philippines, 2024</p>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Call to Action -->
+    <div class="cta-box">
+        <h2>⚡ READY TO AUTOMATE YOUR BUSINESS?</h2>
+        <p>Let's talk about your biggest operational bottleneck and how I can solve it.</p>
+        
+        <div class="cta-contact">
+            <div>💬 <strong>WhatsApp me directly:</strong> +63 928 934 6203</div>
+            <div>✉️ <strong>Email:</strong> anabieza.acc@gmail.com</div>
+        </div>
+
+        <div class="quick-wins">
+            <h3>⚡ Quick Wins I Can Deliver in Week 1:</h3>
+            <ul>
+                <li>Email automation setup</li>
+                <li>Calendar sync & booking flow</li>
+                <li>Data extraction from PDFs/emails</li>
+                <li>CRM integration (Airtable, HubSpot, etc.)</li>
+                <li>Slack/WhatsApp notification systems</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 25px; font-size: 0.95em;">
+            <em>"The best time to automate was yesterday. The second best time is today."</em>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e2e8f0; color: #64748b;">
+        <p><strong>Ken Reymart T. Añabieza</strong> | AI Automation Developer & AI Integration Specialist</p>
+        <p style="margin-top: 10px;">📱 +63 928 934 6203 | ✉️ anabieza.acc@gmail.com | 📍 Manolo Fortich, Bukidnon, Philippines</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">💼 LinkedIn: linkedin.com/in/kenanabieza</p>
+    </div>
+
+</body>
+</html>
