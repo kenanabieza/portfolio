@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0a0a1a"/>
-      <stop offset="100%" style="stop-color:#0f1029"/>
+      <stop offset="100%" style="stop-color:#12123a"/>
     </linearGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#3b82f6"/>
@@ -10,57 +10,34 @@
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Full bleed background - no gaps -->
+  <rect x="-1" y="-1" width="1202" height="632" fill="#0a0a1a"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
 
   <!-- Subtle glow -->
-  <ellipse cx="600" cy="315" rx="500" ry="300" fill="#3b82f6" opacity="0.04"/>
+  <ellipse cx="600" cy="280" rx="400" ry="250" fill="#3b82f6" opacity="0.06"/>
+  <ellipse cx="600" cy="280" rx="250" ry="150" fill="#8b5cf6" opacity="0.04"/>
 
-  <!-- Top accent line -->
-  <rect x="0" y="0" width="1200" height="5" fill="url(#accent)"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
 
-  <!-- Main title -->
-  <text x="600" y="200" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2">AI Automation</text>
-  <text x="600" y="280" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="72" font-weight="900" fill="url(#accent)" letter-spacing="-2">Developer</text>
+  <!-- Main text - extra large for LinkedIn readability -->
+  <text x="600" y="220" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="900" fill="#ffffff" letter-spacing="-3">AI Automation</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="900" fill="url(#accent)" letter-spacing="-3">Developer</text>
 
-  <!-- Subtitle -->
-  <text x="600" y="340" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="28" fill="#94a3b8" font-weight="400">Workflows · Integrations · AI Agents</text>
+  <!-- Subtitle - bigger -->
+  <text x="600" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#94a3b8" font-weight="400">Workflows · Integrations · AI Agents</text>
 
-  <!-- Divider -->
-  <rect x="520" y="370" width="160" height="3" rx="1.5" fill="url(#accent)"/>
+  <!-- Stats row - much larger -->
+  <text x="310" y="490" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="900" fill="#3b82f6">50+</text>
+  <text x="310" y="530" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#64748b">Workflows</text>
 
-  <!-- Stats row -->
-  <text x="340" y="430" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="48" font-weight="800" fill="#3b82f6">50+</text>
-  <text x="340" y="460" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="18" fill="#64748b">Workflows</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="900" fill="#8b5cf6">15+</text>
+  <text x="600" y="530" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#64748b">Businesses</text>
 
-  <text x="600" y="430" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="48" font-weight="800" fill="#8b5cf6">15+</text>
-  <text x="600" y="460" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="18" fill="#64748b">Businesses</text>
+  <text x="890" y="490" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="900" fill="#06b6d4">90%</text>
+  <text x="890" y="530" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#64748b">Cost Reduction</text>
 
-  <text x="860" y="430" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="48" font-weight="800" fill="#06b6d4">90%</text>
-  <text x="860" y="460" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="18" fill="#64748b">Cost Reduction</text>
-
-  <!-- Tool badges row -->
-  <rect x="270" y="500" width="80" height="36" rx="8" fill="#ff6d5a" opacity="0.15"/>
-  <text x="310" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#ff6d5a">n8n</text>
-
-  <rect x="365" y="500" width="110" height="36" rx="8" fill="#9b59b6" opacity="0.15"/>
-  <text x="420" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#b07ce8">Make.com</text>
-
-  <rect x="490" y="500" width="90" height="36" rx="8" fill="#ff4a00" opacity="0.15"/>
-  <text x="535" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#ff7a3d">Zapier</text>
-
-  <rect x="595" y="500" width="70" height="36" rx="8" fill="#2196f3" opacity="0.15"/>
-  <text x="630" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#64b5f6">GHL</text>
-
-  <rect x="680" y="500" width="90" height="36" rx="8" fill="#3776ab" opacity="0.15"/>
-  <text x="725" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#5ba0d4">Python</text>
-
-  <rect x="785" y="500" width="55" height="36" rx="8" fill="#8b5cf6" opacity="0.15"/>
-  <text x="812" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#a78bfa">AI</text>
-
-  <rect x="855" y="500" width="80" height="36" rx="8" fill="#d97745" opacity="0.15"/>
-  <text x="895" y="524" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#d97745">Claude</text>
-
-  <!-- Bottom accent line -->
-  <rect x="0" y="625" width="1200" height="5" fill="url(#accent)"/>
+  <!-- Bottom accent bar -->
+  <rect x="0" y="624" width="1200" height="6" fill="url(#accent)"/>
 </svg>
