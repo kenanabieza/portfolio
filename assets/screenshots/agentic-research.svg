@@ -14,7 +14,7 @@
   <text x="400" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#60a5fa">Autonomous Research &amp; Report Generator</text>
 
   <!-- Pipeline visualization -->
-  <text x="400" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Query &#8594; Research &#8594; Analyze &#8594; Report &middot; Under 10 minutes</text>
+  <text x="400" y="72" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Query &#8594; Research &#8594; Analyze &#8594; Report · Under 10 minutes</text>
 
   <!-- Step 1: Query Input -->
   <rect x="30" y="95" width="160" height="90" rx="10" fill="#0a1628" stroke="#3b82f6" stroke-width="2"/>
@@ -75,8 +75,8 @@
   <text x="60" y="412" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">4. Regulatory frameworks evolving in 12 countries</text>
 
   <text x="60" y="435" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#60a5fa">Sources &amp; Citations</text>
-  <text x="60" y="452" font-family="Inter,sans-serif" font-size="7" fill="#64748b">[1] Nature Medicine, Jan 2026 &middot; [2] WHO Report 2025</text>
-  <text x="60" y="465" font-family="Inter,sans-serif" font-size="7" fill="#64748b">[3] McKinsey Healthcare AI &middot; [4] FDA AI Guidelines</text>
+  <text x="60" y="452" font-family="Inter,sans-serif" font-size="7" fill="#64748b">[1] Nature Medicine, Jan 2026 · [2] WHO Report 2025</text>
+  <text x="60" y="465" font-family="Inter,sans-serif" font-size="7" fill="#64748b">[3] McKinsey Healthcare AI · [4] FDA AI Guidelines</text>
 
   <!-- Performance panel -->
   <rect x="420" y="210" width="360" height="120" rx="10" fill="#0f1a30" stroke="#1e3a5f" stroke-width="1"/>

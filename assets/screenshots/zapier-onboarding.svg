@@ -24,7 +24,7 @@
 
   <!-- Canvas - Zap Steps -->
   <text x="400" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#333" text-anchor="middle">SaaS Customer Onboarding Flow</text>
-  <text x="400" y="94" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">12 steps &middot; Runs every time a new user signs up</text>
+  <text x="400" y="94" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">12 steps · Runs every time a new user signs up</text>
 
   <!-- Step 1: Trigger -->
   <rect x="260" y="110" width="280" height="50" rx="8" fill="#fff" stroke="#ff4a00" stroke-width="2"/>
