@@ -27,7 +27,7 @@
 
   <!-- Main content -->
   <text x="200" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">SaaS Master Service Agreement v3</text>
-  <text x="200" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Uploaded 2 hours ago &middot; AI Analysis Complete</text>
+  <text x="200" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Uploaded 2 hours ago · AI Analysis Complete</text>
 
   <!-- Risk Score -->
   <rect x="196" y="108" width="200" height="80" rx="10" fill="#fff" stroke="#fde68a" stroke-width="2"/>

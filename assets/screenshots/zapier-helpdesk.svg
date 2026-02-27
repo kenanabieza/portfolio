@@ -13,16 +13,16 @@
   <text x="20" y="108" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#888">ZAP HISTORY</text>
   <rect x="16" y="120" width="168" height="24" rx="4" fill="#ecfdf5"/>
   <circle cx="28" cy="132" r="4" fill="#10b981"/>
-  <text x="38" y="136" font-family="Inter,sans-serif" font-size="9" fill="#333">Success &middot; 1 min ago</text>
+  <text x="38" y="136" font-family="Inter,sans-serif" font-size="9" fill="#333">Success · 1 min ago</text>
   <rect x="16" y="148" width="168" height="24" rx="4" fill="#ecfdf5"/>
   <circle cx="28" cy="160" r="4" fill="#10b981"/>
-  <text x="38" y="164" font-family="Inter,sans-serif" font-size="9" fill="#333">Success &middot; 3 min ago</text>
+  <text x="38" y="164" font-family="Inter,sans-serif" font-size="9" fill="#333">Success · 3 min ago</text>
   <rect x="16" y="176" width="168" height="24" rx="4" fill="#ecfdf5"/>
   <circle cx="28" cy="188" r="4" fill="#10b981"/>
-  <text x="38" y="192" font-family="Inter,sans-serif" font-size="9" fill="#333">Success &middot; 4 min ago</text>
+  <text x="38" y="192" font-family="Inter,sans-serif" font-size="9" fill="#333">Success · 4 min ago</text>
   <rect x="16" y="204" width="168" height="24" rx="4" fill="#ecfdf5"/>
   <circle cx="28" cy="216" r="4" fill="#10b981"/>
-  <text x="38" y="220" font-family="Inter,sans-serif" font-size="9" fill="#333">Success &middot; 8 min ago</text>
+  <text x="38" y="220" font-family="Inter,sans-serif" font-size="9" fill="#333">Success · 8 min ago</text>
 
   <!-- Canvas -->
   <text x="500" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#333" text-anchor="middle">IT Help Desk Ticket Router</text>

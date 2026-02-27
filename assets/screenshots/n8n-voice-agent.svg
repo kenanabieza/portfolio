@@ -38,7 +38,7 @@
   <!-- Node 2: VAPI -->
   <rect x="400" y="100" width="130" height="55" rx="8" fill="#2d5a3d" stroke="#10b981" stroke-width="2"/>
   <text x="465" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">VAPI Voice AI</text>
-  <text x="465" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Greet & Collect</text>
+  <text x="465" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Greet &amp; Collect</text>
 
   <!-- Node 3: OpenAI -->
   <rect x="580" y="100" width="130" height="55" rx="8" fill="#3d4a2d" stroke="#84cc16" stroke-width="2"/>

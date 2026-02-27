@@ -21,7 +21,7 @@
 
   <!-- Main content -->
   <text x="200" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Compliance Dashboard</text>
-  <text x="200" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Monitoring 54 regulations &middot; Last scan: 15 min ago</text>
+  <text x="200" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Monitoring 54 regulations · Last scan: 15 min ago</text>
 
   <!-- KPI Cards -->
   <rect x="196" y="108" width="140" height="72" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
