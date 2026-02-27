@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f8fafc"/>
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#1e3a5f"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Dental Patient Reactivation Campaign</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="180" height="452" fill="#0f2744"/>
+  <text x="20" y="80" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#4a90d9">CAMPAIGNS</text>
+  <rect x="12" y="92" width="156" height="30" rx="4" fill="#264d7a"/>
+  <text x="24" y="111" font-family="Inter,sans-serif" font-size="9" fill="#fff" font-weight="600">Reactivation Campaign</text>
+  <rect x="12" y="128" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="147" font-family="Inter,sans-serif" font-size="9" fill="#ccc">New Patient Welcome</text>
+  <rect x="12" y="164" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="183" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Review Requests</text>
+
+  <!-- Campaign Dashboard -->
+  <text x="260" y="80" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Dormant Patient Reactivation</text>
+  <text x="260" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Target: Patients inactive 6+ months &middot; 2,140 contacts</text>
+
+  <!-- KPI Cards -->
+  <rect x="195" y="110" width="145" height="80" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="267" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#3b82f6">340</text>
+  <text x="267" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Patients Reactivated</text>
+  <text x="267" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">+15.9% of target</text>
+
+  <rect x="348" y="110" width="145" height="80" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="420" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#10b981">$52K</text>
+  <text x="420" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Revenue Recovered</text>
+  <text x="420" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">Avg $153/patient</text>
+
+  <rect x="501" y="110" width="145" height="80" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="573" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#8b5cf6">68%</text>
+  <text x="573" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Open Rate</text>
+  <text x="573" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">Industry avg: 22%</text>
+
+  <rect x="654" y="110" width="120" height="80" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="714" y="136" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#f97316">12x</text>
+  <text x="714" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#64748b">ROI</text>
+  <text x="714" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">$4.3K invested</text>
+
+  <!-- Workflow visualization -->
+  <rect x="195" y="205" width="580" height="120" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="215" y="230" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Campaign Workflow</text>
+
+  <!-- Step boxes -->
+  <rect x="210" y="245" width="100" height="60" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="260" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#1e40af">Day 1</text>
+  <text x="260" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#3b82f6">SMS: "We miss</text>
+  <text x="260" y="294" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#3b82f6">your smile!"</text>
+
+  <rect x="325" y="245" width="100" height="60" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+  <text x="375" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#92400e">Day 3</text>
+  <text x="375" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#d97706">Email: Special</text>
+  <text x="375" y="294" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#d97706">offer 20% off</text>
+
+  <rect x="440" y="245" width="100" height="60" rx="6" fill="#fdf2f8" stroke="#ec4899" stroke-width="1"/>
+  <text x="490" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#9d174d">Day 5</text>
+  <text x="490" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#ec4899">Voicemail</text>
+  <text x="490" y="294" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#ec4899">Drop</text>
+
+  <rect x="555" y="245" width="100" height="60" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+  <text x="605" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#065f46">Day 7</text>
+  <text x="605" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#10b981">SMS: Last</text>
+  <text x="605" y="294" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#10b981">chance offer</text>
+
+  <rect x="670" y="245" width="90" height="60" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="715" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#5b21b6">Day 14</text>
+  <text x="715" y="282" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#8b5cf6">Final email</text>
+  <text x="715" y="294" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#8b5cf6">with booking</text>
+
+  <!-- Arrows between steps -->
+  <line x1="310" y1="275" x2="325" y2="275" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="425" y1="275" x2="440" y2="275" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="540" y1="275" x2="555" y2="275" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="655" y1="275" x2="670" y2="275" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Results Chart Area -->
+  <rect x="195" y="340" width="280" height="145" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="215" y="365" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Bookings Over Time</text>
+  <!-- Simple bar chart -->
+  <rect x="225" y="425" width="28" height="40" rx="2" fill="#3b82f6" opacity="0.3"/>
+  <rect x="260" y="405" width="28" height="60" rx="2" fill="#3b82f6" opacity="0.5"/>
+  <rect x="295" y="385" width="28" height="80" rx="2" fill="#3b82f6" opacity="0.7"/>
+  <rect x="330" y="375" width="28" height="90" rx="2" fill="#3b82f6" opacity="0.8"/>
+  <rect x="365" y="365" width="28" height="100" rx="2" fill="#3b82f6"/>
+  <rect x="400" y="370" width="28" height="95" rx="2" fill="#3b82f6" opacity="0.9"/>
+  <text x="239" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W1</text>
+  <text x="274" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W2</text>
+  <text x="309" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W3</text>
+  <text x="344" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W4</text>
+  <text x="379" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W5</text>
+  <text x="414" y="475" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#94a3b8">W6</text>
+
+  <!-- Channel breakdown -->
+  <rect x="495" y="340" width="280" height="145" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="515" y="365" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Channel Breakdown</text>
+  <rect x="515" y="380" width="180" height="14" rx="3" fill="#e2e8f0"/>
+  <rect x="515" y="380" width="85" height="14" rx="3" fill="#3b82f6"/>
+  <text x="515" y="407" font-family="Inter,sans-serif" font-size="8" fill="#64748b">SMS: 47% response</text>
+  <rect x="515" y="420" width="180" height="14" rx="3" fill="#e2e8f0"/>
+  <rect x="515" y="420" width="54" height="14" rx="3" fill="#10b981"/>
+  <text x="515" y="447" font-family="Inter,sans-serif" font-size="8" fill="#64748b">Email: 30% response</text>
+  <rect x="515" y="460" width="180" height="14" rx="3" fill="#e2e8f0"/>
+  <rect x="515" y="460" width="41" height="14" rx="3" fill="#8b5cf6"/>
+  <text x="515" y="485" font-family="Inter,sans-serif" font-size="8" fill="#64748b">Voicemail: 23% response</text>
+</svg>

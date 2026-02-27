@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.5" fill="#2a2a4a"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <!-- Top bar -->
+  <rect width="800" height="40" fill="#12122a"/>
+  <circle cx="16" cy="20" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="20" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="20" r="5" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#888">n8n - Lead Qualification Pipeline</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="40" width="180" height="460" fill="#12122a"/>
+  <text x="16" y="70" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#888">EXECUTION LOG</text>
+  <rect x="12" y="82" width="156" height="24" rx="4" fill="#1a3d2a"/>
+  <circle cx="24" cy="94" r="4" fill="#10b981"/>
+  <text x="34" y="98" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 2m ago</text>
+  <rect x="12" y="110" width="156" height="24" rx="4" fill="#1a3d2a"/>
+  <circle cx="24" cy="122" r="4" fill="#10b981"/>
+  <text x="34" y="126" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 5m ago</text>
+  <rect x="12" y="138" width="156" height="24" rx="4" fill="#1a3d2a"/>
+  <circle cx="24" cy="150" r="4" fill="#10b981"/>
+  <text x="34" y="154" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 8m ago</text>
+  <rect x="12" y="166" width="156" height="24" rx="4" fill="#3d1a1a"/>
+  <circle cx="24" cy="178" r="4" fill="#ef4444"/>
+  <text x="34" y="182" font-family="Inter,sans-serif" font-size="9" fill="#ef4444">Retried - 12m ago</text>
+  <rect x="12" y="194" width="156" height="24" rx="4" fill="#1a3d2a"/>
+  <circle cx="24" cy="206" r="4" fill="#10b981"/>
+  <text x="34" y="210" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 15m ago</text>
+
+  <!-- Canvas -->
+  <!-- Node: Cal.com Trigger -->
+  <rect x="210" y="80" width="130" height="55" rx="8" fill="#2d5a3d" stroke="#10b981" stroke-width="2"/>
+  <text x="275" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Cal.com</text>
+  <text x="275" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">New Booking</text>
+
+  <!-- Node: WhatsApp -->
+  <rect x="400" y="80" width="130" height="55" rx="8" fill="#2d3f5a" stroke="#25d366" stroke-width="2"/>
+  <text x="465" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">WhatsApp API</text>
+  <text x="465" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Send Questions</text>
+
+  <!-- Node: OpenAI Scoring -->
+  <rect x="590" y="80" width="130" height="55" rx="8" fill="#3d4a2d" stroke="#84cc16" stroke-width="2"/>
+  <text x="655" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">OpenAI GPT-4</text>
+  <text x="655" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Score &amp; Analyze</text>
+
+  <!-- Node: Switch -->
+  <rect x="490" y="195" width="120" height="50" rx="25" fill="#5a3d2d" stroke="#f97316" stroke-width="2"/>
+  <text x="550" y="215" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#fff">Lead Score</text>
+  <text x="550" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">&gt;7 = Qualified</text>
+
+  <!-- Node: HubSpot (Qualified) -->
+  <rect x="300" y="300" width="140" height="55" rx="8" fill="#5a2d3d" stroke="#ff7a3d" stroke-width="2"/>
+  <text x="370" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">HubSpot CRM</text>
+  <text x="370" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Create Qualified Deal</text>
+
+  <!-- Node: Notify Sales -->
+  <rect x="300" y="390" width="140" height="55" rx="8" fill="#4a3f8a" stroke="#6c5ce7" stroke-width="2"/>
+  <text x="370" y="414" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Slack Notify</text>
+  <text x="370" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Alert Sales Rep</text>
+
+  <!-- Node: Nurture (Unqualified) -->
+  <rect x="590" y="300" width="140" height="55" rx="8" fill="#2d3f5a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="660" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Email Drip</text>
+  <text x="660" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Nurture Sequence</text>
+
+  <!-- Connections -->
+  <line x1="340" y1="107" x2="400" y2="107" stroke="#555" stroke-width="2"/>
+  <line x1="530" y1="107" x2="590" y2="107" stroke="#555" stroke-width="2"/>
+  <line x1="655" y1="135" x2="655" y2="180" stroke="#555" stroke-width="2"/>
+  <line x1="655" y1="180" x2="550" y2="195" stroke="#555" stroke-width="2"/>
+  <line x1="505" y1="245" x2="370" y2="300" stroke="#10b981" stroke-width="2"/>
+  <line x1="595" y1="245" x2="660" y2="300" stroke="#f97316" stroke-width="2"/>
+  <line x1="370" y1="355" x2="370" y2="390" stroke="#555" stroke-width="2"/>
+  <!-- Labels -->
+  <text x="430" y="275" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Qualified</text>
+  <text x="610" y="275" font-family="Inter,sans-serif" font-size="9" fill="#f97316">Nurture</text>
+
+  <!-- Status bar -->
+  <rect x="180" y="470" width="620" height="30" fill="#12122a"/>
+  <circle cx="200" cy="485" r="4" fill="#10b981"/>
+  <text x="212" y="489" font-family="Inter,sans-serif" font-size="10" fill="#10b981">Active</text>
+  <text x="340" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">Leads Processed: 1,240</text>
+  <text x="540" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">Qualified: 34%</text>
+  <text x="700" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">6 Nodes</text>
+</svg>
