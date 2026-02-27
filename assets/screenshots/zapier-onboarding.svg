@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafafa"/>
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <rect x="200" y="12" width="400" height="24" rx="12" fill="#f5f5f5"/>
+  <text x="400" y="29" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#666">Zapier - SaaS Customer Onboarding Flow</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="200" height="452" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="20" y="78" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#ff4a00">Zapier</text>
+  <rect x="16" y="96" width="168" height="32" rx="6" fill="#fff5f0" stroke="#ff4a00" stroke-width="1"/>
+  <text x="100" y="116" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ff4a00" font-weight="600">+ Create Zap</text>
+  <text x="20" y="152" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#888">MY ZAPS</text>
+  <rect x="16" y="164" width="168" height="28" rx="4" fill="#fff5f0"/>
+  <text x="28" y="182" font-family="Inter,sans-serif" font-size="9" fill="#333">Customer Onboarding</text>
+  <circle cx="172" cy="178" r="4" fill="#10b981"/>
+  <rect x="16" y="196" width="168" height="28" rx="4" fill="#f5f5f5"/>
+  <text x="28" y="214" font-family="Inter,sans-serif" font-size="9" fill="#666">Lead Capture Flow</text>
+  <rect x="16" y="228" width="168" height="28" rx="4" fill="#f5f5f5"/>
+  <text x="28" y="246" font-family="Inter,sans-serif" font-size="9" fill="#666">Invoice Processing</text>
+
+  <!-- Canvas - Zap Steps -->
+  <text x="400" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#333" text-anchor="middle">SaaS Customer Onboarding Flow</text>
+  <text x="400" y="94" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">12 steps &middot; Runs every time a new user signs up</text>
+
+  <!-- Step 1: Trigger -->
+  <rect x="260" y="110" width="280" height="50" rx="8" fill="#fff" stroke="#ff4a00" stroke-width="2"/>
+  <rect x="268" y="118" width="34" height="34" rx="6" fill="#ff4a00"/>
+  <text x="285" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">1</text>
+  <text x="315" y="132" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Trigger: New User in Stripe</text>
+  <text x="315" y="147" font-family="Inter,sans-serif" font-size="9" fill="#888">When a new subscription is created</text>
+
+  <!-- Step 2 -->
+  <rect x="260" y="168" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="268" y="176" width="34" height="34" rx="6" fill="#3b82f6"/>
+  <text x="285" y="198" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">2</text>
+  <text x="315" y="190" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">HubSpot: Create Contact</text>
+  <text x="315" y="205" font-family="Inter,sans-serif" font-size="9" fill="#888">Add to CRM with plan details</text>
+
+  <!-- Step 3 -->
+  <rect x="260" y="226" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="268" y="234" width="34" height="34" rx="6" fill="#ea4335"/>
+  <text x="285" y="256" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">3</text>
+  <text x="315" y="248" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Gmail: Send Welcome Email</text>
+  <text x="315" y="263" font-family="Inter,sans-serif" font-size="9" fill="#888">Personalized onboarding email</text>
+
+  <!-- Step 4 -->
+  <rect x="260" y="284" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="268" y="292" width="34" height="34" rx="6" fill="#4a154b"/>
+  <text x="285" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">4</text>
+  <text x="315" y="306" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Slack: Notify Success Team</text>
+  <text x="315" y="321" font-family="Inter,sans-serif" font-size="9" fill="#888">#new-signups channel alert</text>
+
+  <!-- Step 5 -->
+  <rect x="260" y="342" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="268" y="350" width="34" height="34" rx="6" fill="#2d7d46"/>
+  <text x="285" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">5</text>
+  <text x="315" y="364" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Asana: Create Onboarding Tasks</text>
+  <text x="315" y="379" font-family="Inter,sans-serif" font-size="9" fill="#888">Assign CS rep tasks</text>
+
+  <!-- Step 6 -->
+  <rect x="260" y="400" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="268" y="408" width="34" height="34" rx="6" fill="#7c3aed"/>
+  <text x="285" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">6</text>
+  <text x="315" y="422" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Delay: Wait 3 Days</text>
+  <text x="315" y="437" font-family="Inter,sans-serif" font-size="9" fill="#888">Then send follow-up education</text>
+
+  <!-- Vertical connector lines -->
+  <line x1="400" y1="160" x2="400" y2="168" stroke="#ddd" stroke-width="2"/>
+  <line x1="400" y1="218" x2="400" y2="226" stroke="#ddd" stroke-width="2"/>
+  <line x1="400" y1="276" x2="400" y2="284" stroke="#ddd" stroke-width="2"/>
+  <line x1="400" y1="334" x2="400" y2="342" stroke="#ddd" stroke-width="2"/>
+  <line x1="400" y1="392" x2="400" y2="400" stroke="#ddd" stroke-width="2"/>
+
+  <!-- More steps indicator -->
+  <text x="400" y="472" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#888">+ 6 more steps below...</text>
+
+  <!-- Status -->
+  <rect x="580" y="108" width="80" height="24" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+  <text x="620" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">ON</text>
+  <text x="620" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">847 runs</text>
+</svg>

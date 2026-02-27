@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0d1117"/>
+  <!-- Top bar -->
+  <rect width="800" height="36" fill="#161b22"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="18" r="5" fill="#28c840"/>
+  <text x="400" y="22" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#8b949e">claude-code - AI-Powered API Development</text>
+
+  <!-- Terminal content -->
+  <text x="16" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#8b949e">~/api-project $</text>
+  <text x="155" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#c9d1d9">claude "Build a REST API for inventory management with auth"</text>
+
+  <text x="16" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">&#9608; Claude Code</text>
+  <text x="130" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Building complete REST API from specification...</text>
+
+  <text x="16" y="105" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Project Setup &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
+  <text x="16" y="123" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="123" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">FastAPI project scaffolded with Poetry</text>
+  <text x="16" y="141" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="141" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">PostgreSQL + SQLAlchemy models created</text>
+  <text x="16" y="159" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="159" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">JWT authentication middleware configured</text>
+  <text x="16" y="177" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="177" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Alembic migrations initialized</text>
+
+  <text x="16" y="200" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Endpoints Created &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
+  <text x="16" y="220" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
+  <text x="68" y="220" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/auth/register     - User registration</text>
+  <text x="16" y="238" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
+  <text x="68" y="238" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/auth/login        - JWT token generation</text>
+  <text x="16" y="256" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
+  <text x="68" y="256" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products          - List products (paginated)</text>
+  <text x="16" y="274" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
+  <text x="68" y="274" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products          - Create product</text>
+  <text x="16" y="292" font-family="JetBrains Mono,monospace" font-size="10" fill="#ffa657">  PUT </text>
+  <text x="68" y="292" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products/{id}     - Update product</text>
+  <text x="16" y="310" font-family="JetBrains Mono,monospace" font-size="10" fill="#f85149">  DEL </text>
+  <text x="68" y="310" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products/{id}     - Delete product</text>
+  <text x="16" y="328" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
+  <text x="68" y="328" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/inventory         - Stock levels</text>
+  <text x="16" y="346" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
+  <text x="68" y="346" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/inventory/adjust  - Adjust stock</text>
+  <text x="16" y="364" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
+  <text x="68" y="364" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/reports           - Analytics dashboard</text>
+
+  <text x="16" y="390" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Generated Artifacts &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
+  <text x="16" y="410" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="410" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">OpenAPI/Swagger docs at /docs</text>
+  <text x="16" y="428" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="428" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Docker + docker-compose configuration</text>
+  <text x="16" y="446" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="446" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">48 tests generated (100% pass rate)</text>
+  <text x="16" y="464" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
+  <text x="40" y="464" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">CI/CD pipeline (GitHub Actions)</text>
+
+  <text x="16" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">  Total files created:</text>
+  <text x="200" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">34</text>
+  <text x="250" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">Lines of code:</text>
+  <text x="380" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">2,847</text>
+  <text x="450" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">Time:</text>
+  <text x="500" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">8 min 23s</text>
+</svg>
