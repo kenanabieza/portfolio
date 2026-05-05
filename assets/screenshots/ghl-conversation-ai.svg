@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f8fafc"/>
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#1e3a5f"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Conversation AI &middot; Knowledge Base &amp; Suggestive Mode</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="180" height="452" fill="#0f2744"/>
+  <text x="20" y="80" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#4a90d9" text-transform="uppercase">AI EMPLOYEE</text>
+  <rect x="12" y="92" width="156" height="30" rx="4" fill="#264d7a"/>
+  <text x="24" y="111" font-family="Inter,sans-serif" font-size="9" fill="#fff" font-weight="600">Conversation AI</text>
+  <rect x="12" y="128" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="147" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Reviews AI</text>
+  <rect x="12" y="164" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="183" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Knowledge Base</text>
+  <rect x="12" y="200" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="219" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Conversations</text>
+  <rect x="12" y="236" width="156" height="30" rx="4" fill="#1a3a5f"/>
+  <text x="24" y="255" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Settings</text>
+
+  <!-- Suggestive mode toggle box -->
+  <rect x="200" y="70" width="280" height="74" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="220" y="92" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Response Mode</text>
+  <text x="220" y="108" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Controls when AI replies are sent</text>
+  <!-- Toggle: suggestive -->
+  <rect x="220" y="118" width="100" height="20" rx="10" fill="#10b981"/>
+  <circle cx="310" cy="128" r="7" fill="#fff"/>
+  <text x="330" y="132" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">Suggestive (Review before send)</text>
+
+  <!-- Knowledge Base counter -->
+  <rect x="500" y="70" width="280" height="74" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="520" y="92" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Knowledge Base</text>
+  <text x="520" y="118" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#3b82f6">39</text>
+  <text x="556" y="120" font-family="Inter,sans-serif" font-size="9" fill="#64748b">FAQs trained from</text>
+  <text x="556" y="132" font-family="Inter,sans-serif" font-size="9" fill="#64748b">pricing &amp; service docs</text>
+
+  <!-- FAQ list -->
+  <rect x="200" y="160" width="280" height="270" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="220" y="184" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Trained FAQs</text>
+  <rect x="450" y="170" width="20" height="20" rx="4" fill="#dcfce7"/>
+  <text x="460" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#16a34a">39</text>
+  <line x1="220" y1="195" x2="460" y2="195" stroke="#e2e8f0"/>
+
+  <!-- FAQ items -->
+  <text x="225" y="214" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; What's the turnaround time for photos?</text>
+  <text x="225" y="232" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Do you offer drone / aerial coverage?</text>
+  <text x="225" y="250" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; What's included in the standard package?</text>
+  <text x="225" y="268" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Reschedule policy for shoots</text>
+  <text x="225" y="286" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Pricing for Matterport 3D tours</text>
+  <text x="225" y="304" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Twilight / dusk shoot availability</text>
+  <text x="225" y="322" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Video walkthrough deliverables</text>
+  <text x="225" y="340" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Add-on: floor plans, virtual staging</text>
+  <text x="225" y="358" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; MLS-ready file format &amp; sizes</text>
+  <text x="225" y="376" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Booking lead time / scheduling</text>
+  <text x="225" y="394" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Service area &amp; travel fees</text>
+  <text x="225" y="412" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8" font-style="italic">+ 28 more FAQs</text>
+
+  <!-- Right side: Conversation draft preview -->
+  <rect x="500" y="160" width="280" height="270" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="520" y="184" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Conversation Draft</text>
+  <rect x="700" y="170" width="68" height="20" rx="10" fill="#fef3c7"/>
+  <text x="734" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#d97706">DRAFT</text>
+  <line x1="520" y1="195" x2="760" y2="195" stroke="#e2e8f0"/>
+
+  <!-- Inbound message -->
+  <rect x="520" y="208" width="200" height="44" rx="8" fill="#f1f5f9"/>
+  <text x="530" y="225" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#475569">Agent inquiry</text>
+  <text x="530" y="240" font-family="Inter,sans-serif" font-size="8" fill="#64748b">"What's your turnaround time</text>
+  <text x="530" y="250" font-family="Inter,sans-serif" font-size="8" fill="#64748b">for photos and a video?"</text>
+
+  <!-- AI suggested reply -->
+  <rect x="540" y="266" width="220" height="80" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="550" y="283" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#3b82f6">AI Suggested Reply</text>
+  <text x="550" y="300" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">Standard photo turnaround is</text>
+  <text x="550" y="312" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">24h, video walkthroughs 48h.</text>
+  <text x="550" y="324" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">Bundle delivered together via</text>
+  <text x="550" y="336" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">your media gallery link.</text>
+
+  <!-- Action buttons -->
+  <rect x="540" y="358" width="68" height="28" rx="6" fill="#10b981"/>
+  <text x="574" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#fff">Approve</text>
+  <rect x="616" y="358" width="68" height="28" rx="6" fill="#fff" stroke="#e2e8f0"/>
+  <text x="650" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#475569">Edit</text>
+  <rect x="692" y="358" width="68" height="28" rx="6" fill="#fff" stroke="#fee2e2"/>
+  <text x="726" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#dc2626">Discard</text>
+
+  <text x="540" y="406" font-family="Inter,sans-serif" font-size="8" fill="#64748b" font-style="italic">Source: FAQ #14 (turnaround) + FAQ #22 (delivery)</text>
+  <text x="540" y="420" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Confidence: high &middot; 2 FAQs matched</text>
+
+  <!-- Bottom status bar -->
+  <rect x="200" y="445" width="580" height="40" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="220" y="465" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#166534">Active integrations</text>
+  <text x="220" y="478" font-family="Inter,sans-serif" font-size="9" fill="#166534">&#10003; Workflow trigger inline &middot; &#10003; Reviews AI &middot; Google Business Profile connected</text>
+</svg>
