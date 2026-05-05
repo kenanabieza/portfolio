@@ -1,100 +1,176 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0a0a1a"/>
-  <!-- Top bar -->
-  <rect width="800" height="48" fill="#0f1729" />
-  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="24" r="5" fill="#28c840"/>
-  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Real Estate GHL Middleware</text>
-  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#7aa2d8">Production Deployment &middot; Railway</text>
+  <!-- Background (Railway dark theme) -->
+  <rect width="800" height="500" fill="#13111c"/>
 
-  <!-- Background grid -->
-  <g opacity="0.05" stroke="#3b82f6" stroke-width="1">
-    <line x1="0" y1="120" x2="800" y2="120"/>
-    <line x1="0" y1="180" x2="800" y2="180"/>
-    <line x1="0" y1="240" x2="800" y2="240"/>
-    <line x1="0" y1="300" x2="800" y2="300"/>
-    <line x1="0" y1="360" x2="800" y2="360"/>
-    <line x1="0" y1="420" x2="800" y2="420"/>
+  <!-- Top bar -->
+  <rect width="800" height="44" fill="#1d1b25"/>
+  <circle cx="16" cy="22" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="22" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="22" r="5" fill="#28c840"/>
+  <!-- Railway logo (stylized) -->
+  <rect x="80" y="14" width="16" height="16" rx="3" fill="#fff"/>
+  <text x="86" y="26" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#13111c">R</text>
+  <text x="104" y="26" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Railway</text>
+  <text x="160" y="26" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">/</text>
+  <text x="170" y="26" font-family="Inter,sans-serif" font-size="10" fill="#fff">real-estate-ghl-middleware</text>
+
+  <!-- Env selector -->
+  <rect x="370" y="12" width="92" height="22" rx="4" fill="#2a2832"/>
+  <circle cx="382" cy="23" r="4" fill="#7c3aed"/>
+  <text x="392" y="26" font-family="Inter,sans-serif" font-size="10" fill="#e5e5e5">production</text>
+  <text x="448" y="26" font-family="Inter,sans-serif" font-size="9" fill="#737373">&#9662;</text>
+
+  <!-- Right side: deploy button -->
+  <rect x="708" y="12" width="80" height="22" rx="4" fill="#7c3aed"/>
+  <text x="748" y="26" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Deploy</text>
+
+  <!-- Left sidebar -->
+  <rect x="0" y="44" width="180" height="456" fill="#1d1b25"/>
+  <text x="20" y="68" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#737373" letter-spacing="1.5">SERVICES</text>
+
+  <!-- Web service (selected) -->
+  <rect x="12" y="80" width="156" height="40" rx="6" fill="#2d2738"/>
+  <rect x="20" y="86" width="6" height="28" rx="3" fill="#7c3aed"/>
+  <circle cx="36" cy="100" r="5" fill="#10b981"/>
+  <text x="46" y="98" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">web</text>
+  <text x="46" y="111" font-family="Inter,sans-serif" font-size="8" fill="#737373">Python &middot; FastAPI &middot; Active</text>
+
+  <!-- Postgres -->
+  <rect x="12" y="124" width="156" height="32" rx="6" fill="#1d1b25"/>
+  <circle cx="32" cy="140" r="5" fill="#10b981"/>
+  <rect x="42" y="132" width="22" height="14" rx="3" fill="#3a3744"/>
+  <text x="53" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#a3a3a3">PG</text>
+  <text x="70" y="143" font-family="Inter,sans-serif" font-size="10" fill="#e5e5e5">Postgres</text>
+
+  <!-- Redis -->
+  <rect x="12" y="160" width="156" height="32" rx="6" fill="#1d1b25"/>
+  <circle cx="32" cy="176" r="5" fill="#10b981"/>
+  <rect x="42" y="168" width="22" height="14" rx="3" fill="#3a3744"/>
+  <text x="53" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#a3a3a3">RD</text>
+  <text x="70" y="179" font-family="Inter,sans-serif" font-size="10" fill="#e5e5e5">Redis</text>
+
+  <!-- Sidebar nav items -->
+  <text x="20" y="226" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#737373" letter-spacing="1.5">SERVICE</text>
+  <text x="20" y="248" font-family="Inter,sans-serif" font-size="10" fill="#a78bfa" font-weight="600">Deployments</text>
+  <text x="20" y="270" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">Variables</text>
+  <text x="20" y="292" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">Settings</text>
+  <text x="20" y="314" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">Metrics</text>
+  <text x="20" y="336" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">Logs</text>
+
+  <!-- ============ MAIN PANEL ============ -->
+  <!-- Heading -->
+  <text x="200" y="76" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">web</text>
+  <rect x="234" y="62" width="50" height="20" rx="10" fill="#0f3a1f"/>
+  <text x="259" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#10b981">ACTIVE</text>
+  <text x="200" y="94" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">github.com/kenanabieza/real-estate-ghl-middleware &middot; main &middot; deployed 2h ago</text>
+
+  <!-- Domain pill -->
+  <rect x="500" y="64" width="270" height="22" rx="4" fill="#1d1b25" stroke="#3a3744"/>
+  <circle cx="514" cy="75" r="4" fill="#10b981"/>
+  <text x="524" y="78" font-family="JetBrains Mono,monospace" font-size="9" fill="#a78bfa">re-ghl-middleware.up.railway.app</text>
+
+  <!-- ============ Stats row ============ -->
+  <g transform="translate(200, 110)">
+    <rect x="0" y="0" width="138" height="74" rx="8" fill="#1d1b25" stroke="#2a2832"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">UPTIME</text>
+    <text x="14" y="46" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#10b981">99.9%</text>
+    <text x="14" y="62" font-family="Inter,sans-serif" font-size="8" fill="#737373">last 30 days</text>
+  </g>
+  <g transform="translate(346, 110)">
+    <rect x="0" y="0" width="138" height="74" rx="8" fill="#1d1b25" stroke="#2a2832"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">REQUESTS / MIN</text>
+    <text x="14" y="46" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#a78bfa">14.3</text>
+    <text x="14" y="62" font-family="Inter,sans-serif" font-size="8" fill="#10b981">&#8593; 12% vs yesterday</text>
+  </g>
+  <g transform="translate(492, 110)">
+    <rect x="0" y="0" width="138" height="74" rx="8" fill="#1d1b25" stroke="#2a2832"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">MEMORY</text>
+    <text x="14" y="46" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">186 <tspan font-size="11" fill="#737373">MB</tspan></text>
+    <text x="14" y="62" font-family="Inter,sans-serif" font-size="8" fill="#737373">limit: 512 MB</text>
+  </g>
+  <g transform="translate(638, 110)">
+    <rect x="0" y="0" width="138" height="74" rx="8" fill="#1d1b25" stroke="#2a2832"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">CPU</text>
+    <text x="14" y="46" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">3.2<tspan font-size="11" fill="#737373">%</tspan></text>
+    <text x="14" y="62" font-family="Inter,sans-serif" font-size="8" fill="#737373">low load</text>
   </g>
 
-  <!-- Source: Aryeo -->
-  <rect x="40" y="100" width="180" height="100" rx="12" fill="#111127" stroke="#f97316" stroke-width="1.5"/>
-  <text x="60" y="124" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#f97316" text-transform="uppercase" letter-spacing="1">Aryeo</text>
-  <text x="60" y="146" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">order.fulfilled</text>
-  <text x="60" y="161" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">media.delivered</text>
-  <text x="60" y="176" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">+ /v1/orders poller</text>
-  <text x="60" y="190" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b">HMAC-SHA256</text>
+  <!-- ============ Deployments table ============ -->
+  <text x="200" y="208" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Deployments</text>
+  <rect x="200" y="220" width="576" height="160" rx="8" fill="#1d1b25" stroke="#2a2832"/>
 
-  <!-- Source: Quo -->
-  <rect x="40" y="220" width="180" height="100" rx="12" fill="#111127" stroke="#10b981" stroke-width="1.5"/>
-  <text x="60" y="244" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#10b981" text-transform="uppercase" letter-spacing="1">Quo / OpenPhone</text>
-  <text x="60" y="266" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">call.completed</text>
-  <text x="60" y="281" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">message.received</text>
-  <text x="60" y="310" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b">missed-call detection</text>
+  <!-- Table header -->
+  <rect x="200" y="220" width="576" height="28" rx="8 8 0 0" fill="#252330"/>
+  <text x="216" y="238" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">STATUS</text>
+  <text x="288" y="238" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">COMMIT</text>
+  <text x="500" y="238" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">ENVIRONMENT</text>
+  <text x="640" y="238" font-family="Inter,sans-serif" font-size="9" fill="#737373" letter-spacing="1">TIME</text>
 
-  <!-- Arrows from sources to middleware -->
-  <line x1="220" y1="150" x2="320" y2="220" stroke="#3b82f6" stroke-width="1.5"/>
-  <polygon points="320,220 312,217 314,225" fill="#3b82f6"/>
-  <line x1="220" y1="270" x2="320" y2="260" stroke="#3b82f6" stroke-width="1.5"/>
-  <polygon points="320,260 312,256 312,264" fill="#3b82f6"/>
+  <!-- Row 1 (active) -->
+  <line x1="200" y1="248" x2="776" y2="248" stroke="#2a2832"/>
+  <rect x="216" y="256" width="60" height="20" rx="10" fill="#0f3a1f"/>
+  <circle cx="226" cy="266" r="3" fill="#10b981"/>
+  <text x="263" y="270" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10b981">SUCCESS</text>
+  <rect x="288" y="258" width="36" height="16" rx="3" fill="#2a2832"/>
+  <text x="306" y="269" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#a78bfa">de619b8</text>
+  <text x="332" y="270" font-family="Inter,sans-serif" font-size="9" fill="#e5e5e5">Add GitHub Pages case study</text>
+  <rect x="500" y="258" width="58" height="16" rx="3" fill="#2a2832"/>
+  <text x="529" y="269" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">production</text>
+  <text x="640" y="270" font-family="Inter,sans-serif" font-size="9" fill="#a3a3a3">2h ago</text>
 
-  <!-- Middleware box -->
-  <rect x="320" y="120" width="320" height="280" rx="12" fill="#111127" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="320" y="120" width="320" height="36" rx="12" fill="#1e3a8a"/>
-  <rect x="320" y="138" width="320" height="18" fill="#1e3a8a"/>
-  <text x="340" y="143" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">FastAPI Middleware (Python 3.11)</text>
+  <!-- Row 2 -->
+  <line x1="200" y1="282" x2="776" y2="282" stroke="#2a2832"/>
+  <rect x="216" y="290" width="60" height="20" rx="10" fill="#0f3a1f"/>
+  <circle cx="226" cy="300" r="3" fill="#10b981"/>
+  <text x="263" y="304" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10b981">SUCCESS</text>
+  <rect x="288" y="292" width="36" height="16" rx="3" fill="#2a2832"/>
+  <text x="306" y="303" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#a78bfa">ee8f885</text>
+  <text x="332" y="304" font-family="Inter,sans-serif" font-size="9" fill="#e5e5e5">Initial commit: middleware</text>
+  <rect x="500" y="292" width="58" height="16" rx="3" fill="#2a2832"/>
+  <text x="529" y="303" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">production</text>
+  <text x="640" y="304" font-family="Inter,sans-serif" font-size="9" fill="#a3a3a3">2d ago</text>
 
-  <!-- Routes -->
-  <text x="340" y="180" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#3b82f6" text-transform="uppercase" letter-spacing="1.5">Routes</text>
-  <rect x="340" y="190" width="280" height="22" rx="4" fill="#1a1a3e"/>
-  <text x="352" y="205" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">POST /webhooks/aryeo</text>
-  <rect x="340" y="216" width="280" height="22" rx="4" fill="#1a1a3e"/>
-  <text x="352" y="231" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">POST /webhooks/quo</text>
-  <rect x="340" y="242" width="280" height="22" rx="4" fill="#1a1a3e"/>
-  <text x="352" y="257" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">GET  /health</text>
+  <!-- Row 3 -->
+  <line x1="200" y1="316" x2="776" y2="316" stroke="#2a2832"/>
+  <rect x="216" y="324" width="60" height="20" rx="10" fill="#0f3a1f"/>
+  <circle cx="226" cy="334" r="3" fill="#10b981"/>
+  <text x="263" y="338" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10b981">SUCCESS</text>
+  <rect x="288" y="326" width="36" height="16" rx="3" fill="#2a2832"/>
+  <text x="306" y="337" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#a78bfa">1f11c2d</text>
+  <text x="332" y="338" font-family="Inter,sans-serif" font-size="9" fill="#e5e5e5">Guard contact pagination</text>
+  <rect x="500" y="326" width="58" height="16" rx="3" fill="#2a2832"/>
+  <text x="529" y="337" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">production</text>
+  <text x="640" y="338" font-family="Inter,sans-serif" font-size="9" fill="#a3a3a3">5d ago</text>
 
-  <!-- Background tasks -->
-  <text x="340" y="285" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#a78bfa" text-transform="uppercase" letter-spacing="1.5">Background Workers</text>
-  <rect x="340" y="295" width="280" height="22" rx="4" fill="#1a1a3e"/>
-  <text x="352" y="310" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">Aryeo poller (5 min loop)</text>
-  <rect x="340" y="321" width="280" height="22" rx="4" fill="#1a1a3e"/>
-  <text x="352" y="336" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">Lapsed agent checker (daily)</text>
+  <!-- Row 4 -->
+  <line x1="200" y1="350" x2="776" y2="350" stroke="#2a2832"/>
+  <rect x="216" y="358" width="60" height="20" rx="10" fill="#0f3a1f"/>
+  <circle cx="226" cy="368" r="3" fill="#10b981"/>
+  <text x="263" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10b981">SUCCESS</text>
+  <rect x="288" y="360" width="36" height="16" rx="3" fill="#2a2832"/>
+  <text x="306" y="371" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#a78bfa">2ef933b</text>
+  <text x="332" y="372" font-family="Inter,sans-serif" font-size="9" fill="#e5e5e5">Fix OOM in lapsed agent checker</text>
+  <rect x="500" y="360" width="58" height="16" rx="3" fill="#2a2832"/>
+  <text x="529" y="371" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">production</text>
+  <text x="640" y="372" font-family="Inter,sans-serif" font-size="9" fill="#a3a3a3">7d ago</text>
 
-  <!-- Rule layer -->
-  <text x="340" y="362" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#22d3ee" text-transform="uppercase" letter-spacing="1.5">Rule Layer</text>
-  <rect x="340" y="372" width="135" height="20" rx="4" fill="#0e7490" opacity="0.3"/>
-  <text x="352" y="386" font-family="Inter,sans-serif" font-size="8" fill="#22d3ee">E.164 normalize</text>
-  <rect x="485" y="372" width="135" height="20" rx="4" fill="#0e7490" opacity="0.3"/>
-  <text x="497" y="386" font-family="Inter,sans-serif" font-size="8" fill="#22d3ee">30-day review cap</text>
+  <!-- ============ Live logs panel ============ -->
+  <text x="200" y="408" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Live Logs</text>
+  <rect x="280" y="398" width="42" height="16" rx="8" fill="#3a1f5e"/>
+  <circle cx="291" cy="406" r="3" fill="#a78bfa"/>
+  <text x="306" y="409" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#a78bfa">LIVE</text>
 
-  <!-- Arrow from middleware to GHL -->
-  <line x1="640" y1="260" x2="720" y2="260" stroke="#3b82f6" stroke-width="2"/>
-  <polygon points="725,260 715,255 715,265" fill="#3b82f6"/>
-
-  <!-- Target: GHL -->
-  <rect x="700" y="180" width="80" height="160" rx="12" fill="#111127" stroke="#2196f3" stroke-width="1.5"/>
-  <rect x="700" y="180" width="80" height="34" rx="12" fill="#1e40af"/>
-  <rect x="700" y="200" width="80" height="14" fill="#1e40af"/>
-  <text x="740" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">GHL</text>
-  <text x="740" y="226" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">API v2</text>
-  <text x="740" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">contacts</text>
-  <text x="740" y="263" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">workflows</text>
-  <text x="740" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">pipelines</text>
-  <text x="740" y="293" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">notes</text>
-  <text x="740" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">tags</text>
-  <text x="740" y="323" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">custom fields</text>
-
-  <!-- Stats panel -->
-  <rect x="40" y="425" width="720" height="55" rx="8" fill="#111127" stroke="#1e293b" stroke-width="1"/>
-  <text x="80" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#3b82f6">3</text>
-  <text x="80" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">platforms</text>
-  <text x="200" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#10b981">9</text>
-  <text x="200" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">modules</text>
-  <text x="320" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#a78bfa">4</text>
-  <text x="320" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">event flows</text>
-  <text x="440" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#22d3ee">2</text>
-  <text x="440" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">background workers</text>
-  <text x="600" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#f97316">HMAC</text>
-  <text x="600" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">SHA-256 verified</text>
+  <rect x="200" y="420" width="576" height="68" rx="6" fill="#0a0810" stroke="#2a2832"/>
+  <text x="216" y="438" font-family="JetBrains Mono,monospace" font-size="8" fill="#737373">2026-04-20 04:12:14</text>
+  <text x="316" y="438" font-family="JetBrains Mono,monospace" font-size="8" fill="#86efac">[INFO]</text>
+  <text x="354" y="438" font-family="JetBrains Mono,monospace" font-size="8" fill="#cbd5e1">Aryeo webhook received: order.fulfilled</text>
+  <text x="216" y="452" font-family="JetBrains Mono,monospace" font-size="8" fill="#737373">2026-04-20 04:12:14</text>
+  <text x="316" y="452" font-family="JetBrains Mono,monospace" font-size="8" fill="#86efac">[INFO]</text>
+  <text x="354" y="452" font-family="JetBrains Mono,monospace" font-size="8" fill="#cbd5e1">Upsert contact +1XXXXXXXXXX: id=ghl-..., new=False</text>
+  <text x="216" y="466" font-family="JetBrains Mono,monospace" font-size="8" fill="#737373">2026-04-20 04:12:15</text>
+  <text x="316" y="466" font-family="JetBrains Mono,monospace" font-size="8" fill="#86efac">[INFO]</text>
+  <text x="354" y="466" font-family="JetBrains Mono,monospace" font-size="8" fill="#cbd5e1">Order fulfilled: contact=ghl-..., new=False</text>
+  <text x="216" y="480" font-family="JetBrains Mono,monospace" font-size="8" fill="#737373">2026-04-20 04:13:02</text>
+  <text x="316" y="480" font-family="JetBrains Mono,monospace" font-size="8" fill="#86efac">[INFO]</text>
+  <text x="354" y="480" font-family="JetBrains Mono,monospace" font-size="8" fill="#cbd5e1">Quo webhook received: call.completed (missed)</text>
 </svg>
