@@ -1,91 +1,136 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#f8faf9"/>
+  <defs>
+    <filter id="ocShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="36" fill="#E8E8E8"/>
+  <circle cx="16" cy="18" r="5" fill="#FF5F57"/>
+  <circle cx="34" cy="18" r="5" fill="#FEBC2E"/>
+  <circle cx="52" cy="18" r="5" fill="#28C840"/>
+  <rect x="80" y="8" width="500" height="20" rx="4" fill="#FFFFFF"/>
+  <text x="92" y="22" font-family="Inter,sans-serif" font-size="9" fill="#5F6368">app.openclaw.ai &#183; Contract Review</text>
+
   <!-- Top bar -->
-  <rect width="800" height="48" fill="#0a3d2a"/>
-  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="24" r="5" fill="#28c840"/>
-  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#34d399">OpenClaw</text>
-  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#86efac">AI Contract Review &amp; Risk Assessment</text>
+  <rect x="0" y="36" width="800" height="52" fill="#FFFFFF"/>
+  <line x1="0" y1="88" x2="800" y2="88" stroke="#E2E8F0"/>
+  <!-- Logo -->
+  <rect x="20" y="52" width="22" height="22" rx="5" fill="#10B981"/>
+  <path d="M28 64 a3 3 0 0 1 6 0 v3 h-6 z" fill="#fff"/>
+  <text x="50" y="68" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0F172A">OpenClaw</text>
+  <!-- Search -->
+  <rect x="160" y="52" width="280" height="24" rx="6" fill="#F1F5F9"/>
+  <text x="172" y="68" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">&#128270;  Search clauses, contracts, parties...</text>
+  <!-- Right cluster -->
+  <rect x="600" y="50" width="80" height="28" rx="6" fill="#10B981"/>
+  <text x="640" y="68" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">+ Upload</text>
+  <circle cx="708" cy="64" r="14" fill="#10B981" opacity="0.15"/>
+  <text x="708" y="69" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#10B981">K</text>
 
   <!-- Sidebar -->
-  <rect x="0" y="48" width="180" height="452" fill="#062117"/>
-  <text x="16" y="78" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#34d399">DOCUMENTS</text>
-  <rect x="10" y="90" width="160" height="30" rx="4" fill="#0a3d2a"/>
-  <text x="22" y="110" font-family="Inter,sans-serif" font-size="9" fill="#fff" font-weight="600">SaaS Agreement v3.pdf</text>
-  <rect x="10" y="126" width="160" height="30" rx="4" fill="#083322"/>
-  <text x="22" y="146" font-family="Inter,sans-serif" font-size="9" fill="#86efac">NDA - Acme Corp.pdf</text>
-  <rect x="10" y="162" width="160" height="30" rx="4" fill="#083322"/>
-  <text x="22" y="182" font-family="Inter,sans-serif" font-size="9" fill="#86efac">Service Contract.pdf</text>
-  <rect x="10" y="198" width="160" height="30" rx="4" fill="#083322"/>
-  <text x="22" y="218" font-family="Inter,sans-serif" font-size="9" fill="#86efac">Employment Agmt.pdf</text>
+  <rect x="0" y="88" width="180" height="412" fill="#F8FAFC"/>
+  <text x="20" y="112" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#475569">DOCUMENTS</text>
+  <rect x="12" y="120" width="156" height="36" rx="6" fill="#10B981" opacity="0.12"/>
+  <rect x="12" y="120" width="3" height="36" fill="#10B981"/>
+  <text x="22" y="135" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0F172A">SaaS Agreement v3</text>
+  <text x="22" y="148" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Reviewed 2h ago</text>
+  <rect x="12" y="162" width="156" height="36" rx="6" fill="transparent"/>
+  <text x="22" y="177" font-family="Inter,sans-serif" font-size="10" fill="#0F172A">NDA - Acme Corp</text>
+  <text x="22" y="190" font-family="Inter,sans-serif" font-size="8" fill="#64748B">2 risks flagged</text>
+  <rect x="12" y="204" width="156" height="36" rx="6" fill="transparent"/>
+  <text x="22" y="219" font-family="Inter,sans-serif" font-size="10" fill="#0F172A">Service Contract</text>
+  <text x="22" y="232" font-family="Inter,sans-serif" font-size="8" fill="#64748B">In review</text>
+  <rect x="12" y="246" width="156" height="36" rx="6" fill="transparent"/>
+  <text x="22" y="261" font-family="Inter,sans-serif" font-size="10" fill="#0F172A">Employment Agmt</text>
+  <text x="22" y="274" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Approved</text>
 
-  <text x="16" y="260" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#34d399">RECENT</text>
-  <text x="16" y="280" font-family="Inter,sans-serif" font-size="8" fill="#6ee7b7">&#10003; 12 contracts reviewed</text>
-  <text x="16" y="296" font-family="Inter,sans-serif" font-size="8" fill="#6ee7b7">&#10003; 3 risks flagged today</text>
-  <text x="16" y="312" font-family="Inter,sans-serif" font-size="8" fill="#6ee7b7">&#10003; 95% clause accuracy</text>
+  <text x="20" y="316" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#475569">STATS</text>
+  <text x="20" y="338" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#10B981">12</text>
+  <text x="38" y="338" font-family="Inter,sans-serif" font-size="9" fill="#475569">contracts reviewed</text>
+  <text x="20" y="358" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#EF4444">3</text>
+  <text x="38" y="358" font-family="Inter,sans-serif" font-size="9" fill="#475569">risks flagged today</text>
+  <text x="20" y="378" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#0F172A">95%</text>
+  <text x="50" y="378" font-family="Inter,sans-serif" font-size="9" fill="#475569">clause accuracy</text>
 
-  <!-- Main content -->
-  <text x="200" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1e293b">SaaS Master Service Agreement v3</text>
-  <text x="200" y="96" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Uploaded 2 hours ago · AI Analysis Complete</text>
+  <!-- ============ MAIN: split view ============ -->
+  <!-- Doc viewer (left half) -->
+  <rect x="180" y="88" width="380" height="412" fill="#FFFFFF"/>
+  <text x="200" y="112" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F172A">SaaS Master Service Agreement v3</text>
+  <text x="200" y="128" font-family="Inter,sans-serif" font-size="9" fill="#64748B">Uploaded 2h ago &#183; AI Analysis Complete &#183; 47 pages</text>
 
-  <!-- Risk Score -->
-  <rect x="196" y="108" width="200" height="80" rx="10" fill="#fff" stroke="#fde68a" stroke-width="2"/>
-  <text x="216" y="130" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#92400e">RISK SCORE</text>
-  <text x="216" y="165" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#d97706">6.2</text>
-  <text x="274" y="165" font-family="Inter,sans-serif" font-size="14" fill="#d97706">/ 10</text>
-  <text x="326" y="155" font-family="Inter,sans-serif" font-size="9" fill="#d97706">Medium</text>
-  <text x="326" y="170" font-family="Inter,sans-serif" font-size="9" fill="#d97706">Risk</text>
+  <!-- Document content -->
+  <rect x="200" y="148" width="340" height="334" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="216" y="172" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0F172A">3. LIMITATION OF LIABILITY</text>
 
-  <!-- Key Metrics -->
-  <rect x="408" y="108" width="130" height="80" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="428" y="130" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">CLAUSES</text>
-  <text x="428" y="158" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#1e293b">47</text>
-  <text x="470" y="158" font-family="Inter,sans-serif" font-size="9" fill="#64748b">identified</text>
+  <text x="216" y="194" font-family="Inter,sans-serif" font-size="9" fill="#0F172A">3.1 Subject to Section 3.2, in no event shall either party</text>
+  <text x="216" y="208" font-family="Inter,sans-serif" font-size="9" fill="#0F172A">be liable for any indirect, incidental, special,</text>
+  <text x="216" y="222" font-family="Inter,sans-serif" font-size="9" fill="#0F172A">consequential or punitive damages...</text>
 
-  <rect x="550" y="108" width="110" height="80" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="570" y="130" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">FLAGGED</text>
-  <text x="570" y="158" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#ef4444">5</text>
-  <text x="596" y="158" font-family="Inter,sans-serif" font-size="9" fill="#ef4444">issues</text>
+  <!-- Highlighted clause (risk) -->
+  <rect x="212" y="240" width="316" height="56" rx="4" fill="#FEF3C7"/>
+  <rect x="212" y="240" width="3" height="56" fill="#F59E0B"/>
+  <text x="222" y="258" font-family="Inter,sans-serif" font-size="9" fill="#0F172A" font-weight="600">3.2 Notwithstanding Section 3.1, the limitations shall</text>
+  <text x="222" y="272" font-family="Inter,sans-serif" font-size="9" fill="#0F172A" font-weight="600">not apply to liability arising from gross negligence,</text>
+  <text x="222" y="286" font-family="Inter,sans-serif" font-size="9" fill="#0F172A" font-weight="600">willful misconduct, or breach of confidentiality...</text>
 
-  <rect x="672" y="108" width="110" height="80" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="692" y="130" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">PAGES</text>
-  <text x="692" y="158" font-family="Inter,sans-serif" font-size="24" font-weight="800" fill="#1e293b">24</text>
-  <text x="724" y="158" font-family="Inter,sans-serif" font-size="9" fill="#64748b">analyzed</text>
+  <text x="216" y="316" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0F172A">4. INDEMNIFICATION</text>
+  <text x="216" y="338" font-family="Inter,sans-serif" font-size="9" fill="#0F172A">4.1 Each party shall indemnify, defend and hold</text>
+  <text x="216" y="352" font-family="Inter,sans-serif" font-size="9" fill="#0F172A">harmless the other party from any third-party claims...</text>
 
-  <!-- Flagged Clauses -->
-  <rect x="196" y="200" width="590" height="280" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="216" y="225" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e293b">AI-Identified Issues</text>
+  <!-- High risk highlight -->
+  <rect x="212" y="370" width="316" height="42" rx="4" fill="#FEE2E2"/>
+  <rect x="212" y="370" width="3" height="42" fill="#EF4444"/>
+  <text x="222" y="388" font-family="Inter,sans-serif" font-size="9" fill="#0F172A" font-weight="600">4.2 The indemnification obligations under this Section</text>
+  <text x="222" y="402" font-family="Inter,sans-serif" font-size="9" fill="#0F172A" font-weight="600">shall survive termination of this Agreement indefinitely.</text>
 
-  <!-- Issue 1 -->
-  <rect x="212" y="240" width="558" height="55" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
-  <rect x="220" y="248" width="50" height="18" rx="4" fill="#ef4444"/>
-  <text x="245" y="260" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#fff">HIGH</text>
-  <text x="280" y="260" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#991b1b">Unlimited Liability Clause (Section 8.2)</text>
-  <text x="280" y="278" font-family="Inter,sans-serif" font-size="8" fill="#7f1d1d">No cap on indemnification. Recommend adding $2M aggregate limit.</text>
-  <text x="700" y="260" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Page 12</text>
+  <!-- Page indicator -->
+  <text x="216" y="436" font-family="Inter,sans-serif" font-size="8" fill="#94A3B8">Page 12 of 47</text>
+  <rect x="280" y="424" width="240" height="4" rx="2" fill="#E2E8F0"/>
+  <rect x="280" y="424" width="60" height="4" rx="2" fill="#10B981"/>
 
-  <!-- Issue 2 -->
-  <rect x="212" y="302" width="558" height="55" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
-  <rect x="220" y="310" width="50" height="18" rx="4" fill="#ef4444"/>
-  <text x="245" y="322" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#fff">HIGH</text>
-  <text x="280" y="322" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#991b1b">Auto-Renewal Without Notice (Section 12.1)</text>
-  <text x="280" y="340" font-family="Inter,sans-serif" font-size="8" fill="#7f1d1d">3-year auto-renewal with only 90-day exit window. Industry standard: 30 days.</text>
-  <text x="700" y="322" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Page 18</text>
+  <!-- ============ AI insights (right half) ============ -->
+  <rect x="560" y="88" width="240" height="412" fill="#F8FAFC"/>
 
-  <!-- Issue 3 -->
-  <rect x="212" y="364" width="558" height="55" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-  <rect x="220" y="372" width="50" height="18" rx="4" fill="#f59e0b"/>
-  <text x="245" y="384" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#fff">MED</text>
-  <text x="280" y="384" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#92400e">Broad IP Assignment (Section 5.4)</text>
-  <text x="280" y="402" font-family="Inter,sans-serif" font-size="8" fill="#78350f">Work product ownership extends to pre-existing IP. Needs carve-out clause.</text>
-  <text x="700" y="384" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Page 8</text>
+  <text x="580" y="112" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0F172A">&#10026; AI Analysis</text>
+  <rect x="660" y="100" width="62" height="16" rx="8" fill="#DCFCE7"/>
+  <text x="691" y="111" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#16A34A">COMPLETE</text>
 
-  <!-- Issue 4 -->
-  <rect x="212" y="426" width="558" height="45" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
-  <rect x="220" y="434" width="50" height="18" rx="4" fill="#10b981"/>
-  <text x="245" y="446" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#fff">LOW</text>
-  <text x="280" y="446" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#065f46">Non-Standard Termination Notice (Section 12.3)</text>
-  <text x="280" y="461" font-family="Inter,sans-serif" font-size="8" fill="#064e3b">60-day notice period. Consider negotiating to 30 days.</text>
-  <text x="700" y="446" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Page 19</text>
+  <!-- Risk score -->
+  <rect x="580" y="124" width="200" height="64" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="592" y="142" font-family="Inter,sans-serif" font-size="9" fill="#64748B">RISK SCORE</text>
+  <text x="592" y="172" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#F59E0B">Medium</text>
+  <text x="660" y="172" font-family="Inter,sans-serif" font-size="9" fill="#64748B">7 findings</text>
+
+  <!-- Findings list -->
+  <text x="580" y="208" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#475569">FLAGGED CLAUSES</text>
+
+  <rect x="580" y="218" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#FEE2E2"/>
+  <rect x="580" y="218" width="3" height="50" fill="#EF4444"/>
+  <text x="592" y="236" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#0F172A">Indemnification</text>
+  <rect x="678" y="226" width="60" height="14" rx="3" fill="#FEE2E2"/>
+  <text x="708" y="237" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#DC2626">HIGH RISK</text>
+  <text x="592" y="252" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Survives indefinitely &#183; no cap</text>
+
+  <rect x="580" y="278" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#FEF3C7"/>
+  <rect x="580" y="278" width="3" height="50" fill="#F59E0B"/>
+  <text x="592" y="296" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#0F172A">Liability cap exclusions</text>
+  <rect x="688" y="286" width="50" height="14" rx="3" fill="#FEF3C7"/>
+  <text x="713" y="297" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#D97706">MEDIUM</text>
+  <text x="592" y="312" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Multiple carve-outs in 3.2</text>
+
+  <rect x="580" y="338" width="200" height="50" rx="6" fill="#FFFFFF" stroke="#FEF3C7"/>
+  <rect x="580" y="338" width="3" height="50" fill="#F59E0B"/>
+  <text x="592" y="356" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#0F172A">Auto-renewal terms</text>
+  <rect x="688" y="346" width="50" height="14" rx="3" fill="#FEF3C7"/>
+  <text x="713" y="357" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#D97706">MEDIUM</text>
+  <text x="592" y="372" font-family="Inter,sans-serif" font-size="8" fill="#64748B">90-day cancellation only</text>
+
+  <!-- Generate summary CTA -->
+  <rect x="580" y="406" width="200" height="32" rx="6" fill="#10B981"/>
+  <text x="680" y="426" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">&#10026; Generate Executive Summary</text>
+
+  <text x="580" y="460" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Analysis: gpt-4 + RAG over 14k contracts</text>
+  <text x="580" y="474" font-family="Inter,sans-serif" font-size="8" fill="#10B981">80% faster reviews &#183; 95% clause detection</text>
 </svg>

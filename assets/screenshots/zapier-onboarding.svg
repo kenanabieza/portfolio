@@ -1,85 +1,153 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#fafafa"/>
+  <defs>
+    <pattern id="zapDots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="0.7" fill="#D1D5DB"/>
+    </pattern>
+    <filter id="zapShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="800" height="500" fill="#F5F5F5"/>
+  <rect x="64" y="56" width="736" height="444" fill="url(#zapDots)"/>
+
+  <!-- Sidebar (dark) -->
+  <rect x="0" y="0" width="64" height="500" fill="#1A1A1A"/>
+  <!-- Zapier diamond logo -->
+  <polygon points="32,18 44,30 32,42 20,30" fill="#FF4A00"/>
+  <text x="32" y="34" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">Z</text>
+  <!-- Sidebar icons -->
+  <g stroke="#9CA3AF" stroke-width="1.5" fill="none">
+    <rect x="22" y="64" width="20" height="20" rx="4"/>
+    <rect x="22" y="96" width="20" height="20" rx="4"/>
+    <rect x="22" y="128" width="20" height="20" rx="4"/>
+    <rect x="22" y="160" width="20" height="20" rx="4"/>
+    <rect x="22" y="192" width="20" height="20" rx="4"/>
+  </g>
+  <!-- Active highlight -->
+  <rect x="18" y="92" width="2" height="28" fill="#FF4A00"/>
+  <circle cx="32" cy="468" r="14" fill="#FF4A00"/>
+  <text x="32" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">K</text>
+
   <!-- Top bar -->
-  <rect width="800" height="48" fill="#fff" stroke="#eee" stroke-width="1"/>
-  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="24" r="5" fill="#28c840"/>
-  <rect x="200" y="12" width="400" height="24" rx="12" fill="#f5f5f5"/>
-  <text x="400" y="29" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#666">Zapier - SaaS Customer Onboarding Flow</text>
+  <rect x="64" y="0" width="736" height="56" fill="#FFFFFF"/>
+  <line x1="64" y1="56" x2="800" y2="56" stroke="#E5E7EB"/>
+  <text x="84" y="22" font-family="Inter,sans-serif" font-size="9" fill="#5F6C72">Zaps &#183; Customer Onboarding</text>
+  <text x="84" y="40" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#1A1A1A">SaaS Customer Onboarding Flow</text>
 
-  <!-- Sidebar -->
-  <rect x="0" y="48" width="200" height="452" fill="#fff" stroke="#eee" stroke-width="1"/>
-  <text x="20" y="78" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#ff4a00">Zapier</text>
-  <rect x="16" y="96" width="168" height="32" rx="6" fill="#fff5f0" stroke="#ff4a00" stroke-width="1"/>
-  <text x="100" y="116" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ff4a00" font-weight="600">+ Create Zap</text>
-  <text x="20" y="152" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#888">MY ZAPS</text>
-  <rect x="16" y="164" width="168" height="28" rx="4" fill="#fff5f0"/>
-  <text x="28" y="182" font-family="Inter,sans-serif" font-size="9" fill="#333">Customer Onboarding</text>
-  <circle cx="172" cy="178" r="4" fill="#10b981"/>
-  <rect x="16" y="196" width="168" height="28" rx="4" fill="#f5f5f5"/>
-  <text x="28" y="214" font-family="Inter,sans-serif" font-size="9" fill="#666">Lead Capture Flow</text>
-  <rect x="16" y="228" width="168" height="28" rx="4" fill="#f5f5f5"/>
-  <text x="28" y="246" font-family="Inter,sans-serif" font-size="9" fill="#666">Invoice Processing</text>
+  <!-- Toggle ON pill -->
+  <rect x="370" y="22" width="42" height="20" rx="10" fill="#FF4A00"/>
+  <circle cx="402" cy="32" r="7" fill="#fff"/>
+  <text x="420" y="37" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#FF4A00">On</text>
 
-  <!-- Canvas - Zap Steps -->
-  <text x="400" y="78" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#333" text-anchor="middle">SaaS Customer Onboarding Flow</text>
-  <text x="400" y="94" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">12 steps · Runs every time a new user signs up</text>
+  <!-- Right cluster: Test, History, Publish -->
+  <rect x="554" y="20" width="48" height="22" rx="5" fill="#fff" stroke="#D1D5DB"/>
+  <text x="578" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Test</text>
+  <rect x="610" y="20" width="60" height="22" rx="5" fill="#fff" stroke="#D1D5DB"/>
+  <text x="640" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">History</text>
+  <rect x="678" y="20" width="60" height="22" rx="5" fill="#FF4A00"/>
+  <text x="708" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Publish</text>
 
-  <!-- Step 1: Trigger -->
-  <rect x="260" y="110" width="280" height="50" rx="8" fill="#fff" stroke="#ff4a00" stroke-width="2"/>
-  <rect x="268" y="118" width="34" height="34" rx="6" fill="#ff4a00"/>
-  <text x="285" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">1</text>
-  <text x="315" y="132" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Trigger: New User in Stripe</text>
-  <text x="315" y="147" font-family="Inter,sans-serif" font-size="9" fill="#888">When a new subscription is created</text>
+  <!-- ============ STEP CARDS ============ -->
+  <!-- Step 1: Trigger - Stripe new customer -->
+  <g transform="translate(240, 80)">
+    <!-- Trigger pill above -->
+    <rect x="0" y="0" width="60" height="18" rx="9" fill="#FFE6D9"/>
+    <text x="30" y="13" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#FF4A00">TRIGGER</text>
+    <!-- Card -->
+    <rect x="0" y="22" width="320" height="64" rx="10" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="0" y="22" width="3" height="64" fill="#FF4A00"/>
+    <!-- App icon -->
+    <rect x="14" y="36" width="36" height="36" rx="6" fill="#635BFF"/>
+    <text x="32" y="58" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">S</text>
+    <!-- Text -->
+    <text x="62" y="48" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1A1A1A">New Customer in Stripe</text>
+    <text x="62" y="64" font-family="Inter,sans-serif" font-size="11" fill="#5F6C72">Stripe &#183; New Customer event</text>
+    <text x="62" y="78" font-family="Inter,sans-serif" font-size="9" fill="#13D0AB">&#9679; Connected</text>
+  </g>
 
-  <!-- Step 2 -->
-  <rect x="260" y="168" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <rect x="268" y="176" width="34" height="34" rx="6" fill="#3b82f6"/>
-  <text x="285" y="198" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">2</text>
-  <text x="315" y="190" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">HubSpot: Create Contact</text>
-  <text x="315" y="205" font-family="Inter,sans-serif" font-size="9" fill="#888">Add to CRM with plan details</text>
+  <!-- Connector + button -->
+  <line x1="400" y1="146" x2="400" y2="170" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="400" cy="180" r="11" fill="#fff" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="395" y1="180" x2="405" y2="180" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="400" y1="175" x2="400" y2="185" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="400" y1="190" x2="400" y2="214" stroke="#9CA3AF" stroke-width="2"/>
 
-  <!-- Step 3 -->
-  <rect x="260" y="226" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <rect x="268" y="234" width="34" height="34" rx="6" fill="#ea4335"/>
-  <text x="285" y="256" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">3</text>
-  <text x="315" y="248" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Gmail: Send Welcome Email</text>
-  <text x="315" y="263" font-family="Inter,sans-serif" font-size="9" fill="#888">Personalized onboarding email</text>
+  <!-- Step 2: Welcome email -->
+  <g transform="translate(240, 214)">
+    <rect x="0" y="0" width="320" height="64" rx="10" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="14" y="14" width="36" height="36" rx="6" fill="#0078D4"/>
+    <rect x="20" y="22" width="24" height="20" rx="2" fill="#fff"/>
+    <polygon points="20,22 32,32 44,22" fill="#0078D4"/>
+    <text x="62" y="26" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1A1A1A">Send Welcome Email</text>
+    <text x="62" y="42" font-family="Inter,sans-serif" font-size="11" fill="#5F6C72">Microsoft Outlook &#183; Send Email</text>
+    <text x="62" y="56" font-family="Inter,sans-serif" font-size="9" fill="#13D0AB">&#9679; Configured</text>
+  </g>
 
-  <!-- Step 4 -->
-  <rect x="260" y="284" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <rect x="268" y="292" width="34" height="34" rx="6" fill="#4a154b"/>
-  <text x="285" y="314" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">4</text>
-  <text x="315" y="306" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Slack: Notify Success Team</text>
-  <text x="315" y="321" font-family="Inter,sans-serif" font-size="9" fill="#888">#new-signups channel alert</text>
+  <!-- Connector + button -->
+  <line x1="400" y1="278" x2="400" y2="302" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="400" cy="312" r="11" fill="#fff" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="395" y1="312" x2="405" y2="312" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="400" y1="307" x2="400" y2="317" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="400" y1="322" x2="400" y2="346" stroke="#9CA3AF" stroke-width="2"/>
 
-  <!-- Step 5 -->
-  <rect x="260" y="342" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <rect x="268" y="350" width="34" height="34" rx="6" fill="#2d7d46"/>
-  <text x="285" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">5</text>
-  <text x="315" y="364" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Asana: Create Onboarding Tasks</text>
-  <text x="315" y="379" font-family="Inter,sans-serif" font-size="9" fill="#888">Assign CS rep tasks</text>
+  <!-- Step 3: Path splitter -->
+  <g transform="translate(240, 346)">
+    <rect x="0" y="0" width="320" height="48" rx="10" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="14" y="6" width="36" height="36" rx="6" fill="#7B61FF"/>
+    <line x1="22" y1="20" x2="34" y2="20" stroke="#fff" stroke-width="2"/>
+    <line x1="22" y1="20" x2="34" y2="14" stroke="#fff" stroke-width="2"/>
+    <line x1="22" y1="20" x2="34" y2="26" stroke="#fff" stroke-width="2"/>
+    <text x="62" y="20" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1A1A1A">Paths by Zapier</text>
+    <text x="62" y="36" font-family="Inter,sans-serif" font-size="11" fill="#5F6C72">3 paths &#183; By plan tier</text>
+  </g>
 
-  <!-- Step 6 -->
-  <rect x="260" y="400" width="280" height="50" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <rect x="268" y="408" width="34" height="34" rx="6" fill="#7c3aed"/>
-  <text x="285" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">6</text>
-  <text x="315" y="422" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#333">Delay: Wait 3 Days</text>
-  <text x="315" y="437" font-family="Inter,sans-serif" font-size="9" fill="#888">Then send follow-up education</text>
+  <!-- Branches -->
+  <line x1="400" y1="394" x2="400" y2="418" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="280" y1="418" x2="520" y2="418" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="280" y1="418" x2="280" y2="436" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="400" y1="418" x2="400" y2="436" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="520" y1="418" x2="520" y2="436" stroke="#9CA3AF" stroke-width="2"/>
 
-  <!-- Vertical connector lines -->
-  <line x1="400" y1="160" x2="400" y2="168" stroke="#ddd" stroke-width="2"/>
-  <line x1="400" y1="218" x2="400" y2="226" stroke="#ddd" stroke-width="2"/>
-  <line x1="400" y1="276" x2="400" y2="284" stroke="#ddd" stroke-width="2"/>
-  <line x1="400" y1="334" x2="400" y2="342" stroke="#ddd" stroke-width="2"/>
-  <line x1="400" y1="392" x2="400" y2="400" stroke="#ddd" stroke-width="2"/>
+  <!-- Path A: Pro tier -->
+  <g transform="translate(232, 436)">
+    <rect x="0" y="0" width="96" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="6" y="8" width="22" height="22" rx="4" fill="#4A154B"/>
+    <text x="17" y="24" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">#</text>
+    <text x="34" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1A1A1A">Slack</text>
+    <text x="34" y="34" font-family="Inter,sans-serif" font-size="8" fill="#5F6C72">Pro alert</text>
+  </g>
 
-  <!-- More steps indicator -->
-  <text x="400" y="472" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#888">+ 6 more steps below...</text>
+  <!-- Path B: Free tier -->
+  <g transform="translate(352, 436)">
+    <rect x="0" y="0" width="96" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="6" y="8" width="22" height="22" rx="4" fill="#FF7A59"/>
+    <text x="17" y="24" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">H</text>
+    <text x="34" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1A1A1A">HubSpot</text>
+    <text x="34" y="34" font-family="Inter,sans-serif" font-size="8" fill="#5F6C72">Add to drip</text>
+  </g>
 
-  <!-- Status -->
-  <rect x="580" y="108" width="80" height="24" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
-  <text x="620" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">ON</text>
-  <text x="620" y="148" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">847 runs</text>
+  <!-- Path C: Enterprise -->
+  <g transform="translate(472, 436)">
+    <rect x="0" y="0" width="96" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#zapShadow)"/>
+    <rect x="6" y="8" width="22" height="22" rx="4" fill="#0085F2"/>
+    <text x="17" y="24" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">A</text>
+    <text x="34" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1A1A1A">Asana</text>
+    <text x="34" y="34" font-family="Inter,sans-serif" font-size="8" fill="#5F6C72">CSM task</text>
+  </g>
+
+  <!-- Run history mini panel -->
+  <rect x="84" y="80" width="140" height="60" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="98" y="100" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#1A1A1A">Last runs</text>
+  <circle cx="100" cy="116" r="3" fill="#13D0AB"/>
+  <text x="110" y="120" font-family="Inter,sans-serif" font-size="9" fill="#1A1A1A">12 successful</text>
+  <circle cx="100" cy="130" r="3" fill="#FFC43E"/>
+  <text x="110" y="134" font-family="Inter,sans-serif" font-size="9" fill="#1A1A1A">1 needs review</text>
+
+  <!-- Performance note -->
+  <rect x="600" y="80" width="180" height="60" rx="8" fill="#FFF8C5" stroke="#E5DC8A"/>
+  <text x="614" y="100" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#92400E">Performance</text>
+  <text x="614" y="116" font-family="Inter,sans-serif" font-size="9" fill="#525567">60% faster time-to-value</text>
+  <text x="614" y="130" font-family="Inter,sans-serif" font-size="9" fill="#525567">45% less churn in 90d</text>
 </svg>
