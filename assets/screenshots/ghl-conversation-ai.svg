@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
   <rect width="800" height="500" fill="#f8fafc"/>
   <!-- Top bar -->
   <rect width="800" height="48" fill="#1e3a5f"/>
@@ -6,93 +7,90 @@
   <circle cx="34" cy="24" r="5" fill="#febc2e"/>
   <circle cx="52" cy="24" r="5" fill="#28c840"/>
   <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
-  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Conversation AI &middot; Knowledge Base &amp; Suggestive Mode</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">AI Agents &middot; Conversation AI</text>
 
-  <!-- Sidebar -->
-  <rect x="0" y="48" width="180" height="452" fill="#0f2744"/>
-  <text x="20" y="80" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#4a90d9" text-transform="uppercase">AI EMPLOYEE</text>
-  <rect x="12" y="92" width="156" height="30" rx="4" fill="#264d7a"/>
-  <text x="24" y="111" font-family="Inter,sans-serif" font-size="9" fill="#fff" font-weight="600">Conversation AI</text>
-  <rect x="12" y="128" width="156" height="30" rx="4" fill="#1a3a5f"/>
-  <text x="24" y="147" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Reviews AI</text>
-  <rect x="12" y="164" width="156" height="30" rx="4" fill="#1a3a5f"/>
-  <text x="24" y="183" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Knowledge Base</text>
-  <rect x="12" y="200" width="156" height="30" rx="4" fill="#1a3a5f"/>
-  <text x="24" y="219" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Conversations</text>
-  <rect x="12" y="236" width="156" height="30" rx="4" fill="#1a3a5f"/>
-  <text x="24" y="255" font-family="Inter,sans-serif" font-size="9" fill="#ccc">Settings</text>
+  <!-- AI Agents top nav -->
+  <rect x="0" y="48" width="800" height="42" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="20" y="74" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">AI Agents</text>
+  <text x="120" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Getting Started</text>
+  <text x="218" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Agent Studio</text>
+  <text x="305" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Voice AI</text>
+  <text x="368" y="74" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#3b82f6">Conversation AI</text>
+  <line x1="358" y1="86" x2="478" y2="86" stroke="#3b82f6" stroke-width="2"/>
+  <text x="488" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Knowledge Base</text>
+  <text x="595" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Agent Templates</text>
+  <text x="702" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Content AI</text>
+  <text x="772" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Logs</text>
 
-  <!-- Suggestive mode toggle box -->
-  <rect x="200" y="70" width="280" height="74" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="220" y="92" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Response Mode</text>
-  <text x="220" y="108" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Controls when AI replies are sent</text>
-  <!-- Toggle: suggestive -->
-  <rect x="220" y="118" width="100" height="20" rx="10" fill="#10b981"/>
-  <circle cx="310" cy="128" r="7" fill="#fff"/>
-  <text x="330" y="132" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#10b981">Suggestive (Review before send)</text>
+  <!-- Page title -->
+  <text x="40" y="120" font-family="Inter,sans-serif" font-size="20" font-weight="800" fill="#0f172a">Real Estate SMS Assistant</text>
+  <text x="40" y="139" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Unlock the power of automated conversations</text>
 
-  <!-- Knowledge Base counter -->
-  <rect x="500" y="70" width="280" height="74" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="520" y="92" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Knowledge Base</text>
-  <text x="520" y="118" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#3b82f6">39</text>
-  <text x="556" y="120" font-family="Inter,sans-serif" font-size="9" fill="#64748b">FAQs trained from</text>
-  <text x="556" y="132" font-family="Inter,sans-serif" font-size="9" fill="#64748b">pricing &amp; service docs</text>
+  <!-- Sub-tabs -->
+  <text x="40" y="172" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#3b82f6">Bot Settings</text>
+  <line x1="40" y1="182" x2="105" y2="182" stroke="#3b82f6" stroke-width="2"/>
+  <text x="125" y="172" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Bot Training</text>
+  <text x="208" y="172" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Bot Goals</text>
+  <text x="278" y="172" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Dashboard</text>
+  <line x1="0" y1="190" x2="800" y2="190" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- FAQ list -->
-  <rect x="200" y="160" width="280" height="270" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="220" y="184" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Trained FAQs</text>
-  <rect x="450" y="170" width="20" height="20" rx="4" fill="#dcfce7"/>
-  <text x="460" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#16a34a">39</text>
-  <line x1="220" y1="195" x2="460" y2="195" stroke="#e2e8f0"/>
+  <!-- Bot Details Card -->
+  <rect x="40" y="208" width="720" height="232" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- FAQ items -->
-  <text x="225" y="214" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; What's the turnaround time for photos?</text>
-  <text x="225" y="232" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Do you offer drone / aerial coverage?</text>
-  <text x="225" y="250" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; What's included in the standard package?</text>
-  <text x="225" y="268" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Reschedule policy for shoots</text>
-  <text x="225" y="286" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Pricing for Matterport 3D tours</text>
-  <text x="225" y="304" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Twilight / dusk shoot availability</text>
-  <text x="225" y="322" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Video walkthrough deliverables</text>
-  <text x="225" y="340" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Add-on: floor plans, virtual staging</text>
-  <text x="225" y="358" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; MLS-ready file format &amp; sizes</text>
-  <text x="225" y="376" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Booking lead time / scheduling</text>
-  <text x="225" y="394" font-family="Inter,sans-serif" font-size="9" fill="#475569">&#10003; Service area &amp; travel fees</text>
-  <text x="225" y="412" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8" font-style="italic">+ 28 more FAQs</text>
+  <!-- Bot Details header -->
+  <text x="60" y="232" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0f172a">Bot Details</text>
+  <rect x="142" y="220" width="48" height="16" rx="8" fill="#dbeafe"/>
+  <text x="166" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1e40af">Primary</text>
+  <text x="60" y="250" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Configure your bot's communication preferences and settings</text>
 
-  <!-- Right side: Conversation draft preview -->
-  <rect x="500" y="160" width="280" height="270" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="520" y="184" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1e293b">Conversation Draft</text>
-  <rect x="700" y="170" width="68" height="20" rx="10" fill="#fef3c7"/>
-  <text x="734" y="184" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#d97706">DRAFT</text>
-  <line x1="520" y1="195" x2="760" y2="195" stroke="#e2e8f0"/>
+  <!-- Set as Primary Bot button (greyed) -->
+  <rect x="630" y="218" width="116" height="22" rx="6" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="688" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">Set as Primary Bot</text>
 
-  <!-- Inbound message -->
-  <rect x="520" y="208" width="200" height="44" rx="8" fill="#f1f5f9"/>
-  <text x="530" y="225" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#475569">Agent inquiry</text>
-  <text x="530" y="240" font-family="Inter,sans-serif" font-size="8" fill="#64748b">"What's your turnaround time</text>
-  <text x="530" y="250" font-family="Inter,sans-serif" font-size="8" fill="#64748b">for photos and a video?"</text>
+  <line x1="60" y1="262" x2="740" y2="262" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- AI suggested reply -->
-  <rect x="540" y="266" width="220" height="80" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="550" y="283" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#3b82f6">AI Suggested Reply</text>
-  <text x="550" y="300" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">Standard photo turnaround is</text>
-  <text x="550" y="312" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">24h, video walkthroughs 48h.</text>
-  <text x="550" y="324" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">Bundle delivered together via</text>
-  <text x="550" y="336" font-family="Inter,sans-serif" font-size="8" fill="#1e293b">your media gallery link.</text>
+  <!-- Bot Name field -->
+  <text x="60" y="280" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0f172a">Bot Name <tspan fill="#dc2626">*</tspan></text>
+  <rect x="60" y="288" width="680" height="26" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <text x="72" y="305" font-family="Inter,sans-serif" font-size="11" fill="#0f172a">Real Estate SMS Assistant</text>
 
-  <!-- Action buttons -->
-  <rect x="540" y="358" width="68" height="28" rx="6" fill="#10b981"/>
-  <text x="574" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#fff">Approve</text>
-  <rect x="616" y="358" width="68" height="28" rx="6" fill="#fff" stroke="#e2e8f0"/>
-  <text x="650" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#475569">Edit</text>
-  <rect x="692" y="358" width="68" height="28" rx="6" fill="#fff" stroke="#fee2e2"/>
-  <text x="726" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#dc2626">Discard</text>
+  <!-- Set Bot Status -->
+  <text x="60" y="335" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0f172a">Set Bot Status</text>
+  <text x="60" y="349" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Choose the bot's operating mode (choose one)</text>
 
-  <text x="540" y="406" font-family="Inter,sans-serif" font-size="8" fill="#64748b" font-style="italic">Source: FAQ #14 (turnaround) + FAQ #22 (delivery)</text>
-  <text x="540" y="420" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Confidence: high &middot; 2 FAQs matched</text>
+  <!-- Off card -->
+  <rect x="60" y="358" width="220" height="56" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="72" y="370" width="22" height="22" rx="4" fill="#f1f5f9"/>
+  <line x1="78" y1="375" x2="88" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="88" y1="375" x2="78" y2="385" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="104" y="380" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Off</text>
+  <text x="104" y="395" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Turn off Conversations AI</text>
+  <circle cx="263" cy="386" r="6" fill="#fff" stroke="#cbd5e1"/>
 
-  <!-- Bottom status bar -->
-  <rect x="200" y="445" width="580" height="40" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="220" y="465" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#166534">Active integrations</text>
-  <text x="220" y="478" font-family="Inter,sans-serif" font-size="9" fill="#166534">&#10003; Workflow trigger inline &middot; &#10003; Reviews AI &middot; Google Business Profile connected</text>
+  <!-- Suggestive card (selected) -->
+  <rect x="290" y="358" width="220" height="56" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="302" y="370" width="22" height="22" rx="4" fill="#dbeafe"/>
+  <rect x="306" y="375" width="14" height="10" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="334" y="380" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#3b82f6">Suggestive</text>
+  <text x="334" y="395" font-family="Inter,sans-serif" font-size="9" fill="#3b82f6">Suggests prompts within chat window</text>
+  <circle cx="493" cy="386" r="6" fill="#3b82f6"/>
+  <circle cx="493" cy="386" r="2.5" fill="#fff"/>
+
+  <!-- Auto Pilot card -->
+  <rect x="520" y="358" width="220" height="56" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="532" y="370" width="22" height="22" rx="4" fill="#f1f5f9"/>
+  <polygon points="540,378 548,381 540,384 540,378" fill="#94a3b8"/>
+  <text x="564" y="380" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Auto Pilot</text>
+  <text x="564" y="395" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Bot replies automatically</text>
+  <circle cx="723" cy="386" r="6" fill="#fff" stroke="#cbd5e1"/>
+
+  <!-- AI bot trial banner -->
+  <rect x="60" y="425" width="680" height="0" fill="none"/>
+
+  <!-- Channels footnote -->
+  <rect x="40" y="455" width="720" height="32" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+  <text x="56" y="476" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0c4a6e">Active channel:</text>
+  <rect x="142" y="465" width="50" height="18" rx="4" fill="#fff" stroke="#bae6fd"/>
+  <text x="167" y="477" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#0c4a6e">SMS &times;</text>
+  <text x="208" y="476" font-family="Inter,sans-serif" font-size="10" fill="#0c4a6e">Knowledge base trained &middot; 39 FAQs &middot; Workflow integration ready</text>
 </svg>
