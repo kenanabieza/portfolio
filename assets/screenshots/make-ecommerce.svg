@@ -41,7 +41,7 @@
   <polyline points="92,20 84,26 92,32" fill="none" stroke="#0F1126" stroke-width="2"/>
 
   <!-- Scenario name -->
-  <text x="116" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373">Scenarios &middot; My organization</text>
+  <text x="116" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373">Scenarios &#183; My organization</text>
   <text x="116" y="40" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0F1126">E-commerce Order Fulfillment Engine</text>
 
   <!-- Status pill -->

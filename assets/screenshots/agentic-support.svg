@@ -38,7 +38,7 @@
   <line x1="64" y1="56" x2="800" y2="56" stroke="#E4E6EB"/>
 
   <!-- Top bar left: workflow name + breadcrumb -->
-  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &middot; Workflows</text>
+  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &#183; Workflows</text>
   <text x="84" y="42" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F1126">Multi-Agent Customer Support</text>
   <rect x="316" y="32" width="46" height="16" rx="3" fill="#FCE9EE"/>
   <text x="339" y="43" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#EA4B71">Active</text>
@@ -67,7 +67,7 @@
     <polygon points="20,30 40,46 60,30" fill="#fff"/>
     <polygon points="20,30 40,46 60,30 60,33 40,49 20,33" fill="#FBBC05"/>
     <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Email Trigger</text>
-    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Gmail &middot; on new</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Gmail &#183; on new</text>
   </g>
 
   <!-- Connection: Trigger → Triage -->

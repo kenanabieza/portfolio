@@ -28,7 +28,7 @@
   <!-- Top bar -->
   <rect x="64" y="0" width="736" height="56" fill="#FFFFFF"/>
   <line x1="64" y1="56" x2="800" y2="56" stroke="#E4E6EB"/>
-  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &middot; Workflows</text>
+  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &#183; Workflows</text>
   <text x="84" y="42" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F1126">Lead Qualification Pipeline</text>
   <rect x="304" y="32" width="46" height="16" rx="3" fill="#FCE9EE"/>
   <text x="327" y="43" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#EA4B71">Active</text>
@@ -146,7 +146,7 @@
   <text x="88" y="402" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#92400E">Results (90 days)</text>
   <text x="88" y="418" font-family="Inter,sans-serif" font-size="8" fill="#525567">+34% lead conversion</text>
   <text x="88" y="430" font-family="Inter,sans-serif" font-size="8" fill="#525567">60 hrs/wk saved across team</text>
-  <text x="88" y="442" font-family="Inter,sans-serif" font-size="8" fill="#525567">Sales cycle: 28d &rarr; 19d</text>
+  <text x="88" y="442" font-family="Inter,sans-serif" font-size="8" fill="#525567">Sales cycle: 28d &#8594; 19d</text>
 
   <!-- Bottom toolbar -->
   <rect x="320" y="450" width="240" height="36" rx="18" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>

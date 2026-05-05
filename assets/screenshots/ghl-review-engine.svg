@@ -7,7 +7,7 @@
   <circle cx="34" cy="24" r="5" fill="#febc2e"/>
   <circle cx="52" cy="24" r="5" fill="#28c840"/>
   <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
-  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Workflow &middot; Review Request Engine</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Workflow &#183; Review Request Engine</text>
 
   <!-- Title -->
   <text x="40" y="72" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0f172a">Review Request Engine</text>

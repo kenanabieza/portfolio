@@ -28,7 +28,7 @@
   <!-- Top bar -->
   <rect x="64" y="0" width="736" height="56" fill="#FFFFFF"/>
   <line x1="64" y1="56" x2="800" y2="56" stroke="#E4E6EB"/>
-  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &middot; Workflows</text>
+  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &#183; Workflows</text>
   <text x="84" y="42" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F1126">AI Voice Booking Agent</text>
   <rect x="280" y="32" width="46" height="16" rx="3" fill="#FCE9EE"/>
   <text x="303" y="43" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#EA4B71">Active</text>

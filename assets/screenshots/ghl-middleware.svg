@@ -33,7 +33,7 @@
   <rect x="20" y="86" width="6" height="28" rx="3" fill="#7c3aed"/>
   <circle cx="36" cy="100" r="5" fill="#10b981"/>
   <text x="46" y="98" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">web</text>
-  <text x="46" y="111" font-family="Inter,sans-serif" font-size="8" fill="#737373">Python &middot; FastAPI &middot; Active</text>
+  <text x="46" y="111" font-family="Inter,sans-serif" font-size="8" fill="#737373">Python &#183; FastAPI &#183; Active</text>
 
   <!-- Postgres -->
   <rect x="12" y="124" width="156" height="32" rx="6" fill="#1d1b25"/>
@@ -62,7 +62,7 @@
   <text x="200" y="76" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">web</text>
   <rect x="234" y="62" width="50" height="20" rx="10" fill="#0f3a1f"/>
   <text x="259" y="76" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#10b981">ACTIVE</text>
-  <text x="200" y="94" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">github.com/kenanabieza/real-estate-ghl-middleware &middot; main &middot; deployed 2h ago</text>
+  <text x="200" y="94" font-family="Inter,sans-serif" font-size="10" fill="#a3a3a3">github.com/kenanabieza/real-estate-ghl-middleware &#183; main &#183; deployed 2h ago</text>
 
   <!-- Domain pill -->
   <rect x="500" y="64" width="270" height="22" rx="4" fill="#1d1b25" stroke="#3a3744"/>

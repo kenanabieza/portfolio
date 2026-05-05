@@ -7,7 +7,7 @@
   <circle cx="34" cy="24" r="5" fill="#febc2e"/>
   <circle cx="52" cy="24" r="5" fill="#28c840"/>
   <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
-  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">AI Agents &middot; Conversation AI</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">AI Agents &#183; Conversation AI</text>
 
   <!-- AI Agents top nav -->
   <rect x="0" y="48" width="800" height="42" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
@@ -91,6 +91,6 @@
   <rect x="40" y="455" width="720" height="32" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
   <text x="56" y="476" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0c4a6e">Active channel:</text>
   <rect x="142" y="465" width="50" height="18" rx="4" fill="#fff" stroke="#bae6fd"/>
-  <text x="167" y="477" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#0c4a6e">SMS &times;</text>
-  <text x="208" y="476" font-family="Inter,sans-serif" font-size="10" fill="#0c4a6e">Knowledge base trained &middot; 39 FAQs &middot; Workflow integration ready</text>
+  <text x="167" y="477" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#0c4a6e">SMS &#215;</text>
+  <text x="208" y="476" font-family="Inter,sans-serif" font-size="10" fill="#0c4a6e">Knowledge base trained &#183; 39 FAQs &#183; Workflow integration ready</text>
 </svg>
