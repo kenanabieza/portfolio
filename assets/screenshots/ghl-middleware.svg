@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0a0a1a"/>
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#0f1729" />
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Real Estate GHL Middleware</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#7aa2d8">Production Deployment &middot; Railway</text>
+
+  <!-- Background grid -->
+  <g opacity="0.05" stroke="#3b82f6" stroke-width="1">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+  </g>
+
+  <!-- Source: Aryeo -->
+  <rect x="40" y="100" width="180" height="100" rx="12" fill="#111127" stroke="#f97316" stroke-width="1.5"/>
+  <text x="60" y="124" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#f97316" text-transform="uppercase" letter-spacing="1">Aryeo</text>
+  <text x="60" y="146" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">order.fulfilled</text>
+  <text x="60" y="161" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">media.delivered</text>
+  <text x="60" y="176" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">+ /v1/orders poller</text>
+  <text x="60" y="190" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b">HMAC-SHA256</text>
+
+  <!-- Source: Quo -->
+  <rect x="40" y="220" width="180" height="100" rx="12" fill="#111127" stroke="#10b981" stroke-width="1.5"/>
+  <text x="60" y="244" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#10b981" text-transform="uppercase" letter-spacing="1">Quo / OpenPhone</text>
+  <text x="60" y="266" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">call.completed</text>
+  <text x="60" y="281" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">message.received</text>
+  <text x="60" y="310" font-family="JetBrains Mono,monospace" font-size="8" fill="#64748b">missed-call detection</text>
+
+  <!-- Arrows from sources to middleware -->
+  <line x1="220" y1="150" x2="320" y2="220" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="320,220 312,217 314,225" fill="#3b82f6"/>
+  <line x1="220" y1="270" x2="320" y2="260" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="320,260 312,256 312,264" fill="#3b82f6"/>
+
+  <!-- Middleware box -->
+  <rect x="320" y="120" width="320" height="280" rx="12" fill="#111127" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="320" y="120" width="320" height="36" rx="12" fill="#1e3a8a"/>
+  <rect x="320" y="138" width="320" height="18" fill="#1e3a8a"/>
+  <text x="340" y="143" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">FastAPI Middleware (Python 3.11)</text>
+
+  <!-- Routes -->
+  <text x="340" y="180" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#3b82f6" text-transform="uppercase" letter-spacing="1.5">Routes</text>
+  <rect x="340" y="190" width="280" height="22" rx="4" fill="#1a1a3e"/>
+  <text x="352" y="205" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">POST /webhooks/aryeo</text>
+  <rect x="340" y="216" width="280" height="22" rx="4" fill="#1a1a3e"/>
+  <text x="352" y="231" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">POST /webhooks/quo</text>
+  <rect x="340" y="242" width="280" height="22" rx="4" fill="#1a1a3e"/>
+  <text x="352" y="257" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">GET  /health</text>
+
+  <!-- Background tasks -->
+  <text x="340" y="285" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#a78bfa" text-transform="uppercase" letter-spacing="1.5">Background Workers</text>
+  <rect x="340" y="295" width="280" height="22" rx="4" fill="#1a1a3e"/>
+  <text x="352" y="310" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">Aryeo poller (5 min loop)</text>
+  <rect x="340" y="321" width="280" height="22" rx="4" fill="#1a1a3e"/>
+  <text x="352" y="336" font-family="Inter,sans-serif" font-size="9" fill="#cbd5e1">Lapsed agent checker (daily)</text>
+
+  <!-- Rule layer -->
+  <text x="340" y="362" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#22d3ee" text-transform="uppercase" letter-spacing="1.5">Rule Layer</text>
+  <rect x="340" y="372" width="135" height="20" rx="4" fill="#0e7490" opacity="0.3"/>
+  <text x="352" y="386" font-family="Inter,sans-serif" font-size="8" fill="#22d3ee">E.164 normalize</text>
+  <rect x="485" y="372" width="135" height="20" rx="4" fill="#0e7490" opacity="0.3"/>
+  <text x="497" y="386" font-family="Inter,sans-serif" font-size="8" fill="#22d3ee">30-day review cap</text>
+
+  <!-- Arrow from middleware to GHL -->
+  <line x1="640" y1="260" x2="720" y2="260" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="725,260 715,255 715,265" fill="#3b82f6"/>
+
+  <!-- Target: GHL -->
+  <rect x="700" y="180" width="80" height="160" rx="12" fill="#111127" stroke="#2196f3" stroke-width="1.5"/>
+  <rect x="700" y="180" width="80" height="34" rx="12" fill="#1e40af"/>
+  <rect x="700" y="200" width="80" height="14" fill="#1e40af"/>
+  <text x="740" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">GHL</text>
+  <text x="740" y="226" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">API v2</text>
+  <text x="740" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">contacts</text>
+  <text x="740" y="263" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">workflows</text>
+  <text x="740" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">pipelines</text>
+  <text x="740" y="293" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">notes</text>
+  <text x="740" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">tags</text>
+  <text x="740" y="323" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#cbd5e1">custom fields</text>
+
+  <!-- Stats panel -->
+  <rect x="40" y="425" width="720" height="55" rx="8" fill="#111127" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#3b82f6">3</text>
+  <text x="80" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">platforms</text>
+  <text x="200" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#10b981">9</text>
+  <text x="200" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">modules</text>
+  <text x="320" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#a78bfa">4</text>
+  <text x="320" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">event flows</text>
+  <text x="440" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#22d3ee">2</text>
+  <text x="440" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">background workers</text>
+  <text x="600" y="445" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#f97316">HMAC</text>
+  <text x="600" y="465" font-family="Inter,sans-serif" font-size="8" fill="#64748b">SHA-256 verified</text>
+</svg>
