@@ -1,63 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0d1117"/>
-  <!-- Top bar -->
-  <rect width="800" height="36" fill="#161b22"/>
-  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="18" r="5" fill="#28c840"/>
-  <text x="400" y="22" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#8b949e">claude-code - AI-Powered API Development</text>
+  <!-- Terminal background -->
+  <rect width="800" height="500" fill="#1A1A1A"/>
 
-  <!-- Terminal content -->
-  <text x="16" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#8b949e">~/api-project $</text>
-  <text x="155" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#c9d1d9">claude "Build a REST API for inventory management with auth"</text>
+  <!-- Terminal title bar -->
+  <rect width="800" height="32" fill="#2B2B2B"/>
+  <circle cx="16" cy="16" r="5" fill="#FF5F57"/>
+  <circle cx="34" cy="16" r="5" fill="#FEBC2E"/>
+  <circle cx="52" cy="16" r="5" fill="#28C840"/>
+  <text x="400" y="20" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#A0A0A0">api-project &#8212; claude</text>
 
-  <text x="16" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">&#9608; Claude Code</text>
-  <text x="130" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Building complete REST API from specification...</text>
+  <!-- Claude welcome banner -->
+  <rect x="16" y="48" width="768" height="60" rx="6" fill="#252525" stroke="#3A3A3A"/>
+  <rect x="16" y="48" width="3" height="60" fill="#D97757"/>
+  <text x="32" y="68" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">&#10026; Claude Code</text>
+  <text x="32" y="84" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">v2.0.40 &#8212; Sonnet 4.7</text>
+  <text x="32" y="100" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">cwd: ~/api-project &#183; /help for commands &#183; /memory to manage</text>
 
-  <text x="16" y="105" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Project Setup &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
-  <text x="16" y="123" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="123" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">FastAPI project scaffolded with Poetry</text>
-  <text x="16" y="141" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="141" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">PostgreSQL + SQLAlchemy models created</text>
-  <text x="16" y="159" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="159" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">JWT authentication middleware configured</text>
-  <text x="16" y="177" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="177" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Alembic migrations initialized</text>
+  <!-- User prompt -->
+  <text x="16" y="134" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
+  <text x="32" y="134" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">Build a FastAPI inventory management API with JWT auth, SQLAlchemy models, and Pydantic schemas</text>
 
-  <text x="16" y="200" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Endpoints Created &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
-  <text x="16" y="220" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
-  <text x="68" y="220" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/auth/register     - User registration</text>
-  <text x="16" y="238" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
-  <text x="68" y="238" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/auth/login        - JWT token generation</text>
-  <text x="16" y="256" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
-  <text x="68" y="256" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products          - List products (paginated)</text>
-  <text x="16" y="274" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
-  <text x="68" y="274" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products          - Create product</text>
-  <text x="16" y="292" font-family="JetBrains Mono,monospace" font-size="10" fill="#ffa657">  PUT </text>
-  <text x="68" y="292" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products/{id}     - Update product</text>
-  <text x="16" y="310" font-family="JetBrains Mono,monospace" font-size="10" fill="#f85149">  DEL </text>
-  <text x="68" y="310" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/products/{id}     - Delete product</text>
-  <text x="16" y="328" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
-  <text x="68" y="328" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/inventory         - Stock levels</text>
-  <text x="16" y="346" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  POST</text>
-  <text x="68" y="346" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/inventory/adjust  - Adjust stock</text>
-  <text x="16" y="364" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">  GET </text>
-  <text x="68" y="364" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">/api/reports           - Analytics dashboard</text>
+  <!-- Assistant response -->
+  <text x="16" y="162" font-family="JetBrains Mono,monospace" font-size="10" fill="#D97757">&#9608;</text>
+  <text x="32" y="162" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">I&#8217;ll scaffold the API. Starting with project structure and core models.</text>
 
-  <text x="16" y="390" font-family="JetBrains Mono,monospace" font-size="10" fill="#58a6ff">&#9472;&#9472;&#9472; Generated Artifacts &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</text>
-  <text x="16" y="410" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="410" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">OpenAPI/Swagger docs at /docs</text>
-  <text x="16" y="428" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="428" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">Docker + docker-compose configuration</text>
-  <text x="16" y="446" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="446" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">48 tests generated (100% pass rate)</text>
-  <text x="16" y="464" font-family="JetBrains Mono,monospace" font-size="10" fill="#3fb950">  &#10003;</text>
-  <text x="40" y="464" font-family="JetBrains Mono,monospace" font-size="10" fill="#c9d1d9">CI/CD pipeline (GitHub Actions)</text>
+  <!-- Tool use: Bash -->
+  <text x="16" y="186" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Bash</text>
+  <text x="60" y="186" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">poetry new inventory-api &amp;&amp; cd inventory-api</text>
+  <text x="32" y="200" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <text x="48" y="200" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">project scaffolded</text>
 
-  <text x="16" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">  Total files created:</text>
-  <text x="200" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">34</text>
-  <text x="250" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">Lines of code:</text>
-  <text x="380" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">2,847</text>
-  <text x="450" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#d97745">Time:</text>
-  <text x="500" y="486" font-family="JetBrains Mono,monospace" font-size="10" fill="#79c0ff">8 min 23s</text>
+  <!-- Tool use: Write models.py -->
+  <text x="16" y="222" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
+  <text x="60" y="222" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/models.py</text>
+  <text x="220" y="222" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(94 lines)</text>
+  <text x="32" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <text x="48" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">SQLAlchemy: User, Item, Category, StockLog</text>
+
+  <!-- Tool use: Write auth.py -->
+  <text x="16" y="258" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
+  <text x="60" y="258" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/auth.py</text>
+  <text x="220" y="258" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(72 lines)</text>
+  <text x="32" y="272" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <text x="48" y="272" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">JWT bearer auth with refresh tokens</text>
+
+  <!-- Tool use: Write routers -->
+  <text x="16" y="294" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
+  <text x="60" y="294" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/routers/items.py</text>
+  <text x="220" y="294" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(141 lines)</text>
+  <text x="32" y="308" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <text x="48" y="308" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">CRUD + filter + pagination + bulk ops</text>
+
+  <!-- Tool use: Bash run -->
+  <text x="16" y="330" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Bash</text>
+  <text x="60" y="330" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">poetry run alembic upgrade head &amp;&amp; pytest</text>
+  <text x="32" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <text x="48" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">migrations applied &#183; 47 tests passed</text>
+
+  <!-- Summary box -->
+  <rect x="16" y="362" width="768" height="92" rx="6" fill="#252525" stroke="#3A3A3A"/>
+  <text x="32" y="382" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
+  <text x="32" y="402" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; FastAPI app with 14 endpoints across 4 routers</text>
+  <text x="32" y="416" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; PostgreSQL + Alembic migrations</text>
+  <text x="32" y="430" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; JWT auth with refresh tokens, role-based scopes</text>
+  <text x="32" y="444" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; OpenAPI docs at /docs &#183; 47 tests pass &#183; ready to deploy</text>
+  <rect x="600" y="372" width="170" height="22" rx="4" fill="#0F3A1F"/>
+  <text x="685" y="386" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">~12 min &#183; 1.4M tokens</text>
+
+  <!-- Prompt for next input -->
+  <text x="16" y="478" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
+  <text x="32" y="478" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;add stripe billing&quot; or &quot;deploy to fly.io&quot;...</text>
+  <rect x="32" y="468" width="2" height="14" fill="#E5E5E5"/>
 </svg>
