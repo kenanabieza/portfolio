@@ -1,77 +1,171 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#f5f0ff"/>
+  <defs>
+    <pattern id="makeDots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="0.6" fill="#E0E0E5"/>
+    </pattern>
+    <filter id="makeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas (light grey) -->
+  <rect width="800" height="500" fill="#F4F4F7"/>
+  <rect x="64" y="52" width="736" height="448" fill="url(#makeDots)"/>
+
+  <!-- Sidebar (deep purple) -->
+  <rect x="0" y="0" width="64" height="500" fill="#3D0066"/>
+  <!-- Make logo (M mark) -->
+  <rect x="20" y="18" width="24" height="24" rx="6" fill="#fff"/>
+  <text x="32" y="36" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#3D0066">M</text>
+  <!-- Sidebar icons -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity="0.7">
+    <rect x="22" y="64" width="20" height="20" rx="4"/>
+    <line x1="26" y1="70" x2="38" y2="70"/>
+    <line x1="26" y1="74" x2="36" y2="74"/>
+    <rect x="22" y="96" width="20" height="20" rx="4"/>
+    <rect x="22" y="128" width="20" height="20" rx="4"/>
+    <circle cx="32" cy="170" r="9"/>
+    <line x1="26" y1="166" x2="38" y2="166"/>
+    <rect x="22" y="192" width="20" height="20" rx="4"/>
+    <rect x="22" y="224" width="20" height="20" rx="4"/>
+  </g>
+  <circle cx="32" cy="468" r="14" fill="#B794F4"/>
+  <text x="32" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#3D0066">K</text>
+
   <!-- Top bar -->
-  <rect width="800" height="48" fill="#fff" stroke="#e5dff0" stroke-width="1"/>
-  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="24" r="5" fill="#28c840"/>
-  <rect x="200" y="12" width="400" height="24" rx="12" fill="#f0ecf5"/>
-  <text x="400" y="29" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#6b5b8a">Make.com - E-commerce Order Fulfillment</text>
+  <rect x="64" y="0" width="736" height="52" fill="#FFFFFF"/>
+  <line x1="64" y1="52" x2="800" y2="52" stroke="#E5E5EA"/>
 
-  <!-- Sidebar -->
-  <rect x="0" y="48" width="60" height="452" fill="#2d1b69"/>
-  <rect x="12" y="64" width="36" height="36" rx="8" fill="#6c3fa0"/>
-  <text x="30" y="87" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#fff">M</text>
-  <rect x="12" y="112" width="36" height="4" rx="2" fill="#4a2d80"/>
-  <rect x="18" y="128" width="24" height="24" rx="4" fill="#3d2570"/>
-  <rect x="18" y="160" width="24" height="24" rx="4" fill="#3d2570"/>
-  <rect x="18" y="192" width="24" height="24" rx="4" fill="#3d2570"/>
+  <!-- Back arrow -->
+  <line x1="84" y1="26" x2="98" y2="26" stroke="#0F1126" stroke-width="2"/>
+  <polyline points="92,20 84,26 92,32" fill="none" stroke="#0F1126" stroke-width="2"/>
 
-  <!-- Canvas -->
-  <!-- Module 1: Shopify -->
-  <circle cx="160" cy="250" r="38" fill="#96bf48" stroke="#fff" stroke-width="3"/>
-  <text x="160" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">Shopify</text>
-  <text x="160" y="260" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">New Order</text>
+  <!-- Scenario name -->
+  <text x="116" y="22" font-family="Inter,sans-serif" font-size="9" fill="#737373">Scenarios &middot; My organization</text>
+  <text x="116" y="40" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#0F1126">E-commerce Order Fulfillment Engine</text>
+
+  <!-- Status pill -->
+  <rect x="500" y="20" width="60" height="20" rx="10" fill="#DCFCE7"/>
+  <circle cx="510" cy="30" r="3" fill="#16A34A"/>
+  <text x="535" y="34" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#16A34A">RUNNING</text>
+
+  <!-- Operations + Data transfer chips -->
+  <rect x="572" y="18" width="68" height="22" rx="11" fill="#F4F4F7" stroke="#E5E5EA"/>
+  <text x="606" y="32" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#6D00CC">2,340 ops</text>
+  <rect x="648" y="18" width="68" height="22" rx="11" fill="#F4F4F7" stroke="#E5E5EA"/>
+  <text x="682" y="32" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#525567">186 KB</text>
+
+  <!-- ============ MODULES on canvas ============ -->
+  <!-- Module 1: Shopify (trigger) -->
+  <g transform="translate(120, 180)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#96BF48" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <!-- Shopify icon -->
+    <path d="M40 22 c-3 0 -5 2 -7 5 c-2 0 -4 1 -5 3 l4 25 l16 0 l-1 -25 c0 -5 -3 -8 -7 -8 z" fill="#96BF48"/>
+    <text x="40" y="42" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">S</text>
+    <!-- Numbered badge -->
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">1</text>
+    <!-- Status dot bottom-right -->
+    <circle cx="68" cy="68" r="7" fill="#10B981" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Shopify</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">Watch new orders</text>
+  </g>
+
+  <!-- Connection 1->2 (curved with chevron) -->
+  <path d="M 200 220 C 230 220 240 220 270 220" stroke="#B0B0BA" stroke-width="2" fill="none"/>
+  <polygon points="244,217 250,220 244,223" fill="#B0B0BA"/>
 
   <!-- Module 2: Router -->
-  <circle cx="290" cy="250" r="28" fill="#6c3fa0" stroke="#fff" stroke-width="3"/>
-  <text x="290" y="254" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#fff">Router</text>
+  <g transform="translate(270, 180)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#6D00CC" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <!-- Inner ring -->
+    <circle cx="40" cy="40" r="32" fill="none" stroke="#B794F4" stroke-width="2"/>
+    <!-- Branch icon -->
+    <line x1="32" y1="40" x2="48" y2="32" stroke="#6D00CC" stroke-width="2"/>
+    <line x1="32" y1="40" x2="48" y2="40" stroke="#6D00CC" stroke-width="2"/>
+    <line x1="32" y1="40" x2="48" y2="48" stroke="#6D00CC" stroke-width="2"/>
+    <circle cx="32" cy="40" r="3" fill="#6D00CC"/>
+    <circle cx="50" cy="32" r="3" fill="#6D00CC"/>
+    <circle cx="50" cy="40" r="3" fill="#6D00CC"/>
+    <circle cx="50" cy="48" r="3" fill="#6D00CC"/>
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">2</text>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Router</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">3 routes</text>
+  </g>
 
-  <!-- Module 3: Inventory -->
-  <circle cx="420" cy="150" r="35" fill="#3498db" stroke="#fff" stroke-width="3"/>
-  <text x="420" y="146" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">Inventory</text>
-  <text x="420" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Sync Stock</text>
+  <!-- Branch top: Inventory check -->
+  <path d="M 350 200 C 380 200 400 130 430 130" stroke="#B0B0BA" stroke-width="2" fill="none"/>
+  <polygon points="408,127 414,130 408,133" fill="#B0B0BA"/>
 
-  <!-- Module 4: ShipStation -->
-  <circle cx="420" cy="250" r="35" fill="#f39c12" stroke="#fff" stroke-width="3"/>
-  <text x="420" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#fff">ShipStation</text>
-  <text x="420" y="260" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Create Label</text>
+  <g transform="translate(430, 90)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#0F9D58" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <rect x="22" y="22" width="36" height="36" rx="2" fill="#0F9D58"/>
+    <text x="40" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">G</text>
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">3</text>
+    <circle cx="68" cy="68" r="7" fill="#10B981" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Sheets</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">Update inventory</text>
+  </g>
 
-  <!-- Module 5: Customer Email -->
-  <circle cx="420" cy="350" r="35" fill="#e74c3c" stroke="#fff" stroke-width="3"/>
-  <text x="420" y="346" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">Gmail</text>
-  <text x="420" y="360" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Notify</text>
+  <!-- Branch middle: ShipStation -->
+  <path d="M 350 220 C 380 220 400 220 430 220" stroke="#B0B0BA" stroke-width="2" fill="none"/>
+  <polygon points="408,217 414,220 408,223" fill="#B0B0BA"/>
 
-  <!-- Module 6: Airtable -->
-  <circle cx="560" cy="200" r="35" fill="#18bfff" stroke="#fff" stroke-width="3"/>
-  <text x="560" y="196" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">Airtable</text>
-  <text x="560" y="210" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Log Order</text>
+  <g transform="translate(430, 180)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#F97316" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <rect x="22" y="26" width="36" height="22" rx="2" fill="#F97316"/>
+    <rect x="22" y="32" width="36" height="3" fill="#fff" opacity="0.6"/>
+    <circle cx="30" cy="50" r="4" fill="#F97316" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="50" cy="50" r="4" fill="#F97316" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">4</text>
+    <circle cx="68" cy="68" r="7" fill="#10B981" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">ShipStation</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">Create label</text>
+  </g>
 
-  <!-- Module 7: Slack -->
-  <circle cx="560" cy="310" r="35" fill="#4a154b" stroke="#fff" stroke-width="3"/>
-  <text x="560" y="306" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">Slack</text>
-  <text x="560" y="320" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Team Alert</text>
+  <!-- Branch bottom: Klaviyo email -->
+  <path d="M 350 240 C 380 240 400 310 430 310" stroke="#B0B0BA" stroke-width="2" fill="none"/>
+  <polygon points="408,307 414,310 408,313" fill="#B0B0BA"/>
 
-  <!-- Module 8: Google Sheets -->
-  <circle cx="690" cy="250" r="35" fill="#0f9d58" stroke="#fff" stroke-width="3"/>
-  <text x="690" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#fff">G Sheets</text>
-  <text x="690" y="260" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#fff">Analytics</text>
+  <g transform="translate(430, 270)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <rect x="22" y="28" width="36" height="24" rx="3" fill="#3B82F6"/>
+    <polygon points="22,28 40,42 58,28" fill="#fff"/>
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">5</text>
+    <circle cx="68" cy="68" r="7" fill="#10B981" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Klaviyo</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">Send order email</text>
+  </g>
 
-  <!-- Connections -->
-  <line x1="198" y1="250" x2="262" y2="250" stroke="#6c3fa0" stroke-width="3"/>
-  <line x1="318" y1="235" x2="387" y2="160" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="318" y1="250" x2="385" y2="250" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="318" y1="268" x2="387" y2="340" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="455" y1="155" x2="525" y2="195" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="455" y1="255" x2="525" y2="305" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="595" y1="210" x2="655" y2="240" stroke="#6c3fa0" stroke-width="2"/>
-  <line x1="595" y1="305" x2="655" y2="260" stroke="#6c3fa0" stroke-width="2"/>
+  <!-- Continue from ShipStation: Slack -->
+  <path d="M 510 220 C 540 220 560 220 590 220" stroke="#B0B0BA" stroke-width="2" fill="none"/>
+  <polygon points="568,217 574,220 568,223" fill="#B0B0BA"/>
 
-  <!-- Bottom bar -->
-  <rect x="60" y="460" width="740" height="40" fill="#fff" stroke="#e5dff0" stroke-width="1"/>
-  <circle cx="85" cy="480" r="6" fill="#10b981"/>
-  <text x="98" y="484" font-family="Inter,sans-serif" font-size="11" fill="#10b981" font-weight="500">ON</text>
-  <text x="220" y="484" font-family="Inter,sans-serif" font-size="10" fill="#888">Operations used: 12,480 / 20,000</text>
-  <text x="500" y="484" font-family="Inter,sans-serif" font-size="10" fill="#888">8 modules</text>
-  <text x="650" y="484" font-family="Inter,sans-serif" font-size="10" fill="#888">Every 5 minutes</text>
+  <g transform="translate(590, 180)">
+    <circle cx="40" cy="40" r="40" fill="#FFFFFF" stroke="#4A154B" stroke-width="2.5" filter="url(#makeShadow)"/>
+    <rect x="22" y="22" width="36" height="36" rx="3" fill="#4A154B"/>
+    <text x="40" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">#</text>
+    <circle cx="6" cy="6" r="11" fill="#6D00CC"/>
+    <text x="6" y="10" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">6</text>
+    <circle cx="68" cy="68" r="7" fill="#10B981" stroke="#fff" stroke-width="2"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Slack</text>
+    <text x="40" y="114" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#737373">Notify ops</text>
+  </g>
+
+  <!-- Bottom floating toolbar -->
+  <rect x="240" y="450" width="320" height="36" rx="18" fill="#FFFFFF" stroke="#E5E5EA" filter="url(#makeShadow)"/>
+  <rect x="250" y="458" width="76" height="20" rx="10" fill="#6D00CC"/>
+  <text x="288" y="471" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">&#9654; Run once</text>
+  <line x1="338" y1="460" x2="338" y2="476" stroke="#E5E5EA"/>
+  <text x="356" y="471" font-family="Inter,sans-serif" font-size="9" fill="#525567">Schedule</text>
+  <line x1="406" y1="460" x2="406" y2="476" stroke="#E5E5EA"/>
+  <text x="424" y="471" font-family="Inter,sans-serif" font-size="9" fill="#525567">Auto-align</text>
+  <line x1="478" y1="460" x2="478" y2="476" stroke="#E5E5EA"/>
+  <text x="496" y="471" font-family="Inter,sans-serif" font-size="9" fill="#525567">Notes</text>
+  <line x1="528" y1="460" x2="528" y2="476" stroke="#E5E5EA"/>
+  <text x="544" y="471" font-family="Inter,sans-serif" font-size="9" fill="#525567">+</text>
 </svg>

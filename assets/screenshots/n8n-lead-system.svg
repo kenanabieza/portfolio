@@ -1,90 +1,157 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="10" cy="10" r="0.5" fill="#2a2a4a"/>
+    <pattern id="n8nDots4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.75" fill="#D5D7DC"/>
     </pattern>
+    <filter id="n8nShadow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
   </defs>
-  <rect width="800" height="500" fill="#1a1a2e"/>
-  <rect width="800" height="500" fill="url(#grid2)"/>
-  <!-- Top bar -->
-  <rect width="800" height="40" fill="#12122a"/>
-  <circle cx="16" cy="20" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="20" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="20" r="5" fill="#28c840"/>
-  <text x="400" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#888">n8n - Lead Qualification Pipeline</text>
+
+  <rect width="800" height="500" fill="#F5F6F8"/>
+  <rect x="64" y="56" width="736" height="444" fill="url(#n8nDots4)"/>
 
   <!-- Sidebar -->
-  <rect x="0" y="40" width="180" height="460" fill="#12122a"/>
-  <text x="16" y="70" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#888">EXECUTION LOG</text>
-  <rect x="12" y="82" width="156" height="24" rx="4" fill="#1a3d2a"/>
-  <circle cx="24" cy="94" r="4" fill="#10b981"/>
-  <text x="34" y="98" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 2m ago</text>
-  <rect x="12" y="110" width="156" height="24" rx="4" fill="#1a3d2a"/>
-  <circle cx="24" cy="122" r="4" fill="#10b981"/>
-  <text x="34" y="126" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 5m ago</text>
-  <rect x="12" y="138" width="156" height="24" rx="4" fill="#1a3d2a"/>
-  <circle cx="24" cy="150" r="4" fill="#10b981"/>
-  <text x="34" y="154" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 8m ago</text>
-  <rect x="12" y="166" width="156" height="24" rx="4" fill="#3d1a1a"/>
-  <circle cx="24" cy="178" r="4" fill="#ef4444"/>
-  <text x="34" y="182" font-family="Inter,sans-serif" font-size="9" fill="#ef4444">Retried - 12m ago</text>
-  <rect x="12" y="194" width="156" height="24" rx="4" fill="#1a3d2a"/>
-  <circle cx="24" cy="206" r="4" fill="#10b981"/>
-  <text x="34" y="210" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Success - 15m ago</text>
+  <rect x="0" y="0" width="64" height="500" fill="#101330"/>
+  <rect x="20" y="18" width="24" height="24" rx="6" fill="#EA4B71"/>
+  <text x="32" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="900" fill="#fff">n</text>
+  <g stroke="#A0A4B8" stroke-width="1.5" fill="none">
+    <rect x="22" y="64" width="20" height="20" rx="4"/>
+    <rect x="22" y="96" width="20" height="20" rx="4"/>
+    <rect x="22" y="128" width="20" height="20" rx="4"/>
+    <rect x="22" y="160" width="20" height="20" rx="4"/>
+    <rect x="22" y="192" width="20" height="20" rx="4"/>
+  </g>
+  <circle cx="32" cy="468" r="14" fill="#EA4B71"/>
+  <text x="32" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">K</text>
 
-  <!-- Canvas -->
-  <!-- Node: Cal.com Trigger -->
-  <rect x="210" y="80" width="130" height="55" rx="8" fill="#2d5a3d" stroke="#10b981" stroke-width="2"/>
-  <text x="275" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Cal.com</text>
-  <text x="275" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">New Booking</text>
+  <!-- Top bar -->
+  <rect x="64" y="0" width="736" height="56" fill="#FFFFFF"/>
+  <line x1="64" y1="56" x2="800" y2="56" stroke="#E4E6EB"/>
+  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &middot; Workflows</text>
+  <text x="84" y="42" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F1126">Lead Qualification Pipeline</text>
+  <rect x="304" y="32" width="46" height="16" rx="3" fill="#FCE9EE"/>
+  <text x="327" y="43" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#EA4B71">Active</text>
+  <text x="450" y="36" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Editor</text>
+  <line x1="448" y1="46" x2="478" y2="46" stroke="#EA4B71" stroke-width="2"/>
+  <text x="498" y="36" font-family="Inter,sans-serif" font-size="11" fill="#525567">Executions</text>
+  <text x="568" y="36" font-family="Inter,sans-serif" font-size="11" fill="#525567">Evaluations</text>
+  <rect x="640" y="22" width="34" height="18" rx="9" fill="#EA4B71"/>
+  <circle cx="666" cy="31" r="7" fill="#fff"/>
+  <rect x="684" y="20" width="44" height="22" rx="6" fill="#fff" stroke="#DBDFE7"/>
+  <text x="706" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#525567">Share</text>
+  <rect x="734" y="20" width="50" height="22" rx="6" fill="#EA4B71"/>
+  <text x="759" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Save</text>
 
-  <!-- Node: WhatsApp -->
-  <rect x="400" y="80" width="130" height="55" rx="8" fill="#2d3f5a" stroke="#25d366" stroke-width="2"/>
-  <text x="465" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">WhatsApp API</text>
-  <text x="465" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Send Questions</text>
+  <!-- ========= NODES ========= -->
+  <!-- WhatsApp Trigger -->
+  <g transform="translate(96, 100)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="0" y="0" width="3" height="80" fill="#EA4B71"/>
+    <circle cx="40" cy="40" r="16" fill="#25D366"/>
+    <path d="M40 28 a12 12 0 1 0 6 22 l4 1 -1 -4 a12 12 0 0 0 -9 -19 z" fill="#fff"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">WhatsApp</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">new message</text>
+  </g>
+  <path d="M 176 140 C 220 140 220 220 256 220" stroke="#B4B7C1" stroke-width="2" fill="none"/>
 
-  <!-- Node: OpenAI Scoring -->
-  <rect x="590" y="80" width="130" height="55" rx="8" fill="#3d4a2d" stroke="#84cc16" stroke-width="2"/>
-  <text x="655" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">OpenAI GPT-4</text>
-  <text x="655" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Score &amp; Analyze</text>
+  <!-- Qualifier AI Agent -->
+  <g transform="translate(256, 180)">
+    <rect x="0" y="0" width="110" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="84" y="6" width="20" height="14" rx="7" fill="#0F1126"/>
+    <text x="94" y="16" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="800" fill="#fff">AI</text>
+    <polygon points="55,30 65,36 65,46 55,52 45,46 45,36" fill="#EA4B71"/>
+    <text x="55" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">&#10026;</text>
+    <text x="55" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Qualifier Agent</text>
+    <text x="55" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">scores BANT</text>
+  </g>
 
-  <!-- Node: Switch -->
-  <rect x="490" y="195" width="120" height="50" rx="25" fill="#5a3d2d" stroke="#f97316" stroke-width="2"/>
-  <text x="550" y="215" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#fff">Lead Score</text>
-  <text x="550" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">&gt;7 = Qualified</text>
+  <!-- AI sub-nodes -->
+  <line x1="282" y1="260" x2="282" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(258, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="14" y="16" width="20" height="12" rx="2" fill="#10A37F"/>
+    <text x="24" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="900" fill="#fff">GPT</text>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">gpt-4o-mini</text>
+  </g>
+  <line x1="320" y1="260" x2="320" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(296, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="13" y="14" width="22" height="20" rx="2" fill="#0EA5E9"/>
+    <line x1="17" y1="20" x2="31" y2="20" stroke="#fff" stroke-width="1.5"/>
+    <line x1="17" y1="24" x2="27" y2="24" stroke="#fff" stroke-width="1.5"/>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">Apollo enrich</text>
+  </g>
+  <line x1="358" y1="260" x2="358" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(334, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="13" y="14" width="22" height="20" rx="2" fill="#fff" stroke="#475569" stroke-width="1.5"/>
+    <text x="24" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="900" fill="#475569">{ }</text>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">JSON parser</text>
+  </g>
 
-  <!-- Node: HubSpot (Qualified) -->
-  <rect x="300" y="300" width="140" height="55" rx="8" fill="#5a2d3d" stroke="#ff7a3d" stroke-width="2"/>
-  <text x="370" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">HubSpot CRM</text>
-  <text x="370" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Create Qualified Deal</text>
+  <!-- Connection: AI Agent → Switch -->
+  <path d="M 366 220 C 410 220 420 220 446 220" stroke="#B4B7C1" stroke-width="2" fill="none"/>
 
-  <!-- Node: Notify Sales -->
-  <rect x="300" y="390" width="140" height="55" rx="8" fill="#4a3f8a" stroke="#6c5ce7" stroke-width="2"/>
-  <text x="370" y="414" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Slack Notify</text>
-  <text x="370" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Alert Sales Rep</text>
+  <!-- Switch (score buckets) -->
+  <g transform="translate(446, 180)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <line x1="22" y1="40" x2="36" y2="28" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="22" y1="40" x2="36" y2="40" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="22" y1="40" x2="36" y2="52" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="22" cy="40" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="28" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="40" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="52" r="3" fill="#F59E0B"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Switch</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">by score</text>
+  </g>
 
-  <!-- Node: Nurture (Unqualified) -->
-  <rect x="590" y="300" width="140" height="55" rx="8" fill="#2d3f5a" stroke="#3b82f6" stroke-width="2"/>
-  <text x="660" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Email Drip</text>
-  <text x="660" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ccc">Nurture Sequence</text>
+  <!-- Branch HOT: Slack ping rep -->
+  <path d="M 526 200 C 570 200 580 130 596 130" stroke="#10B981" stroke-width="2" fill="none"/>
+  <text x="556" y="148" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10B981">hot &#8805;80</text>
+  <g transform="translate(596, 90)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="22" y="22" width="36" height="36" rx="6" fill="#4A154B"/>
+    <text x="40" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">#</text>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Slack</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">notify rep</text>
+  </g>
 
-  <!-- Connections -->
-  <line x1="340" y1="107" x2="400" y2="107" stroke="#555" stroke-width="2"/>
-  <line x1="530" y1="107" x2="590" y2="107" stroke="#555" stroke-width="2"/>
-  <line x1="655" y1="135" x2="655" y2="180" stroke="#555" stroke-width="2"/>
-  <line x1="655" y1="180" x2="550" y2="195" stroke="#555" stroke-width="2"/>
-  <line x1="505" y1="245" x2="370" y2="300" stroke="#10b981" stroke-width="2"/>
-  <line x1="595" y1="245" x2="660" y2="300" stroke="#f97316" stroke-width="2"/>
-  <line x1="370" y1="355" x2="370" y2="390" stroke="#555" stroke-width="2"/>
-  <!-- Labels -->
-  <text x="430" y="275" font-family="Inter,sans-serif" font-size="9" fill="#10b981">Qualified</text>
-  <text x="610" y="275" font-family="Inter,sans-serif" font-size="9" fill="#f97316">Nurture</text>
+  <!-- Branch WARM: drip enrollment -->
+  <path d="M 526 220 C 570 220 580 220 596 220" stroke="#F59E0B" stroke-width="2" fill="none"/>
+  <text x="556" y="214" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#F59E0B">warm 50-79</text>
+  <g transform="translate(596, 180)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="22" y="22" width="36" height="36" rx="6" fill="#3B82F6"/>
+    <text x="40" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">G</text>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">GHL</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">drip campaign</text>
+  </g>
 
-  <!-- Status bar -->
-  <rect x="180" y="470" width="620" height="30" fill="#12122a"/>
-  <circle cx="200" cy="485" r="4" fill="#10b981"/>
-  <text x="212" y="489" font-family="Inter,sans-serif" font-size="10" fill="#10b981">Active</text>
-  <text x="340" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">Leads Processed: 1,240</text>
-  <text x="540" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">Qualified: 34%</text>
-  <text x="700" y="489" font-family="Inter,sans-serif" font-size="10" fill="#888">6 Nodes</text>
+  <!-- Branch COLD: archive -->
+  <path d="M 526 240 C 570 240 580 310 596 310" stroke="#94A3B8" stroke-width="2" fill="none"/>
+  <text x="556" y="298" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#94A3B8">cold &lt;50</text>
+  <g transform="translate(596, 270)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+    <rect x="20" y="22" width="40" height="36" rx="3" fill="#fff" stroke="#475569" stroke-width="1.5"/>
+    <line x1="20" y1="32" x2="60" y2="32" stroke="#475569" stroke-width="1.5"/>
+    <line x1="40" y1="22" x2="40" y2="58" stroke="#475569" stroke-width="1.5"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Notion DB</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">archive</text>
+  </g>
+
+  <!-- Sticky note (results) -->
+  <rect x="76" y="380" width="200" height="76" rx="6" fill="#FFF8C5" stroke="#E5DC8A"/>
+  <text x="88" y="402" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#92400E">Results (90 days)</text>
+  <text x="88" y="418" font-family="Inter,sans-serif" font-size="8" fill="#525567">+34% lead conversion</text>
+  <text x="88" y="430" font-family="Inter,sans-serif" font-size="8" fill="#525567">60 hrs/wk saved across team</text>
+  <text x="88" y="442" font-family="Inter,sans-serif" font-size="8" fill="#525567">Sales cycle: 28d &rarr; 19d</text>
+
+  <!-- Bottom toolbar -->
+  <rect x="320" y="450" width="240" height="36" rx="18" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow4)"/>
+  <rect x="330" y="458" width="76" height="20" rx="10" fill="#EA4B71"/>
+  <text x="368" y="471" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">&#9654; Execute</text>
+  <line x1="418" y1="460" x2="418" y2="476" stroke="#E4E6EB"/>
+  <text x="436" y="471" font-family="Inter,sans-serif" font-size="10" fill="#525567">87 leads today</text>
 </svg>

@@ -1,138 +1,189 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <pattern id="agSupportGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="10" cy="10" r="0.7" fill="#2a2a4a"/>
+    <pattern id="n8nDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.75" fill="#D5D7DC"/>
     </pattern>
+    <filter id="n8nShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
   </defs>
-  <!-- Background canvas -->
-  <rect width="800" height="500" fill="#1a1a2e"/>
-  <rect width="800" height="500" fill="url(#agSupportGrid)"/>
 
-  <!-- Top bar -->
-  <rect width="800" height="40" fill="#12122a"/>
-  <circle cx="16" cy="20" r="5" fill="#ff5f57"/>
-  <circle cx="34" cy="20" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="20" r="5" fill="#28c840"/>
-  <text x="80" y="25" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#ff6d5a">n8n</text>
-  <text x="120" y="25" font-family="Inter,sans-serif" font-size="10" fill="#94a3b8">Multi-Agent Customer Support</text>
-  <circle cx="640" cy="21" r="4" fill="#10b981"/>
-  <text x="650" y="25" font-family="Inter,sans-serif" font-size="9" fill="#10b981">running</text>
-  <rect x="700" y="10" width="86" height="22" rx="4" fill="#ff6d5a"/>
-  <text x="743" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Execute Workflow</text>
+  <!-- Canvas background (light) -->
+  <rect width="800" height="500" fill="#F5F6F8"/>
+  <rect x="64" y="56" width="736" height="444" fill="url(#n8nDots)"/>
 
-  <!-- Left side controls -->
-  <rect x="0" y="40" width="44" height="460" fill="#12122a"/>
-  <rect x="10" y="56" width="24" height="24" rx="4" fill="#1e1e3a"/>
-  <text x="22" y="73" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">+</text>
-  <rect x="10" y="86" width="24" height="24" rx="4" fill="#1e1e3a"/>
-  <circle cx="22" cy="98" r="6" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
-  <line x1="26" y1="102" x2="30" y2="106" stroke="#94a3b8" stroke-width="1.5"/>
-  <rect x="10" y="116" width="24" height="24" rx="4" fill="#1e1e3a"/>
-  <line x1="14" y1="124" x2="30" y2="124" stroke="#94a3b8" stroke-width="1.2"/>
-  <line x1="14" y1="129" x2="26" y2="129" stroke="#94a3b8" stroke-width="1.2"/>
-  <line x1="14" y1="134" x2="22" y2="134" stroke="#94a3b8" stroke-width="1.2"/>
+  <!-- Left sidebar (dark navy, ~64px) -->
+  <rect x="0" y="0" width="64" height="500" fill="#101330"/>
+  <!-- n8n logo mark -->
+  <rect x="20" y="18" width="24" height="24" rx="6" fill="#EA4B71"/>
+  <text x="32" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="900" fill="#fff">n</text>
+  <!-- Sidebar icons -->
+  <g fill="#A0A4B8">
+    <rect x="22" y="64" width="20" height="20" rx="4" fill="none" stroke="#A0A4B8" stroke-width="1.5"/>
+    <rect x="26" y="68" width="12" height="3" rx="1" fill="#A0A4B8"/>
+    <rect x="26" y="74" width="8" height="3" rx="1" fill="#A0A4B8"/>
+    <circle cx="32" cy="106" r="9" fill="none" stroke="#A0A4B8" stroke-width="1.5"/>
+    <line x1="32" y1="100" x2="32" y2="106" stroke="#A0A4B8" stroke-width="1.5"/>
+    <line x1="32" y1="106" x2="36" y2="109" stroke="#A0A4B8" stroke-width="1.5"/>
+    <rect x="22" y="132" width="20" height="20" rx="4" fill="none" stroke="#A0A4B8" stroke-width="1.5"/>
+    <rect x="22" y="164" width="20" height="20" rx="4" fill="none" stroke="#A0A4B8" stroke-width="1.5"/>
+    <rect x="22" y="196" width="20" height="20" rx="4" fill="none" stroke="#A0A4B8" stroke-width="1.5"/>
+  </g>
+  <!-- Bottom: avatar -->
+  <circle cx="32" cy="468" r="14" fill="#EA4B71"/>
+  <text x="32" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">K</text>
 
-  <!-- Trigger node: Email -->
-  <g transform="translate(60, 220)">
-    <rect x="0" y="0" width="120" height="60" rx="8" fill="#1e1e3a" stroke="#10b981" stroke-width="2"/>
-    <circle cx="-8" cy="30" r="6" fill="#10b981"/>
-    <circle cx="128" cy="30" r="6" fill="#10b981"/>
-    <rect x="10" y="10" width="22" height="22" rx="4" fill="#0f3a1f"/>
-    <text x="21" y="26" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#10b981">@</text>
-    <text x="42" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Email Trigger</text>
-    <text x="42" y="36" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">support@inbox</text>
-    <text x="10" y="50" font-family="Inter,sans-serif" font-size="8" fill="#3fb950">&#9679; 12 events/min</text>
+  <!-- Top bar (white, ~56px) -->
+  <rect x="64" y="0" width="736" height="56" fill="#FFFFFF"/>
+  <line x1="64" y1="56" x2="800" y2="56" stroke="#E4E6EB"/>
+
+  <!-- Top bar left: workflow name + breadcrumb -->
+  <text x="84" y="24" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Personal &middot; Workflows</text>
+  <text x="84" y="42" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F1126">Multi-Agent Customer Support</text>
+  <rect x="316" y="32" width="46" height="16" rx="3" fill="#FCE9EE"/>
+  <text x="339" y="43" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#EA4B71">Active</text>
+
+  <!-- Top bar center: tabs -->
+  <text x="450" y="36" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Editor</text>
+  <line x1="448" y1="46" x2="478" y2="46" stroke="#EA4B71" stroke-width="2"/>
+  <text x="498" y="36" font-family="Inter,sans-serif" font-size="11" fill="#525567">Executions</text>
+  <text x="568" y="36" font-family="Inter,sans-serif" font-size="11" fill="#525567">Evaluations</text>
+
+  <!-- Top bar right: activation toggle + share + save -->
+  <rect x="640" y="22" width="34" height="18" rx="9" fill="#EA4B71"/>
+  <circle cx="666" cy="31" r="7" fill="#fff"/>
+  <rect x="684" y="20" width="44" height="22" rx="6" fill="#fff" stroke="#DBDFE7"/>
+  <text x="706" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#525567">Share</text>
+  <rect x="734" y="20" width="50" height="22" rx="6" fill="#EA4B71"/>
+  <text x="759" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Save</text>
+
+  <!-- ============ NODES on canvas ============ -->
+  <!-- Email Trigger -->
+  <g transform="translate(96, 100)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="0" y="0" width="3" height="80" fill="#EA4B71"/>
+    <!-- Email icon (Gmail-style) -->
+    <rect x="20" y="30" width="40" height="26" rx="3" fill="#EA4335"/>
+    <polygon points="20,30 40,46 60,30" fill="#fff"/>
+    <polygon points="20,30 40,46 60,30 60,33 40,49 20,33" fill="#FBBC05"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Email Trigger</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">Gmail &middot; on new</text>
   </g>
 
-  <!-- Connector to Triage -->
-  <line x1="188" y1="250" x2="240" y2="250" stroke="#475569" stroke-width="2" stroke-dasharray="4,2"/>
-  <polygon points="246,250 238,246 238,254" fill="#475569"/>
+  <!-- Connection: Trigger → Triage -->
+  <path d="M 176 140 C 210 140 220 220 256 220" stroke="#B4B7C1" stroke-width="2" fill="none"/>
+  <circle cx="176" cy="140" r="3" fill="#B4B7C1"/>
+  <circle cx="256" cy="220" r="3" fill="#B4B7C1"/>
 
-  <!-- Triage Agent (AI node) -->
-  <g transform="translate(240, 220)">
-    <rect x="0" y="0" width="140" height="60" rx="8" fill="#1e1e3a" stroke="#a78bfa" stroke-width="2"/>
-    <circle cx="-8" cy="30" r="6" fill="#a78bfa"/>
-    <circle cx="148" cy="30" r="6" fill="#a78bfa"/>
-    <rect x="10" y="10" width="22" height="22" rx="4" fill="#3b1f5e"/>
-    <circle cx="17" cy="18" r="1.5" fill="#a78bfa"/>
-    <circle cx="25" cy="22" r="1.5" fill="#a78bfa"/>
-    <circle cx="19" cy="26" r="1" fill="#a78bfa"/>
-    <text x="42" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Triage Agent</text>
-    <text x="42" y="36" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">AI Agent &middot; gpt-4</text>
-    <text x="10" y="50" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">Classifies intent + priority</text>
+  <!-- Triage AI Agent (wider) -->
+  <g transform="translate(256, 180)">
+    <rect x="0" y="0" width="110" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <!-- AI badge top-right -->
+    <rect x="84" y="6" width="20" height="14" rx="7" fill="#0F1126"/>
+    <text x="94" y="16" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="800" fill="#fff">AI</text>
+    <!-- Hexagon spark icon -->
+    <polygon points="55,30 65,36 65,46 55,52 45,46 45,36" fill="#EA4B71"/>
+    <text x="55" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="900" fill="#fff">&#10026;</text>
+    <text x="55" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Triage Agent</text>
+    <text x="55" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">AI Agent</text>
   </g>
 
-  <!-- Connector to Switch -->
-  <line x1="388" y1="250" x2="430" y2="250" stroke="#475569" stroke-width="2" stroke-dasharray="4,2"/>
-  <polygon points="436,250 428,246 428,254" fill="#475569"/>
-
-  <!-- Switch / Route node -->
-  <g transform="translate(430, 230)">
-    <rect x="0" y="0" width="80" height="40" rx="8" fill="#1e1e3a" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="-8" cy="20" r="6" fill="#f59e0b"/>
-    <circle cx="88" cy="2" r="5" fill="#f59e0b"/>
-    <circle cx="88" cy="20" r="5" fill="#f59e0b"/>
-    <circle cx="88" cy="38" r="5" fill="#f59e0b"/>
-    <text x="40" y="16" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fbbf24">Switch</text>
-    <text x="40" y="30" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">by category</text>
+  <!-- Sub-nodes attached to Triage AI Agent (vertical dashed lines) -->
+  <line x1="282" y1="260" x2="282" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(258, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="14" y="16" width="20" height="12" rx="2" fill="#10A37F"/>
+    <text x="24" y="25" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="900" fill="#fff">GPT</text>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">Chat Model</text>
   </g>
 
-  <!-- Branch: Billing (top) -->
-  <path d="M 522 232 Q 540 232 545 200 Q 545 130 558 125" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
-  <polygon points="563,123 555,121 557,128" fill="#3b82f6"/>
-  <g transform="translate(560, 95)">
-    <rect x="0" y="0" width="160" height="60" rx="8" fill="#1e1e3a" stroke="#3b82f6" stroke-width="2"/>
-    <circle cx="-8" cy="30" r="6" fill="#3b82f6"/>
-    <circle cx="168" cy="30" r="6" fill="#3b82f6"/>
-    <rect x="10" y="10" width="22" height="22" rx="4" fill="#1e3a5f"/>
-    <text x="21" y="26" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#60a5fa">$</text>
-    <text x="42" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Billing Agent</text>
-    <text x="42" y="36" font-family="Inter,sans-serif" font-size="8" fill="#60a5fa">Tools: Stripe, DB</text>
-    <text x="10" y="50" font-family="Inter,sans-serif" font-size="8" fill="#3fb950">&#9679; 184 today</text>
+  <line x1="320" y1="260" x2="320" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(296, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <circle cx="24" cy="22" r="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="24" y1="17" x2="24" y2="22" stroke="#92400E" stroke-width="1.5"/>
+    <line x1="24" y1="22" x2="27" y2="24" stroke="#92400E" stroke-width="1.5"/>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">Memory</text>
   </g>
 
-  <!-- Branch: Technical (middle) -->
-  <line x1="518" y1="250" x2="556" y2="250" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4,2"/>
-  <polygon points="562,250 554,246 554,254" fill="#a78bfa"/>
-  <g transform="translate(560, 220)">
-    <rect x="0" y="0" width="160" height="60" rx="8" fill="#1e1e3a" stroke="#a78bfa" stroke-width="2"/>
-    <circle cx="-8" cy="30" r="6" fill="#a78bfa"/>
-    <circle cx="168" cy="30" r="6" fill="#a78bfa"/>
-    <rect x="10" y="10" width="22" height="22" rx="4" fill="#3b1f5e"/>
-    <text x="21" y="27" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#a78bfa">&#9881;</text>
-    <text x="42" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Technical Agent</text>
-    <text x="42" y="36" font-family="Inter,sans-serif" font-size="8" fill="#a78bfa">Tools: KB, GitHub, Docs</text>
-    <text x="10" y="50" font-family="Inter,sans-serif" font-size="8" fill="#3fb950">&#9679; 247 today</text>
+  <line x1="358" y1="260" x2="358" y2="294" stroke="#B4B7C1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <g transform="translate(334, 294)">
+    <rect x="0" y="0" width="48" height="48" rx="6" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="14" y="14" width="20" height="20" rx="3" fill="none" stroke="#525567" stroke-width="1.5"/>
+    <line x1="18" y1="20" x2="30" y2="20" stroke="#525567" stroke-width="1.2"/>
+    <line x1="18" y1="24" x2="26" y2="24" stroke="#525567" stroke-width="1.2"/>
+    <line x1="18" y1="28" x2="28" y2="28" stroke="#525567" stroke-width="1.2"/>
+    <text x="24" y="60" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#525567">Tool: KB</text>
   </g>
 
-  <!-- Branch: Shipping (bottom) -->
-  <path d="M 522 268 Q 540 268 545 300 Q 545 380 558 385" stroke="#f97316" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
-  <polygon points="563,387 555,383 557,391" fill="#f97316"/>
-  <g transform="translate(560, 355)">
-    <rect x="0" y="0" width="160" height="60" rx="8" fill="#1e1e3a" stroke="#f97316" stroke-width="2"/>
-    <circle cx="-8" cy="30" r="6" fill="#f97316"/>
-    <circle cx="168" cy="30" r="6" fill="#f97316"/>
-    <rect x="10" y="10" width="22" height="22" rx="4" fill="#5a2410"/>
-    <rect x="14" y="14" width="14" height="14" rx="2" fill="none" stroke="#fb923c" stroke-width="1.5"/>
-    <text x="42" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#fff">Shipping Agent</text>
-    <text x="42" y="36" font-family="Inter,sans-serif" font-size="8" fill="#fb923c">Tools: ShipStation</text>
-    <text x="10" y="50" font-family="Inter,sans-serif" font-size="8" fill="#3fb950">&#9679; 89 today</text>
+  <!-- Connection: Triage → Switch -->
+  <path d="M 366 220 C 410 220 420 200 446 200" stroke="#B4B7C1" stroke-width="2" fill="none"/>
+
+  <!-- Switch / Router node -->
+  <g transform="translate(446, 160)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <!-- Switch icon: branches -->
+    <line x1="22" y1="40" x2="36" y2="28" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="22" y1="40" x2="36" y2="40" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="22" y1="40" x2="36" y2="52" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="22" cy="40" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="28" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="40" r="3" fill="#F59E0B"/>
+    <circle cx="40" cy="52" r="3" fill="#F59E0B"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0F1126">Switch</text>
+    <text x="40" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B8E99">by category</text>
   </g>
 
-  <!-- Right execution panel -->
-  <rect x="60" y="320" width="380" height="160" rx="8" fill="#0e0e22" stroke="#1e1e3a" stroke-width="1"/>
-  <text x="76" y="342" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Execution Output</text>
-  <rect x="370" y="330" width="60" height="18" rx="9" fill="#0f3a1f"/>
-  <text x="400" y="343" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#10b981">SUCCESS</text>
-  <line x1="76" y1="352" x2="424" y2="352" stroke="#1e1e3a"/>
+  <!-- Three branches to specialist agents -->
+  <path d="M 526 200 C 580 200 590 140 624 140" stroke="#B4B7C1" stroke-width="2" fill="none"/>
+  <path d="M 526 200 C 580 200 590 220 624 220" stroke="#B4B7C1" stroke-width="2" fill="none"/>
+  <path d="M 526 200 C 580 200 590 300 624 300" stroke="#B4B7C1" stroke-width="2" fill="none"/>
 
-  <text x="76" y="370" font-family="JetBrains Mono,monospace" font-size="9" fill="#7dd3fc">[Triage Agent]</text>
-  <text x="175" y="370" font-family="JetBrains Mono,monospace" font-size="9" fill="#cbd5e1">classify intent...</text>
-  <text x="76" y="386" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">  &#10003; category: technical (0.94)</text>
-  <text x="76" y="402" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">  &#10003; priority: high</text>
-  <text x="76" y="418" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">  &#10003; routed_to: technical_agent</text>
-  <text x="76" y="438" font-family="JetBrains Mono,monospace" font-size="9" fill="#a78bfa">[Technical Agent]</text>
-  <text x="190" y="438" font-family="JetBrains Mono,monospace" font-size="9" fill="#cbd5e1">querying knowledge base...</text>
-  <text x="76" y="454" font-family="JetBrains Mono,monospace" font-size="9" fill="#86efac">  &#10003; resolved in 2.3s &middot; sent reply</text>
-  <text x="76" y="470" font-family="JetBrains Mono,monospace" font-size="9" fill="#fbbf24">resolved: 73% &middot; escalated: 27%</text>
+  <!-- Branch 1: Billing Agent -->
+  <g transform="translate(624, 100)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="64" y="6" width="14" height="10" rx="5" fill="#0F1126"/>
+    <text x="71" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" font-weight="800" fill="#fff">AI</text>
+    <circle cx="40" cy="40" r="14" fill="#635BFF"/>
+    <text x="40" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="900" fill="#fff">$</text>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0F1126">Billing Agent</text>
+  </g>
+
+  <!-- Branch 2: Technical Agent -->
+  <g transform="translate(624, 180)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="64" y="6" width="14" height="10" rx="5" fill="#0F1126"/>
+    <text x="71" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" font-weight="800" fill="#fff">AI</text>
+    <circle cx="40" cy="40" r="14" fill="#7C3AED"/>
+    <path d="M40 32 L42 36 L46 36 L43 39 L44 43 L40 41 L36 43 L37 39 L34 36 L38 36 Z" fill="#fff"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0F1126">Technical Agent</text>
+  </g>
+
+  <!-- Branch 3: Shipping Agent -->
+  <g transform="translate(624, 260)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+    <rect x="64" y="6" width="14" height="10" rx="5" fill="#0F1126"/>
+    <text x="71" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" font-weight="800" fill="#fff">AI</text>
+    <rect x="26" y="28" width="28" height="22" rx="2" fill="#F97316"/>
+    <rect x="26" y="34" width="28" height="3" fill="#fff" opacity="0.5"/>
+    <text x="40" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0F1126">Shipping Agent</text>
+  </g>
+
+  <!-- ============ Bottom toolbar ============ -->
+  <rect x="280" y="450" width="240" height="36" rx="18" fill="#FFFFFF" stroke="#DBDFE7" filter="url(#n8nShadow)"/>
+  <!-- Execute button -->
+  <rect x="290" y="458" width="76" height="20" rx="10" fill="#EA4B71"/>
+  <text x="328" y="471" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">&#9654; Execute</text>
+  <!-- divider -->
+  <line x1="378" y1="460" x2="378" y2="476" stroke="#E4E6EB"/>
+  <text x="396" y="471" font-family="Inter,sans-serif" font-size="10" fill="#525567">73% resolved</text>
+  <line x1="476" y1="460" x2="476" y2="476" stroke="#E4E6EB"/>
+  <circle cx="490" cy="468" r="4" fill="#10B981"/>
+  <text x="500" y="471" font-family="Inter,sans-serif" font-size="9" fill="#525567">live</text>
+
+  <!-- Sticky note -->
+  <rect x="76" y="380" width="160" height="56" rx="6" fill="#FFF8C5" stroke="#E5DC8A"/>
+  <text x="86" y="398" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#92400E">Note</text>
+  <text x="86" y="412" font-family="Inter,sans-serif" font-size="8" fill="#525567">Triage uses gpt-4 with</text>
+  <text x="86" y="424" font-family="Inter,sans-serif" font-size="8" fill="#525567">7-day memory + KB tool.</text>
 </svg>
