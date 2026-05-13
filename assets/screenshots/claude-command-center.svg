@@ -1,69 +1,172 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#1A1A1A"/>
+  <rect width="800" height="500" fill="#1A1D23"/>
 
-  <rect width="800" height="32" fill="#2B2B2B"/>
-  <circle cx="16" cy="16" r="5" fill="#FF5F57"/>
-  <circle cx="34" cy="16" r="5" fill="#FEBC2E"/>
-  <circle cx="52" cy="16" r="5" fill="#28C840"/>
-  <text x="400" y="20" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#A0A0A0">command-center &#8212; claude</text>
+  <!-- Top header -->
+  <rect width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <text x="24" y="28" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#fff">Command Center</text>
+  <text x="24" y="46" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">12 active tickets &#183; agent runner online</text>
+  <rect x="540" y="16" width="100" height="26" rx="6" fill="rgba(34,197,94,0.15)"/>
+  <circle cx="554" cy="29" r="4" fill="#22C55E"/>
+  <text x="600" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#86EFAC">runner online</text>
+  <rect x="650" y="16" width="60" height="26" rx="6" fill="#1E2530" stroke="#2D3139"/>
+  <text x="680" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Logs</text>
+  <rect x="716" y="16" width="64" height="26" rx="6" fill="#3B82F6"/>
+  <text x="748" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">+ Ticket</text>
 
-  <rect x="16" y="48" width="768" height="56" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <rect x="16" y="48" width="3" height="56" fill="#D97757"/>
-  <text x="32" y="68" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">&#10026; Claude Code</text>
-  <text x="32" y="84" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">v2.0.40 &#8212; Sonnet 4.7 &#183; agent-runner dispatch &#183; ticket-to-deploy pipeline</text>
+  <!-- Filter chips -->
+  <g transform="translate(20,72)">
+    <rect width="74" height="26" rx="13" fill="#3B82F6"/>
+    <text x="37" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">All (12)</text>
+  </g>
+  <g transform="translate(102,72)">
+    <rect width="82" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+    <text x="41" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">My tickets</text>
+  </g>
+  <g transform="translate(192,72)">
+    <rect width="74" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+    <text x="37" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">High pri</text>
+  </g>
+  <g transform="translate(274,72)">
+    <rect width="84" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+    <text x="42" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">This sprint</text>
+  </g>
 
-  <text x="16" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">Approved ticket #214: &quot;Add bulk SKU export to admin orders page&quot;. Run the pipeline end-to-end.</text>
+  <!-- Kanban columns -->
+  <!-- Column 1: New -->
+  <g transform="translate(20,116)">
+    <text x="0" y="14" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">New</text>
+    <rect x="32" y="3" width="22" height="16" rx="8" fill="#2D3139"/>
+    <text x="43" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#CBD5E1">2</text>
 
-  <text x="16" y="152" font-family="JetBrains Mono,monospace" font-size="10" fill="#D97757">&#9608;</text>
-  <text x="32" y="152" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">Branch: ticket-214-bulk-sku-export &#183; AGENTS.md rules loaded</text>
+    <!-- Card 1 -->
+    <rect x="0" y="28" width="180" height="120" rx="6" fill="#21252B" stroke="#2D3139"/>
+    <text x="12" y="48" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#218</text>
+    <rect x="148" y="40" width="20" height="14" rx="3" fill="rgba(245,158,11,0.15)"/>
+    <text x="158" y="51" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FCD34D">P2</text>
+    <text x="12" y="68" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Add CSV export</text>
+    <text x="12" y="82" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">for admin orders</text>
+    <text x="12" y="106" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">submitted by ops</text>
+    <text x="12" y="120" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">2026-05-13 &#183; 09:42</text>
+    <circle cx="160" cy="132" r="9" fill="#374151"/>
+    <text x="160" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#E5E7EB">O</text>
 
-  <text x="16" y="176" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[1/8]</text>
-  <text x="60" y="176" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Scan &#8212; ticket detected, claimed by runner</text>
-  <text x="700" y="176" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- Card 2 -->
+    <rect x="0" y="160" width="180" height="100" rx="6" fill="#21252B" stroke="#2D3139"/>
+    <text x="12" y="180" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#219</text>
+    <rect x="148" y="172" width="20" height="14" rx="3" fill="rgba(148,163,184,0.15)"/>
+    <text x="158" y="183" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#CBD5E1">P3</text>
+    <text x="12" y="200" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Filter quotes by</text>
+    <text x="12" y="214" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">customer</text>
+    <text x="12" y="236" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">submitted by stakeholder</text>
+    <text x="12" y="250" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">awaiting approval</text>
+  </g>
 
-  <text x="16" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[2/8]</text>
-  <text x="60" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Clarify &#8212; Claude asked submitter: scope = website orders only? &#8594; &quot;yes&quot;</text>
-  <text x="700" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <!-- Column 2: Approved -->
+  <g transform="translate(212,116)">
+    <text x="0" y="14" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Approved</text>
+    <rect x="62" y="3" width="22" height="16" rx="8" fill="#2D3139"/>
+    <text x="73" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#CBD5E1">3</text>
 
-  <text x="16" y="216" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[3/8]</text>
-  <text x="60" y="216" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">User Stories &#8212; 3 stories written &#183; acceptance criteria attached</text>
-  <text x="700" y="216" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- Card 1 -->
+    <rect x="0" y="28" width="180" height="110" rx="6" fill="#21252B" stroke="#2D3139"/>
+    <text x="12" y="48" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#216</text>
+    <rect x="146" y="40" width="22" height="14" rx="3" fill="rgba(239,68,68,0.18)"/>
+    <text x="157" y="51" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FCA5A5">P1</text>
+    <text x="12" y="68" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Backorder email</text>
+    <text x="12" y="82" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">template</text>
+    <text x="12" y="106" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">queued for runner</text>
+    <text x="12" y="120" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">started in 2m 14s</text>
 
-  <text x="16" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[4/8]</text>
-  <text x="60" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Implement &#8212; Edit admin/orders/export.ts &#183; Write lib/csv-stream.ts</text>
-  <text x="700" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- Card 2 -->
+    <rect x="0" y="150" width="180" height="100" rx="6" fill="#21252B" stroke="#2D3139"/>
+    <text x="12" y="170" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#215</text>
+    <rect x="148" y="162" width="20" height="14" rx="3" fill="rgba(245,158,11,0.15)"/>
+    <text x="158" y="173" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FCD34D">P2</text>
+    <text x="12" y="190" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Daily quote digest</text>
+    <text x="12" y="214" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">queued for runner</text>
+    <text x="12" y="228" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">starts after #216</text>
+  </g>
 
-  <text x="16" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[5/8]</text>
-  <text x="60" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Pull Request &#8212; #1147 opened against main &#183; reviewers: owner, dev</text>
-  <text x="700" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+  <!-- Column 3: In Progress -->
+  <g transform="translate(404,116)">
+    <text x="0" y="14" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">In Progress</text>
+    <rect x="72" y="3" width="22" height="16" rx="8" fill="#3B82F6"/>
+    <text x="83" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#fff">1</text>
 
-  <text x="16" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[6/8]</text>
-  <text x="60" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">QA &#8212; lint &#10003; &#183; type-check &#10003; &#183; unit + e2e &#10003; (18 tests)</text>
-  <text x="700" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- Card 1: active with pipeline progress -->
+    <rect x="0" y="28" width="180" height="246" rx="6" fill="#21252B" stroke="#3B82F6"/>
+    <rect x="0" y="28" width="3" height="246" fill="#3B82F6"/>
+    <text x="12" y="48" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#214</text>
+    <rect x="146" y="40" width="22" height="14" rx="3" fill="rgba(239,68,68,0.18)"/>
+    <text x="157" y="51" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FCA5A5">P1</text>
+    <text x="12" y="68" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Bulk SKU export</text>
+    <text x="12" y="82" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">on admin orders</text>
 
-  <text x="16" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[7/8]</text>
-  <text x="60" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Deploy &#8212; PR merged after owner approval &#183; Vercel production deploy</text>
-  <text x="700" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- Pipeline progress -->
+    <text x="12" y="108" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">PIPELINE 6/8</text>
+    <g transform="translate(12,116)">
+      <rect x="0" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="22" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="44" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="66" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="88" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="110" y="0" width="20" height="6" rx="3" fill="#22C55E"/>
+      <rect x="132" y="0" width="20" height="6" rx="3" fill="#3B82F6"/>
+      <rect x="154" y="0" width="14" height="6" rx="3" fill="#2D3139"/>
+    </g>
+    <text x="12" y="142" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">&#10003; Scan &#183; Clarify &#183; Stories</text>
+    <text x="12" y="156" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">&#10003; Implement &#183; PR &#183; QA</text>
+    <text x="12" y="170" font-family="Inter,sans-serif" font-size="9" fill="#7DD3FC">&#9679; Deploy &#8212; Vercel building</text>
+    <text x="12" y="184" font-family="Inter,sans-serif" font-size="9" fill="#525567">&#9675; Smoke test</text>
 
-  <text x="16" y="316" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[8/8]</text>
-  <text x="60" y="316" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Smoke Test &#8212; admin login &#8594; export 50 SKUs &#8594; CSV verified</text>
-  <text x="700" y="316" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
+    <!-- PR link -->
+    <rect x="12" y="200" width="156" height="22" rx="4" fill="#0F1419" stroke="#2D3139"/>
+    <text x="20" y="215" font-family="JetBrains Mono,monospace" font-size="9" fill="#93C5FD">PR #1147 &#183; approved by owner</text>
 
-  <text x="16" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Task</text>
-  <text x="60" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">notify_stakeholders</text>
-  <text x="32" y="358" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Slack DM &#8594; submitter &#183; ticket auto-closed with deploy URL</text>
+    <text x="12" y="244" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">runner: claude-sonnet-4.7</text>
+    <text x="12" y="258" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">elapsed 8m 41s &#183; ETA 2m</text>
+  </g>
 
-  <rect x="16" y="372" width="768" height="86" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <text x="32" y="392" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
-  <text x="32" y="412" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Project mgmt dashboard + 8-stage agent pipeline (scan &#8594; smoke test)</text>
-  <text x="32" y="426" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Next.js 14 &#183; Turso &#183; NextAuth (GitHub) &#183; Claude API for refinement</text>
-  <text x="32" y="440" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; AGENTS.md rules enforced: PRs only &#183; tests required &#183; no main pushes</text>
-  <text x="32" y="454" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Stakeholders see live status &#8212; replaces manual check-ins</text>
-  <rect x="600" y="380" width="170" height="22" rx="4" fill="#0F3A1F"/>
-  <text x="685" y="394" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">ticket &#8594; prod &#183; auto</text>
+  <!-- Column 4: Done -->
+  <g transform="translate(596,116)">
+    <text x="0" y="14" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Done (last 24h)</text>
+    <rect x="100" y="3" width="22" height="16" rx="8" fill="#2D3139"/>
+    <text x="111" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#CBD5E1">6</text>
 
-  <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Next ticket: #215 (queued by stakeholder) &#183; /claim to pick up</text>
-  <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
+    <!-- Compact done rows -->
+    <g transform="translate(0,32)">
+      <rect width="184" height="36" rx="6" fill="#21252B" stroke="#2D3139"/>
+      <text x="12" y="16" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#213</text>
+      <text x="50" y="16" font-family="Inter,sans-serif" font-size="10" fill="#E5E7EB">Activity log filter</text>
+      <text x="12" y="29" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">deployed 1h 12m ago</text>
+    </g>
+    <g transform="translate(0,76)">
+      <rect width="184" height="36" rx="6" fill="#21252B" stroke="#2D3139"/>
+      <text x="12" y="16" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#212</text>
+      <text x="50" y="16" font-family="Inter,sans-serif" font-size="10" fill="#E5E7EB">Reply intent classifier</text>
+      <text x="12" y="29" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">deployed 4h ago</text>
+    </g>
+    <g transform="translate(0,120)">
+      <rect width="184" height="36" rx="6" fill="#21252B" stroke="#2D3139"/>
+      <text x="12" y="16" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#211</text>
+      <text x="50" y="16" font-family="Inter,sans-serif" font-size="10" fill="#E5E7EB">PDF invoice fix</text>
+      <text x="12" y="29" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">deployed 7h ago</text>
+    </g>
+    <g transform="translate(0,164)">
+      <rect width="184" height="36" rx="6" fill="#21252B" stroke="#2D3139"/>
+      <text x="12" y="16" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#210</text>
+      <text x="50" y="16" font-family="Inter,sans-serif" font-size="10" fill="#E5E7EB">Webhook retry</text>
+      <text x="12" y="29" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">deployed 10h ago</text>
+    </g>
+    <g transform="translate(0,208)">
+      <rect width="184" height="36" rx="6" fill="#21252B" stroke="#2D3139"/>
+      <text x="12" y="16" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#94A3B8">#209</text>
+      <text x="50" y="16" font-family="Inter,sans-serif" font-size="10" fill="#E5E7EB">Dealer login fix</text>
+      <text x="12" y="29" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">deployed yesterday</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="20" y="490" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Pipeline: Scan &#8594; Clarify &#8594; Stories &#8594; Implement &#8594; PR &#8594; QA &#8594; Deploy &#8594; Smoke Test</text>
 </svg>

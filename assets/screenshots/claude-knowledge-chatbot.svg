@@ -1,59 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#1A1A1A"/>
+  <rect width="800" height="500" fill="#1A1D23"/>
 
-  <rect width="800" height="32" fill="#2B2B2B"/>
-  <circle cx="16" cy="16" r="5" fill="#FF5F57"/>
-  <circle cx="34" cy="16" r="5" fill="#FEBC2E"/>
-  <circle cx="52" cy="16" r="5" fill="#28C840"/>
-  <text x="400" y="20" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#A0A0A0">knowledge-chatbot &#8212; claude</text>
+  <!-- Top nav bar -->
+  <rect width="800" height="48" fill="#21252B"/>
+  <rect x="0" y="47" width="800" height="1" fill="#2D3139"/>
+  <circle cx="24" cy="24" r="10" fill="#3B82F6"/>
+  <text x="24" y="29" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">K</text>
+  <text x="46" y="29" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Knowledge Library</text>
+  <text x="195" y="29" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Search 10,247 catalogs</text>
+  <rect x="180" y="14" width="280" height="20" rx="4" fill="#0F1419" stroke="#2D3139"/>
+  <circle cx="760" cy="24" r="12" fill="#374151"/>
+  <text x="760" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#E5E7EB">KA</text>
 
-  <rect x="16" y="48" width="768" height="56" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <rect x="16" y="48" width="3" height="56" fill="#D97757"/>
-  <text x="32" y="68" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">&#10026; Claude Code</text>
-  <text x="32" y="84" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">v2.0.40 &#8212; Sonnet 4.7 &#183; cwd: ~/knowledge-chatbot</text>
+  <!-- Left rail: conversations -->
+  <rect x="0" y="48" width="180" height="452" fill="#16191E"/>
+  <rect x="180" y="48" width="1" height="452" fill="#2D3139"/>
+  <text x="14" y="76" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">RECENT</text>
+  <rect x="8" y="86" width="164" height="42" rx="6" fill="#1E2530"/>
+  <rect x="8" y="86" width="3" height="42" fill="#3B82F6"/>
+  <text x="20" y="102" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">EHD vs EHB1 ratings</text>
+  <text x="20" y="116" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">Eaton EHD-series have a higher...</text>
+  <rect x="8" y="134" width="164" height="36" rx="6" fill="transparent"/>
+  <text x="20" y="150" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Schneider NF panelboards</text>
+  <text x="20" y="163" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">3 hours ago</text>
+  <rect x="8" y="174" width="164" height="36" rx="6" fill="transparent"/>
+  <text x="20" y="190" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Siemens motor starter sizing</text>
+  <text x="20" y="203" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Yesterday</text>
+  <rect x="8" y="214" width="164" height="36" rx="6" fill="transparent"/>
+  <text x="20" y="230" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">ABB drive replacement</text>
+  <text x="20" y="243" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Yesterday</text>
 
-  <text x="16" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">Build hybrid RAG ingestion: scrape Eaton/Schneider/ABB/Siemens PDFs, OCR scans, chunk with table</text>
-  <text x="32" y="138" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">preservation, embed to Qdrant. Cite page numbers in answers.</text>
+  <!-- Main thread -->
+  <!-- User message -->
+  <rect x="400" y="72" width="380" height="48" rx="12" fill="#3B82F6"/>
+  <text x="416" y="92" font-family="Inter,sans-serif" font-size="12" fill="#fff">What&apos;s the interrupting capacity difference</text>
+  <text x="416" y="108" font-family="Inter,sans-serif" font-size="12" fill="#fff">between Eaton EHD and EHB1 breakers?</text>
+  <text x="780" y="132" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">You &#183; just now</text>
 
-  <text x="16" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#D97757">&#9608;</text>
-  <text x="32" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">Plan: scraper &#8594; R2 storage &#8594; ingest worker &#8594; hybrid search API &#8594; chat UI</text>
+  <!-- AI response -->
+  <circle cx="210" cy="160" r="14" fill="#1E293B" stroke="#3B82F6"/>
+  <path d="M 204 160 L 209 165 L 218 156" stroke="#06B6D4" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <text x="232" y="159" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Knowledge Library</text>
+  <text x="332" y="159" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">grounded answer</text>
+  <rect x="200" y="170" width="580" height="118" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="216" y="192" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">Eaton EHD-series breakers have an interrupting capacity of</text>
+  <text x="216" y="208" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB"><tspan font-weight="700" fill="#fff">65 kA at 240 VAC</tspan>, while EHB1-series breakers are rated</text>
+  <text x="216" y="224" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">at <tspan font-weight="700" fill="#fff">22 kA at 240 VAC</tspan>. The EHD is a high-AIC variant designed</text>
+  <text x="216" y="240" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">for service-entrance applications where fault currents are higher.</text>
+  <text x="216" y="263" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#94A3B8">Sources</text>
+  <rect x="263" y="252" width="146" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
+  <text x="271" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[1] EHD-Datasheet.pdf p.4</text>
+  <rect x="414" y="252" width="152" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
+  <text x="422" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[2] EHB1-Datasheet.pdf p.3</text>
+  <rect x="571" y="252" width="142" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
+  <text x="579" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[3] Eaton-AIC-Guide p.18</text>
 
-  <text x="16" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Bash</text>
-  <text x="60" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">node scrape-eaton.js &#38;&#38; node scrape-schneider.js</text>
-  <text x="32" y="204" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="204" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">10,247 PDFs &#8594; R2 (catalogs/{vendor}/{category}/) &#183; SHA-256 dedup</text>
+  <!-- Follow-up suggestions -->
+  <text x="200" y="312" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#94A3B8">Suggested follow-ups</text>
+  <rect x="200" y="320" width="184" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+  <text x="212" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Show EHD frame sizes available</text>
+  <rect x="392" y="320" width="160" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+  <text x="404" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">What replaces EHB1 today?</text>
+  <rect x="560" y="320" width="168" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
+  <text x="572" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">EHD lead time and pricing</text>
 
-  <text x="16" y="226" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="226" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">ingest.js</text>
-  <text x="220" y="226" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(310 lines)</text>
-  <text x="32" y="240" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">pdf-parse + OCR fallback &#183; table-aware chunker &#183; OpenAI embeddings</text>
-
-  <text x="16" y="262" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="262" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">lib/search.ts</text>
-  <text x="220" y="262" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(184 lines)</text>
-  <text x="32" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">BM25 + vector (Qdrant) merge &#8594; Cohere reranker &#8594; top-12 to LLM</text>
-
-  <text x="16" y="298" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="298" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/api/chat/route.ts</text>
-  <text x="220" y="298" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">(96 lines)</text>
-  <text x="32" y="312" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Next.js chat + Slack bot share one backend &#183; citation assembly</text>
-
-  <text x="16" y="334" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Bash</text>
-  <text x="60" y="334" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">node ocr-failed.js &#38;&#38; node ingest.js --resume</text>
-  <text x="32" y="348" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="348" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">98.4% ingestion success &#183; 1,247 OCR-recovered pages</text>
-
-  <rect x="16" y="366" width="768" height="92" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <text x="32" y="386" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
-  <text x="32" y="406" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; 10K+ vendor catalogs ingested to Qdrant + Postgres metadata</text>
-  <text x="32" y="420" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Hybrid retrieval (BM25 + vector) with Cohere reranker</text>
-  <text x="32" y="434" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Next.js web chat + Slack bot &#183; page-level citations on every answer</text>
-  <text x="32" y="448" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Deployed to Vercel &#183; library.example.com</text>
-  <rect x="600" y="376" width="170" height="22" rx="4" fill="#0F3A1F"/>
-  <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">3 phases &#183; ~6 weeks</text>
-
-  <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">/reindex &#183; /agents &#183; /help &#183; ask anything about the catalog...</text>
-  <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
+  <!-- Input box at bottom -->
+  <rect x="200" y="440" width="580" height="44" rx="22" fill="#0F1419" stroke="#2D3139"/>
+  <text x="222" y="466" font-family="Inter,sans-serif" font-size="12" fill="#525567">Ask the knowledge library&#8230;</text>
+  <circle cx="754" cy="462" r="14" fill="#3B82F6"/>
+  <path d="M 748 462 L 760 462 M 757 458 L 760 462 L 757 466" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
