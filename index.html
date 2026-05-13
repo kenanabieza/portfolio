@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ken Añabieza | AI Automation & Integration Specialist</title>
-    <meta name="description" content="AI Automation Specialist building intelligent workflows with n8n, Make.com, Zapier, GoHighLevel, Claude Code, Python, and more. Helping businesses eliminate manual work and scale operations.">
+    <meta name="description" content="AI Automation Specialist building intelligent workflows with Claude Code, n8n, Make.com, Zapier, GoHighLevel, Python, and more. Helping businesses eliminate manual work and scale operations.">
     <!-- Open Graph / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kenanabieza.github.io/portfolio/">
     <meta property="og:title" content="Ken Anabieza | AI Automation & Integration Specialist">
-    <meta property="og:description" content="Building AI-powered automations that scale businesses. 50+ workflows, 15+ businesses served, 90% cost reduction. n8n, Make.com, Zapier, GoHighLevel, Claude Code, Python.">
+    <meta property="og:description" content="Building AI-powered automations that scale businesses. 50+ workflows, 15+ businesses served, 90% cost reduction. Claude Code, n8n, Make.com, Zapier, GoHighLevel, Python.">
     <meta property="og:image" content="https://kenanabieza.github.io/portfolio/assets/og-thumbnail.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -1143,7 +1143,7 @@
         <h1>I Build <span class="gradient-text">AI-Powered Automations</span> That Scale Businesses</h1>
         <p class="hero-subtitle">
             From intelligent workflows to autonomous AI agents &mdash; I help businesses eliminate manual work,
-            cut costs, and scale operations using n8n, Make.com, Zapier, GoHighLevel, Claude Code, Python, and more.
+            cut costs, and scale operations using Claude Code, n8n, Make.com, Zapier, GoHighLevel, Python, and more.
         </p>
         <div class="hero-buttons">
             <a href="#projects" class="btn-primary">View My Projects</a>
@@ -1239,6 +1239,12 @@
             <p class="section-subtitle">End-to-end expertise across the automation ecosystem</p>
         </div>
         <div class="tools-grid fade-in">
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #d97745, #c06030);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #d97745, #c06030);">CC</div>
+                <h3>Claude Code</h3>
+                <p>AI-powered development with Claude. Automated refactoring, code generation, full-stack app building, and agentic coding.</p>
+                <span class="tool-level">Advanced &middot; 20+ Projects</span>
+            </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #ff6d5a, #ff4500);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
                 <h3>n8n</h3>
@@ -1262,12 +1268,6 @@
                 <h3>GoHighLevel</h3>
                 <p>All-in-one marketing platform. Funnel building, pipeline management, SMS/email campaigns, and booking automation.</p>
                 <span class="tool-level">Proficient &middot; 15+ Funnels</span>
-            </div>
-            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #d97745, #c06030);">
-                <div class="tool-icon" style="background: linear-gradient(135deg, #d97745, #c06030);">CC</div>
-                <h3>Claude Code</h3>
-                <p>AI-powered development with Claude. Automated refactoring, code generation, full-stack app building, and agentic coding.</p>
-                <span class="tool-level">Advanced &middot; 20+ Projects</span>
             </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #8b5cf6, #6d28d9);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">AI</div>
@@ -1313,6 +1313,179 @@
         </div>
 
         <div class="projects-grid fade-in" id="projectsGrid">
+
+            <!-- Claude Code: Knowledge Chatbot (Hybrid RAG) -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-knowledge-chatbot.svg?v=1" alt="Claude Code building a hybrid RAG knowledge chatbot">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">RAG</span>
+                    </div>
+                    <h3 class="project-title">Hybrid RAG Knowledge Chatbot</h3>
+                    <p class="project-desc">Built end-to-end with Claude Code for an industrial equipment distributor: scraped 10K+ vendor catalog PDFs (Eaton, Schneider, ABB, Siemens) to Cloudflare R2, table-aware chunking with OCR fallback, hybrid BM25 + vector search (Qdrant) with a Cohere reranker. Next.js chat UI and a Slack bot share one backend &mdash; every answer cites page-level sources.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">10K+ PDFs indexed</span>
+                        <span class="project-metric">Web + Slack chat</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Automated Marketing System -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-marketing-outreach.svg?v=1" alt="Claude Code running a 5-channel outreach campaign">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-python">Python</span>
+                    </div>
+                    <h3 class="project-title">5-Channel B2B Outreach System</h3>
+                    <p class="project-desc">Daily multi-channel outreach engine built on a WAT framework (Workflows / Agents / Tools). Claude Code orchestrates Python tools across Instantly (email), Twilio (A2P 10DLC SMS), Slybroadcast (RVM), PhantomBuster (LinkedIn) and ZeroBounce (validation), with Airtable as source of truth. GitHub Actions runs the workflow daily and posts a Slack summary &mdash; entire playbook is VA-operable.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">5 outreach channels</span>
+                        <span class="project-metric">Daily auto-run</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Automated Quoting Pipeline -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-quoting-pipeline.svg?v=1" alt="Claude Code building an email-to-quote pipeline">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-python">Python</span>
+                        <span class="project-tag tag-ai">AI</span>
+                    </div>
+                    <h3 class="project-title">Email-to-Quote AI Pipeline</h3>
+                    <p class="project-desc">Inbound RFQ email lands &rarr; Claude parses the parts list &rarr; Sellbrite inventory lookup &rarr; tiered-margin pricing &rarr; branded PDF generated &rarr; attached to a Pipedrive deal &rarr; Slack notifies the approver. Margins below threshold are gated for human approval; everything else closes the loop in under 90 seconds. Cuts a 30-minute manual workflow to a single click.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">~90s end-to-end</span>
+                        <span class="project-metric">Pipedrive + Slack sync</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Sales / Marketing Dashboard -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-sales-dashboard.svg?v=1" alt="Claude Code building a Next.js sales dashboard">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">Next.js</span>
+                    </div>
+                    <h3 class="project-title">Sales &amp; Marketing Operations Dashboard</h3>
+                    <p class="project-desc">Internal dashboard built on Next.js 14 + Turso (libSQL) + NextAuth that surfaces pending quote approvals, today&rsquo;s outreach activity per channel, reply heatmaps, and pipeline health. Approving a quote fires a webhook back to the quoting pipeline to advance the Pipedrive deal. Replaces daily status check-ins &mdash; owner, ops, and non-technical stakeholder all see the same live data.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">One-click approvals</span>
+                        <span class="project-metric">Replaces daily check-ins</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Post-Order Flow -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-post-order.svg?v=1" alt="Claude Code building Stripe refund + PDF invoice flow">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">Stripe</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Post-Order &amp; Cancellation Flow</h3>
+                    <p class="project-desc">Complete post-purchase flow for a Next.js + Stripe storefront: brand-matched HTML confirmation and shipped emails (Resend), a paid-invoice PDF rendered with @react-pdf/renderer, plus admin-initiated cancellation that calls the Stripe refund API (full or custom partial), auto-restocks inventory, and emits a customer email &mdash; gated behind an owner-approval kill switch until samples are signed off.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Stripe refund API</span>
+                        <span class="project-metric">Auto-restock + PDF invoice</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: 3-2-1 Backup Infrastructure -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-backup.svg?v=1" alt="Claude Code building 3-2-1 backup infrastructure">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-python">Infra</span>
+                    </div>
+                    <h3 class="project-title">3-2-1 Backup &amp; Disaster Recovery</h3>
+                    <p class="project-desc">Designed and implemented a 3-2-1 backup strategy for a multi-app SaaS footprint: 9 Turso databases dumped daily via HTTPS API, encrypted with age, replicated to Cloudflare R2; 18 GitHub repos mirrored to GitLab; 25 GB of Vercel Blob product photos synced incrementally to R2 + Synology NAS. Verified decrypt round-trip on every run, Healthchecks.io pulses, Sentry alerts, and tested restore scripts &mdash; RTO under 4 hours.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">9 DBs + 18 repos mirrored</span>
+                        <span class="project-metric">RTO &lt; 4h</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Command Center + Ticket Pipeline -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-command-center.svg?v=1" alt="Claude Code agent pipeline taking a ticket from approval to deploy">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-agentic">Agentic AI</span>
+                        <span class="project-tag tag-ai">Next.js</span>
+                    </div>
+                    <h3 class="project-title">Command Center &amp; Ticket-to-Deploy Pipeline</h3>
+                    <p class="project-desc">Internal project-management dashboard plus an 8-stage agentic pipeline that takes an approved ticket from <em>scan</em> through <em>clarify, user stories, implement, PR, QA, deploy, smoke test</em>. Next.js 14 + Turso + NextAuth (GitHub), with Claude as the dispatch layer. Strict AGENTS.md rules enforce branch naming, tests-before-PR, and no direct pushes to main &mdash; non-technical stakeholders submit features and watch them ship.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">8-stage agent pipeline</span>
+                        <span class="project-metric">Ticket &rarr; production</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code Project 1 -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-refactor.svg?v=3" alt="Claude Code Refactoring">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">AI</span>
+                    </div>
+                    <h3 class="project-title">Legacy Codebase Modernization</h3>
+                    <p class="project-desc">Used Claude Code to analyze and refactor 50K+ lines of legacy JavaScript. Automated migration from callback-based patterns to async/await with comprehensive test generation.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">50K+ lines refactored</span>
+                        <span class="project-metric">40% fewer bugs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code Project 2 -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-api.svg?v=3" alt="Claude Code API Builder">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-python">Python</span>
+                    </div>
+                    <h3 class="project-title">AI-Powered API Development Suite</h3>
+                    <p class="project-desc">Built complete REST APIs from natural language specs using Claude Code. Auto-generated endpoints, database models, authentication, documentation, and deployment configs.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">10x faster development</span>
+                        <span class="project-metric">Auto-documented</span>
+                    </div>
+                </div>
+            </div>
 
             <!-- n8n Project 1 -->
             <div class="project-card" data-category="n8n">
@@ -1538,179 +1711,6 @@
                     <div class="project-metrics">
                         <span class="project-metric">3-way sentiment routing</span>
                         <span class="project-metric">Owner alert on negative</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Knowledge Chatbot (Hybrid RAG) -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-knowledge-chatbot.svg?v=1" alt="Claude Code building a hybrid RAG knowledge chatbot">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-ai">RAG</span>
-                    </div>
-                    <h3 class="project-title">Hybrid RAG Knowledge Chatbot</h3>
-                    <p class="project-desc">Built end-to-end with Claude Code for an industrial equipment distributor: scraped 10K+ vendor catalog PDFs (Eaton, Schneider, ABB, Siemens) to Cloudflare R2, table-aware chunking with OCR fallback, hybrid BM25 + vector search (Qdrant) with a Cohere reranker. Next.js chat UI and a Slack bot share one backend &mdash; every answer cites page-level sources.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">10K+ PDFs indexed</span>
-                        <span class="project-metric">Web + Slack chat</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Automated Marketing System -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-marketing-outreach.svg?v=1" alt="Claude Code running a 5-channel outreach campaign">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-python">Python</span>
-                    </div>
-                    <h3 class="project-title">5-Channel B2B Outreach System</h3>
-                    <p class="project-desc">Daily multi-channel outreach engine built on a WAT framework (Workflows / Agents / Tools). Claude Code orchestrates Python tools across Instantly (email), Twilio (A2P 10DLC SMS), Slybroadcast (RVM), PhantomBuster (LinkedIn) and ZeroBounce (validation), with Airtable as source of truth. GitHub Actions runs the workflow daily and posts a Slack summary &mdash; entire playbook is VA-operable.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">5 outreach channels</span>
-                        <span class="project-metric">Daily auto-run</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Automated Quoting Pipeline -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-quoting-pipeline.svg?v=1" alt="Claude Code building an email-to-quote pipeline">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-python">Python</span>
-                        <span class="project-tag tag-ai">AI</span>
-                    </div>
-                    <h3 class="project-title">Email-to-Quote AI Pipeline</h3>
-                    <p class="project-desc">Inbound RFQ email lands &rarr; Claude parses the parts list &rarr; Sellbrite inventory lookup &rarr; tiered-margin pricing &rarr; branded PDF generated &rarr; attached to a Pipedrive deal &rarr; Slack notifies the approver. Margins below threshold are gated for human approval; everything else closes the loop in under 90 seconds. Cuts a 30-minute manual workflow to a single click.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">~90s end-to-end</span>
-                        <span class="project-metric">Pipedrive + Slack sync</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Sales / Marketing Dashboard -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-sales-dashboard.svg?v=1" alt="Claude Code building a Next.js sales dashboard">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-ai">Next.js</span>
-                    </div>
-                    <h3 class="project-title">Sales &amp; Marketing Operations Dashboard</h3>
-                    <p class="project-desc">Internal dashboard built on Next.js 14 + Turso (libSQL) + NextAuth that surfaces pending quote approvals, today&rsquo;s outreach activity per channel, reply heatmaps, and pipeline health. Approving a quote fires a webhook back to the quoting pipeline to advance the Pipedrive deal. Replaces daily status check-ins &mdash; owner, ops, and non-technical stakeholder all see the same live data.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">One-click approvals</span>
-                        <span class="project-metric">Replaces daily check-ins</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Post-Order Flow -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-post-order.svg?v=1" alt="Claude Code building Stripe refund + PDF invoice flow">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-ai">Stripe</span>
-                    </div>
-                    <h3 class="project-title">E-commerce Post-Order &amp; Cancellation Flow</h3>
-                    <p class="project-desc">Complete post-purchase flow for a Next.js + Stripe storefront: brand-matched HTML confirmation and shipped emails (Resend), a paid-invoice PDF rendered with @react-pdf/renderer, plus admin-initiated cancellation that calls the Stripe refund API (full or custom partial), auto-restocks inventory, and emits a customer email &mdash; gated behind an owner-approval kill switch until samples are signed off.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">Stripe refund API</span>
-                        <span class="project-metric">Auto-restock + PDF invoice</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: 3-2-1 Backup Infrastructure -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-backup.svg?v=1" alt="Claude Code building 3-2-1 backup infrastructure">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-python">Infra</span>
-                    </div>
-                    <h3 class="project-title">3-2-1 Backup &amp; Disaster Recovery</h3>
-                    <p class="project-desc">Designed and implemented a 3-2-1 backup strategy for a multi-app SaaS footprint: 9 Turso databases dumped daily via HTTPS API, encrypted with age, replicated to Cloudflare R2; 18 GitHub repos mirrored to GitLab; 25 GB of Vercel Blob product photos synced incrementally to R2 + Synology NAS. Verified decrypt round-trip on every run, Healthchecks.io pulses, Sentry alerts, and tested restore scripts &mdash; RTO under 4 hours.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">9 DBs + 18 repos mirrored</span>
-                        <span class="project-metric">RTO &lt; 4h</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Command Center + Ticket Pipeline -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-command-center.svg?v=1" alt="Claude Code agent pipeline taking a ticket from approval to deploy">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-agentic">Agentic AI</span>
-                        <span class="project-tag tag-ai">Next.js</span>
-                    </div>
-                    <h3 class="project-title">Command Center &amp; Ticket-to-Deploy Pipeline</h3>
-                    <p class="project-desc">Internal project-management dashboard plus an 8-stage agentic pipeline that takes an approved ticket from <em>scan</em> through <em>clarify, user stories, implement, PR, QA, deploy, smoke test</em>. Next.js 14 + Turso + NextAuth (GitHub), with Claude as the dispatch layer. Strict AGENTS.md rules enforce branch naming, tests-before-PR, and no direct pushes to main &mdash; non-technical stakeholders submit features and watch them ship.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">8-stage agent pipeline</span>
-                        <span class="project-metric">Ticket &rarr; production</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code Project 1 -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-refactor.svg?v=3" alt="Claude Code Refactoring">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-ai">AI</span>
-                    </div>
-                    <h3 class="project-title">Legacy Codebase Modernization</h3>
-                    <p class="project-desc">Used Claude Code to analyze and refactor 50K+ lines of legacy JavaScript. Automated migration from callback-based patterns to async/await with comprehensive test generation.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">50K+ lines refactored</span>
-                        <span class="project-metric">40% fewer bugs</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code Project 2 -->
-            <div class="project-card" data-category="claude">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-api.svg?v=3" alt="Claude Code API Builder">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-python">Python</span>
-                    </div>
-                    <h3 class="project-title">AI-Powered API Development Suite</h3>
-                    <p class="project-desc">Built complete REST APIs from natural language specs using Claude Code. Auto-generated endpoints, database models, authentication, documentation, and deployment configs.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">10x faster development</span>
-                        <span class="project-metric">Auto-documented</span>
                     </div>
                 </div>
             </div>
