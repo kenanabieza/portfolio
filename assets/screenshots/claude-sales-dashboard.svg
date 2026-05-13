@@ -1,59 +1,106 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#1A1A1A"/>
+  <rect width="800" height="500" fill="#1A1D23"/>
 
-  <rect width="800" height="32" fill="#2B2B2B"/>
-  <circle cx="16" cy="16" r="5" fill="#FF5F57"/>
-  <circle cx="34" cy="16" r="5" fill="#FEBC2E"/>
-  <circle cx="52" cy="16" r="5" fill="#28C840"/>
-  <text x="400" y="20" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#A0A0A0">sales-dashboard &#8212; claude</text>
+  <!-- Left sidebar -->
+  <rect width="60" height="500" fill="#16191E"/>
+  <rect x="60" y="0" width="1" height="500" fill="#2D3139"/>
+  <rect x="14" y="16" width="32" height="32" rx="6" fill="#3B82F6"/>
+  <text x="30" y="38" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#fff">B</text>
+  <!-- Sidebar icons -->
+  <g transform="translate(14,80)" stroke="#94A3B8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="32" height="32" rx="6" fill="#1E2530" stroke="none"/>
+    <rect x="9" y="9" width="14" height="14" rx="2"/>
+  </g>
+  <g transform="translate(14,124)" stroke="#94A3B8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 6 12 L 26 12 M 6 18 L 26 18 M 6 24 L 18 24"/>
+  </g>
+  <g transform="translate(14,162)" stroke="#94A3B8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="13" r="5"/>
+    <path d="M 7 25 C 7 20, 25 20, 25 25"/>
+  </g>
+  <g transform="translate(14,200)" stroke="#94A3B8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="6" y="8" width="20" height="14" rx="2"/>
+    <path d="M 6 14 L 26 14"/>
+  </g>
 
-  <rect x="16" y="48" width="768" height="56" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <rect x="16" y="48" width="3" height="56" fill="#D97757"/>
-  <text x="32" y="68" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">&#10026; Claude Code</text>
-  <text x="32" y="84" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">v2.0.40 &#8212; Sonnet 4.7 &#183; Next.js 14 + Turso + NextAuth + Tailwind</text>
+  <!-- Top header -->
+  <rect x="61" y="0" width="739" height="56" fill="#21252B"/>
+  <rect x="61" y="55" width="739" height="1" fill="#2D3139"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#fff">Sales Dashboard</text>
+  <text x="80" y="46" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Pending approvals &#183; 3 awaiting review</text>
+  <circle cx="770" cy="28" r="12" fill="#374151"/>
+  <text x="770" y="32" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#E5E7EB">KA</text>
 
-  <text x="16" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="124" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">Build the sales dashboard: pending quote approvals, marketing outreach activity, and a live</text>
-  <text x="32" y="138" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">pipeline view. Auth via NextAuth, Turso for data, dark theme to match the rest of the suite.</text>
+  <!-- KPI strip -->
+  <g transform="translate(80,72)">
+    <rect width="166" height="62" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">QUOTES TODAY</text>
+    <text x="14" y="48" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">8</text>
+    <text x="50" y="48" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">&#8593; 2 vs yesterday</text>
+  </g>
+  <g transform="translate(258,72)">
+    <rect width="166" height="62" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">PENDING REVIEW</text>
+    <text x="14" y="48" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#FCD34D">3</text>
+    <text x="40" y="48" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">avg wait 9m</text>
+  </g>
+  <g transform="translate(436,72)">
+    <rect width="166" height="62" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">AVG MARGIN</text>
+    <text x="14" y="48" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">22.4<tspan font-size="14" fill="#94A3B8">%</tspan></text>
+    <text x="80" y="48" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">healthy</text>
+  </g>
+  <g transform="translate(614,72)">
+    <rect width="166" height="62" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">PIPELINE VALUE</text>
+    <text x="14" y="48" font-family="Inter,sans-serif" font-size="20" font-weight="800" fill="#fff">$184k</text>
+    <text x="80" y="48" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">across 12 deals</text>
+  </g>
 
-  <text x="16" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#D97757">&#9608;</text>
-  <text x="32" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">Scaffolding pages &#183; wiring auth &#183; building the approval flow first</text>
+  <!-- Section title -->
+  <text x="80" y="160" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Pending Quote Approvals</text>
 
-  <text x="16" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Edit</text>
-  <text x="60" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">lib/db/schema.sql</text>
-  <text x="32" y="204" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="204" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">tables: quotes, approvals, leads, activity_log, users (5 migrations)</text>
+  <!-- Approval card 1: low margin (red border) -->
+  <rect x="80" y="172" width="700" height="92" rx="8" fill="#21252B" stroke="#EF4444"/>
+  <rect x="80" y="172" width="3" height="92" fill="#EF4444"/>
+  <text x="100" y="194" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#FCA5A5">Q-2614</text>
+  <text x="160" y="194" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">2026-05-13 &#183; 09:14</text>
+  <rect x="280" y="183" width="76" height="18" rx="9" fill="rgba(239,68,68,0.15)"/>
+  <text x="318" y="195" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#FCA5A5">margin 18.2%</text>
+  <text x="100" y="216" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Acme Electric &#8212; 6 line items</text>
+  <text x="100" y="234" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Eaton, Schneider, Siemens, ABB &#183; LTL Freight to Phoenix AZ</text>
+  <text x="100" y="252" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$5,780.50</tspan></text>
+  <rect x="586" y="220" width="92" height="30" rx="6" fill="#22C55E"/>
+  <text x="632" y="240" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Approve</text>
+  <rect x="686" y="220" width="84" height="30" rx="6" fill="transparent" stroke="#2D3139"/>
+  <text x="728" y="240" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#CBD5E1">Decline</text>
 
-  <text x="16" y="226" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="226" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/(dashboard)/approvals/page.tsx</text>
-  <text x="32" y="240" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="240" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Pending quotes list &#183; one-click approve/decline &#183; margin tooltip</text>
+  <!-- Approval card 2 -->
+  <rect x="80" y="276" width="700" height="92" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="100" y="298" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#93C5FD">Q-2615</text>
+  <text x="160" y="298" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">2026-05-13 &#183; 08:42</text>
+  <rect x="280" y="287" width="76" height="18" rx="9" fill="rgba(34,197,94,0.15)"/>
+  <text x="318" y="299" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#86EFAC">margin 24.1%</text>
+  <text x="100" y="320" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Riverside Power &#8212; 3 line items</text>
+  <text x="100" y="338" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Square D, Eaton &#183; Ground UPS to Tacoma WA</text>
+  <text x="100" y="356" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$3,210.00</tspan></text>
+  <rect x="586" y="324" width="92" height="30" rx="6" fill="#22C55E"/>
+  <text x="632" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Approve</text>
+  <rect x="686" y="324" width="84" height="30" rx="6" fill="transparent" stroke="#2D3139"/>
+  <text x="728" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#CBD5E1">Decline</text>
 
-  <text x="16" y="262" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="262" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/(dashboard)/outreach/page.tsx</text>
-  <text x="32" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Today&apos;s sends per channel &#183; reply heatmap &#183; campaign filter</text>
-
-  <text x="16" y="298" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Write</text>
-  <text x="60" y="298" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">app/api/quotes/[id]/route.ts</text>
-  <text x="32" y="312" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="312" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Approve &#8594; webhook to ai-quoting-pipeline &#8594; Pipedrive deal advance</text>
-
-  <text x="16" y="334" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Bash</text>
-  <text x="60" y="334" font-family="JetBrains Mono,monospace" font-size="9" fill="#808080">npm run build &amp;&amp; vercel deploy --prod</text>
-  <text x="32" y="348" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
-  <text x="48" y="348" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">build &#10003; &#183; type-check &#10003; &#183; deployed: dashboard.example.com</text>
-
-  <rect x="16" y="366" width="768" height="92" rx="6" fill="#252525" stroke="#3A3A3A"/>
-  <text x="32" y="386" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
-  <text x="32" y="406" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Next.js 14 App Router &#183; dark theme &#183; Tabler icons</text>
-  <text x="32" y="420" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Turso (libSQL) &#183; NextAuth (GitHub provider) &#183; role-based pages</text>
-  <text x="32" y="434" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Replaces daily check-ins &#8212; owner, ops, and stakeholder see the same data live</text>
-  <text x="32" y="448" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Deployed to Vercel &#183; webhook back into quoting + marketing systems</text>
-  <rect x="600" y="376" width="170" height="22" rx="4" fill="#0F3A1F"/>
-  <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">dashboard live</text>
-
-  <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Hint: /deploy promotes to prod &#183; /rollback restores last build</text>
-  <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
+  <!-- Approval card 3 (large deal) -->
+  <rect x="80" y="380" width="700" height="92" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="100" y="402" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#93C5FD">Q-2616</text>
+  <text x="160" y="402" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">2026-05-13 &#183; 07:58</text>
+  <rect x="280" y="391" width="76" height="18" rx="9" fill="rgba(245,158,11,0.15)"/>
+  <text x="318" y="403" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#FCD34D">margin 19.6%</text>
+  <text x="380" y="403" font-family="Inter,sans-serif" font-size="10" fill="#FCD34D">large-deal review</text>
+  <text x="100" y="424" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Cardinal Switchgear &#8212; 17 line items</text>
+  <text x="100" y="442" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Schneider, ABB, Cutler-Hammer &#183; LTL Freight to Chicago IL</text>
+  <text x="100" y="460" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$42,140.00</tspan></text>
+  <rect x="586" y="428" width="92" height="30" rx="6" fill="#22C55E"/>
+  <text x="632" y="448" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Approve</text>
+  <rect x="686" y="428" width="84" height="30" rx="6" fill="transparent" stroke="#2D3139"/>
+  <text x="728" y="448" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#CBD5E1">Decline</text>
 </svg>
