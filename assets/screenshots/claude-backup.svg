@@ -55,6 +55,6 @@
   <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">RTO &#60; 4 hours</text>
 
   <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;quarterly DR drill&quot; or &quot;rotate age keys&quot;...</text>
+  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Last pulse 47s ago &#183; 9/9 DBs healthy &#183; next backup in 4h 12m</text>
   <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
 </svg>
