@@ -48,12 +48,12 @@
   <text x="32" y="386" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
   <text x="32" y="406" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Next.js 14 App Router &#183; dark theme &#183; Tabler icons</text>
   <text x="32" y="420" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Turso (libSQL) &#183; NextAuth (GitHub provider) &#183; role-based pages</text>
-  <text x="32" y="434" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Replaces daily check-ins &#8212; Nick / Matt / Ken see the same data live</text>
+  <text x="32" y="434" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Replaces daily check-ins &#8212; owner, ops, and stakeholder see the same data live</text>
   <text x="32" y="448" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">&#10003; Deployed to Vercel &#183; webhook back into quoting + marketing systems</text>
   <rect x="600" y="376" width="170" height="22" rx="4" fill="#0F3A1F"/>
   <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">dashboard live</text>
 
   <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;add weekly KPIs&quot; or &quot;wire Slack approve button&quot;...</text>
+  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Hint: /deploy promotes to prod &#183; /rollback restores last build</text>
   <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
 </svg>

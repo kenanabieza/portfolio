@@ -23,7 +23,7 @@
   <text x="700" y="176" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[2/8]</text>
-  <text x="60" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Clarify &#8212; Claude asked Nick: scope = website orders only? &#8594; &quot;yes&quot;</text>
+  <text x="60" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Clarify &#8212; Claude asked submitter: scope = website orders only? &#8594; &quot;yes&quot;</text>
   <text x="700" y="196" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="216" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[3/8]</text>
@@ -35,7 +35,7 @@
   <text x="700" y="236" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[5/8]</text>
-  <text x="60" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Pull Request &#8212; #1147 opened against main &#183; reviewers: Matt, Ken</text>
+  <text x="60" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Pull Request &#8212; #1147 opened against main &#183; reviewers: owner, dev</text>
   <text x="700" y="256" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[6/8]</text>
@@ -43,7 +43,7 @@
   <text x="700" y="276" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[7/8]</text>
-  <text x="60" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Deploy &#8212; PR merged after Matt approval &#183; Vercel production deploy</text>
+  <text x="60" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#C9C9C9">Deploy &#8212; PR merged after owner approval &#183; Vercel production deploy</text>
   <text x="700" y="296" font-family="JetBrains Mono,monospace" font-size="9" fill="#86EFAC">&#10003;</text>
 
   <text x="16" y="316" font-family="JetBrains Mono,monospace" font-size="9" fill="#FEBC2E">[8/8]</text>
@@ -52,7 +52,7 @@
 
   <text x="16" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Task</text>
   <text x="60" y="344" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">notify_stakeholders</text>
-  <text x="32" y="358" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Slack DM &#8594; Nick (submitter) &#183; ticket auto-closed with deploy URL</text>
+  <text x="32" y="358" font-family="JetBrains Mono,monospace" font-size="9" fill="#A0A0A0">Slack DM &#8594; submitter &#183; ticket auto-closed with deploy URL</text>
 
   <rect x="16" y="372" width="768" height="86" rx="6" fill="#252525" stroke="#3A3A3A"/>
   <text x="32" y="392" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700" fill="#D97757">Summary</text>
@@ -64,6 +64,6 @@
   <text x="685" y="394" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">ticket &#8594; prod &#183; auto</text>
 
   <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;parallel agent on next ticket&quot; or &quot;weekly throughput report&quot;...</text>
+  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Next ticket: #215 (queued by stakeholder) &#183; /claim to pick up</text>
   <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
 </svg>

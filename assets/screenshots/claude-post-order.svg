@@ -17,7 +17,7 @@
   <text x="32" y="138" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E5E5">and admin cancel with Stripe refund + auto-restock. Gate all customer email behind a flag.</text>
 
   <text x="16" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#D97757">&#9608;</text>
-  <text x="32" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">Routing all customer addresses to staging inbox until Matt approves samples</text>
+  <text x="32" y="166" font-family="JetBrains Mono,monospace" font-size="10" fill="#C9C9C9">Routing all customer addresses to staging inbox until owner approves samples</text>
 
   <text x="16" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#A78BFA">&#9679; Edit</text>
   <text x="60" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#7DD3FC">lib/email/templates/order-confirmed.tsx</text>
@@ -55,6 +55,6 @@
   <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">milestone shipped</text>
 
   <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;backorder email&quot; or &quot;split-shipment tracking links&quot;...</text>
+  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Samples queued in staging inbox &#183; awaiting owner sign-off...</text>
   <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
 </svg>

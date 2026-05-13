@@ -54,6 +54,6 @@
   <text x="685" y="390" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#86EFAC">3 phases &#183; ~6 weeks</text>
 
   <text x="16" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#7DD3FC">&gt;</text>
-  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">Try &quot;add spreadsheet query path&quot; or &quot;wire admin reindex&quot;...</text>
+  <text x="32" y="482" font-family="JetBrains Mono,monospace" font-size="11" fill="#525567">/reindex &#183; /agents &#183; /help &#183; ask anything about the catalog...</text>
   <rect x="32" y="472" width="2" height="14" fill="#E5E5E5"/>
 </svg>
