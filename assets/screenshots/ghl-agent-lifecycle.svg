@@ -154,7 +154,7 @@
     <line x1="38" y1="213" x2="38" y2="210" stroke="#a855f7" stroke-width="1.5"/>
     <line x1="38" y1="213" x2="40.5" y2="215" stroke="#a855f7" stroke-width="1.5"/>
     <text x="56" y="219" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0f172a">Wait</text>
-    <text x="56" y="219" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">                 (delay)</text>
+    <text x="88" y="219" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">(delay)</text>
 
     <line x1="120" y1="233" x2="120" y2="255" stroke="#cbd5e1" stroke-width="1"/>
 

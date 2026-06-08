@@ -76,7 +76,7 @@
 
   <!-- Page title -->
   <text x="220" y="76" font-family="Source Sans Pro,Inter,sans-serif" font-size="22" font-weight="700" fill="#262730">Business Intelligence</text>
-  <text x="220" y="96" font-family="Inter,sans-serif" font-size="10" fill="#808495">Last updated: 2 minutes ago &#183; 5 data sources</text>
+  <text x="220" y="96" font-family="Inter,sans-serif" font-size="10" fill="#808495">Last updated: 2 minutes ago &#183; 4 data sources</text>
 
   <!-- KPI metric cards (st.metric style) -->
   <g transform="translate(220, 116)">
