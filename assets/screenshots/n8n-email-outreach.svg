@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <text x="24" y="28" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#fff">Email Outreach Sequence</text>
+  <text x="24" y="46" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Cold campaign &#183; AI-personalized &#183; reply-aware</text>
+  <rect x="654" y="16" width="122" height="26" rx="13" fill="rgba(255,109,90,0.14)"/>
+  <circle cx="668" cy="29" r="4" fill="#ff6d5a"/>
+  <text x="710" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#ff8d7a">n8n &#183; running</text>
+
+  <!-- Stat strip -->
+  <g transform="translate(24,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">SENT</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">480</text>
+    <text x="68" y="50" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">throttled</text>
+  </g>
+  <g transform="translate(214,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">OPEN RATE</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">52<tspan font-size="14" fill="#94A3B8">%</tspan></text>
+    <text x="76" y="50" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">strong</text>
+  </g>
+  <g transform="translate(404,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">REPLY RATE</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">8.3<tspan font-size="14" fill="#94A3B8">%</tspan></text>
+    <text x="84" y="50" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">40 replies</text>
+  </g>
+  <g transform="translate(594,72)">
+    <rect width="182" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">MEETINGS</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#34d399">19</text>
+    <text x="50" y="50" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">booked</text>
+  </g>
+
+  <!-- Sequence steps -->
+  <text x="24" y="166" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Sequence</text>
+
+  <!-- Step 1 -->
+  <rect x="24" y="178" width="226" height="120" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="40" y="200" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#ff8d7a">STEP 1 &#183; DAY 0</text>
+  <text x="40" y="218" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#fff">AI-personalized intro</text>
+  <text x="40" y="234" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">opener written from enrichment data</text>
+  <rect x="40" y="246" width="194" height="1" fill="#2D3139"/>
+  <text x="40" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Sent <tspan font-weight="700" fill="#fff">480</tspan></text>
+  <text x="118" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Opened <tspan font-weight="700" fill="#fff">250</tspan></text>
+  <text x="40" y="286" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Replied <tspan font-weight="700" fill="#86EFAC">22</tspan></text>
+
+  <!-- connector -->
+  <path d="M 250 238 L 274 238" stroke="#3A4150" stroke-width="1.5" fill="none"/>
+  <path d="M 270 234 L 274 238 L 270 242" stroke="#3A4150" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2 -->
+  <rect x="287" y="178" width="226" height="120" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="303" y="200" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#ff8d7a">STEP 2 &#183; DAY 3</text>
+  <text x="303" y="218" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#fff">Value-add follow-up</text>
+  <text x="303" y="234" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">skips anyone who already replied</text>
+  <rect x="303" y="246" width="194" height="1" fill="#2D3139"/>
+  <text x="303" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Sent <tspan font-weight="700" fill="#fff">410</tspan></text>
+  <text x="381" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Opened <tspan font-weight="700" fill="#fff">198</tspan></text>
+  <text x="303" y="286" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Replied <tspan font-weight="700" fill="#86EFAC">14</tspan></text>
+
+  <path d="M 513 238 L 537 238" stroke="#3A4150" stroke-width="1.5" fill="none"/>
+  <path d="M 533 234 L 537 238 L 533 242" stroke="#3A4150" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3 -->
+  <rect x="550" y="178" width="226" height="120" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="566" y="200" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#ff8d7a">STEP 3 &#183; DAY 7</text>
+  <text x="566" y="218" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#fff">Break-up email</text>
+  <text x="566" y="234" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">final touch, then auto-archive</text>
+  <rect x="566" y="246" width="194" height="1" fill="#2D3139"/>
+  <text x="566" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Sent <tspan font-weight="700" fill="#fff">360</tspan></text>
+  <text x="644" y="266" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Opened <tspan font-weight="700" fill="#fff">150</tspan></text>
+  <text x="566" y="286" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Replied <tspan font-weight="700" fill="#86EFAC">4</tspan></text>
+
+  <!-- Recent activity -->
+  <rect x="24" y="312" width="752" height="172" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="40" y="336" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Recent activity</text>
+  <rect x="24" y="346" width="752" height="1" fill="#2D3139"/>
+
+  <g font-family="Inter,sans-serif" font-size="11">
+    <!-- r1 -->
+    <text x="40" y="370" font-family="JetBrains Mono,monospace" font-size="9" fill="#6B7280">09:42</text>
+    <text x="92" y="370" fill="#E5E7EB">A. Carter &#183; Westside Realty</text>
+    <rect x="600" y="359" width="160" height="18" rx="9" fill="rgba(34,197,94,0.16)"/>
+    <text x="680" y="371" text-anchor="middle" font-size="9" fill="#86EFAC">Replied &#8594; meeting booked</text>
+    <rect x="40" y="382" width="720" height="1" fill="#2D3139"/>
+    <!-- r2 -->
+    <text x="40" y="406" font-family="JetBrains Mono,monospace" font-size="9" fill="#6B7280">09:31</text>
+    <text x="92" y="406" fill="#E5E7EB">M. Walsh &#183; Delta HVAC</text>
+    <rect x="624" y="395" width="136" height="18" rx="9" fill="rgba(245,158,11,0.16)"/>
+    <text x="692" y="407" text-anchor="middle" font-size="9" fill="#fbbf24">Replied &#8594; paused</text>
+    <rect x="40" y="418" width="720" height="1" fill="#2D3139"/>
+    <!-- r3 -->
+    <text x="40" y="442" font-family="JetBrains Mono,monospace" font-size="9" fill="#6B7280">09:18</text>
+    <text x="92" y="442" fill="#E5E7EB">P. Liu &#183; Apex Surplus</text>
+    <rect x="664" y="431" width="96" height="18" rx="9" fill="rgba(59,130,246,0.16)"/>
+    <text x="712" y="443" text-anchor="middle" font-size="9" fill="#93C5FD">Opened x3</text>
+    <rect x="40" y="454" width="720" height="1" fill="#2D3139"/>
+    <!-- r4 -->
+    <text x="40" y="478" font-family="JetBrains Mono,monospace" font-size="9" fill="#6B7280">09:05</text>
+    <text x="92" y="478" fill="#E5E7EB">K. Brown &#183; Ridgeline Controls</text>
+    <rect x="664" y="467" width="96" height="18" rx="9" fill="rgba(255,109,90,0.16)"/>
+    <text x="712" y="479" text-anchor="middle" font-size="9" fill="#ff8d7a">Step 2 sent</text>
+  </g>
+</svg>
