@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken Añabieza | AI Automation & Integration Specialist</title>
+    <title>Ken Añabieza | AI Automation Developer & AI Agent Specialist</title>
     <meta name="description" content="AI Automation Developer building intelligent workflows with Claude Code, Voice AI, n8n, Make.com, Zapier, GoHighLevel, and Python. Real automations, real ROI.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233b82f6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Inter,sans-serif' font-size='52' font-weight='800' fill='white'%3EKA%3C/text%3E%3C/svg%3E">
     <!-- Open Graph / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kenanabieza.github.io/portfolio/">
-    <meta property="og:title" content="Ken A&ntilde;abieza | AI Automation & Integration Specialist">
+    <meta property="og:title" content="Ken A&ntilde;abieza | AI Automation Developer & AI Agent Specialist">
     <meta property="og:description" content="Building AI-powered automations that scale businesses. 50+ workflows, 15+ businesses served, 90% cost reduction. Claude Code, Voice AI, n8n, Make.com, Zapier, GoHighLevel, Python.">
     <meta property="og:image" content="https://kenanabieza.github.io/portfolio/assets/og-thumbnail.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ken A&ntilde;abieza | AI Automation & Integration Specialist">
+    <meta name="twitter:title" content="Ken A&ntilde;abieza | AI Automation Developer & AI Agent Specialist">
     <meta name="twitter:description" content="Building AI-powered automations that scale businesses. 50+ workflows, 15+ businesses served.">
     <meta name="twitter:image" content="https://kenanabieza.github.io/portfolio/assets/og-thumbnail.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +54,21 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html { scroll-behavior: smooth; }
+
+        .skip-link {
+            position: absolute;
+            left: 12px;
+            top: -48px;
+            z-index: 2000;
+            background: var(--primary);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: top 0.2s ease;
+        }
+        .skip-link:focus { top: 12px; outline: 2px solid #fff; outline-offset: 2px; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1119,9 +1134,11 @@
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to content</a>
+
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar" id="navbar">
-    <a href="#" class="nav-logo">KA</a>
+    <a href="#hero" class="nav-logo" aria-label="Ken Añabieza — home">KA</a>
     <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#tools">Tools</a></li>
@@ -1131,10 +1148,12 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
     </button>
 </nav>
+
+<main id="main">
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
@@ -1164,7 +1183,7 @@
                 <div class="hero-stat-label">Businesses Served</div>
             </div>
             <div class="hero-stat">
-                <div class="hero-stat-value">80+</div>
+                <div class="hero-stat-value">150+</div>
                 <div class="hero-stat-label">Hours Saved / Week</div>
             </div>
             <div class="hero-stat">
@@ -1184,7 +1203,7 @@
         </div>
         <div style="max-width:750px; margin:0 auto; text-align:center;" class="fade-in">
             <p style="font-size:1.08em; color:var(--text-light); line-height:1.8; margin-bottom:20px;">
-                I'm <strong style="color:white;">Ken Reymart A&ntilde;abieza</strong>, an AI Automation Developer based in the Philippines.
+                I'm <strong style="color:white;">Ken Reymart A&ntilde;abieza</strong>, an AI Automation Developer & AI Agent Specialist based in the Philippines.
                 I specialize in building intelligent systems that work 24/7 so businesses don't have to. With experience across
                 <strong style="color:var(--primary);">8+ automation platforms</strong> and a background in quality assurance and process optimization,
                 I bring a unique blend of precision engineering and creative problem-solving to every project.
@@ -1260,7 +1279,7 @@
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
                 <h3>n8n</h3>
                 <p>Self-hosted workflow automation with 400+ integrations. Complex data transformations, webhooks, and AI agent orchestration.</p>
-                <span class="tool-level">Advanced &middot; 50+ Workflows</span>
+                <span class="tool-level">Advanced &middot; 20+ Workflows</span>
             </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #9b59b6, #6c3483);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #9b59b6, #6c3483);">M</div>
@@ -1305,16 +1324,16 @@
             <p class="section-subtitle">Real solutions delivering real business impact</p>
         </div>
 
-        <div class="filter-buttons fade-in">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="claude">Claude Code</button>
-            <button class="filter-btn" data-filter="voice">Voice AI</button>
-            <button class="filter-btn" data-filter="n8n">n8n</button>
-            <button class="filter-btn" data-filter="make">Make.com</button>
-            <button class="filter-btn" data-filter="zapier">Zapier</button>
-            <button class="filter-btn" data-filter="ghl">GoHighLevel</button>
-            <button class="filter-btn" data-filter="agentic">Agentic AI</button>
-            <button class="filter-btn" data-filter="python">Python</button>
+        <div class="filter-buttons fade-in" role="group" aria-label="Filter projects by platform">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+            <button class="filter-btn" data-filter="claude" aria-pressed="false">Claude Code</button>
+            <button class="filter-btn" data-filter="voice" aria-pressed="false">Voice AI</button>
+            <button class="filter-btn" data-filter="n8n" aria-pressed="false">n8n</button>
+            <button class="filter-btn" data-filter="make" aria-pressed="false">Make.com</button>
+            <button class="filter-btn" data-filter="zapier" aria-pressed="false">Zapier</button>
+            <button class="filter-btn" data-filter="ghl" aria-pressed="false">GoHighLevel</button>
+            <button class="filter-btn" data-filter="agentic" aria-pressed="false">Agentic AI</button>
+            <button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
         </div>
 
         <div class="projects-grid fade-in" id="projectsGrid">
@@ -1341,7 +1360,7 @@
             <!-- Claude Code: Automated Marketing System -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-marketing-outreach.svg?v=2" alt="Outreach activity dashboard showing today’s sends across 5 channels">
+                    <img src="assets/screenshots/claude-marketing-outreach.svg?v=2" alt="Outreach activity dashboard showing today's sends across 5 channels">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -1388,7 +1407,7 @@
                         <span class="project-tag tag-nextjs">Next.js</span>
                     </div>
                     <h3 class="project-title">Sales &amp; Marketing Operations Dashboard</h3>
-                    <p class="project-desc">Internal dashboard built on Next.js 14 + Turso (libSQL) + NextAuth that surfaces pending quote approvals, today&rsquo;s outreach activity per channel, reply heatmaps, and pipeline health. Approving a quote fires a webhook back to the quoting pipeline to advance the Pipedrive deal. Replaces daily status check-ins &mdash; owner, ops, and stakeholder all see the same live data.</p>
+                    <p class="project-desc">Internal dashboard built on Next.js 14 + Turso (libSQL) + NextAuth that surfaces pending quote approvals, today's outreach activity per channel, reply heatmaps, and pipeline health. Approving a quote fires a webhook back to the quoting pipeline to advance the Pipedrive deal. Replaces daily status check-ins &mdash; owner, ops, and stakeholder all see the same live data.</p>
                     <div class="project-metrics">
                         <span class="project-metric">One-click approvals</span>
                         <span class="project-metric">Replaces daily check-ins</span>
@@ -1437,7 +1456,7 @@
             <!-- Claude Code: Command Center + Ticket Pipeline -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/claude-command-center.svg?v=2" alt="Command Center ticket board with one ticket mid-pipeline">
+                    <img src="assets/screenshots/claude-command-center.svg?v=3" alt="Command Center ticket board with one ticket mid-pipeline">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -1494,7 +1513,7 @@
                 </div>
             </div>
 
-            <!-- n8n Project 2 -->
+            <!-- n8n Project 1 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-lead-system.svg?v=3" alt="n8n Lead Qualification System">
@@ -1513,7 +1532,7 @@
                 </div>
             </div>
 
-            <!-- n8n Project 3 -->
+            <!-- n8n Project 2 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-scheduling-agent.svg?v=1" alt="n8n scheduling agent dashboard booking meetings and managing a calendar">
@@ -1533,7 +1552,7 @@
                 </div>
             </div>
 
-            <!-- n8n Project 4 -->
+            <!-- n8n Project 3 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-email-outreach.svg?v=1" alt="n8n email outreach sequence dashboard with per-step stats and reply detection">
@@ -1619,7 +1638,7 @@
                         <span class="project-tag tag-ai">AI</span>
                     </div>
                     <h3 class="project-title">IT Help Desk Ticket Router</h3>
-                    <p class="project-desc">AI-powered ticket categorization and smart assignment system. Incoming Zendesk tickets are classified, prioritized, routed to the right team, with SLA tracking and escalation.</p>
+                    <p class="project-desc">AI-powered ticket categorization and smart assignment system. Incoming Zendesk tickets are classified, prioritized, and routed to the right team, with SLA tracking and escalation built in.</p>
                     <div class="project-metrics">
                         <span class="project-metric">45% faster resolution</span>
                         <span class="project-metric">80% auto-categorized</span>
@@ -1648,7 +1667,7 @@
             <!-- GoHighLevel Project 2 -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/ghl-reactivation.svg?v=3" alt="GoHighLevel Patient Reactivation">
+                    <img src="assets/screenshots/ghl-reactivation.svg?v=4" alt="GoHighLevel Patient Reactivation">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -1707,7 +1726,7 @@
             <!-- GoHighLevel Project 5: Agent Lifecycle / Nurture Workflows -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/ghl-agent-lifecycle.svg?v=3" alt="GoHighLevel Real Estate Agent Lifecycle Workflows">
+                    <img src="assets/screenshots/ghl-agent-lifecycle.svg?v=4" alt="GoHighLevel Real Estate Agent Lifecycle Workflows">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -1771,7 +1790,7 @@
                         <span class="project-tag tag-agentic">Agentic AI</span>
                         <span class="project-tag tag-python">Python</span>
                     </div>
-                    <h3 class="project-title">Autonomous Research & Report Generator</h3>
+                    <h3 class="project-title">Autonomous Research &amp; Report Generator</h3>
                     <p class="project-desc">Multi-step AI agent pipeline: accepts research queries, crawls web sources, synthesizes findings, generates structured reports with citations in under 10 minutes.</p>
                     <div class="project-metrics">
                         <span class="project-metric">10 min per report</span>
@@ -1783,7 +1802,7 @@
             <!-- Python Project 1 -->
             <div class="project-card" data-category="python">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/python-scraper.svg?v=3" alt="Python Scraping Dashboard">
+                    <img src="assets/screenshots/python-scraper.svg?v=3" alt="Code editor showing a Python web-scraping script">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -1801,16 +1820,16 @@
             <!-- Python Project 2 -->
             <div class="project-card" data-category="python">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/python-dashboard.svg?v=3" alt="Python Business Dashboard">
+                    <img src="assets/screenshots/python-dashboard.svg?v=4" alt="Python Business Dashboard">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
                         <span class="project-tag tag-python">Python</span>
                     </div>
                     <h3 class="project-title">Business Intelligence Dashboard</h3>
-                    <p class="project-desc">Custom Streamlit application aggregating data from Google Sheets, Airtable, and PostgreSQL. Interactive charts, KPI tracking, automated PDF reports, and email distribution.</p>
+                    <p class="project-desc">Custom Streamlit application aggregating data from Google Sheets, Airtable, PostgreSQL, and Stripe. Interactive charts, KPI tracking, automated PDF reports, and email distribution.</p>
                     <div class="project-metrics">
-                        <span class="project-metric">5 data sources merged</span>
+                        <span class="project-metric">4 data sources merged</span>
                         <span class="project-metric">Auto PDF reports</span>
                     </div>
                 </div>
@@ -1829,10 +1848,10 @@
             <p class="section-subtitle">The full story behind some of my most impactful projects</p>
         </div>
 
-        <!-- Case Study 2 -->
+        <!-- Case Study 1 -->
         <div class="case-study-card fade-in">
             <div class="case-header">
-                <h3 class="case-title">Lead Qualification & Engagement System</h3>
+                <h3 class="case-title">Lead Qualification &amp; Engagement System</h3>
                 <div class="case-tags">
                     <span class="case-tag">n8n</span>
                     <span class="case-tag">WhatsApp API</span>
@@ -1860,7 +1879,7 @@
             </div>
         </div>
 
-        <!-- Case Study 3 -->
+        <!-- Case Study 2 -->
         <div class="case-study-card fade-in">
             <div class="case-header">
                 <h3 class="case-title">Real Estate Media Production Automation Stack</h3>
@@ -2089,9 +2108,11 @@
     </div>
 </section>
 
+</main>
+
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-    <p><strong style="color:var(--text-white);">Ken Reymart A&ntilde;abieza</strong> &middot; AI Automation Developer & Integration Specialist</p>
+    <p><strong style="color:var(--text-white);">Ken Reymart A&ntilde;abieza</strong> &middot; AI Automation Developer & AI Agent Specialist</p>
     <p style="margin-top:8px;">
         <a href="mailto:anabieza.acc@gmail.com">anabieza.acc@gmail.com</a> &middot;
         <a href="https://linkedin.com/in/kenanabieza" target="_blank" rel="noopener">LinkedIn</a> &middot;
@@ -2110,12 +2131,16 @@ window.addEventListener('scroll', () => {
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 
 // Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+    });
 });
 
 // Scroll animations
@@ -2135,8 +2160,12 @@ const projectCards = document.querySelectorAll('.project-card');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         const filter = btn.dataset.filter;
 
         projectCards.forEach(card => {
