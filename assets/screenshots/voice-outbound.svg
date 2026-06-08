@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <text x="24" y="28" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#fff">Outbound Voice Campaign</text>
+  <text x="24" y="46" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Lead Callback &#183; 312 contacts &#183; timezone-aware</text>
+  <rect x="636" y="16" width="74" height="26" rx="13" fill="rgba(16,185,129,0.15)"/>
+  <circle cx="650" cy="29" r="4" fill="#22C55E"/>
+  <text x="676" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#86EFAC">Running</text>
+  <rect x="718" y="16" width="58" height="26" rx="6" fill="#1E2530" stroke="#2D3139"/>
+  <text x="747" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Pause</text>
+
+  <!-- Stat strip -->
+  <g transform="translate(24,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">CALLS PLACED</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">312</text>
+    <text x="78" y="50" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">of 312</text>
+  </g>
+  <g transform="translate(214,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">CONNECTED</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">188</text>
+    <text x="70" y="50" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">60%</text>
+  </g>
+  <g transform="translate(404,72)">
+    <rect width="178" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">QUALIFIED</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#fff">74</text>
+    <text x="56" y="50" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">39% of conn.</text>
+  </g>
+  <g transform="translate(594,72)">
+    <rect width="182" height="64" rx="8" fill="#21252B" stroke="#2D3139"/>
+    <text x="14" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">BOOKED</text>
+    <text x="14" y="50" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#34d399">41</text>
+    <text x="54" y="50" font-family="Inter,sans-serif" font-size="11" fill="#22C55E">22% of conn.</text>
+  </g>
+
+  <!-- Outcomes breakdown -->
+  <rect x="24" y="152" width="320" height="332" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="40" y="176" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Call outcomes</text>
+  <g font-family="Inter,sans-serif" font-size="10">
+    <!-- Booked -->
+    <text x="40" y="206" fill="#CBD5E1">Booked</text>
+    <rect x="40" y="212" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="212" width="58" height="8" rx="4" fill="#34d399"/>
+    <text x="304" y="207" text-anchor="end" fill="#94A3B8">41</text>
+    <!-- Qualified callback -->
+    <text x="40" y="236" fill="#CBD5E1">Qualified &#8212; callback set</text>
+    <rect x="40" y="242" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="242" width="47" height="8" rx="4" fill="#22d3ee"/>
+    <text x="304" y="237" text-anchor="end" fill="#94A3B8">33</text>
+    <!-- Live transferred -->
+    <text x="40" y="266" fill="#CBD5E1">Live-transferred to rep</text>
+    <rect x="40" y="272" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="272" width="26" height="8" rx="4" fill="#a78bfa"/>
+    <text x="304" y="267" text-anchor="end" fill="#94A3B8">18</text>
+    <!-- Not interested -->
+    <text x="40" y="296" fill="#CBD5E1">Not interested</text>
+    <rect x="40" y="302" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="302" width="40" height="8" rx="4" fill="#64748b"/>
+    <text x="304" y="297" text-anchor="end" fill="#94A3B8">28</text>
+    <!-- Voicemail -->
+    <text x="40" y="326" fill="#CBD5E1">Voicemail &#8212; retry queued</text>
+    <rect x="40" y="332" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="332" width="78" height="8" rx="4" fill="#fbbf24"/>
+    <text x="304" y="327" text-anchor="end" fill="#94A3B8">68</text>
+    <!-- No answer -->
+    <text x="40" y="356" fill="#CBD5E1">No answer &#8212; retry queued</text>
+    <rect x="40" y="362" width="264" height="8" rx="4" fill="#0F1419"/>
+    <rect x="40" y="362" width="66" height="8" rx="4" fill="#fb7185"/>
+    <text x="304" y="357" text-anchor="end" fill="#94A3B8">56</text>
+  </g>
+  <rect x="40" y="392" width="264" height="1" fill="#2D3139"/>
+  <text x="40" y="416" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">AUTO-RETRY</text>
+  <text x="40" y="436" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">124 numbers re-queued</text>
+  <text x="40" y="452" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">next attempt respects local business hours</text>
+  <rect x="232" y="424" width="72" height="22" rx="11" fill="rgba(16,185,129,0.12)"/>
+  <text x="268" y="439" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">scheduled</text>
+
+  <!-- Recent calls table -->
+  <rect x="360" y="152" width="416" height="332" rx="8" fill="#21252B" stroke="#2D3139"/>
+  <text x="376" y="176" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Recent calls</text>
+  <rect x="360" y="186" width="416" height="1" fill="#2D3139"/>
+  <text x="376" y="204" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">LEAD</text>
+  <text x="540" y="204" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">DUR</text>
+  <text x="600" y="204" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#94A3B8" letter-spacing="0.5">OUTCOME</text>
+
+  <g font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">
+    <!-- r1 -->
+    <text x="376" y="232">A. Carter</text>
+    <text x="376" y="245" font-size="9" fill="#6B7280">Westside Realty</text>
+    <text x="540" y="232" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">2:41</text>
+    <rect x="600" y="221" width="60" height="18" rx="9" fill="rgba(52,211,153,0.16)"/>
+    <text x="630" y="233" text-anchor="middle" font-size="9" fill="#34d399">Booked</text>
+    <rect x="360" y="254" width="416" height="1" fill="#2D3139"/>
+    <!-- r2 -->
+    <text x="376" y="276">M. Walsh</text>
+    <text x="376" y="289" font-size="9" fill="#6B7280">Delta HVAC</text>
+    <text x="540" y="276" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">1:58</text>
+    <rect x="600" y="265" width="74" height="18" rx="9" fill="rgba(34,211,238,0.16)"/>
+    <text x="637" y="277" text-anchor="middle" font-size="9" fill="#22d3ee">Callback</text>
+    <rect x="360" y="298" width="416" height="1" fill="#2D3139"/>
+    <!-- r3 -->
+    <text x="376" y="320">P. Liu</text>
+    <text x="376" y="333" font-size="9" fill="#6B7280">Apex Surplus</text>
+    <text x="540" y="320" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">3:12</text>
+    <rect x="600" y="309" width="86" height="18" rx="9" fill="rgba(167,139,250,0.16)"/>
+    <text x="643" y="321" text-anchor="middle" font-size="9" fill="#a78bfa">Transferred</text>
+    <rect x="360" y="342" width="416" height="1" fill="#2D3139"/>
+    <!-- r4 -->
+    <text x="376" y="364">T. Reyes</text>
+    <text x="376" y="377" font-size="9" fill="#6B7280">Summit Field</text>
+    <text x="540" y="364" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">0:42</text>
+    <rect x="600" y="353" width="78" height="18" rx="9" fill="rgba(251,191,36,0.16)"/>
+    <text x="639" y="365" text-anchor="middle" font-size="9" fill="#fbbf24">Voicemail</text>
+    <rect x="360" y="386" width="416" height="1" fill="#2D3139"/>
+    <!-- r5 -->
+    <text x="376" y="408">K. Brown</text>
+    <text x="376" y="421" font-size="9" fill="#6B7280">Ridgeline Co.</text>
+    <text x="540" y="408" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">2:05</text>
+    <rect x="600" y="397" width="60" height="18" rx="9" fill="rgba(52,211,153,0.16)"/>
+    <text x="630" y="409" text-anchor="middle" font-size="9" fill="#34d399">Booked</text>
+    <rect x="360" y="430" width="416" height="1" fill="#2D3139"/>
+    <!-- r6 -->
+    <text x="376" y="452">N. Patel</text>
+    <text x="376" y="465" font-size="9" fill="#6B7280">Tideline Switch</text>
+    <text x="540" y="452" font-family="JetBrains Mono,monospace" font-size="10" fill="#CBD5E1">0:18</text>
+    <rect x="600" y="441" width="84" height="18" rx="9" fill="rgba(251,113,133,0.16)"/>
+    <text x="642" y="453" text-anchor="middle" font-size="9" fill="#fb7185">No answer</text>
+  </g>
+</svg>

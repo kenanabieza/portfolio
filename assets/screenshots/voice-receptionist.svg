@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <!-- Header -->
+  <rect width="800" height="52" fill="#21252B"/>
+  <rect x="0" y="51" width="800" height="1" fill="#2D3139"/>
+  <circle cx="26" cy="26" r="11" fill="rgba(16,185,129,0.18)"/>
+  <path d="M21 23a5 5 0 0 0 10 0" fill="none" stroke="#34d399" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="23.5" y="18" width="5" height="9" rx="2.5" fill="#34d399"/>
+  <text x="46" y="24" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">AI Voice Receptionist</text>
+  <text x="46" y="39" font-family="Inter,sans-serif" font-size="10" fill="#94A3B8">Bright Smile Dental &#183; inbound line</text>
+  <!-- Live badge + timer -->
+  <rect x="612" y="15" width="74" height="22" rx="11" fill="rgba(16,185,129,0.15)"/>
+  <circle cx="626" cy="26" r="4" fill="#22C55E"/>
+  <text x="664" y="30" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#86EFAC">Live call</text>
+  <rect x="694" y="15" width="62" height="22" rx="6" fill="#0F1419" stroke="#2D3139"/>
+  <text x="725" y="30" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#E5E7EB">02:14</text>
+
+  <!-- Left: transcript -->
+  <text x="20" y="76" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">LIVE TRANSCRIPT</text>
+
+  <!-- AI bubble -->
+  <text x="20" y="98" font-family="Inter,sans-serif" font-size="9" fill="#34d399" font-weight="600">AI Agent</text>
+  <rect x="20" y="104" width="430" height="46" rx="10" fill="#1E2A24"/>
+  <rect x="20" y="104" width="3" height="46" rx="1.5" fill="#10b981"/>
+  <text x="36" y="124" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">Thanks for calling Bright Smile Dental, this is the</text>
+  <text x="36" y="140" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">virtual assistant. How can I help today?</text>
+
+  <!-- Caller bubble -->
+  <text x="450" y="170" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8" font-weight="600">Caller</text>
+  <rect x="150" y="176" width="300" height="46" rx="10" fill="#21252B" stroke="#2D3139"/>
+  <text x="166" y="196" font-family="Inter,sans-serif" font-size="11" fill="#CBD5E1">Hi, I&apos;d like to book a cleaning sometime</text>
+  <text x="166" y="212" font-family="Inter,sans-serif" font-size="11" fill="#CBD5E1">next week if you have anything open.</text>
+
+  <!-- AI bubble 2 -->
+  <text x="20" y="242" font-family="Inter,sans-serif" font-size="9" fill="#34d399" font-weight="600">AI Agent</text>
+  <rect x="20" y="248" width="430" height="60" rx="10" fill="#1E2A24"/>
+  <rect x="20" y="248" width="3" height="60" rx="1.5" fill="#10b981"/>
+  <text x="36" y="268" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">Of course, Maria &#8212; I see you&apos;re an existing patient.</text>
+  <text x="36" y="284" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">I have Tuesday at 2 PM or Thursday at 10 AM open.</text>
+  <text x="36" y="300" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">Which works better for you?</text>
+
+  <!-- Caller bubble 2 -->
+  <text x="450" y="330" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8" font-weight="600">Caller</text>
+  <rect x="240" y="336" width="210" height="30" rx="10" fill="#21252B" stroke="#2D3139"/>
+  <text x="256" y="356" font-family="Inter,sans-serif" font-size="11" fill="#CBD5E1">Thursday at 10 works great.</text>
+
+  <!-- AI bubble 3 (booking confirm) -->
+  <text x="20" y="386" font-family="Inter,sans-serif" font-size="9" fill="#34d399" font-weight="600">AI Agent</text>
+  <rect x="20" y="392" width="430" height="44" rx="10" fill="#1E2A24"/>
+  <rect x="20" y="392" width="3" height="44" rx="1.5" fill="#10b981"/>
+  <text x="36" y="412" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">Done &#8212; you&apos;re booked Thursday at 10 AM. I&apos;ve just</text>
+  <text x="36" y="428" font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">texted you a confirmation. Anything else?</text>
+
+  <!-- Waveform strip -->
+  <g transform="translate(20,456)" fill="#34d399">
+    <rect x="0" y="6" width="3" height="8" rx="1.5"/><rect x="6" y="2" width="3" height="16" rx="1.5"/><rect x="12" y="8" width="3" height="4" rx="1.5"/><rect x="18" y="0" width="3" height="20" rx="1.5"/><rect x="24" y="5" width="3" height="10" rx="1.5"/><rect x="30" y="3" width="3" height="14" rx="1.5"/><rect x="36" y="7" width="3" height="6" rx="1.5"/><rect x="42" y="1" width="3" height="18" rx="1.5"/><rect x="48" y="6" width="3" height="8" rx="1.5"/><rect x="54" y="4" width="3" height="12" rx="1.5"/><rect x="60" y="8" width="3" height="4" rx="1.5"/><rect x="66" y="2" width="3" height="16" rx="1.5"/><rect x="72" y="6" width="3" height="8" rx="1.5"/><rect x="78" y="0" width="3" height="20" rx="1.5"/><rect x="84" y="7" width="3" height="6" rx="1.5"/><rect x="90" y="3" width="3" height="14" rx="1.5"/><rect x="96" y="5" width="3" height="10" rx="1.5"/><rect x="102" y="1" width="3" height="18" rx="1.5"/><rect x="108" y="8" width="3" height="4" rx="1.5"/><rect x="114" y="4" width="3" height="12" rx="1.5"/><rect x="120" y="6" width="3" height="8" rx="1.5"/><rect x="126" y="2" width="3" height="16" rx="1.5"/><rect x="132" y="7" width="3" height="6" rx="1.5"/><rect x="138" y="3" width="3" height="14" rx="1.5"/><rect x="144" y="6" width="3" height="8" rx="1.5"/><rect x="150" y="0" width="3" height="20" rx="1.5"/><rect x="156" y="5" width="3" height="10" rx="1.5"/><rect x="162" y="2" width="3" height="16" rx="1.5"/><rect x="168" y="8" width="3" height="4" rx="1.5"/><rect x="174" y="4" width="3" height="12" rx="1.5"/><rect x="180" y="6" width="3" height="8" rx="1.5"/><rect x="186" y="1" width="3" height="18" rx="1.5"/><rect x="192" y="7" width="3" height="6" rx="1.5"/><rect x="198" y="3" width="3" height="14" rx="1.5"/><rect x="204" y="6" width="3" height="8" rx="1.5"/><rect x="210" y="2" width="3" height="16" rx="1.5"/></g>
+
+  <!-- Right panel: caller + actions -->
+  <rect x="486" y="68" width="298" height="416" rx="10" fill="#21252B" stroke="#2D3139"/>
+
+  <!-- Caller card -->
+  <circle cx="516" cy="100" r="18" fill="#1E2A24"/>
+  <text x="516" y="105" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#34d399">MG</text>
+  <text x="544" y="96" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">Maria G.</text>
+  <text x="544" y="112" font-family="JetBrains Mono,monospace" font-size="10" fill="#94A3B8">+1 (&#8226;&#8226;&#8226;) &#8226;&#8226;&#8226;-4471</text>
+  <rect x="500" y="128" width="160" height="20" rx="10" fill="rgba(16,185,129,0.12)"/>
+  <circle cx="514" cy="138" r="3.5" fill="#22C55E"/>
+  <text x="524" y="142" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">Verified &#183; matched in CRM</text>
+  <text x="502" y="166" font-family="Inter,sans-serif" font-size="10" fill="#94A3B8">Existing patient &#183; 3 prior visits</text>
+  <rect x="502" y="178" width="266" height="1" fill="#2D3139"/>
+
+  <!-- Actions taken -->
+  <text x="502" y="200" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">ACTIONS TAKEN</text>
+
+  <g font-family="Inter,sans-serif" font-size="11" fill="#E5E7EB">
+    <circle cx="510" cy="222" r="8" fill="rgba(34,197,94,0.18)"/>
+    <path d="M506 222 L509 225 L514 219" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="226">Caller identity verified</text>
+
+    <circle cx="510" cy="252" r="8" fill="rgba(34,197,94,0.18)"/>
+    <path d="M506 252 L509 255 L514 249" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="256">Calendar availability checked</text>
+
+    <circle cx="510" cy="282" r="8" fill="rgba(34,197,94,0.18)"/>
+    <path d="M506 282 L509 285 L514 279" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="286" font-weight="600" fill="#fff">Appointment booked</text>
+    <text x="526" y="300" font-size="9" fill="#94A3B8">Thu, 10:00 AM &#183; Cleaning</text>
+
+    <circle cx="510" cy="324" r="8" fill="rgba(34,197,94,0.18)"/>
+    <path d="M506 324 L509 327 L514 321" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="328">SMS confirmation sent</text>
+
+    <circle cx="510" cy="354" r="8" fill="rgba(34,197,94,0.18)"/>
+    <path d="M506 354 L509 357 L514 351" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="526" y="358">CRM record updated</text>
+  </g>
+
+  <!-- Integration chips -->
+  <rect x="502" y="378" width="266" height="1" fill="#2D3139"/>
+  <text x="502" y="400" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">CONNECTED</text>
+  <rect x="502" y="410" width="78" height="22" rx="6" fill="#0F1419" stroke="#2D3139"/>
+  <text x="541" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">CRM</text>
+  <rect x="588" y="410" width="86" height="22" rx="6" fill="#0F1419" stroke="#2D3139"/>
+  <text x="631" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Calendar</text>
+  <rect x="682" y="410" width="86" height="22" rx="6" fill="#0F1419" stroke="#2D3139"/>
+  <text x="725" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">SMS</text>
+  <text x="502" y="456" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Resolved in-call &#183; no human handoff needed</text>
+</svg>

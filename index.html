@@ -597,6 +597,7 @@
         .tag-stripe { background: rgba(99, 91, 255, 0.15); color: #a5a0ff; }
         .tag-infra { background: rgba(20, 184, 166, 0.15); color: #5eead4; }
         .tag-rag { background: rgba(244, 114, 182, 0.15); color: #f9a8d4; }
+        .tag-voice { background: rgba(16, 185, 129, 0.15); color: #34d399; }
 
         .project-title {
             font-size: 1.15em;
@@ -1249,6 +1250,12 @@
                 <p>AI-powered development with Claude. Automated refactoring, code generation, full-stack app building, and agentic coding.</p>
                 <span class="tool-level">Advanced &middot; 25+ Projects</span>
             </div>
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #10b981, #06b6d4);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #10b981, #06b6d4);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div>
+                <h3>Voice AI</h3>
+                <p>AI voice agents for inbound and outbound calls &mdash; booking, qualification, and support with live CRM and calendar actions.</p>
+                <span class="tool-level">Advanced &middot; AI Phone Agents</span>
+            </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #ff6d5a, #ff4500);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
                 <h3>n8n</h3>
@@ -1301,6 +1308,7 @@
         <div class="filter-buttons fade-in">
             <button class="filter-btn active" data-filter="all">All Projects</button>
             <button class="filter-btn" data-filter="claude">Claude Code</button>
+            <button class="filter-btn" data-filter="voice">Voice AI</button>
             <button class="filter-btn" data-filter="n8n">n8n</button>
             <button class="filter-btn" data-filter="make">Make.com</button>
             <button class="filter-btn" data-filter="zapier">Zapier</button>
@@ -1442,6 +1450,46 @@
                     <div class="project-metrics">
                         <span class="project-metric">8-stage agent pipeline</span>
                         <span class="project-metric">Ticket &rarr; production</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voice AI Project 1 -->
+            <div class="project-card" data-category="voice">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/voice-receptionist.svg?v=1" alt="Live AI voice receptionist console handling an inbound booking call">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-voice">Voice AI</span>
+                        <span class="project-tag tag-ghl">CRM</span>
+                        <span class="project-tag tag-ai">Realtime</span>
+                    </div>
+                    <h3 class="project-title">24/7 AI Voice Receptionist</h3>
+                    <p class="project-desc">An always-on AI phone agent that answers inbound calls in natural conversation, verifies the caller against the CRM, checks live calendar availability, and books the appointment mid-call &mdash; then fires an SMS confirmation and updates the record. Covers after-hours and overflow so no call goes to voicemail.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">24/7 call coverage</span>
+                        <span class="project-metric">Books in-call</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voice AI Project 2 -->
+            <div class="project-card" data-category="voice">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/voice-outbound.svg?v=1" alt="Outbound AI voice campaign dashboard showing call outcomes and qualification">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-voice">Voice AI</span>
+                        <span class="project-tag tag-ai">Outbound</span>
+                        <span class="project-tag tag-infra">Batch</span>
+                    </div>
+                    <h3 class="project-title">Outbound AI Voice Campaign</h3>
+                    <p class="project-desc">A batch outbound calling system that dials a list of leads, qualifies intent in natural conversation, books callbacks or appointments, and logs every outcome back to the CRM. Timezone-aware scheduling, automatic no-answer retries, and warm live-transfer to a human the moment a lead is hot.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Auto-qualify + retry</span>
+                        <span class="project-metric">Live human transfer</span>
                     </div>
                 </div>
             </div>
@@ -1822,6 +1870,18 @@
             <p class="section-subtitle">Tailored automation solutions for every stage of your business</p>
         </div>
         <div class="services-grid fade-in">
+            <div class="service-card">
+                <div class="service-icon-box">&#128222;</div>
+                <h3>AI Voice Agents</h3>
+                <p>24/7 AI phone agents that handle inbound and outbound calls and take real actions on your systems.</p>
+                <ul class="service-list">
+                    <li>Inbound reception & after-hours</li>
+                    <li>Outbound qualification & callbacks</li>
+                    <li>In-call booking & CRM updates</li>
+                    <li>Calendar, CRM & webhook integration</li>
+                </ul>
+                <span class="service-timeline-badge">2-3 weeks delivery</span>
+            </div>
             <div class="service-card">
                 <div class="service-icon-box">&#9889;</div>
                 <h3>Workflow Automation</h3>
