@@ -48,7 +48,7 @@
     <rect x="40" y="212" width="58" height="8" rx="4" fill="#34d399"/>
     <text x="304" y="207" text-anchor="end" fill="#94A3B8">41</text>
     <!-- Qualified callback -->
-    <text x="40" y="236" fill="#CBD5E1">Qualified &#8212; callback set</text>
+    <text x="40" y="236" fill="#CBD5E1">Qualified &#183; callback set</text>
     <rect x="40" y="242" width="264" height="8" rx="4" fill="#0F1419"/>
     <rect x="40" y="242" width="47" height="8" rx="4" fill="#22d3ee"/>
     <text x="304" y="237" text-anchor="end" fill="#94A3B8">33</text>
@@ -63,12 +63,12 @@
     <rect x="40" y="302" width="40" height="8" rx="4" fill="#64748b"/>
     <text x="304" y="297" text-anchor="end" fill="#94A3B8">28</text>
     <!-- Voicemail -->
-    <text x="40" y="326" fill="#CBD5E1">Voicemail &#8212; retry queued</text>
+    <text x="40" y="326" fill="#CBD5E1">Voicemail &#183; retry queued</text>
     <rect x="40" y="332" width="264" height="8" rx="4" fill="#0F1419"/>
     <rect x="40" y="332" width="78" height="8" rx="4" fill="#fbbf24"/>
     <text x="304" y="327" text-anchor="end" fill="#94A3B8">68</text>
     <!-- No answer -->
-    <text x="40" y="356" fill="#CBD5E1">No answer &#8212; retry queued</text>
+    <text x="40" y="356" fill="#CBD5E1">No answer &#183; retry queued</text>
     <rect x="40" y="362" width="264" height="8" rx="4" fill="#0F1419"/>
     <rect x="40" y="362" width="66" height="8" rx="4" fill="#fb7185"/>
     <text x="304" y="357" text-anchor="end" fill="#94A3B8">56</text>

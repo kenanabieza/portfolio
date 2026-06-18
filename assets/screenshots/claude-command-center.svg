@@ -117,7 +117,7 @@
     </g>
     <text x="12" y="142" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">&#10003; Scan &#183; Clarify &#183; Stories</text>
     <text x="12" y="156" font-family="Inter,sans-serif" font-size="9" fill="#86EFAC">&#10003; Implement &#183; PR &#183; QA</text>
-    <text x="12" y="170" font-family="Inter,sans-serif" font-size="9" fill="#7DD3FC">&#9679; Deploy &#8212; Vercel building</text>
+    <text x="12" y="170" font-family="Inter,sans-serif" font-size="9" fill="#7DD3FC">&#9679; Deploy &#183; Vercel building</text>
     <text x="12" y="184" font-family="Inter,sans-serif" font-size="9" fill="#525567">&#9675; Smoke test</text>
 
     <!-- PR link -->
