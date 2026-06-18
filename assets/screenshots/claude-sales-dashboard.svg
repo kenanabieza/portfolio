@@ -67,7 +67,7 @@
   <text x="160" y="194" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">2026-05-13 &#183; 09:14</text>
   <rect x="280" y="183" width="76" height="18" rx="9" fill="rgba(239,68,68,0.15)"/>
   <text x="318" y="195" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#FCA5A5">margin 18.2%</text>
-  <text x="100" y="216" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Acme Electric &#8212; 6 line items</text>
+  <text x="100" y="216" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Acme Electric &#183; 6 line items</text>
   <text x="100" y="234" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Eaton, Schneider, Siemens, ABB &#183; LTL Freight to Phoenix AZ</text>
   <text x="100" y="252" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$5,780.50</tspan></text>
   <rect x="586" y="220" width="92" height="30" rx="6" fill="#22C55E"/>
@@ -81,7 +81,7 @@
   <text x="160" y="298" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">2026-05-13 &#183; 08:42</text>
   <rect x="280" y="287" width="76" height="18" rx="9" fill="rgba(34,197,94,0.15)"/>
   <text x="318" y="299" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#86EFAC">margin 24.1%</text>
-  <text x="100" y="320" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Riverside Power &#8212; 3 line items</text>
+  <text x="100" y="320" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Riverside Power &#183; 3 line items</text>
   <text x="100" y="338" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Square D, Eaton &#183; Ground UPS to Tacoma WA</text>
   <text x="100" y="356" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$3,210.00</tspan></text>
   <rect x="586" y="324" width="92" height="30" rx="6" fill="#22C55E"/>
@@ -96,7 +96,7 @@
   <rect x="280" y="391" width="76" height="18" rx="9" fill="rgba(245,158,11,0.15)"/>
   <text x="318" y="403" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#FCD34D">margin 19.6%</text>
   <text x="380" y="403" font-family="Inter,sans-serif" font-size="10" fill="#FCD34D">large-deal review</text>
-  <text x="100" y="424" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Cardinal Switchgear &#8212; 17 line items</text>
+  <text x="100" y="424" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#fff">Cardinal Switchgear &#183; 17 line items</text>
   <text x="100" y="442" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">Schneider, ABB, Cutler-Hammer &#183; LTL Freight to Chicago IL</text>
   <text x="100" y="460" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total <tspan fill="#fff" font-weight="700">$42,140.00</tspan></text>
   <rect x="586" y="428" width="92" height="30" rx="6" fill="#22C55E"/>

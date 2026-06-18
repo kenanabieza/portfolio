@@ -7,7 +7,7 @@
   <circle cx="16" cy="15" r="5" fill="#FF5F57"/>
   <circle cx="34" cy="15" r="5" fill="#FEBC2E"/>
   <circle cx="52" cy="15" r="5" fill="#28C840"/>
-  <text x="400" y="19" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#CCCCCC">scraper.py &#8212; market-intelligence &#8212; Visual Studio Code</text>
+  <text x="400" y="19" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#CCCCCC">scraper.py &#183; market-intelligence &#183; Visual Studio Code</text>
 
   <!-- Activity bar (far left) -->
   <rect x="0" y="30" width="48" height="470" fill="#333333"/>

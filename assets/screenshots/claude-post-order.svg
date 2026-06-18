@@ -50,11 +50,11 @@
   <text x="80" y="362" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0F1419" letter-spacing="0.5">ORDER SUMMARY</text>
   <rect x="80" y="370" width="640" height="1" fill="#E2E8F0"/>
   <g font-family="Inter,sans-serif" font-size="11" fill="#0F1419">
-    <text x="80" y="388">2&#215; Eaton EHD3030L &#8212; 30A 3P Breaker, 600V</text>
+    <text x="80" y="388">2&#215; Eaton EHD3030L &#183; 30A 3P Breaker, 600V</text>
     <text x="720" y="388" text-anchor="end" font-weight="600">$770.00</text>
-    <text x="80" y="406">1&#215; Schneider NF250L &#8212; 250A Panelboard Frame</text>
+    <text x="80" y="406">1&#215; Schneider NF250L &#183; 250A Panelboard Frame</text>
     <text x="720" y="406" text-anchor="end" font-weight="600">$1,240.00</text>
-    <text x="80" y="424">5&#215; Siemens ED63B080 &#8212; 80A 3P breaker</text>
+    <text x="80" y="424">5&#215; Siemens ED63B080 &#183; 80A 3P breaker</text>
     <text x="720" y="424" text-anchor="end" font-weight="600">$1,075.00</text>
   </g>
   <rect x="80" y="436" width="640" height="1" fill="#E2E8F0"/>

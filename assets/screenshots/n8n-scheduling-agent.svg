@@ -63,7 +63,7 @@
   <rect x="40" y="352" width="328" height="40" rx="6" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.3)"/>
   <circle cx="60" cy="372" r="9" fill="rgba(34,197,94,0.18)"/>
   <path d="M56 372 L59 375 L64 369" stroke="#22C55E" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="78" y="369" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Booked &#8212; Wed 3:30 PM</text>
+  <text x="78" y="369" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Booked &#183; Wed 3:30 PM</text>
   <text x="78" y="383" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">Google Meet link generated</text>
 
   <!-- Follow-up actions -->
@@ -108,7 +108,7 @@
     <!-- highlighted (the just-booked one) -->
     <rect x="408" y="352" width="360" height="30" rx="6" fill="rgba(34,197,94,0.06)"/>
     <text x="416" y="372" font-family="JetBrains Mono,monospace" font-size="11" fill="#86EFAC">15:30</text>
-    <text x="470" y="372" font-size="11" fill="#fff" font-weight="600">Northwind &#8212; Jordan M.</text>
+    <text x="470" y="372" font-size="11" fill="#fff" font-weight="600">Northwind &#183; Jordan M.</text>
     <rect x="676" y="361" width="84" height="18" rx="9" fill="rgba(34,197,94,0.16)"/>
     <text x="718" y="373" text-anchor="middle" font-size="9" fill="#86EFAC">New</text>
 
