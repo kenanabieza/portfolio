@@ -1271,6 +1271,12 @@
                 <p>AI voice agents for inbound and outbound calls: booking, qualification, and support with live CRM and calendar actions.</p>
                 <span class="tool-level">Advanced &middot; AI Phone Agents</span>
             </div>
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #2196f3, #1565c0);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #2196f3, #1565c0);">GHL</div>
+                <h3>GoHighLevel</h3>
+                <p>All-in-one marketing platform. Funnel building, pipeline management, SMS/email campaigns, and booking automation.</p>
+                <span class="tool-level">Proficient &middot; 15+ Funnels</span>
+            </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #ff6d5a, #ff4500);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
                 <h3>n8n</h3>
@@ -1288,12 +1294,6 @@
                 <h3>Zapier</h3>
                 <p>No-code automation connecting 6,000+ apps. Multi-step zaps, paths, filters, and conditional logic.</p>
                 <span class="tool-level">Proficient &middot; 25+ Zaps</span>
-            </div>
-            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #2196f3, #1565c0);">
-                <div class="tool-icon" style="background: linear-gradient(135deg, #2196f3, #1565c0);">GHL</div>
-                <h3>GoHighLevel</h3>
-                <p>All-in-one marketing platform. Funnel building, pipeline management, SMS/email campaigns, and booking automation.</p>
-                <span class="tool-level">Proficient &middot; 15+ Funnels</span>
             </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #8b5cf6, #6d28d9);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">AI</div>
@@ -1324,10 +1324,10 @@
             <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
             <button class="filter-btn" data-filter="claude" aria-pressed="false">Claude Code</button>
             <button class="filter-btn" data-filter="voice" aria-pressed="false">Voice AI</button>
+            <button class="filter-btn" data-filter="ghl" aria-pressed="false">GoHighLevel</button>
             <button class="filter-btn" data-filter="n8n" aria-pressed="false">n8n</button>
             <button class="filter-btn" data-filter="make" aria-pressed="false">Make.com</button>
             <button class="filter-btn" data-filter="zapier" aria-pressed="false">Zapier</button>
-            <button class="filter-btn" data-filter="ghl" aria-pressed="false">GoHighLevel</button>
             <button class="filter-btn" data-filter="agentic" aria-pressed="false">Agentic AI</button>
             <button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
         </div>
@@ -1509,139 +1509,6 @@
                 </div>
             </div>
 
-            <!-- n8n Project 1 -->
-            <div class="project-card" data-category="n8n">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/n8n-lead-system.svg?v=3" alt="n8n Lead Qualification System">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-n8n">n8n</span>
-                        <span class="project-tag tag-ai">OpenAI</span>
-                    </div>
-                    <h3 class="project-title">Lead Qualification Pipeline</h3>
-                    <p class="project-desc">Automated WhatsApp-based lead scoring system that qualifies prospects with AI, enriches profiles, and routes hot leads to sales reps while nurturing cold leads automatically.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">34% conversion increase</span>
-                        <span class="project-metric">60 hrs/week saved</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- n8n Project 2 -->
-            <div class="project-card" data-category="n8n">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/n8n-scheduling-agent.svg?v=2" alt="n8n scheduling agent dashboard booking meetings and managing a calendar">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-n8n">n8n</span>
-                        <span class="project-tag tag-ai">OpenAI</span>
-                        <span class="project-tag tag-ai">Calendar</span>
-                    </div>
-                    <h3 class="project-title">AI Scheduling Agent</h3>
-                    <p class="project-desc">An n8n agent that handles meeting scheduling end-to-end: it parses inbound requests from email or forms, checks real-time calendar availability across the team, proposes and books slots, generates the meeting link, and fires T&minus;24h / T&minus;1h reminders. Reschedules and cancellations are handled automatically, with every booking logged to the CRM.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">Zero back-and-forth</span>
-                        <span class="project-metric">Auto reminders + reschedule</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- n8n Project 3 -->
-            <div class="project-card" data-category="n8n">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/n8n-email-outreach.svg?v=1" alt="n8n email outreach sequence dashboard with per-step stats and reply detection">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-n8n">n8n</span>
-                        <span class="project-tag tag-ai">OpenAI</span>
-                        <span class="project-tag tag-ai">Email</span>
-                    </div>
-                    <h3 class="project-title">Email Outreach Automation</h3>
-                    <p class="project-desc">Multi-step cold email sequences orchestrated in n8n. Pulls leads from a list or CRM, has AI personalize each opener from enrichment data, sends on a warmed and throttled schedule, detects replies and auto-pauses the sequence, books interested prospects, and logs every touch back to the CRM. Bounces and unsubscribes are scrubbed automatically.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">AI-personalized at scale</span>
-                        <span class="project-metric">Auto-pause on reply</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Make.com Project 1 -->
-            <div class="project-card" data-category="make">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/make-ecommerce.svg?v=3" alt="Make.com E-commerce Automation">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-make">Make.com</span>
-                    </div>
-                    <h3 class="project-title">E-commerce Order Fulfillment Engine</h3>
-                    <p class="project-desc">End-to-end Shopify automation: order processing, inventory sync across 3 warehouses, shipping label generation, and automated customer notifications with tracking updates.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">95% faster fulfillment</span>
-                        <span class="project-metric">Zero overselling</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Make.com Project 2 -->
-            <div class="project-card" data-category="make">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/make-social.svg?v=3" alt="Make.com Social Media Automation">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-make">Make.com</span>
-                        <span class="project-tag tag-ai">OpenAI</span>
-                    </div>
-                    <h3 class="project-title">Social Media Content Autopilot</h3>
-                    <p class="project-desc">Automated content distribution across 5 platforms from a single Notion content calendar. AI generates platform-specific captions, schedules posts, and aggregates analytics.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">15 hrs/week saved</span>
-                        <span class="project-metric">3x posting frequency</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Zapier Project 1 -->
-            <div class="project-card" data-category="zapier">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/zapier-onboarding.svg?v=3" alt="Zapier Onboarding Workflow">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-zapier">Zapier</span>
-                    </div>
-                    <h3 class="project-title">SaaS Customer Onboarding Flow</h3>
-                    <p class="project-desc">12-step automated onboarding sequence: welcome emails, Slack team notifications, CRM entry, task assignment, drip education series, and usage milestone tracking.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">60% faster time-to-value</span>
-                        <span class="project-metric">45% less churn</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Zapier Project 2 -->
-            <div class="project-card" data-category="zapier">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/zapier-helpdesk.svg?v=3" alt="Zapier Help Desk Automation">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-zapier">Zapier</span>
-                        <span class="project-tag tag-ai">AI</span>
-                    </div>
-                    <h3 class="project-title">IT Help Desk Ticket Router</h3>
-                    <p class="project-desc">AI-powered ticket categorization and smart assignment system. Incoming Zendesk tickets are classified, prioritized, and routed to the right team, with SLA tracking and escalation built in.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">45% faster resolution</span>
-                        <span class="project-metric">80% auto-categorized</span>
-                    </div>
-                </div>
-            </div>
-
             <!-- GoHighLevel Project: Reel-to-Carousel Social Pipeline -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
@@ -1773,6 +1640,139 @@
                     <div class="project-metrics">
                         <span class="project-metric">3-way sentiment routing</span>
                         <span class="project-metric">Owner alert on negative</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- n8n Project 1 -->
+            <div class="project-card" data-category="n8n">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/n8n-lead-system.svg?v=3" alt="n8n Lead Qualification System">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-n8n">n8n</span>
+                        <span class="project-tag tag-ai">OpenAI</span>
+                    </div>
+                    <h3 class="project-title">Lead Qualification Pipeline</h3>
+                    <p class="project-desc">Automated WhatsApp-based lead scoring system that qualifies prospects with AI, enriches profiles, and routes hot leads to sales reps while nurturing cold leads automatically.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">34% conversion increase</span>
+                        <span class="project-metric">60 hrs/week saved</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- n8n Project 2 -->
+            <div class="project-card" data-category="n8n">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/n8n-scheduling-agent.svg?v=2" alt="n8n scheduling agent dashboard booking meetings and managing a calendar">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-n8n">n8n</span>
+                        <span class="project-tag tag-ai">OpenAI</span>
+                        <span class="project-tag tag-ai">Calendar</span>
+                    </div>
+                    <h3 class="project-title">AI Scheduling Agent</h3>
+                    <p class="project-desc">An n8n agent that handles meeting scheduling end-to-end: it parses inbound requests from email or forms, checks real-time calendar availability across the team, proposes and books slots, generates the meeting link, and fires T&minus;24h / T&minus;1h reminders. Reschedules and cancellations are handled automatically, with every booking logged to the CRM.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Zero back-and-forth</span>
+                        <span class="project-metric">Auto reminders + reschedule</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- n8n Project 3 -->
+            <div class="project-card" data-category="n8n">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/n8n-email-outreach.svg?v=1" alt="n8n email outreach sequence dashboard with per-step stats and reply detection">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-n8n">n8n</span>
+                        <span class="project-tag tag-ai">OpenAI</span>
+                        <span class="project-tag tag-ai">Email</span>
+                    </div>
+                    <h3 class="project-title">Email Outreach Automation</h3>
+                    <p class="project-desc">Multi-step cold email sequences orchestrated in n8n. Pulls leads from a list or CRM, has AI personalize each opener from enrichment data, sends on a warmed and throttled schedule, detects replies and auto-pauses the sequence, books interested prospects, and logs every touch back to the CRM. Bounces and unsubscribes are scrubbed automatically.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">AI-personalized at scale</span>
+                        <span class="project-metric">Auto-pause on reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Make.com Project 1 -->
+            <div class="project-card" data-category="make">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/make-ecommerce.svg?v=3" alt="Make.com E-commerce Automation">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-make">Make.com</span>
+                    </div>
+                    <h3 class="project-title">E-commerce Order Fulfillment Engine</h3>
+                    <p class="project-desc">End-to-end Shopify automation: order processing, inventory sync across 3 warehouses, shipping label generation, and automated customer notifications with tracking updates.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">95% faster fulfillment</span>
+                        <span class="project-metric">Zero overselling</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Make.com Project 2 -->
+            <div class="project-card" data-category="make">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/make-social.svg?v=3" alt="Make.com Social Media Automation">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-make">Make.com</span>
+                        <span class="project-tag tag-ai">OpenAI</span>
+                    </div>
+                    <h3 class="project-title">Social Media Content Autopilot</h3>
+                    <p class="project-desc">Automated content distribution across 5 platforms from a single Notion content calendar. AI generates platform-specific captions, schedules posts, and aggregates analytics.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">15 hrs/week saved</span>
+                        <span class="project-metric">3x posting frequency</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zapier Project 1 -->
+            <div class="project-card" data-category="zapier">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/zapier-onboarding.svg?v=3" alt="Zapier Onboarding Workflow">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-zapier">Zapier</span>
+                    </div>
+                    <h3 class="project-title">SaaS Customer Onboarding Flow</h3>
+                    <p class="project-desc">12-step automated onboarding sequence: welcome emails, Slack team notifications, CRM entry, task assignment, drip education series, and usage milestone tracking.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">60% faster time-to-value</span>
+                        <span class="project-metric">45% less churn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zapier Project 2 -->
+            <div class="project-card" data-category="zapier">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/zapier-helpdesk.svg?v=3" alt="Zapier Help Desk Automation">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-zapier">Zapier</span>
+                        <span class="project-tag tag-ai">AI</span>
+                    </div>
+                    <h3 class="project-title">IT Help Desk Ticket Router</h3>
+                    <p class="project-desc">AI-powered ticket categorization and smart assignment system. Incoming Zendesk tickets are classified, prioritized, and routed to the right team, with SLA tracking and escalation built in.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">45% faster resolution</span>
+                        <span class="project-metric">80% auto-categorized</span>
                     </div>
                 </div>
             </div>
