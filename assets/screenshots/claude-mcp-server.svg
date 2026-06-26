@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <rect x="20" y="16" width="30" height="24" rx="6" fill="#6366f1"/>
+  <text x="35" y="32" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">MCP</text>
+  <text x="62" y="33" fill="#E6E8EB" font-size="15" font-weight="700">MCP Server Console</text>
+  <text x="214" y="33" fill="#94A3B8" font-size="12">crm-ops-mcp &#183; JSON-RPC 2.0 &#183; HTTP/SSE</text>
+  <rect x="694" y="18" width="82" height="22" rx="11" fill="rgba(16,185,129,0.15)"/>
+  <circle cx="710" cy="29" r="4" fill="#34d399"/>
+  <text x="720" y="33" fill="#34d399" font-size="12" font-weight="600">Live</text>
+
+  <!-- Stat strip -->
+  <g>
+    <rect x="24" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="40" y="99" fill="#E6E8EB" font-size="18" font-weight="700">12</text>
+    <text x="40" y="116" fill="#94A3B8" font-size="11">Tools exposed</text>
+
+    <rect x="216" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="232" y="99" fill="#E6E8EB" font-size="18" font-weight="700">4</text>
+    <text x="232" y="116" fill="#94A3B8" font-size="11">Clients connected</text>
+
+    <rect x="408" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="424" y="99" fill="#E6E8EB" font-size="18" font-weight="700">OAuth</text>
+    <text x="424" y="116" fill="#94A3B8" font-size="11">Per-tool scoped</text>
+
+    <rect x="600" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="616" y="99" fill="#E6E8EB" font-size="18" font-weight="700">100%</text>
+    <text x="616" y="116" fill="#94A3B8" font-size="11">Calls audited</text>
+  </g>
+
+  <!-- Exposed tools panel -->
+  <rect x="24" y="140" width="462" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="44" y="170" fill="#E6E8EB" font-size="13" font-weight="700">Exposed Tools</text>
+  <text x="466" y="170" fill="#94A3B8" font-size="11" text-anchor="end">6 functions</text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="13">
+    <text x="44" y="212" fill="#CBD5E1">contacts.search</text>
+    <rect x="404" y="198" width="62" height="20" rx="10" fill="rgba(99,102,241,0.15)"/>
+    <text x="435" y="212" fill="#a5b4fc" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">read</text>
+    <line x1="44" y1="233" x2="466" y2="233" stroke="#2D3139"/>
+
+    <text x="44" y="255" fill="#CBD5E1">contacts.upsert</text>
+    <rect x="404" y="241" width="62" height="20" rx="10" fill="rgba(251,191,36,0.15)"/>
+    <text x="435" y="255" fill="#fbbf24" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">write</text>
+    <line x1="44" y1="276" x2="466" y2="276" stroke="#2D3139"/>
+
+    <text x="44" y="298" fill="#CBD5E1">calendar.list_slots</text>
+    <rect x="404" y="284" width="62" height="20" rx="10" fill="rgba(99,102,241,0.15)"/>
+    <text x="435" y="298" fill="#a5b4fc" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">read</text>
+    <line x1="44" y1="319" x2="466" y2="319" stroke="#2D3139"/>
+
+    <text x="44" y="341" fill="#CBD5E1">calendar.book_slot</text>
+    <rect x="404" y="327" width="62" height="20" rx="10" fill="rgba(251,191,36,0.15)"/>
+    <text x="435" y="341" fill="#fbbf24" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">write</text>
+    <line x1="44" y1="362" x2="466" y2="362" stroke="#2D3139"/>
+
+    <text x="44" y="384" fill="#CBD5E1">invoice.create_draft</text>
+    <rect x="404" y="370" width="62" height="20" rx="10" fill="rgba(251,191,36,0.15)"/>
+    <text x="435" y="384" fill="#fbbf24" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">write</text>
+    <line x1="44" y1="405" x2="466" y2="405" stroke="#2D3139"/>
+
+    <text x="44" y="427" fill="#CBD5E1">notes.append</text>
+    <rect x="404" y="413" width="62" height="20" rx="10" fill="rgba(251,191,36,0.15)"/>
+    <text x="435" y="427" fill="#fbbf24" font-size="11" text-anchor="middle" font-family="Inter, Arial, sans-serif">write</text>
+  </g>
+
+  <!-- Connected clients panel -->
+  <rect x="502" y="140" width="274" height="150" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="522" y="170" fill="#E6E8EB" font-size="13" font-weight="700">Connected Clients</text>
+
+  <circle cx="526" cy="202" r="4" fill="#34d399"/>
+  <text x="540" y="206" fill="#CBD5E1" font-size="13">Claude</text>
+  <text x="760" y="206" fill="#94A3B8" font-size="11" text-anchor="end">stdio</text>
+
+  <circle cx="526" cy="234" r="4" fill="#34d399"/>
+  <text x="540" y="238" fill="#CBD5E1" font-size="13">ChatGPT</text>
+  <text x="760" y="238" fill="#94A3B8" font-size="11" text-anchor="end">HTTP</text>
+
+  <circle cx="526" cy="266" r="4" fill="#34d399"/>
+  <text x="540" y="270" fill="#CBD5E1" font-size="13">n8n agent</text>
+  <text x="760" y="270" fill="#94A3B8" font-size="11" text-anchor="end">SSE</text>
+
+  <!-- Last tool call panel -->
+  <rect x="502" y="306" width="274" height="170" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="522" y="336" fill="#E6E8EB" font-size="13" font-weight="700">Last tool call</text>
+  <text x="522" y="366" fill="#a5b4fc" font-size="12.5" font-family="'JetBrains Mono', monospace">&#8594; contacts.upsert</text>
+  <text x="522" y="390" fill="#94A3B8" font-size="11" font-family="'JetBrains Mono', monospace">email &#183; name &#183; tag: lead</text>
+  <rect x="522" y="406" width="124" height="22" rx="11" fill="rgba(251,191,36,0.15)"/>
+  <text x="534" y="421" fill="#fbbf24" font-size="11" font-weight="600">human approved &#10003;</text>
+  <text x="522" y="452" fill="#34d399" font-size="12" font-family="'JetBrains Mono', monospace">&#10003; 200 OK &#183; 142 ms</text>
+</svg>

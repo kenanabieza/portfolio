@@ -22,7 +22,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code is first everywhere; Voice AI is second.**
 
-Current categories and card counts: `claude`(7), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `ghl`(7), `agentic`(2), `python`(2).
+Current categories and card counts: `claude`(8), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `ghl`(7), `agentic`(2), `python`(2).
 
 **Card markup pattern:**
 ```html
