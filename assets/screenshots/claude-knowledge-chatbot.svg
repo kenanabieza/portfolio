@@ -18,23 +18,23 @@
   <text x="14" y="76" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">RECENT</text>
   <rect x="8" y="86" width="164" height="42" rx="6" fill="#1E2530"/>
   <rect x="8" y="86" width="3" height="42" fill="#3B82F6"/>
-  <text x="20" y="102" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">EHD vs EHB1 ratings</text>
-  <text x="20" y="116" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">Eaton EHD-series have a higher...</text>
+  <text x="20" y="102" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">High-AIC vs standard</text>
+  <text x="20" y="116" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">High-AIC breakers have a higher...</text>
   <rect x="8" y="134" width="164" height="36" rx="6" fill="transparent"/>
-  <text x="20" y="150" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Schneider NF panelboards</text>
+  <text x="20" y="150" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Panelboard frame sizing</text>
   <text x="20" y="163" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">3 hours ago</text>
   <rect x="8" y="174" width="164" height="36" rx="6" fill="transparent"/>
-  <text x="20" y="190" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Siemens motor starter sizing</text>
+  <text x="20" y="190" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Motor starter sizing</text>
   <text x="20" y="203" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Yesterday</text>
   <rect x="8" y="214" width="164" height="36" rx="6" fill="transparent"/>
-  <text x="20" y="230" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">ABB drive replacement</text>
+  <text x="20" y="230" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">VFD drive replacement</text>
   <text x="20" y="243" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">Yesterday</text>
 
   <!-- Main thread -->
   <!-- User message -->
   <rect x="400" y="72" width="380" height="48" rx="12" fill="#3B82F6"/>
   <text x="416" y="92" font-family="Inter,sans-serif" font-size="12" fill="#fff">What&apos;s the interrupting capacity difference</text>
-  <text x="416" y="108" font-family="Inter,sans-serif" font-size="12" fill="#fff">between Eaton EHD and EHB1 breakers?</text>
+  <text x="416" y="108" font-family="Inter,sans-serif" font-size="12" fill="#fff">between high-AIC and standard breakers?</text>
   <text x="780" y="132" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#6B7280">You &#183; just now</text>
 
   <!-- AI response -->
@@ -43,26 +43,26 @@
   <text x="232" y="159" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#fff">Knowledge Library</text>
   <text x="332" y="159" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">grounded answer</text>
   <rect x="200" y="170" width="580" height="118" rx="8" fill="#21252B" stroke="#2D3139"/>
-  <text x="216" y="192" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">Eaton EHD-series breakers have an interrupting capacity of</text>
-  <text x="216" y="208" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB"><tspan font-weight="700" fill="#fff">65 kA at 240 VAC</tspan>, while EHB1-series breakers are rated</text>
-  <text x="216" y="224" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">at <tspan font-weight="700" fill="#fff">22 kA at 240 VAC</tspan>. The EHD is a high-AIC variant designed</text>
+  <text x="216" y="192" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">High-AIC service breakers have an interrupting capacity of</text>
+  <text x="216" y="208" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB"><tspan font-weight="700" fill="#fff">65 kA at 240 VAC</tspan>, while standard breakers are rated</text>
+  <text x="216" y="224" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">at <tspan font-weight="700" fill="#fff">22 kA at 240 VAC</tspan>. The high-AIC type is a variant designed</text>
   <text x="216" y="240" font-family="Inter,sans-serif" font-size="12" fill="#E5E7EB">for service-entrance applications where fault currents are higher.</text>
   <text x="216" y="263" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#94A3B8">Sources</text>
   <rect x="263" y="252" width="146" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
-  <text x="271" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[1] EHD-Datasheet.pdf p.4</text>
+  <text x="271" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[1] Catalog-A.pdf p.4</text>
   <rect x="414" y="252" width="152" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
-  <text x="422" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[2] EHB1-Datasheet.pdf p.3</text>
+  <text x="422" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[2] Catalog-B.pdf p.3</text>
   <rect x="571" y="252" width="142" height="20" rx="10" fill="#1E2530" stroke="#3B82F6"/>
-  <text x="579" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[3] Eaton-AIC-Guide p.18</text>
+  <text x="579" y="266" font-family="Inter,sans-serif" font-size="9" fill="#93C5FD">[3] AIC-Guide.pdf p.18</text>
 
   <!-- Follow-up suggestions -->
   <text x="200" y="312" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#94A3B8">Suggested follow-ups</text>
   <rect x="200" y="320" width="184" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
-  <text x="212" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Show EHD frame sizes available</text>
+  <text x="212" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Show frame sizes available</text>
   <rect x="392" y="320" width="160" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
-  <text x="404" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">What replaces EHB1 today?</text>
+  <text x="404" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Standard breaker options?</text>
   <rect x="560" y="320" width="168" height="26" rx="13" fill="transparent" stroke="#2D3139"/>
-  <text x="572" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">EHD lead time and pricing</text>
+  <text x="572" y="337" font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">Lead time and pricing</text>
 
   <!-- Input box at bottom -->
   <rect x="200" y="440" width="580" height="44" rx="22" fill="#0F1419" stroke="#2D3139"/>

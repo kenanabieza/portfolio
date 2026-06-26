@@ -53,48 +53,48 @@
   <!-- Line items -->
   <g font-family="Inter,sans-serif" font-size="10" fill="#0F1419">
     <text x="152" y="262">2</text>
-    <text x="186" y="262">Eaton</text>
-    <text x="240" y="262" font-family="JetBrains Mono,monospace" font-size="9">EHD3030L</text>
+    <text x="186" y="262">Vendor A</text>
+    <text x="240" y="262" font-family="JetBrains Mono,monospace" font-size="9">B30-600</text>
     <text x="332" y="262" fill="#475569">30A 3P Breaker, 600V</text>
     <text x="540" y="262" text-anchor="end">$385.00</text>
     <text x="648" y="262" text-anchor="end" font-weight="600">$770.00</text>
     <rect x="140" y="270" width="520" height="1" fill="#E2E8F0"/>
 
     <text x="152" y="288">1</text>
-    <text x="186" y="288">Schneider</text>
-    <text x="240" y="288" font-family="JetBrains Mono,monospace" font-size="9">NF250L</text>
+    <text x="186" y="288">Vendor B</text>
+    <text x="240" y="288" font-family="JetBrains Mono,monospace" font-size="9">PF-250</text>
     <text x="332" y="288" fill="#475569">250A Panelboard Frame</text>
     <text x="540" y="288" text-anchor="end">$1,240.00</text>
     <text x="648" y="288" text-anchor="end" font-weight="600">$1,240.00</text>
     <rect x="140" y="296" width="520" height="1" fill="#E2E8F0"/>
 
     <text x="152" y="314">5</text>
-    <text x="186" y="314">Siemens</text>
-    <text x="240" y="314" font-family="JetBrains Mono,monospace" font-size="9">ED63B080</text>
+    <text x="186" y="314">Vendor C</text>
+    <text x="240" y="314" font-family="JetBrains Mono,monospace" font-size="9">B80-240</text>
     <text x="332" y="314" fill="#475569">80A 3P breaker</text>
     <text x="540" y="314" text-anchor="end">$215.00</text>
     <text x="648" y="314" text-anchor="end" font-weight="600">$1,075.00</text>
     <rect x="140" y="322" width="520" height="1" fill="#E2E8F0"/>
 
     <text x="152" y="340">12</text>
-    <text x="186" y="340">ABB</text>
-    <text x="240" y="340" font-family="JetBrains Mono,monospace" font-size="9">S203-K10</text>
+    <text x="186" y="340">Vendor D</text>
+    <text x="240" y="340" font-family="JetBrains Mono,monospace" font-size="9">DIN-K10</text>
     <text x="332" y="340" fill="#475569">10A 3P K-curve, DIN rail</text>
     <text x="540" y="340" text-anchor="end">$94.50</text>
     <text x="648" y="340" text-anchor="end" font-weight="600">$1,134.00</text>
     <rect x="140" y="348" width="520" height="1" fill="#E2E8F0"/>
 
     <text x="152" y="366">1</text>
-    <text x="186" y="366">Eaton</text>
-    <text x="240" y="366" font-family="JetBrains Mono,monospace" font-size="9">CHL16-R</text>
+    <text x="186" y="366">Vendor A</text>
+    <text x="240" y="366" font-family="JetBrains Mono,monospace" font-size="9">LC-16R</text>
     <text x="332" y="366" fill="#475569">16-circuit Loadcenter, NEMA 3R</text>
     <text x="540" y="366" text-anchor="end">$680.00</text>
     <text x="648" y="366" text-anchor="end" font-weight="600">$680.00</text>
     <rect x="140" y="374" width="520" height="1" fill="#E2E8F0"/>
 
     <text x="152" y="392">3</text>
-    <text x="186" y="392">Square D</text>
-    <text x="240" y="392" font-family="JetBrains Mono,monospace" font-size="9">QO320</text>
+    <text x="186" y="392">Vendor B</text>
+    <text x="240" y="392" font-family="JetBrains Mono,monospace" font-size="9">B20-PO</text>
     <text x="332" y="392" fill="#475569">20A 3P plug-on breaker (refurb)</text>
     <text x="540" y="392" text-anchor="end">$132.00</text>
     <text x="648" y="392" text-anchor="end" font-weight="600">$396.00</text>
