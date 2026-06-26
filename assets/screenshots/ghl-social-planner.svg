@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#1e3a5f"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Marketing &#183; Social Planner</text>
+
+  <!-- Sub-nav -->
+  <rect x="0" y="48" width="800" height="42" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="20" y="74" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Social Planner</text>
+  <text x="140" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Calendar</text>
+  <text x="210" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Posts</text>
+  <text x="265" y="74" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#3b82f6">Drafts</text>
+  <line x1="262" y1="86" x2="305" y2="86" stroke="#3b82f6" stroke-width="2"/>
+  <text x="320" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Analytics</text>
+  <rect x="690" y="58" width="92" height="24" rx="6" fill="#3b82f6"/>
+  <text x="736" y="74" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">+ New Post</text>
+
+  <!-- Page title + DRAFT badge -->
+  <text x="40" y="118" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#0f172a">Reel Carousel</text>
+  <rect x="178" y="104" width="56" height="18" rx="9" fill="#fef3c7" stroke="#fcd34d"/>
+  <text x="206" y="117" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#92400e">DRAFT</text>
+  <text x="40" y="136" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Generated from a reel transcript &#183; on-brand carousel + captions &#183; awaiting approval</text>
+
+  <!-- ===== Left: carousel slide preview ===== -->
+  <!-- main slide (4:5, brand: forest bg / cream text / terracotta accent) -->
+  <rect x="40" y="152" width="264" height="288" rx="10" fill="#1A2E25"/>
+  <!-- 3-bar logo mark -->
+  <rect x="60" y="174" width="6" height="16" rx="2" fill="#D17A5C"/>
+  <rect x="69" y="178" width="6" height="12" rx="2" fill="#D17A5C"/>
+  <rect x="78" y="182" width="6" height="8" rx="2" fill="#D17A5C"/>
+  <text x="96" y="187" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#EFE8D8" letter-spacing="1">THE BRAND</text>
+  <!-- headline -->
+  <text x="60" y="248" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#EFE8D8">3 SYSTEMS</text>
+  <text x="60" y="276" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#EFE8D8">THAT BUY</text>
+  <text x="60" y="304" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#D17A5C">BACK YOUR</text>
+  <text x="60" y="332" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#EFE8D8">WEEK</text>
+  <rect x="60" y="346" width="60" height="4" rx="2" fill="#7C9B6E"/>
+  <!-- slide indicator -->
+  <text x="60" y="416" font-family="Inter,sans-serif" font-size="10" fill="#9DB3A4">Swipe</text>
+  <text x="284" y="416" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#EFE8D8">01 / 06</text>
+
+  <!-- slide thumbnail strip -->
+  <g>
+    <rect x="40" y="452" width="38" height="34" rx="4" fill="#1A2E25" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="84" y="452" width="38" height="34" rx="4" fill="#EFE8D8" stroke="#e2e8f0"/>
+    <rect x="128" y="452" width="38" height="34" rx="4" fill="#D17A5C" stroke="#e2e8f0"/>
+    <rect x="172" y="452" width="38" height="34" rx="4" fill="#1A2E25" stroke="#e2e8f0"/>
+    <rect x="216" y="452" width="38" height="34" rx="4" fill="#EFE8D8" stroke="#e2e8f0"/>
+    <rect x="260" y="452" width="38" height="34" rx="4" fill="#1A2E25" stroke="#e2e8f0"/>
+  </g>
+
+  <!-- ===== Right: composer panel ===== -->
+  <rect x="324" y="152" width="436" height="288" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Platforms -->
+  <text x="344" y="178" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0f172a">PUBLISH TO</text>
+  <rect x="344" y="188" width="118" height="28" rx="6" fill="#eff6ff" stroke="#3b82f6"/>
+  <circle cx="362" cy="202" r="8" fill="#1877F2"/>
+  <text x="362" y="206" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#fff">f</text>
+  <text x="376" y="206" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0f172a">Facebook</text>
+  <circle cx="450" cy="202" r="6" fill="#22c55e"/>
+  <path d="M447 202 l2 2 l4 -4" stroke="#fff" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="470" y="188" width="120" height="28" rx="6" fill="#eff6ff" stroke="#3b82f6"/>
+  <rect x="482" y="194" width="16" height="16" rx="5" fill="none" stroke="#E1306C" stroke-width="1.6"/>
+  <circle cx="490" cy="202" r="3.2" fill="none" stroke="#E1306C" stroke-width="1.6"/>
+  <text x="504" y="206" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0f172a">Instagram</text>
+  <circle cx="579" cy="202" r="6" fill="#22c55e"/>
+  <path d="M576 202 l2 2 l4 -4" stroke="#fff" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="606" y="206" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">connections verified</text>
+
+  <!-- Caption -->
+  <text x="344" y="244" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0f172a">CAPTION</text>
+  <rect x="344" y="252" width="396" height="96" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="356" y="272" font-family="Inter,sans-serif" font-size="10" fill="#334155">Most founders don't have a time problem. They have a</text>
+  <text x="356" y="288" font-family="Inter,sans-serif" font-size="10" fill="#334155">systems problem. Here are the 3 we install first to buy</text>
+  <text x="356" y="304" font-family="Inter,sans-serif" font-size="10" fill="#334155">back ~10 hours every week (swipe through). Which one</text>
+  <text x="356" y="320" font-family="Inter,sans-serif" font-size="10" fill="#334155">would move the needle most for you? Drop a number below.</text>
+  <text x="356" y="340" font-family="Inter,sans-serif" font-size="9" fill="#94a3b8">First comment: #systems #founder #delegation #leverage  +4</text>
+
+  <!-- Approval gate buttons -->
+  <text x="344" y="376" font-family="Inter,sans-serif" font-size="9" fill="#64748b">Nothing publishes until you review and schedule.</text>
+  <rect x="344" y="388" width="120" height="34" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <text x="404" y="409" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#475569">Edit</text>
+  <rect x="474" y="388" width="130" height="34" rx="8" fill="#fff" stroke="#3b82f6"/>
+  <text x="539" y="409" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#3b82f6">Schedule</text>
+  <rect x="614" y="388" width="126" height="34" rx="8" fill="#3b82f6"/>
+  <text x="677" y="409" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Publish now</text>
+
+  <!-- Footer status -->
+  <rect x="324" y="452" width="436" height="34" rx="8" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <circle cx="346" cy="469" r="4" fill="#22c55e"/>
+  <text x="358" y="473" font-family="Inter,sans-serif" font-size="10" fill="#166534">6 slides rendered &#183; uploaded to media library &#183; draft created via API &#183; saved ~10 hrs/week</text>
+</svg>
