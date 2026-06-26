@@ -1009,40 +1009,6 @@
             font-size: 0.95em;
         }
 
-        .quick-wins-box {
-            text-align: left;
-            padding: 24px;
-            background: rgba(16, 185, 129, 0.05);
-            border: 1px solid rgba(16, 185, 129, 0.1);
-            border-radius: 12px;
-        }
-
-        .quick-wins-box h3 {
-            font-size: 1em;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--green);
-        }
-
-        .quick-wins-box ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-
-        .quick-wins-box li {
-            font-size: 0.88em;
-            color: var(--text-light);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .quick-wins-box li::before {
-            content: '\26A1';
-        }
-
         /* ===== FOOTER ===== */
         .footer {
             padding: 40px;
@@ -1112,7 +1078,6 @@
             .projects-grid { grid-template-columns: 1fr; }
             .case-grid { grid-template-columns: 1fr; }
             .contact-methods { grid-template-columns: 1fr; }
-            .quick-wins-box ul { grid-template-columns: 1fr; }
             .filter-buttons { gap: 6px; }
             .filter-btn { padding: 8px 14px; font-size: 0.8em; }
         }
@@ -2090,9 +2055,6 @@
 <section class="contact-section" id="contact">
     <div class="container">
         <div class="contact-card fade-in">
-            <h2>Let's Build Something <span style="background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Amazing</span></h2>
-            <p>Ready to automate your business? Let's talk about your biggest operational bottleneck.</p>
-
             <div class="contact-methods">
                 <a href="mailto:anabieza.acc@gmail.com" class="contact-method">
                     <div class="label">Email</div>
@@ -2110,18 +2072,6 @@
                     <div class="label">GitHub</div>
                     <div class="value">github.com/kenanabieza</div>
                 </a>
-            </div>
-
-            <div class="quick-wins-box">
-                <h3>Quick Wins I Can Deliver in Week 1:</h3>
-                <ul>
-                    <li>Email automation setup</li>
-                    <li>Calendar sync & booking flow</li>
-                    <li>Data extraction from PDFs/emails</li>
-                    <li>CRM integration (Airtable, HubSpot)</li>
-                    <li>Slack/WhatsApp notification systems</li>
-                    <li>Lead capture funnel setup</li>
-                </ul>
             </div>
         </div>
     </div>
