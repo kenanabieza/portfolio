@@ -461,6 +461,64 @@
             line-height: 1.4;
         }
 
+        /* ===== CLIENTS ===== */
+        .clients-section { padding: 60px 40px; background: var(--bg-darker); }
+        .clients-caption {
+            text-align: center;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 28px;
+        }
+        .clients-strip {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 16px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .client-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-width: 168px;
+            min-height: 82px;
+            padding: 16px 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            opacity: 0.8;
+            transition: transform 0.3s, border-color 0.3s, opacity 0.3s;
+        }
+        .client-logo:hover {
+            opacity: 1;
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        .client-logo .cl-name {
+            font-weight: 800;
+            font-size: 1.1em;
+            letter-spacing: -0.3px;
+            color: var(--text-light);
+            line-height: 1.1;
+        }
+        .client-logo:hover .cl-name { color: var(--text-white); }
+        .client-logo .cl-name b { color: var(--primary); }
+        .client-logo .cl-sub {
+            font-size: 0.62em;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            margin-top: 5px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
         /* ===== TOOLS ===== */
         .tools-grid {
             display: grid;
@@ -1179,6 +1237,29 @@
             <div class="hero-stat">
                 <div class="hero-stat-value">90%</div>
                 <div class="hero-stat-label">Cost Reduction</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CLIENTS ===== -->
+<section class="clients-section" id="clients">
+    <div class="container">
+        <h2 class="clients-caption">Clients I've Worked With</h2>
+        <div class="clients-strip fade-in">
+            <div class="client-logo" title="The Leveraged CEO">
+                <span class="cl-name">The Leveraged <b>CEO</b></span>
+            </div>
+            <div class="client-logo" title="Brilliant Electrical Supply">
+                <span class="cl-name">Brilliant</span>
+                <span class="cl-sub">Electrical Supply</span>
+            </div>
+            <div class="client-logo" title="Trillet">
+                <span class="cl-name">Trillet</span>
+            </div>
+            <div class="client-logo" title="Densley Film &amp; Photo">
+                <span class="cl-name">Densley</span>
+                <span class="cl-sub">Film &amp; Photo</span>
             </div>
         </div>
     </div>
