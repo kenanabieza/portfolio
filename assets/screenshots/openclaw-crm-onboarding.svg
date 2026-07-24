@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <rect x="0" y="0" width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <rect x="20" y="16" width="30" height="24" rx="6" fill="#f97316"/>
+  <text x="35" y="32" fill="#3b1503" font-size="10" font-weight="700" text-anchor="middle">OC</text>
+  <text x="62" y="33" fill="#E6E8EB" font-size="15" font-weight="700">OpenClaw &#183; Client Onboarding</text>
+  <text x="302" y="33" fill="#94A3B8" font-size="12">intake &#183; docs &#183; follow-up &#183; CRM</text>
+  <rect x="666" y="18" width="110" height="22" rx="11" fill="rgba(16,185,129,0.15)"/>
+  <circle cx="682" cy="29" r="4" fill="#34d399"/>
+  <text x="692" y="33" fill="#34d399" font-size="12" font-weight="600">3 in flight</text>
+
+  <g>
+    <rect x="24" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="40" y="99" fill="#E6E8EB" font-size="18" font-weight="700">9 steps</text>
+    <text x="40" y="116" fill="#94A3B8" font-size="11">Per new client</text>
+
+    <rect x="216" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="232" y="99" fill="#E6E8EB" font-size="18" font-weight="700">auto</text>
+    <text x="232" y="116" fill="#94A3B8" font-size="11">Chase and remind</text>
+
+    <rect x="408" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="424" y="99" fill="#E6E8EB" font-size="18" font-weight="700">synced</text>
+    <text x="424" y="116" fill="#94A3B8" font-size="11">CRM stays current</text>
+
+    <rect x="600" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="616" y="99" fill="#E6E8EB" font-size="18" font-weight="700">gated</text>
+    <text x="616" y="116" fill="#94A3B8" font-size="11">Sends need approval</text>
+  </g>
+
+  <rect x="24" y="140" width="452" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="44" y="167" fill="#E6E8EB" font-size="13" font-weight="700">Onboarding run</text>
+  <text x="158" y="167" fill="#64748B" font-size="10">same sequence every time, nothing forgotten</text>
+  <line x1="24" y1="182" x2="476" y2="182" stroke="#2D3139"/>
+
+  <line x1="70" y1="208" x2="70" y2="404" stroke="#2D3139" stroke-width="2"/>
+
+  <circle cx="70" cy="208" r="9" fill="#34d399"/>
+  <text x="70" y="212" fill="#0f2e22" font-size="9" font-weight="700" text-anchor="middle">1</text>
+  <text x="94" y="205" fill="#E6E8EB" font-size="12" font-weight="600">Intake form parsed</text>
+  <text x="94" y="221" fill="#64748B" font-size="10">fields mapped, contact created</text>
+
+  <circle cx="70" cy="257" r="9" fill="#34d399"/>
+  <text x="70" y="261" fill="#0f2e22" font-size="9" font-weight="700" text-anchor="middle">2</text>
+  <text x="94" y="254" fill="#E6E8EB" font-size="12" font-weight="600">Welcome pack sent</text>
+  <text x="94" y="270" fill="#64748B" font-size="10">agreement, access links, next steps</text>
+
+  <circle cx="70" cy="306" r="9" fill="#34d399"/>
+  <text x="70" y="310" fill="#0f2e22" font-size="9" font-weight="700" text-anchor="middle">3</text>
+  <text x="94" y="303" fill="#E6E8EB" font-size="12" font-weight="600">Kickoff booked</text>
+  <text x="94" y="319" fill="#64748B" font-size="10">calendar checked, invite issued</text>
+
+  <circle cx="70" cy="355" r="9" fill="#fbbf24"/>
+  <text x="70" y="359" fill="#3b2c03" font-size="9" font-weight="700" text-anchor="middle">4</text>
+  <text x="94" y="352" fill="#E6E8EB" font-size="12" font-weight="600">Document chase</text>
+  <text x="94" y="368" fill="#64748B" font-size="10">2 of 3 returned, reminder queued</text>
+
+  <circle cx="70" cy="404" r="9" fill="#2D3139"/>
+  <text x="70" y="408" fill="#94A3B8" font-size="9" font-weight="700" text-anchor="middle">5</text>
+  <text x="94" y="401" fill="#94A3B8" font-size="12" font-weight="600">Handover to delivery</text>
+  <text x="94" y="417" fill="#64748B" font-size="10">waits until step 4 completes</text>
+
+  <rect x="44" y="432" width="412" height="30" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="60" y="452" fill="#64748B" font-size="10">Every outbound message is drafted, then held for a human to release.</text>
+
+  <rect x="492" y="140" width="284" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="512" y="167" fill="#E6E8EB" font-size="13" font-weight="700">After the kickoff call</text>
+  <line x1="492" y1="182" x2="776" y2="182" stroke="#2D3139"/>
+
+  <text x="512" y="206" fill="#94A3B8" font-size="11" font-weight="700">SUMMARY</text>
+  <rect x="512" y="216" width="244" height="8" rx="4" fill="#2D3139"/>
+  <rect x="512" y="230" width="212" height="8" rx="4" fill="#2D3139"/>
+  <rect x="512" y="244" width="180" height="8" rx="4" fill="#2D3139"/>
+
+  <text x="512" y="282" fill="#94A3B8" font-size="11" font-weight="700">ACTION ITEMS</text>
+  <rect x="512" y="292" width="244" height="34" rx="6" fill="#1A1D23"/>
+  <rect x="526" y="303" width="12" height="12" rx="3" fill="none" stroke="#f97316" stroke-width="2"/>
+  <text x="548" y="313" fill="#E6E8EB" font-size="11">Send scope revision</text>
+
+  <rect x="512" y="332" width="244" height="34" rx="6" fill="#1A1D23"/>
+  <rect x="526" y="343" width="12" height="12" rx="3" fill="none" stroke="#f97316" stroke-width="2"/>
+  <text x="548" y="353" fill="#E6E8EB" font-size="11">Add billing contact</text>
+
+  <rect x="512" y="372" width="244" height="34" rx="6" fill="#1A1D23"/>
+  <rect x="526" y="383" width="12" height="12" rx="3" fill="#34d399"/>
+  <text x="548" y="393" fill="#94A3B8" font-size="11">CRM stage advanced</text>
+
+  <rect x="512" y="418" width="244" height="42" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="528" y="437" fill="#E6E8EB" font-size="11" font-weight="600">Written straight into the CRM</text>
+  <text x="528" y="452" fill="#64748B" font-size="10">no one retypes the call notes</text>
+</svg>

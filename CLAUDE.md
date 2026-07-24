@@ -20,9 +20,9 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 ## Projects grid (the part most often edited)
 
-Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code is first everywhere; GoHighLevel is second, then Voice AI. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
+Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code first, then GoHighLevel, Voice AI, Hermes Agent, OpenClaw, and the rest. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
 
-Current categories and card counts: `claude`(10), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `ghl`(9), `agentic`(2), `python`(2).
+Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `hermes`(3), `openclaw`(3), `n8n`(3), `make`(2), `zapier`(2), `agentic`(2), `python`(2). Total 38.
 
 **Card markup pattern:**
 ```html
@@ -45,7 +45,7 @@ Current categories and card counts: `claude`(10), `voice`(2), `n8n`(3), `make`(2
 </div>
 ```
 
-**Tag CSS classes that exist** (defined in the `<style>` block, search `.tag-`): `tag-claude`, `tag-voice`, `tag-n8n`, `tag-make`, `tag-zapier`, `tag-ghl`, `tag-agentic`, `tag-python`, `tag-ai`, `tag-nextjs`, `tag-stripe`, `tag-infra`, `tag-rag`. If you need a new tag color, add a `.tag-<name>` rule next to the others before using it.
+**Tag CSS classes that exist** (defined in the `<style>` block, search `.tag-`): `tag-claude`, `tag-voice`, `tag-n8n`, `tag-make`, `tag-zapier`, `tag-ghl`, `tag-agentic`, `tag-python`, `tag-ai`, `tag-nextjs`, `tag-stripe`, `tag-infra`, `tag-rag`, `tag-mcp`, `tag-hermes`, `tag-openclaw`. If you need a new tag color, add a `.tag-<name>` rule next to the others before using it.
 
 ## SVG mockup conventions
 

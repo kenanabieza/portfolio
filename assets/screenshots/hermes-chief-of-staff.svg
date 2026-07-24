@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <rect x="0" y="0" width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <rect x="20" y="16" width="30" height="24" rx="6" fill="#38bdf8"/>
+  <text x="35" y="32" fill="#0b2b3d" font-size="10" font-weight="700" text-anchor="middle">HA</text>
+  <text x="62" y="33" fill="#E6E8EB" font-size="15" font-weight="700">Hermes &#183; Chief of Staff</text>
+  <text x="252" y="33" fill="#94A3B8" font-size="12">profiles &#183; subagents &#183; scheduled reports</text>
+  <rect x="676" y="18" width="100" height="22" rx="11" fill="rgba(56,189,248,0.15)"/>
+  <circle cx="692" cy="29" r="4" fill="#7dd3fc"/>
+  <text x="702" y="33" fill="#7dd3fc" font-size="12" font-weight="600">4 profiles</text>
+
+  <g>
+    <rect x="24" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="40" y="99" fill="#E6E8EB" font-size="18" font-weight="700">4</text>
+    <text x="40" y="116" fill="#94A3B8" font-size="11">Isolated memories</text>
+
+    <rect x="216" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="232" y="99" fill="#E6E8EB" font-size="18" font-weight="700">3</text>
+    <text x="232" y="116" fill="#94A3B8" font-size="11">Subagents running</text>
+
+    <rect x="408" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="424" y="99" fill="#E6E8EB" font-size="18" font-weight="700">09:00</text>
+    <text x="424" y="116" fill="#94A3B8" font-size="11">Daily report, no prompt</text>
+
+    <rect x="600" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="616" y="99" fill="#E6E8EB" font-size="18" font-weight="700">sandboxed</text>
+    <text x="616" y="116" fill="#94A3B8" font-size="11">Parallel workstreams</text>
+  </g>
+
+  <rect x="24" y="140" width="452" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="44" y="167" fill="#E6E8EB" font-size="13" font-weight="700">Profiles</text>
+  <text x="112" y="167" fill="#94A3B8" font-size="11">one per engagement, memory never mixes</text>
+  <line x1="24" y1="182" x2="476" y2="182" stroke="#2D3139"/>
+
+  <rect x="44" y="196" width="412" height="60" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <rect x="60" y="212" width="28" height="28" rx="7" fill="rgba(56,189,248,0.15)"/>
+  <text x="74" y="231" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">01</text>
+  <text x="100" y="220" fill="#E6E8EB" font-size="12" font-weight="600">Client onboarding</text>
+  <text x="100" y="238" fill="#64748B" font-size="10">7 open tickets &#183; memory 214 facts</text>
+  <rect x="386" y="215" width="54" height="18" rx="9" fill="rgba(16,185,129,0.15)"/>
+  <text x="413" y="228" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">active</text>
+
+  <rect x="44" y="264" width="412" height="60" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <rect x="60" y="280" width="28" height="28" rx="7" fill="rgba(56,189,248,0.15)"/>
+  <text x="74" y="299" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">02</text>
+  <text x="100" y="288" fill="#E6E8EB" font-size="12" font-weight="600">Delivery workstream</text>
+  <text x="100" y="306" fill="#64748B" font-size="10">12 open tickets &#183; memory 486 facts</text>
+  <rect x="386" y="283" width="54" height="18" rx="9" fill="rgba(16,185,129,0.15)"/>
+  <text x="413" y="296" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">active</text>
+
+  <rect x="44" y="332" width="412" height="60" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <rect x="60" y="348" width="28" height="28" rx="7" fill="rgba(56,189,248,0.15)"/>
+  <text x="74" y="367" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">03</text>
+  <text x="100" y="356" fill="#E6E8EB" font-size="12" font-weight="600">Internal ops</text>
+  <text x="100" y="374" fill="#64748B" font-size="10">4 open tickets &#183; memory 132 facts</text>
+  <rect x="386" y="351" width="54" height="18" rx="9" fill="rgba(251,191,36,0.15)"/>
+  <text x="413" y="364" fill="#fbbf24" font-size="9" font-weight="700" text-anchor="middle">queued</text>
+
+  <rect x="44" y="400" width="412" height="56" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="60" y="422" fill="#E6E8EB" font-size="11" font-weight="600">Handoff keeps the whole session</text>
+  <text x="60" y="440" fill="#64748B" font-size="10">every message and tool call moves to the new profile</text>
+
+  <rect x="492" y="140" width="284" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="512" y="167" fill="#E6E8EB" font-size="13" font-weight="700">Daily report</text>
+  <text x="606" y="167" fill="#64748B" font-size="10">sent 09:00</text>
+  <line x1="492" y1="182" x2="776" y2="182" stroke="#2D3139"/>
+
+  <text x="512" y="206" fill="#94A3B8" font-size="11" font-weight="700">SHIPPED</text>
+  <rect x="512" y="214" width="244" height="8" rx="4" fill="#2D3139"/>
+  <rect x="512" y="214" width="176" height="8" rx="4" fill="#34d399"/>
+  <text x="512" y="240" fill="#E6E8EB" font-size="11">9 tickets closed across 3 profiles</text>
+
+  <text x="512" y="272" fill="#94A3B8" font-size="11" font-weight="700">NEEDS YOU</text>
+  <rect x="512" y="282" width="244" height="34" rx="6" fill="#1A1D23"/>
+  <circle cx="528" cy="299" r="4" fill="#fbbf24"/>
+  <text x="542" y="303" fill="#E6E8EB" font-size="11">2 approvals waiting</text>
+
+  <rect x="512" y="324" width="244" height="34" rx="6" fill="#1A1D23"/>
+  <circle cx="528" cy="341" r="4" fill="#f87171"/>
+  <text x="542" y="345" fill="#E6E8EB" font-size="11">1 blocked on client reply</text>
+
+  <text x="512" y="386" fill="#94A3B8" font-size="11" font-weight="700">LEARNED TODAY</text>
+  <rect x="512" y="396" width="244" height="60" rx="6" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="528" y="418" fill="#7dd3fc" font-size="11" font-weight="600">+ skill: weekly client digest</text>
+  <text x="528" y="438" fill="#64748B" font-size="10">distilled from a repeated request</text>
+</svg>

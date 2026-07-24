@@ -706,6 +706,8 @@
         .tag-rag { background: rgba(244, 114, 182, 0.15); color: #f9a8d4; }
         .tag-voice { background: rgba(16, 185, 129, 0.15); color: #34d399; }
         .tag-mcp { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+        .tag-hermes { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; }
+        .tag-openclaw { background: rgba(249, 115, 22, 0.15); color: #fdba74; }
 
         .project-title {
             font-size: 1.15em;
@@ -1329,6 +1331,18 @@
                 <p>AI voice agents for inbound and outbound calls: booking, qualification, and support with live CRM and calendar actions.</p>
                 <span class="tool-level">Advanced &middot; AI Phone Agents</span>
             </div>
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #38bdf8, #0284c7);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">HA</div>
+                <h3>Hermes Agent</h3>
+                <p>Self-hosted self-improving agent from Nous Research. Per-project profiles, parallel subagents, persistent memory, and skills that refine themselves with use.</p>
+                <span class="tool-level">Self-hosted &middot; Skills &amp; Memory</span>
+            </div>
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #f97316, #c2410c);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #f97316, #c2410c);">OC</div>
+                <h3>OpenClaw</h3>
+                <p>Self-hosted autonomous agent with a heartbeat, 50+ messaging channels, and the MCP tool ecosystem. Deployed hardened, with approval-gated execution.</p>
+                <span class="tool-level">Self-hosted &middot; Hardened Deploys</span>
+            </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #ff6d5a, #ff4500);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
                 <h3>n8n</h3>
@@ -1383,6 +1397,8 @@
             <button class="filter-btn" data-filter="claude" aria-pressed="false">Claude Code</button>
             <button class="filter-btn" data-filter="ghl" aria-pressed="false">GoHighLevel</button>
             <button class="filter-btn" data-filter="voice" aria-pressed="false">Voice AI</button>
+            <button class="filter-btn" data-filter="hermes" aria-pressed="false">Hermes Agent</button>
+            <button class="filter-btn" data-filter="openclaw" aria-pressed="false">OpenClaw</button>
             <button class="filter-btn" data-filter="n8n" aria-pressed="false">n8n</button>
             <button class="filter-btn" data-filter="make" aria-pressed="false">Make.com</button>
             <button class="filter-btn" data-filter="zapier" aria-pressed="false">Zapier</button>
@@ -1796,6 +1812,120 @@
                     <div class="project-metrics">
                         <span class="project-metric">Auto-qualify + retry</span>
                         <span class="project-metric">Live human transfer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hermes Agent: Chief of Staff -->
+            <div class="project-card" data-category="hermes">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/hermes-chief-of-staff.svg?v=1" alt="Hermes chief-of-staff console showing one isolated profile per engagement beside a scheduled daily report">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-hermes">Hermes Agent</span>
+                        <span class="project-tag tag-agentic">Agentic AI</span>
+                    </div>
+                    <h3 class="project-title">Chief-of-Staff Agent with Per-Project Profiles</h3>
+                    <p class="project-desc">The pattern teams reach for first: a profile per client or project, each with its own isolated memory, while a coordinating agent works tickets in the project tool and posts a daily report to Slack or WhatsApp without being asked. Parallel subagents run in separate sandboxes so several workstreams move at once, and long jobs are delegated to the background instead of blocking the thread. A handoff migrates an entire live session, every message and tool call, to a different model or profile without dropping context. Schedules are written in plain language rather than cron syntax.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">One profile per client</span>
+                        <span class="project-metric">Daily report, unprompted</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hermes Agent: Research Desk -->
+            <div class="project-card" data-category="hermes">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/hermes-research-desk.svg?v=1" alt="Hermes research desk showing a sourced morning brief beside a skill improving itself across four revisions">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-hermes">Hermes Agent</span>
+                        <span class="project-tag tag-ai">Research Ops</span>
+                    </div>
+                    <h3 class="project-title">Self-Improving Research and Briefing Desk</h3>
+                    <p class="project-desc">Watches a defined set of sources, writes the summary, and delivers it into Slack, Discord, or Notion on a schedule. What separates it from a scraper is that the routine is captured as a reusable skill, then refines itself with use: it drops the sections nobody opens and tightens the ones people act on. Persistent memory plus SQLite full-text search gives it recall across sessions, so each brief builds on what it told you last week rather than starting cold. The journey timeline keeps what it learned reviewable and editable instead of a black box, and every claim carries its source.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Skills improve with use</span>
+                        <span class="project-metric">Every claim keeps a source</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hermes Agent: Lead Research -->
+            <div class="project-card" data-category="hermes">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/hermes-lead-research.svg?v=1" alt="Hermes lead research console showing a qualified prospect queue beside a three tier model routing panel">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-hermes">Hermes Agent</span>
+                        <span class="project-tag tag-ai">Sales Ops</span>
+                    </div>
+                    <h3 class="project-title">Lead Research and Outreach Agent</h3>
+                    <p class="project-desc">Researches prospects on the open web, qualifies them against fit criteria, and drafts outreach into the CRM for a human to send. Service businesses run this to get prospect research without paying for a data provider. The economics come from model routing: a fast cheap model does bulk enrichment, a mid tier makes the qualification judgement, and only the outreach copy reaches the strongest model, which is the one place quality actually shows. Providers swap with a single command and no code change, so cost and quality stay tunable. It researches and writes, it never hits send.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Model routing by task</span>
+                        <span class="project-metric">Drafts only, human sends</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OpenClaw: Morning Briefing -->
+            <div class="project-card" data-category="openclaw">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/openclaw-briefing.svg?v=1" alt="OpenClaw morning briefing console showing triaged inbox priorities beside the briefing delivered into a chat app">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-openclaw">OpenClaw</span>
+                        <span class="project-tag tag-ai">Email Ops</span>
+                    </div>
+                    <h3 class="project-title">Morning Briefing and Inbox Triage</h3>
+                    <p class="project-desc">The most widely adopted OpenClaw deployment in small businesses. A heartbeat wakes the agent roughly every thirty minutes with no prompt at all, so the briefing is already waiting: the inbox read, threads labelled and filed, replies drafted for the few that matter, and a prioritised summary pushed to Telegram, Slack, or WhatsApp. Memory is plain Markdown on your own disk, so it learns which senders you never answer and quietly stops surfacing them. Proactive rather than reactive, which is the part a chatbot cannot do.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Runs unprompted</span>
+                        <span class="project-metric">Ready before you start</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OpenClaw: Client Onboarding -->
+            <div class="project-card" data-category="openclaw">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/openclaw-crm-onboarding.svg?v=1" alt="OpenClaw onboarding console showing a five step client onboarding run beside call action items written into the CRM">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-openclaw">OpenClaw</span>
+                        <span class="project-tag tag-ai">CRM Ops</span>
+                    </div>
+                    <h3 class="project-title">Client Onboarding and CRM Assistant</h3>
+                    <p class="project-desc">Onboarding is the use case businesses automate first, because it is the same sequence every time and the one most often dropped. The agent parses the intake form, creates the contact, sends the welcome pack, books the kickoff, chases outstanding documents on a schedule, then turns the call into action items written straight back to the CRM so nobody retypes notes. Every outbound message is drafted and held for a person to release, which keeps a mistake to a bad draft rather than a bad send.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Same sequence every time</span>
+                        <span class="project-metric">Sends held for approval</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OpenClaw: Hardened Ops Control -->
+            <div class="project-card" data-category="openclaw">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/openclaw-ops-control.svg?v=1" alt="OpenClaw ops control console showing an approval prompt for a shell action beside a four point security posture panel">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-openclaw">OpenClaw</span>
+                        <span class="project-tag tag-infra">Hardening</span>
+                    </div>
+                    <h3 class="project-title">Hardened Ops Control Layer</h3>
+                    <p class="project-desc">Turns a chat thread into a control surface for the business: shell, browser automation, file operations, and the MCP tool ecosystem reachable from a phone across more than fifty channels. The engineering here is the restraint. OpenClaw runs as your own user and can read or write any file and execute any command, the project has drawn hundreds of CVEs, and roughly a fifth of its community skill marketplace was found to be malicious. So it ships bound to localhost, inside a container, with execution approval left on ask, skills reviewed by hand before install, and advisories tracked on a patch schedule.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Approval-gated execution</span>
+                        <span class="project-metric">Never internet-exposed</span>
                     </div>
                 </div>
             </div>
