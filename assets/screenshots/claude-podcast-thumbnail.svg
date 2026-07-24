@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="500" fill="#1A1D23"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#21252B"/>
+  <rect x="0" y="55" width="800" height="1" fill="#2D3139"/>
+  <rect x="20" y="16" width="30" height="24" rx="6" fill="#D17A5C"/>
+  <text x="35" y="32" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">PNG</text>
+  <text x="62" y="33" fill="#E6E8EB" font-size="15" font-weight="700">Thumbnail Renderer</text>
+  <text x="222" y="33" fill="#94A3B8" font-size="12">headless Chrome &#183; 1080x1080 @2x &#183; bundled fonts</text>
+  <rect x="686" y="18" width="90" height="22" rx="11" fill="rgba(16,185,129,0.15)"/>
+  <text x="731" y="33" fill="#34d399" font-size="12" font-weight="600" text-anchor="middle">fit ok</text>
+
+  <!-- Stat strip -->
+  <g>
+    <rect x="24" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="40" y="99" fill="#E6E8EB" font-size="18" font-weight="700">3 to 4</text>
+    <text x="40" y="116" fill="#94A3B8" font-size="11">Target headline lines</text>
+
+    <rect x="216" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="232" y="99" fill="#E6E8EB" font-size="18" font-weight="700">measured</text>
+    <text x="232" y="116" fill="#94A3B8" font-size="11">Not estimated by length</text>
+
+    <rect x="408" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="424" y="99" fill="#E6E8EB" font-size="18" font-weight="700">10%</text>
+    <text x="424" y="116" fill="#94A3B8" font-size="11">Grid crop each side</text>
+
+    <rect x="600" y="76" width="176" height="50" rx="10" fill="#21252B" stroke="#2D3139"/>
+    <text x="616" y="99" fill="#E6E8EB" font-size="18" font-weight="700">any</text>
+    <text x="616" y="116" fill="#94A3B8" font-size="11">Title length safe</text>
+  </g>
+
+  <!-- Left: preview -->
+  <rect x="24" y="140" width="336" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="44" y="167" fill="#E6E8EB" font-size="13" font-weight="700">Preview</text>
+  <text x="116" y="167" fill="#94A3B8" font-size="11">square with crop guides</text>
+
+  <!-- the square thumbnail -->
+  <rect x="52" y="182" width="280" height="280" rx="8" fill="#1A2E25"/>
+  <!-- centred headline block -->
+  <text x="192" y="252" fill="#D17A5C" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">EPISODE 128</text>
+  <text x="192" y="292" fill="#EFE8D8" font-size="26" font-weight="800" text-anchor="middle">THE COST OF</text>
+  <text x="192" y="322" fill="#EFE8D8" font-size="26" font-weight="800" text-anchor="middle">DOING IT ALL</text>
+  <text x="192" y="352" fill="#D17A5C" font-size="26" font-weight="800" text-anchor="middle">YOURSELF</text>
+  <!-- footer lockup -->
+  <rect x="176" y="410" width="5" height="14" rx="2" fill="#EFE8D8"/>
+  <rect x="184" y="414" width="5" height="10" rx="2" fill="#EFE8D8"/>
+  <rect x="192" y="417" width="5" height="7" rx="2" fill="#D17A5C"/>
+  <text x="192" y="440" fill="#EFE8D8" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="1">THE PODCAST</text>
+
+  <!-- crop guides -->
+  <line x1="80" y1="182" x2="80" y2="462" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.9"/>
+  <line x1="304" y1="182" x2="304" y2="462" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.9"/>
+  <rect x="52" y="182" width="28" height="280" fill="#fbbf24" opacity="0.12"/>
+  <rect x="304" y="182" width="28" height="280" fill="#fbbf24" opacity="0.12"/>
+
+  <!-- Right: fit loop -->
+  <rect x="376" y="140" width="400" height="336" rx="12" fill="#21252B" stroke="#2D3139"/>
+  <text x="396" y="167" fill="#E6E8EB" font-size="13" font-weight="700">Auto-fit loop</text>
+  <text x="500" y="167" fill="#94A3B8" font-size="11">render, measure, resize, repeat</text>
+  <line x1="376" y1="182" x2="776" y2="182" stroke="#2D3139"/>
+
+  <text x="396" y="204" fill="#64748B" font-size="10" font-weight="700">FONT SIZE</text>
+  <text x="516" y="204" fill="#64748B" font-size="10" font-weight="700">LINES</text>
+  <text x="606" y="204" fill="#64748B" font-size="10" font-weight="700">RESULT</text>
+
+  <rect x="392" y="214" width="368" height="34" rx="6" fill="#1A1D23"/>
+  <text x="404" y="236" fill="#E6E8EB" font-size="12">190px</text>
+  <text x="520" y="236" fill="#E6E8EB" font-size="12">2</text>
+  <text x="610" y="236" fill="#f87171" font-size="11" font-weight="600">too few, shrink</text>
+
+  <rect x="392" y="254" width="368" height="34" rx="6" fill="#1A1D23"/>
+  <text x="404" y="276" fill="#E6E8EB" font-size="12">140px</text>
+  <text x="520" y="276" fill="#E6E8EB" font-size="12">2</text>
+  <text x="610" y="276" fill="#f87171" font-size="11" font-weight="600">too few, shrink</text>
+
+  <rect x="392" y="294" width="368" height="34" rx="6" fill="#1A1D23"/>
+  <text x="404" y="316" fill="#E6E8EB" font-size="12">96px</text>
+  <text x="520" y="316" fill="#E6E8EB" font-size="12">3</text>
+  <text x="610" y="316" fill="#34d399" font-size="11" font-weight="600">accepted</text>
+
+  <rect x="392" y="346" width="368" height="52" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="408" y="368" fill="#E6E8EB" font-size="11" font-weight="600">Last line painted in the accent colour</text>
+  <text x="408" y="386" fill="#64748B" font-size="10">grouped by measured offset, never guessed</text>
+
+  <rect x="392" y="408" width="368" height="52" rx="8" fill="#1A1D23" stroke="#2D3139"/>
+  <text x="408" y="430" fill="#E6E8EB" font-size="11" font-weight="600">Copy held inside the grid-safe column</text>
+  <text x="408" y="448" fill="#64748B" font-size="10">the profile grid crops a square to 4:5</text>
+</svg>

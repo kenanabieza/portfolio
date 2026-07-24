@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#1e3a5f"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Automation &#183; Workflow Builder</text>
+
+  <!-- Sub-nav -->
+  <rect x="0" y="48" width="800" height="42" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="20" y="74" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Workflows</text>
+  <text x="110" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Triggers</text>
+  <text x="175" y="74" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#3b82f6">Actions</text>
+  <line x1="172" y1="86" x2="212" y2="86" stroke="#3b82f6" stroke-width="2"/>
+  <text x="230" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Custom Values</text>
+  <text x="330" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Enrolled</text>
+
+  <!-- Page title -->
+  <text x="40" y="118" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#0f172a">Weekly Email Send</text>
+  <rect x="248" y="104" width="86" height="18" rx="9" fill="#dcfce7" stroke="#86efac"/>
+  <text x="291" y="117" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#166534">PUBLISHED</text>
+  <text x="40" y="136" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Copy written by the agent &#183; released only by a human approval in chat</text>
+
+  <!-- Left: workflow canvas -->
+  <rect x="40" y="152" width="384" height="304" rx="10" fill="#fff" stroke="#e2e8f0"/>
+
+  <!-- node 1 -->
+  <rect x="64" y="176" width="336" height="58" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="80" y="192" width="26" height="26" rx="6" fill="#3b82f6"/>
+  <text x="93" y="209" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">1</text>
+  <text x="118" y="200" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Trigger &#183; Tag added</text>
+  <text x="118" y="216" font-family="Inter,sans-serif" font-size="10" fill="#64748b">the agent tags the approved audience</text>
+
+  <line x1="232" y1="234" x2="232" y2="254" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- node 2 -->
+  <rect x="64" y="254" width="336" height="76" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="80" y="270" width="26" height="26" rx="6" fill="#0ea5e9"/>
+  <text x="93" y="287" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">2</text>
+  <text x="118" y="278" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Send Email</text>
+  <text x="118" y="294" font-family="Inter,sans-serif" font-size="10" fill="#64748b">subject and body pulled from custom values</text>
+  <text x="118" y="310" font-family="Inter,sans-serif" font-size="10" fill="#64748b">sender on the aligned dedicated subdomain</text>
+
+  <line x1="232" y1="330" x2="232" y2="350" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- node 3 -->
+  <rect x="64" y="350" width="336" height="58" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="80" y="366" width="26" height="26" rx="6" fill="#64748b"/>
+  <text x="93" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">3</text>
+  <text x="118" y="374" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Remove tag</text>
+  <text x="118" y="390" font-family="Inter,sans-serif" font-size="10" fill="#64748b">audience resets for next week</text>
+
+  <rect x="64" y="420" width="336" height="24" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="232" y="436" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#166534">Unsubscribe footer appended automatically</text>
+
+  <!-- Right: audience -->
+  <rect x="440" y="152" width="320" height="184" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="460" y="176" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#0f172a">Audience</text>
+  <text x="460" y="192" font-family="Inter,sans-serif" font-size="10" fill="#64748b">suppression runs before every send</text>
+
+  <text x="460" y="216" font-family="Inter,sans-serif" font-size="11" fill="#0f172a">In segment</text>
+  <text x="740" y="216" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">30</text>
+  <line x1="460" y1="224" x2="740" y2="224" stroke="#f1f5f9"/>
+
+  <text x="460" y="242" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Existing clients</text>
+  <text x="740" y="242" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#dc2626">-1</text>
+
+  <text x="460" y="262" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Unsubscribed</text>
+  <text x="740" y="262" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#dc2626">-1</text>
+
+  <text x="460" y="282" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Do not contact</text>
+  <text x="740" y="282" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#dc2626">-1</text>
+
+  <text x="460" y="302" font-family="Inter,sans-serif" font-size="11" fill="#64748b">Hard bounced</text>
+  <text x="740" y="302" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#dc2626">-1</text>
+  <line x1="460" y1="310" x2="740" y2="310" stroke="#e2e8f0"/>
+
+  <text x="460" y="328" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Recipients</text>
+  <text x="740" y="328" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#16a34a">26</text>
+
+  <!-- Right: approval gate -->
+  <rect x="440" y="348" width="320" height="108" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="460" y="372" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#0f172a">Send gate</text>
+
+  <rect x="460" y="384" width="132" height="30" rx="6" fill="#16a34a"/>
+  <text x="526" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">Approve and Send</text>
+  <rect x="602" y="384" width="138" height="30" rx="6" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="671" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#64748b">live mode required</text>
+
+  <text x="460" y="432" font-family="Inter,sans-serif" font-size="10" fill="#64748b">One click sends. A draft left alone never sends.</text>
+  <text x="460" y="446" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Repeat clicks are ignored after the first.</text>
+</svg>

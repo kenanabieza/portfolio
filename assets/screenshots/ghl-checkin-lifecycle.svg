@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#1e3a5f"/>
+  <circle cx="16" cy="24" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="24" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="24" r="5" fill="#28c840"/>
+  <text x="80" y="28" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#fff">GoHighLevel</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#8ab4e8">Automation &#183; Check-In System</text>
+
+  <!-- Sub-nav -->
+  <rect x="0" y="48" width="800" height="42" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="20" y="74" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">Workflows</text>
+  <text x="110" y="74" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#3b82f6">Check In Processes</text>
+  <line x1="107" y1="86" x2="217" y2="86" stroke="#3b82f6" stroke-width="2"/>
+  <text x="240" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Tags</text>
+  <text x="290" y="74" font-family="Inter,sans-serif" font-size="10" fill="#64748b">Contacts</text>
+
+  <!-- Page title -->
+  <text x="40" y="118" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#0f172a">Client Check-In Lifecycle</text>
+  <rect x="286" y="104" width="94" height="18" rx="9" fill="#e0e7ff" stroke="#c7d2fe"/>
+  <text x="333" y="117" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#3730a3">4 WORKFLOWS</text>
+  <text x="40" y="136" font-family="Inter,sans-serif" font-size="10" fill="#64748b">One tag drives the whole loop. Cadence follows the client type.</text>
+
+  <!-- Left: state machine -->
+  <rect x="40" y="152" width="420" height="304" rx="10" fill="#fff" stroke="#e2e8f0"/>
+
+  <rect x="64" y="176" width="372" height="56" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="82" y="198" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">1 &#183; Reminder</text>
+  <text x="82" y="214" font-family="Inter,sans-serif" font-size="10" fill="#64748b">recurring Monday send, weekly or fortnightly by type</text>
+  <rect x="330" y="188" width="94" height="18" rx="9" fill="#dbeafe"/>
+  <text x="377" y="201" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1d4ed8">adds pending</text>
+
+  <line x1="250" y1="232" x2="250" y2="246" stroke="#cbd5e1" stroke-width="2"/>
+
+  <rect x="64" y="246" width="372" height="56" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <text x="82" y="268" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">2 &#183; Same-day nudge</text>
+  <text x="82" y="284" font-family="Inter,sans-serif" font-size="10" fill="#64748b">evening reminder, leaves the pending tag in place</text>
+  <rect x="352" y="258" width="72" height="18" rx="9" fill="#fef3c7"/>
+  <text x="388" y="271" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#92400e">6pm</text>
+
+  <line x1="250" y1="302" x2="250" y2="316" stroke="#cbd5e1" stroke-width="2"/>
+
+  <rect x="64" y="316" width="372" height="56" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <text x="82" y="338" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">3 &#183; Overdue</text>
+  <text x="82" y="354" font-family="Inter,sans-serif" font-size="10" fill="#64748b">next day, only if still unanswered</text>
+  <rect x="352" y="328" width="72" height="18" rx="9" fill="#fee2e2"/>
+  <text x="388" y="341" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#b91c1c">24h</text>
+
+  <line x1="250" y1="372" x2="250" y2="386" stroke="#cbd5e1" stroke-width="2"/>
+
+  <rect x="64" y="386" width="372" height="56" rx="8" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="82" y="408" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0f172a">4 &#183; Submitted</text>
+  <text x="82" y="424" font-family="Inter,sans-serif" font-size="10" fill="#64748b">clears every tag and opens a coach review task</text>
+  <rect x="340" y="398" width="84" height="18" rx="9" fill="#dcfce7"/>
+  <text x="382" y="411" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#166534">resets loop</text>
+
+  <!-- Right: audit -->
+  <rect x="476" y="152" width="284" height="146" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="496" y="176" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#0f172a">Why it never fired</text>
+
+  <rect x="496" y="188" width="112" height="46" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="552" y="210" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#0f172a">61</text>
+  <text x="552" y="226" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#64748b">active clients</text>
+
+  <rect x="620" y="188" width="120" height="46" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="680" y="210" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#b91c1c">0</text>
+  <text x="680" y="226" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#b91c1c">ever enrolled</text>
+
+  <text x="496" y="256" font-family="Inter,sans-serif" font-size="10" fill="#64748b">The build was sound. Not one client carried</text>
+  <text x="496" y="270" font-family="Inter,sans-serif" font-size="10" fill="#64748b">the tag that enrols them, so nothing ran.</text>
+  <text x="496" y="288" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#0f172a">Data problem, not a logic problem.</text>
+
+  <!-- reconciliation -->
+  <rect x="476" y="310" width="284" height="146" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="496" y="334" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#0f172a">Roster reconciliation</text>
+  <text x="496" y="350" font-family="Inter,sans-serif" font-size="10" fill="#64748b">matched on normalised phone numbers</text>
+
+  <text x="496" y="376" font-family="Inter,sans-serif" font-size="11" fill="#0f172a">Clean matches</text>
+  <text x="740" y="376" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#16a34a">32</text>
+  <line x1="496" y1="384" x2="740" y2="384" stroke="#f1f5f9"/>
+
+  <text x="496" y="402" font-family="Inter,sans-serif" font-size="11" fill="#64748b">In CRM, not on the list</text>
+  <text x="740" y="402" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#ea580c">29</text>
+  <line x1="496" y1="410" x2="740" y2="410" stroke="#f1f5f9"/>
+
+  <text x="496" y="428" font-family="Inter,sans-serif" font-size="11" fill="#64748b">On the list, no record</text>
+  <text x="740" y="428" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#ea580c">8</text>
+  <line x1="496" y1="436" x2="740" y2="436" stroke="#f1f5f9"/>
+
+  <text x="496" y="450" font-family="Inter,sans-serif" font-size="11" fill="#b91c1c">Staff files found on it</text>
+  <text x="740" y="450" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#b91c1c">2</text>
+</svg>

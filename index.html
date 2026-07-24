@@ -1392,6 +1392,84 @@
 
         <div class="projects-grid fade-in" id="projectsGrid">
 
+            <!-- Claude Code: Slack-Triggered Content Agent -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-slack-content-agent.svg?v=1" alt="Agent console showing a Slack channel where a pasted transcript becomes a verified draft, beside the job pipeline stages">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-agentic">Agentic AI</span>
+                        <span class="project-tag tag-infra">Node</span>
+                    </div>
+                    <h3 class="project-title">Slack-Triggered Content Agent on a VPS</h3>
+                    <p class="project-desc">The trigger and hosting layer that made a content pipeline usable by a non-technical operator. A Slack Socket Mode bot runs as a systemd service on a small always-on server, so there is no public URL, tunnel, or open inbound port. One process serves several channels and routes each job by channel, with a serial queue so two headless browser renders never overlap, retry with backoff on every network step, and a read-back verify instead of trusting the create response. Paste text into a channel, get a finished draft about a minute later.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Paste to draft in ~1 min</span>
+                        <span class="project-metric">No terminal required</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Code: Podcast Thumbnail Renderer -->
+            <div class="project-card" data-category="claude">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/claude-podcast-thumbnail.svg?v=1" alt="Thumbnail renderer showing a branded square preview with crop guides beside the auto-fit loop that resizes the headline until it lands on three lines">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">Design Automation</span>
+                    </div>
+                    <h3 class="project-title">Podcast Episode to Branded Thumbnail Pipeline</h3>
+                    <p class="project-desc">Paste an episode into chat and get a branded square thumbnail plus a ready social draft. The headline sizes itself by measurement rather than by a character-count rule: the page renders, the code measures the real line boxes in the browser, then grows or shrinks the type until it lands on three or four lines, so any title length holds its layout. Copy also stays inside a crop-safe column, because the profile grid trims a square to a portrait crop and was silently cutting the first and last word. A tolerant parser accepts whatever shape the details are pasted in.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Any title length</span>
+                        <span class="project-metric">Crop-safe layout</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GoHighLevel: Compliance-Safe Email Agent -->
+            <div class="project-card" data-category="ghl">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/ghl-email-approval.svg?v=1" alt="GoHighLevel workflow that sends a weekly email from custom values, beside an audience panel showing suppression rules and a human approval gate">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-ghl">GoHighLevel</span>
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">Email Ops</span>
+                    </div>
+                    <h3 class="project-title">Compliance-Safe Email Agent with Human Send Gate</h3>
+                    <p class="project-desc">Writes a weekly email in the owner's voice from a plain-language spec read at runtime, posts it to a private channel as an approval card, and only sends when a human clicks. The send routes through the CRM's own workflow engine rather than a per-contact message API, so the compliant unsubscribe footer is attached on every send and opted-out contacts are skipped. Four suppression rules run first and caught a real defect in the system this replaced, which was set to email both existing customers and an unsubscribed contact. Live sending has to be switched on deliberately, a stale approval card refuses to fire, and a repeat click cannot double-send.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Unsubscribe on every send</span>
+                        <span class="project-metric">Two-key send gate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GoHighLevel: Check-In Lifecycle -->
+            <div class="project-card" data-category="ghl">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/ghl-checkin-lifecycle.svg?v=1" alt="GoHighLevel check-in lifecycle showing reminder, nudge, overdue and submitted stages beside an audit panel explaining why no client was ever enrolled">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-ghl">GoHighLevel</span>
+                        <span class="project-tag tag-python">Data Audit</span>
+                    </div>
+                    <h3 class="project-title">CRM Check-In Lifecycle Rebuild</h3>
+                    <p class="project-desc">A four-state client check-in loop for a fitness coaching business: a recurring reminder, a same-day nudge, a next-day overdue path, and a submission step that clears the state and opens a review task for the coach. The valuable part was the diagnosis. The existing automation looked broken but was structurally sound and simply had zero enrolled clients, which I proved by auditing all 61 active records. Reconciling the owner's roster against the CRM by normalised phone number then surfaced dozens of mismatches, including two staff records sitting on the client list that would have been texted as clients.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">61 records audited</span>
+                        <span class="project-metric">Root cause was the data</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Claude Code: Custom MCP Server -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
@@ -1599,7 +1677,7 @@
                         <span class="project-tag tag-ai">Social Planner</span>
                     </div>
                     <h3 class="project-title">Reel-to-Carousel Social Pipeline</h3>
-                    <p class="project-desc">Turns a reel transcript into an on-brand carousel plus Instagram and Facebook captions, then drafts it straight into GoHighLevel Social Planner for a personal-brand client. Claude generates the on-brand package, then a Node pipeline renders the branded slides, uploads them to the GHL media library, and creates the Social Planner draft over the REST API. Strictly human-gated: nothing publishes until the owner reviews, edits, and schedules. Ships with a weekly performance digest. Replaces a Manus + Gemini + manual-scheduling loop, saving roughly 10 hours a week.</p>
+                    <p class="project-desc">Turns a reel transcript into an on-brand carousel plus Instagram and Facebook captions, then drafts it straight into GoHighLevel Social Planner for a personal-brand client. Claude writes the copy against a brand guide held as editable Markdown, a Node pipeline renders the branded slides in headless Chrome with fonts bundled locally, uploads them to the media library, and creates the draft over the REST API. It began as a local command and now runs from a single paste in Slack on an always-on server, as one job inside the same agent that handles podcast graphics and the weekly email. Strictly human-gated: nothing publishes until the owner reviews, edits, and schedules. Ships with a weekly performance digest, and retires a three-tool manual loop worth roughly 10 hours a week.</p>
                     <div class="project-metrics">
                         <span class="project-metric">~10 hrs/week saved</span>
                         <span class="project-metric">Human-approved drafts</span>
