@@ -20,7 +20,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 ## Projects grid (the part most often edited)
 
-Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code is first everywhere; Voice AI is second.**
+Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code is first everywhere; GoHighLevel is second, then Voice AI. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
 
 Current categories and card counts: `claude`(10), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `ghl`(9), `agentic`(2), `python`(2).
 

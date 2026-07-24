@@ -1317,17 +1317,17 @@
                 <p>AI-powered development with Claude. Automated refactoring, code generation, full-stack app building, and agentic coding.</p>
                 <span class="tool-level">Advanced &middot; 25+ Projects</span>
             </div>
-            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #10b981, #06b6d4);">
-                <div class="tool-icon" style="background: linear-gradient(135deg, #10b981, #06b6d4);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div>
-                <h3>Voice AI</h3>
-                <p>AI voice agents for inbound and outbound calls: booking, qualification, and support with live CRM and calendar actions.</p>
-                <span class="tool-level">Advanced &middot; AI Phone Agents</span>
-            </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #2196f3, #1565c0);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #2196f3, #1565c0);">GHL</div>
                 <h3>GoHighLevel</h3>
                 <p>All-in-one marketing platform. Funnel building, pipeline management, SMS/email campaigns, and booking automation.</p>
                 <span class="tool-level">Proficient &middot; 15+ Funnels</span>
+            </div>
+            <div class="tool-card" style="--tool-color: linear-gradient(135deg, #10b981, #06b6d4);">
+                <div class="tool-icon" style="background: linear-gradient(135deg, #10b981, #06b6d4);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div>
+                <h3>Voice AI</h3>
+                <p>AI voice agents for inbound and outbound calls: booking, qualification, and support with live CRM and calendar actions.</p>
+                <span class="tool-level">Advanced &middot; AI Phone Agents</span>
             </div>
             <div class="tool-card" style="--tool-color: linear-gradient(135deg, #ff6d5a, #ff4500);">
                 <div class="tool-icon" style="background: linear-gradient(135deg, #ff6d5a, #ff4500);">n8n</div>
@@ -1381,8 +1381,8 @@
         <div class="filter-buttons fade-in" role="group" aria-label="Filter projects by platform">
             <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
             <button class="filter-btn" data-filter="claude" aria-pressed="false">Claude Code</button>
-            <button class="filter-btn" data-filter="voice" aria-pressed="false">Voice AI</button>
             <button class="filter-btn" data-filter="ghl" aria-pressed="false">GoHighLevel</button>
+            <button class="filter-btn" data-filter="voice" aria-pressed="false">Voice AI</button>
             <button class="filter-btn" data-filter="n8n" aria-pressed="false">n8n</button>
             <button class="filter-btn" data-filter="make" aria-pressed="false">Make.com</button>
             <button class="filter-btn" data-filter="zapier" aria-pressed="false">Zapier</button>
@@ -1412,7 +1412,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Podcast Thumbnail Renderer -->
+<!-- Claude Code: Podcast Thumbnail Renderer -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-podcast-thumbnail.svg?v=1" alt="Thumbnail renderer showing a branded square preview with crop guides beside the auto-fit loop that resizes the headline until it lands on three lines">
@@ -1431,46 +1431,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel: Compliance-Safe Email Agent -->
-            <div class="project-card" data-category="ghl">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/ghl-email-approval.svg?v=1" alt="GoHighLevel workflow that sends a weekly email from custom values, beside an audience panel showing suppression rules and a human approval gate">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-ghl">GoHighLevel</span>
-                        <span class="project-tag tag-claude">Claude Code</span>
-                        <span class="project-tag tag-ai">Email Ops</span>
-                    </div>
-                    <h3 class="project-title">Compliance-Safe Email Agent with Human Send Gate</h3>
-                    <p class="project-desc">Writes a weekly email in the owner's voice from a plain-language spec read at runtime, posts it to a private channel as an approval card, and only sends when a human clicks. The send routes through the CRM's own workflow engine rather than a per-contact message API, so the compliant unsubscribe footer is attached on every send and opted-out contacts are skipped. Four suppression rules run first and caught a real defect in the system this replaced, which was set to email both existing customers and an unsubscribed contact. Live sending has to be switched on deliberately, a stale approval card refuses to fire, and a repeat click cannot double-send.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">Unsubscribe on every send</span>
-                        <span class="project-metric">Two-key send gate</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GoHighLevel: Check-In Lifecycle -->
-            <div class="project-card" data-category="ghl">
-                <div class="project-screenshot">
-                    <img src="assets/screenshots/ghl-checkin-lifecycle.svg?v=1" alt="GoHighLevel check-in lifecycle showing reminder, nudge, overdue and submitted stages beside an audit panel explaining why no client was ever enrolled">
-                </div>
-                <div class="project-info">
-                    <div class="project-tags">
-                        <span class="project-tag tag-ghl">GoHighLevel</span>
-                        <span class="project-tag tag-python">Data Audit</span>
-                    </div>
-                    <h3 class="project-title">CRM Check-In Lifecycle Rebuild</h3>
-                    <p class="project-desc">A four-state client check-in loop for a fitness coaching business: a recurring reminder, a same-day nudge, a next-day overdue path, and a submission step that clears the state and opens a review task for the coach. The valuable part was the diagnosis. The existing automation looked broken but was structurally sound and simply had zero enrolled clients, which I proved by auditing all 61 active records. Reconciling the owner's roster against the CRM by normalised phone number then surfaced dozens of mismatches, including two staff records sitting on the client list that would have been texted as clients.</p>
-                    <div class="project-metrics">
-                        <span class="project-metric">61 records audited</span>
-                        <span class="project-metric">Root cause was the data</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Claude Code: Custom MCP Server -->
+<!-- Claude Code: Custom MCP Server -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-mcp-server.svg?v=1" alt="MCP server console showing exposed CRM and calendar tools connected to Claude, ChatGPT and n8n clients">
@@ -1490,7 +1451,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Knowledge Chatbot (Hybrid RAG) -->
+<!-- Claude Code: Knowledge Chatbot (Hybrid RAG) -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-knowledge-chatbot.svg?v=3" alt="Hybrid RAG chat UI answering a question with PDF citations">
@@ -1509,7 +1470,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Automated Marketing System -->
+<!-- Claude Code: Automated Marketing System -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-marketing-outreach.svg?v=2" alt="Outreach activity dashboard showing today's sends across 5 channels">
@@ -1528,7 +1489,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Automated Quoting Pipeline -->
+<!-- Claude Code: Automated Quoting Pipeline -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-quoting-pipeline.svg?v=4" alt="Auto-generated PDF quote with line items and totals">
@@ -1548,7 +1509,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Sales / Marketing Dashboard -->
+<!-- Claude Code: Sales / Marketing Dashboard -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-sales-dashboard.svg?v=4" alt="Sales dashboard with pending quote approval cards">
@@ -1567,7 +1528,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Post-Order Flow -->
+<!-- Claude Code: Post-Order Flow -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-post-order.svg?v=4" alt="Rendered HTML order-shipped email with attached PDF invoice">
@@ -1586,7 +1547,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: 3-2-1 Backup Infrastructure -->
+<!-- Claude Code: 3-2-1 Backup Infrastructure -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-backup.svg?v=2" alt="Backup health board showing 5 scheduled jobs all healthy">
@@ -1605,7 +1566,7 @@
                 </div>
             </div>
 
-            <!-- Claude Code: Command Center + Ticket Pipeline -->
+<!-- Claude Code: Command Center + Ticket Pipeline -->
             <div class="project-card" data-category="claude">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/claude-command-center.svg?v=4" alt="Command Center ticket board with one ticket mid-pipeline">
@@ -1625,47 +1586,46 @@
                 </div>
             </div>
 
-            <!-- Voice AI Project 1 -->
-            <div class="project-card" data-category="voice">
+<!-- GoHighLevel: Compliance-Safe Email Agent -->
+            <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/voice-receptionist.svg?v=2" alt="Live AI voice receptionist console handling an inbound booking call">
+                    <img src="assets/screenshots/ghl-email-approval.svg?v=1" alt="GoHighLevel workflow that sends a weekly email from custom values, beside an audience panel showing suppression rules and a human approval gate">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span class="project-tag tag-voice">Voice AI</span>
-                        <span class="project-tag tag-ai">Realtime API</span>
-                        <span class="project-tag tag-mcp">MCP</span>
+                        <span class="project-tag tag-ghl">GoHighLevel</span>
+                        <span class="project-tag tag-claude">Claude Code</span>
+                        <span class="project-tag tag-ai">Email Ops</span>
                     </div>
-                    <h3 class="project-title">24/7 AI Voice Receptionist</h3>
-                    <p class="project-desc">An always-on AI phone agent built on a realtime speech-to-speech model (sub-500ms latency, natural turn-taking) connected over SIP to a real business line. It verifies the caller against the CRM, checks live calendar availability, and books the appointment mid-call, then fires an SMS confirmation. CRM, calendar, and booking are wired as MCP tools, so it covers after-hours and overflow with no call going to voicemail.</p>
+                    <h3 class="project-title">Compliance-Safe Email Agent with Human Send Gate</h3>
+                    <p class="project-desc">Writes a weekly email in the owner's voice from a plain-language spec read at runtime, posts it to a private channel as an approval card, and only sends when a human clicks. The send routes through the CRM's own workflow engine rather than a per-contact message API, so the compliant unsubscribe footer is attached on every send and opted-out contacts are skipped. Four suppression rules run first and caught a real defect in the system this replaced, which was set to email both existing customers and an unsubscribed contact. Live sending has to be switched on deliberately, a stale approval card refuses to fire, and a repeat click cannot double-send.</p>
                     <div class="project-metrics">
-                        <span class="project-metric">24/7 call coverage</span>
-                        <span class="project-metric">Books in-call</span>
+                        <span class="project-metric">Unsubscribe on every send</span>
+                        <span class="project-metric">Two-key send gate</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Voice AI Project 2 -->
-            <div class="project-card" data-category="voice">
+<!-- GoHighLevel: Check-In Lifecycle -->
+            <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
-                    <img src="assets/screenshots/voice-outbound.svg?v=2" alt="Outbound AI voice campaign dashboard showing call outcomes and qualification">
+                    <img src="assets/screenshots/ghl-checkin-lifecycle.svg?v=1" alt="GoHighLevel check-in lifecycle showing reminder, nudge, overdue and submitted stages beside an audit panel explaining why no client was ever enrolled">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span class="project-tag tag-voice">Voice AI</span>
-                        <span class="project-tag tag-ai">Realtime API</span>
-                        <span class="project-tag tag-mcp">MCP</span>
+                        <span class="project-tag tag-ghl">GoHighLevel</span>
+                        <span class="project-tag tag-python">Data Audit</span>
                     </div>
-                    <h3 class="project-title">Outbound AI Voice Campaign</h3>
-                    <p class="project-desc">A batch outbound calling system on the same realtime speech-to-speech stack that dials a lead list over SIP, qualifies intent in natural conversation, books callbacks or appointments, and logs every outcome back to the CRM through MCP tools. Timezone-aware scheduling, automatic no-answer retries, and warm live-transfer to a human the moment a lead is hot.</p>
+                    <h3 class="project-title">CRM Check-In Lifecycle Rebuild</h3>
+                    <p class="project-desc">A four-state client check-in loop for a fitness coaching business: a recurring reminder, a same-day nudge, a next-day overdue path, and a submission step that clears the state and opens a review task for the coach. The valuable part was the diagnosis. The existing automation looked broken but was structurally sound and simply had zero enrolled clients, which I proved by auditing all 61 active records. Reconciling the owner's roster against the CRM by normalised phone number then surfaced dozens of mismatches, including two staff records sitting on the client list that would have been texted as clients.</p>
                     <div class="project-metrics">
-                        <span class="project-metric">Auto-qualify + retry</span>
-                        <span class="project-metric">Live human transfer</span>
+                        <span class="project-metric">61 records audited</span>
+                        <span class="project-metric">Root cause was the data</span>
                     </div>
                 </div>
             </div>
 
-            <!-- GoHighLevel Project: Reel-to-Carousel Social Pipeline -->
+<!-- GoHighLevel Project: Reel-to-Carousel Social Pipeline -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-social-planner.svg?v=1" alt="GoHighLevel Social Planner showing an AI-generated carousel draft awaiting approval">
@@ -1685,7 +1645,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel Project 1 -->
+<!-- GoHighLevel Project 1 -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-funnel.svg?v=3" alt="GoHighLevel Lead Funnel">
@@ -1703,7 +1663,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel Project 2 -->
+<!-- GoHighLevel Project 2 -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-reactivation.svg?v=4" alt="GoHighLevel Patient Reactivation">
@@ -1721,7 +1681,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel Project 3: Real Estate Media Middleware -->
+<!-- GoHighLevel Project 3: Real Estate Media Middleware -->
             <div class="project-card" data-category="ghl">
                 <a href="https://kenanabieza.github.io/real-estate-ghl-middleware/" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
                 <div class="project-screenshot">
@@ -1743,7 +1703,7 @@
                 </a>
             </div>
 
-            <!-- GoHighLevel Project 4: AI Employee Setup -->
+<!-- GoHighLevel Project 4: AI Employee Setup -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-conversation-ai.svg?v=3" alt="GoHighLevel Conversation AI">
@@ -1762,7 +1722,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel Project 5: Agent Lifecycle / Nurture Workflows -->
+<!-- GoHighLevel Project 5: Agent Lifecycle / Nurture Workflows -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-agent-lifecycle.svg?v=4" alt="GoHighLevel Real Estate Agent Lifecycle Workflows">
@@ -1781,7 +1741,7 @@
                 </div>
             </div>
 
-            <!-- GoHighLevel Project 6: Review Request Engine -->
+<!-- GoHighLevel Project 6: Review Request Engine -->
             <div class="project-card" data-category="ghl">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/ghl-review-engine.svg?v=3" alt="GoHighLevel Review Request Engine with Sentiment Routing">
@@ -1800,7 +1760,47 @@
                 </div>
             </div>
 
-            <!-- n8n Project 1 -->
+<!-- Voice AI Project 1 -->
+            <div class="project-card" data-category="voice">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/voice-receptionist.svg?v=2" alt="Live AI voice receptionist console handling an inbound booking call">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-voice">Voice AI</span>
+                        <span class="project-tag tag-ai">Realtime API</span>
+                        <span class="project-tag tag-mcp">MCP</span>
+                    </div>
+                    <h3 class="project-title">24/7 AI Voice Receptionist</h3>
+                    <p class="project-desc">An always-on AI phone agent built on a realtime speech-to-speech model (sub-500ms latency, natural turn-taking) connected over SIP to a real business line. It verifies the caller against the CRM, checks live calendar availability, and books the appointment mid-call, then fires an SMS confirmation. CRM, calendar, and booking are wired as MCP tools, so it covers after-hours and overflow with no call going to voicemail.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">24/7 call coverage</span>
+                        <span class="project-metric">Books in-call</span>
+                    </div>
+                </div>
+            </div>
+
+<!-- Voice AI Project 2 -->
+            <div class="project-card" data-category="voice">
+                <div class="project-screenshot">
+                    <img src="assets/screenshots/voice-outbound.svg?v=2" alt="Outbound AI voice campaign dashboard showing call outcomes and qualification">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag tag-voice">Voice AI</span>
+                        <span class="project-tag tag-ai">Realtime API</span>
+                        <span class="project-tag tag-mcp">MCP</span>
+                    </div>
+                    <h3 class="project-title">Outbound AI Voice Campaign</h3>
+                    <p class="project-desc">A batch outbound calling system on the same realtime speech-to-speech stack that dials a lead list over SIP, qualifies intent in natural conversation, books callbacks or appointments, and logs every outcome back to the CRM through MCP tools. Timezone-aware scheduling, automatic no-answer retries, and warm live-transfer to a human the moment a lead is hot.</p>
+                    <div class="project-metrics">
+                        <span class="project-metric">Auto-qualify + retry</span>
+                        <span class="project-metric">Live human transfer</span>
+                    </div>
+                </div>
+            </div>
+
+<!-- n8n Project 1 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-lead-system.svg?v=3" alt="n8n Lead Qualification System">
@@ -1819,7 +1819,7 @@
                 </div>
             </div>
 
-            <!-- n8n Project 2 -->
+<!-- n8n Project 2 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-scheduling-agent.svg?v=2" alt="n8n scheduling agent dashboard booking meetings and managing a calendar">
@@ -1839,7 +1839,7 @@
                 </div>
             </div>
 
-            <!-- n8n Project 3 -->
+<!-- n8n Project 3 -->
             <div class="project-card" data-category="n8n">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/n8n-email-outreach.svg?v=1" alt="n8n email outreach sequence dashboard with per-step stats and reply detection">
@@ -1859,7 +1859,7 @@
                 </div>
             </div>
 
-            <!-- Make.com Project 1 -->
+<!-- Make.com Project 1 -->
             <div class="project-card" data-category="make">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/make-ecommerce.svg?v=3" alt="Make.com E-commerce Automation">
@@ -1877,7 +1877,7 @@
                 </div>
             </div>
 
-            <!-- Make.com Project 2 -->
+<!-- Make.com Project 2 -->
             <div class="project-card" data-category="make">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/make-social.svg?v=3" alt="Make.com Social Media Automation">
@@ -1896,7 +1896,7 @@
                 </div>
             </div>
 
-            <!-- Zapier Project 1 -->
+<!-- Zapier Project 1 -->
             <div class="project-card" data-category="zapier">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/zapier-onboarding.svg?v=3" alt="Zapier Onboarding Workflow">
@@ -1914,7 +1914,7 @@
                 </div>
             </div>
 
-            <!-- Zapier Project 2 -->
+<!-- Zapier Project 2 -->
             <div class="project-card" data-category="zapier">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/zapier-helpdesk.svg?v=3" alt="Zapier Help Desk Automation">
@@ -1933,7 +1933,7 @@
                 </div>
             </div>
 
-            <!-- Agentic Project 1 -->
+<!-- Agentic Project 1 -->
             <div class="project-card" data-category="agentic">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/agentic-support.svg?v=3" alt="Multi-Agent Support System">
@@ -1952,7 +1952,7 @@
                 </div>
             </div>
 
-            <!-- Agentic Project 2 -->
+<!-- Agentic Project 2 -->
             <div class="project-card" data-category="agentic">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/agentic-research.svg?v=3" alt="AI Research Pipeline">
@@ -1971,7 +1971,7 @@
                 </div>
             </div>
 
-            <!-- Python Project 1 -->
+<!-- Python Project 1 -->
             <div class="project-card" data-category="python">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/python-scraper.svg?v=4" alt="Code editor showing a Python web-scraping script">
@@ -1989,7 +1989,7 @@
                 </div>
             </div>
 
-            <!-- Python Project 2 -->
+<!-- Python Project 2 -->
             <div class="project-card" data-category="python">
                 <div class="project-screenshot">
                     <img src="assets/screenshots/python-dashboard.svg?v=4" alt="Python Business Dashboard">
