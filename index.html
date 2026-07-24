@@ -2354,7 +2354,10 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('visible');
         }
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+// threshold must stay 0: it is a ratio of the OBSERVED element's own area, and tall
+// elements (the projects grid is ~20000px on mobile) can never get 10% on screen at
+// once, so any higher value means they never reveal and stay at opacity:0 forever.
+}, { threshold: 0, rootMargin: '0px 0px -50px 0px' });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
