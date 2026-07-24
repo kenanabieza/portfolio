@@ -12,6 +12,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 - **One file does everything:** `index.html` (~2,200 lines). All CSS lives in a single inline `<style>` in `<head>`; all JS is one inline `<script>` before `</body>`. No build step, no framework, no dependencies.
 - **Images:** hand-authored SVG "mockups" in `assets/screenshots/`, all `viewBox="0 0 800 500"`. There is no real screenshot tooling — every project image is a drawn SVG (see conventions below).
+- **Social preview:** `assets/og-thumbnail.svg` is the **source** for `assets/og-thumbnail.png` (the `og:image` / `twitter:image` / JSON-LD image). It is deliberately not referenced from `index.html`, so do not "clean it up" as an orphan. Regenerate the PNG by rendering the SVG at exactly **1200x630** (the standard OG size) and quantizing to a 256-colour palette, which keeps it near 65 KB with no visible banding. It was 2400x1260 / 448 KB until 2026-07-25; keep it under ~200 KB.
 - **Fonts:** Inter + JetBrains Mono via Google Fonts. Favicon is an inline data-URI SVG ("KA").
 - **Theme:** dark site chrome with light Services/Education sections. CSS variables in `:root` (e.g. `--primary:#3b82f6`, `--bg-dark:#0a0a1a`).
 
@@ -20,7 +21,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 ## Projects grid (the part most often edited)
 
-Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Order positioning: Claude Code first, then GoHighLevel, Voice AI, Hermes Agent, OpenClaw, and the rest. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
+Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Progressive reveal:** only the first `VISIBLE_LIMIT` (9) cards of the current selection render; `#showMoreBtn` expands to the full set and back. One `applyView()` owns both filtering and the cap, so never set `card.style.display` from anywhere else. Picking a filter resets to collapsed, and the button hides itself whenever the selection is 9 or fewer. This exists because 38 cards is a single ~43,000px column on a phone. **Order positioning: Claude Code first, then GoHighLevel, Voice AI, Hermes Agent, OpenClaw, and the rest. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
 
 Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `hermes`(3), `openclaw`(3), `n8n`(3), `make`(2), `zapier`(2), `agentic`(2), `python`(2). Total 38.
 

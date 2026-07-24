@@ -614,6 +614,26 @@
             font-family: inherit;
         }
 
+        .show-more-wrap { text-align: center; margin-top: 44px; }
+        .show-more-btn {
+            padding: 13px 34px;
+            background: transparent;
+            color: var(--text-light);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            font-size: 0.92em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .show-more-btn:hover, .show-more-btn:focus-visible {
+            border-color: var(--primary);
+            color: var(--text-white);
+            background: rgba(59, 130, 246, 0.08);
+        }
+        .show-more-count { color: var(--text-muted); font-weight: 400; }
+
         .filter-btn:hover,
         .filter-btn.active {
             background: var(--primary);
@@ -2136,6 +2156,10 @@
             </div>
 
         </div>
+
+        <div class="show-more-wrap">
+            <button class="show-more-btn" id="showMoreBtn" aria-expanded="false" aria-controls="projectsGrid" hidden></button>
+        </div>
     </div>
 </section>
 
@@ -2486,9 +2510,40 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Project filter
+// Project filter + progressive reveal.
+// The grid is long, and on a phone it is a single very tall column, so only the
+// first VISIBLE_LIMIT cards of the current selection render until asked for more.
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
+const showMoreBtn = document.getElementById('showMoreBtn');
+const showMoreWrap = document.querySelector('.show-more-wrap');
+const VISIBLE_LIMIT = 9;
+let currentFilter = 'all';
+let expanded = false;
+
+function applyView(animate) {
+    let matched = 0;
+    projectCards.forEach(card => {
+        if (currentFilter !== 'all' && card.dataset.category !== currentFilter) {
+            card.style.display = 'none';
+            return;
+        }
+        matched++;
+        const show = expanded || matched <= VISIBLE_LIMIT;
+        card.style.display = show ? '' : 'none';
+        if (show && animate) card.style.animation = 'fadeInUp 0.4s ease forwards';
+    });
+
+    const needsButton = matched > VISIBLE_LIMIT;
+    showMoreWrap.style.display = needsButton ? '' : 'none';
+    showMoreBtn.hidden = !needsButton;
+    showMoreBtn.setAttribute('aria-expanded', expanded && needsButton ? 'true' : 'false');
+    if (needsButton) {
+        showMoreBtn.innerHTML = expanded
+            ? 'Show fewer projects'
+            : 'Show all <span class="show-more-count">' + matched + '</span> projects';
+    }
+}
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -2498,18 +2553,21 @@ filterBtns.forEach(btn => {
         });
         btn.classList.add('active');
         btn.setAttribute('aria-pressed', 'true');
-        const filter = btn.dataset.filter;
-
-        projectCards.forEach(card => {
-            if (filter === 'all' || card.dataset.category === filter) {
-                card.style.display = '';
-                card.style.animation = 'fadeInUp 0.4s ease forwards';
-            } else {
-                card.style.display = 'none';
-            }
-        });
+        currentFilter = btn.dataset.filter;
+        expanded = false;               // a new selection starts collapsed
+        applyView(true);
     });
 });
+
+showMoreBtn.addEventListener('click', () => {
+    const collapsing = expanded;
+    expanded = !expanded;
+    applyView(!collapsing);
+    // collapsing from the bottom would strand you below the grid, so return to it
+    if (collapsing) document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+applyView(false);
 </script>
 
 </body>
