@@ -21,9 +21,9 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 ## Projects grid (the part most often edited)
 
-Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Progressive reveal:** only the first `VISIBLE_LIMIT` (9) cards of the current selection render; `#showMoreBtn` expands to the full set and back. One `applyView()` owns both filtering and the cap, so never set `card.style.display` from anywhere else. Picking a filter resets to collapsed, and the button hides itself whenever the selection is 9 or fewer. This exists because 38 cards is a single ~43,000px column on a phone. **Order positioning: Claude Code first, then GoHighLevel, Voice AI, Hermes Agent, OpenClaw, and the rest. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
+Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Progressive reveal:** only the first `VISIBLE_LIMIT` (9) cards of the current selection render; `#showMoreBtn` expands to the full set and back. One `applyView()` owns both filtering and the cap, so never set `card.style.display` from anywhere else. Picking a filter resets to collapsed, and the button hides itself whenever the selection is 9 or fewer. This exists because 38 cards is a single ~43,000px column on a phone. **Order positioning: Claude Code, GoHighLevel, Voice AI, n8n, Make.com, Zapier, Agentic AI, Python, then Hermes Agent and OpenClaw last. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
 
-Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `hermes`(3), `openclaw`(3), `n8n`(3), `make`(2), `zapier`(2), `agentic`(2), `python`(2). Total 38.
+Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `agentic`(2), `python`(2), `hermes`(3), `openclaw`(3). Total 38.
 
 **Card markup pattern:**
 ```html
