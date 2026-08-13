@@ -21,7 +21,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 
 ## Projects grid (the part most often edited)
 
-Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Progressive reveal:** only the first `VISIBLE_LIMIT` (9) cards of the current selection render; `#showMoreBtn` expands to the full set and back. One `applyView()` owns both filtering and the cap, so never set `card.style.display` from anywhere else. Picking a filter resets to collapsed, and the button hides itself whenever the selection is 9 or fewer. This exists because 38 cards is a single ~43,000px column on a phone. **Order positioning: Claude Code, GoHighLevel, Voice AI, n8n, Make.com, Zapier, Agentic AI, Python, then Hermes Agent and OpenClaw last. This applies to the Tech Stack tiles, the filter chips, and the card order, which is grouped by category in that same sequence.**
+Filter chips (`.filter-btn[data-filter]`) toggle visibility of project cards (`.project-card[data-category]`) via the inline JS at the bottom. **Progressive reveal:** only the first `VISIBLE_LIMIT` (9) cards of the current selection render; `#showMoreBtn` expands to the full set and back. One `applyView()` owns both filtering and the cap, so never set `card.style.display` from anywhere else. Besides `data-category`, `applyView()` also matches a space-separated `data-stack` attribute; the **Full-Stack** chip (`data-filter="fullstack"`) uses it to surface web/app projects across categories without moving them out of their primary category. Picking a filter resets to collapsed, and the button hides itself whenever the selection is 9 or fewer. This exists because 38 cards is a single ~43,000px column on a phone. **Order positioning: Claude Code, GoHighLevel, Voice AI, n8n, Make.com, Zapier, Agentic AI, MCP, Python, then Hermes Agent and OpenClaw last. This applies to the Tech Stack tiles, the filter chips, and the card order (grouped by category in that same sequence). The Tech Stack and chips also include a Full-Stack Development entry right after Python (before Hermes), but Full-Stack is a cross-cutting `data-stack` filter with no card group of its own.**
 
 Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `n8n`(3), `make`(2), `zapier`(2), `agentic`(2), `python`(2), `hermes`(3), `openclaw`(3). Total 38.
 
@@ -46,7 +46,7 @@ Current categories and card counts: `claude`(10), `ghl`(9), `voice`(2), `n8n`(3)
 </div>
 ```
 
-**Tag CSS classes that exist** (defined in the `<style>` block, search `.tag-`): `tag-claude`, `tag-voice`, `tag-n8n`, `tag-make`, `tag-zapier`, `tag-ghl`, `tag-agentic`, `tag-python`, `tag-ai`, `tag-nextjs`, `tag-stripe`, `tag-infra`, `tag-rag`, `tag-mcp`, `tag-hermes`, `tag-openclaw`. If you need a new tag color, add a `.tag-<name>` rule next to the others before using it.
+**Tag CSS classes that exist** (defined in the `<style>` block, search `.tag-`): `tag-claude`, `tag-voice`, `tag-n8n`, `tag-make`, `tag-zapier`, `tag-ghl`, `tag-agentic`, `tag-python`, `tag-ai`, `tag-nextjs`, `tag-stripe`, `tag-infra`, `tag-rag`, `tag-mcp`, `tag-hermes`, `tag-openclaw`, `tag-fullstack`. If you need a new tag color, add a `.tag-<name>` rule next to the others before using it.
 
 ## SVG mockup conventions
 
@@ -72,7 +72,7 @@ Use `&#183;` (·) as a separator inside mockups. **Never** use em/en dashes (see
 2. **No long dashes anywhere.** Em (—) and en (–) dashes read as AI-generated and the owner does not want them. In prose use commas / periods / colons; in mockup UI use `·` (`&#183;`); for ranges/compounds use a plain hyphen `-`. Grep before committing: `grep -rE '&mdash;|&ndash;|&#8212;|&#8211;|—|–' index.html assets/` should return nothing.
 3. **Cache-bust changed SVGs.** When you edit an existing SVG, bump its `?v=N` in `index.html` (e.g. `?v=2` → `?v=3`) so browsers fetch the new version.
 4. **Keep numbers internally consistent.** Hero stats, the Results cards, tool-tile counts (e.g. "20+ Workflows"), per-project metrics, and Experience bullets must not contradict each other. Headline totals should exceed the sums of their parts. (`50+` workflows is the all-platform total; hero "Hours Saved / Week" is `150+`.)
-5. **One canonical role title:** "**AI Automation Developer & AI Agent Specialist**" — used in `<title>`, `og:title`, `twitter:title`, About, Experience, and footer. Don't introduce a new variant.
+5. **One canonical role title:** "**AI Automation, AI Agents & Full-Stack Developer**" — used in `<title>`, `og:title`, `twitter:title`, JSON-LD `jobTitle`, About, Experience, and footer. Don't introduce a new variant.
 6. **Accessibility stays intact.** Keep: the `<main>` landmark + skip link; `aria-pressed` on filter buttons (toggled in JS); `aria-expanded` on the nav toggle (toggled in JS); meaningful `alt` text describing what each mockup shows.
 
 ## Verification (run before every commit)
