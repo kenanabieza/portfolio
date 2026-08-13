@@ -70,7 +70,7 @@
   <g font-family="Inter,sans-serif" font-size="10" fill="#CBD5E1">
     <circle cx="48" cy="416" r="3.5" fill="#22C55E"/><text x="60" y="420">Calendar invite sent to both parties</text>
     <circle cx="48" cy="438" r="3.5" fill="#22C55E"/><text x="60" y="442">Contact + meeting logged to CRM</text>
-    <circle cx="48" cy="460" r="3.5" fill="#22C55E"/><text x="60" y="464">Reminders scheduled: T&#8722;24h, T&#8722;1h</text>
+    <circle cx="48" cy="460" r="3.5" fill="#22C55E"/><text x="60" y="464">Reminders scheduled: T-24h, T-1h</text>
   </g>
 
   <!-- Right: today's schedule -->
