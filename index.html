@@ -953,48 +953,42 @@
         }
 
         /* ===== EXPERIENCE ===== */
-        .exp-timeline { position: relative; }
-
-        .exp-item {
-            position: relative;
-            padding-left: 40px;
-            padding-bottom: 40px;
-            border-left: 2px solid var(--border);
+        .exp-summary {
+            max-width: 750px;
+            margin: 0 auto 44px;
+            text-align: center;
         }
 
-        .exp-item:last-child {
-            border-left: 2px solid transparent;
-            padding-bottom: 0;
+        .exp-years {
+            font-size: clamp(2.6em, 7vw, 3.6em);
+            font-weight: 900;
+            line-height: 1.1;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .exp-dot {
-            position: absolute;
-            left: -8px;
-            top: 4px;
-            width: 14px;
-            height: 14px;
-            background: var(--primary);
-            border-radius: 50%;
-            border: 3px solid var(--bg-dark);
+        .exp-years-label {
+            margin-top: 12px;
+            font-size: 1.05em;
+            color: var(--text-light);
+            line-height: 1.7;
         }
 
-        .exp-date {
-            font-size: 0.85em;
+        .exp-years-label a {
             color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 8px;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.4);
         }
 
-        .exp-role {
-            font-size: 1.3em;
-            font-weight: 700;
-            margin-bottom: 4px;
+        .exp-years-label a:hover {
+            border-bottom-color: var(--primary);
         }
 
-        .exp-company {
-            font-size: 0.95em;
-            color: var(--text-muted);
-            margin-bottom: 16px;
+        .exp-highlights {
+            max-width: 750px;
+            margin: 0 auto;
         }
 
         .exp-list {
@@ -2392,31 +2386,27 @@
             <div class="section-label">Experience</div>
             <h2 class="section-title">Professional Background</h2>
         </div>
-        <div class="exp-timeline fade-in" style="max-width:750px; margin:0 auto;">
-            <div class="exp-item">
-                <div class="exp-dot"></div>
-                <div class="exp-date">January 2023 - Present</div>
-                <div class="exp-role">AI Automation, AI Agents & Full-Stack Developer</div>
-                <ul class="exp-list">
-                    <li>Designed and deployed <strong>50+ custom automation workflows</strong> across n8n, Make.com, Zapier, and GoHighLevel</li>
-                    <li>Built multi-agent AI systems using Claude Code and OpenAI for autonomous business process handling</li>
-                    <li>Developed custom Python applications including scrapers, dashboards, and data pipelines</li>
-                    <li>Built full-stack web apps and internal tools with Next.js, NextAuth, Turso/Postgres, and Stripe, deployed on Vercel and Railway</li>
-                    <li>Delivered solutions across agentic workflows and RAG-based knowledge systems</li>
-                    <li>Achieved <strong>95% client satisfaction</strong> with comprehensive documentation and training</li>
-                </ul>
-            </div>
-            <div class="exp-item">
-                <div class="exp-dot"></div>
-                <div class="exp-date">June 2016 - June 2024</div>
-                <div class="exp-role">QA Analyst & Process Optimization Specialist</div>
-                <ul class="exp-list">
-                    <li>Validated <strong>10,000+ data points</strong> with <strong>99.8% accuracy</strong> across multiple projects</li>
-                    <li>Documented <strong>25+ workflow optimization opportunities</strong> that became the foundation for automation</li>
-                    <li>Trained <strong>10+ team members</strong> on quality standards and efficient data handling</li>
-                    <li>Improved team productivity by <strong>30%</strong> and cut onboarding time in half</li>
-                </ul>
-            </div>
+        <div class="exp-summary fade-in">
+            <div class="exp-years">10 Years</div>
+            <p class="exp-years-label">
+                of industry experience spanning quality assurance and process optimization,
+                workflow automation, and AI engineering. Full role history is on
+                <a href="https://linkedin.com/in/kenanabieza" target="_blank" rel="noopener">LinkedIn</a>.
+            </p>
+        </div>
+        <div class="exp-highlights fade-in">
+            <ul class="exp-list">
+                <li>Designed and deployed <strong>50+ custom automation workflows</strong> across n8n, Make.com, Zapier, and GoHighLevel</li>
+                <li>Built multi-agent AI systems using Claude Code and OpenAI for autonomous business process handling</li>
+                <li>Developed custom Python applications including scrapers, dashboards, and data pipelines</li>
+                <li>Built full-stack web apps and internal tools with Next.js, NextAuth, Turso/Postgres, and Stripe, deployed on Vercel and Railway</li>
+                <li>Delivered solutions across agentic workflows and RAG-based knowledge systems</li>
+                <li>Achieved <strong>95% client satisfaction</strong> with comprehensive documentation and training</li>
+                <li>Validated <strong>10,000+ data points</strong> with <strong>99.8% accuracy</strong> across multiple projects</li>
+                <li>Documented <strong>25+ workflow optimization opportunities</strong> that became the foundation for automation</li>
+                <li>Trained <strong>10+ team members</strong> on quality standards and efficient data handling</li>
+                <li>Improved team productivity by <strong>30%</strong> and cut onboarding time in half</li>
+            </ul>
         </div>
     </div>
 </section>
