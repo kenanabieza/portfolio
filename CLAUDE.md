@@ -5,7 +5,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 - **Live site:** https://kenanabieza.github.io/portfolio/ (GitHub Pages)
 - **GitHub repo:** `kenanabieza/portfolio` (private/public personal repo)
 - **GitHub account to use:** **`kenanabieza`** (Ken's personal account) — run `gh auth switch --user kenanabieza` before any git/gh work
-- **Local working copy:** this folder (`E:\Portfolio`). Edit here, commit, push to `origin/main`; Pages redeploys automatically (~1 min).
+- **Local working copy:** this folder (`D:\Portfolio`). Edit here, commit, push to `origin/main`; Pages redeploys automatically (~1 min).
 - **Owner / contact:** anabieza.acc@gmail.com · linkedin.com/in/kenanabieza · github.com/kenanabieza
 
 ## Stack & layout
@@ -17,7 +17,7 @@ Single-page personal portfolio for **Ken Reymart Añabieza**, an AI Automation D
 - **Theme:** dark site chrome with light Services/Education sections. CSS variables in `:root` (e.g. `--primary:#3b82f6`, `--bg-dark:#0a0a1a`).
 
 ### Page sections (in order, each a `<section id>`)
-`nav` → `hero` → `about` → `results` → `tools` (Tools & Platforms tiles) → `projects` (filterable grid) → `case-studies` → `services` → `experience` → `education` → `contact` → `footer`. The content sections are wrapped in a `<main id="main">` landmark; there's a visually-hidden skip link.
+`nav` → `hero` → `about` → `results` → `tools` (Tools & Platforms tiles) → `projects` (filterable grid) → `case-studies` → `services` → `clients` (logo strip) → `experience` → `education` → `contact` → `footer`. The content sections are wrapped in a `<main id="main">` landmark; there's a visually-hidden skip link.
 
 ## Projects grid (the part most often edited)
 
@@ -59,7 +59,7 @@ Use `&#183;` (·) as a separator inside mockups. **Never** use em/en dashes (see
 
 ## Adding a new project (checklist)
 
-1. Build the SVG mockup in `assets/screenshots/<name>.svg`, matching the category's visual style. Validate it: `python -c "import xml.etree.ElementTree as ET; ET.parse('assets/screenshots/<name>.svg')"`.
+1. Build the SVG mockup in `assets/screenshots/<name>.svg`, matching the category's visual style. Validate it: `node tools/check-svg.js assets/screenshots/<name>.svg`.
 2. Add a `.project-card` with the right `data-category`, tags, title, description (2–4 sentences), and two metrics. Reference the SVG with `?v=1`.
 3. If it's a brand-new category: add a `.filter-btn[data-filter]` chip (with `aria-pressed="false"`), a `.tag-<name>` CSS rule, and `data-category` on the card.
 4. Verify nothing broke (see Verification).
@@ -72,14 +72,14 @@ Use `&#183;` (·) as a separator inside mockups. **Never** use em/en dashes (see
 2. **No long dashes anywhere.** Em (—) and en (–) dashes read as AI-generated and the owner does not want them. In prose use commas / periods / colons; in mockup UI use `·` (`&#183;`); for ranges/compounds use a plain hyphen `-`. Grep before committing: `grep -rE '&mdash;|&ndash;|&#8212;|&#8211;|&minus;|&#8722;|—|–' index.html assets/` should return nothing.
 3. **Cache-bust changed SVGs.** When you edit an existing SVG, bump its `?v=N` in `index.html` (e.g. `?v=2` → `?v=3`) so browsers fetch the new version.
 4. **Keep numbers internally consistent.** Hero stats, the Results cards, tool-tile counts (e.g. "20+ Workflows"), per-project metrics, and Experience bullets must not contradict each other. Headline totals should exceed the sums of their parts. (`50+` workflows is the all-platform total; hero "Hours Saved / Week" is `150+`.)
-5. **One canonical role title:** "**AI Automation, AI Agents & Full-Stack Developer**" — used in `<title>`, `og:title`, `twitter:title`, JSON-LD `jobTitle`, About, Experience, and footer. Don't introduce a new variant.
+5. **One canonical role title:** "**AI Automation, AI Agents & Full-Stack Developer**" — used in `<title>`, `og:title`, `twitter:title`, JSON-LD `jobTitle`, About, and footer. Don't introduce a new variant. **Experience deliberately does not carry it any more:** that section was cut down to a "10 Years" summary plus achievement bullets on 2026-08-20, because positions, companies and date ranges are already on LinkedIn. Don't "restore" the job titles or the dated timeline.
 6. **Accessibility stays intact.** Keep: the `<main>` landmark + skip link; `aria-pressed` on filter buttons (toggled in JS); `aria-expanded` on the nav toggle (toggled in JS); meaningful `alt` text describing what each mockup shows.
 
 ## Verification (run before every commit)
 
 ```bash
 # All SVGs are valid XML
-python -c "import xml.etree.ElementTree as ET,os; [ET.parse('assets/screenshots/'+f) for f in os.listdir('assets/screenshots') if f.endswith('.svg')]; print('svg ok')"
+node tools/check-svg.js
 # No long dashes
 grep -rE '&mdash;|&ndash;|&#8212;|&#8211;|&minus;|&#8722;|—|–' index.html assets/ && echo 'DASH FOUND' || echo 'no dashes'
 # No leaked client/vendor names — substitute the real terms from your PRIVATE note
@@ -92,18 +92,20 @@ grep -riE '<client>|<brand>|<person>|<domain>' index.html assets/ && echo 'LEAK'
 
 ```bash
 gh auth switch --user kenanabieza
-cd E:/Portfolio
+cd D:/Portfolio
 git pull --rebase
 # ...edit index.html / add SVGs...
 # ...run Verification...
-git add -A
+git add index.html assets tools   # never `git add -A`: see Gotchas
 git commit -m "..."
 git push origin main      # GitHub Pages auto-deploys
 ```
 
 ## Gotchas
 
+- **Never run `git add -A` here.** `GHL-Portfolio/` is a *separate git repo* living inside this folder, so `add -A` stages it as a broken gitlink. It is in `.gitignore` now, but stage explicitly anyway: `git add index.html assets tools`.
+- **There is no Python on this machine** (`py` reports "No installed Python found"), and no `xmllint`. SVG validation runs through `node tools/check-svg.js`, a dependency-free well-formedness checker. It exits non-zero and prints `file` + `line N: reason` for unclosed/mismatched tags, bare `&`, unquoted attributes, and stray second roots.
 - Git on Windows warns `LF will be replaced by CRLF` — harmless, ignore.
 - GitHub Pages + the browser cache the page hard. If a change "isn't showing," it's almost always cache: hard-refresh or check the live HTML via `gh api repos/kenanabieza/portfolio/pages/builds/latest`.
-- This repo was previously edited from a throwaway temp clone. **This folder (`E:\Portfolio`) is now the canonical local working copy** — work here.
+- This repo was previously edited from a throwaway temp clone. **This folder (`D:\Portfolio`) is now the canonical local working copy** — work here.
 - History note: the portfolio used to sit (empty) under `E:\Transfer\Portfolio` on a USB/transfer drive, which loaded unrelated client-project context from that drive's own `CLAUDE.md`. It was moved here on 2026-06-26 specifically to be independent of that.

@@ -1,0 +1,14 @@
+# Separate repos / scratch folders that sit next to the site but are not part of it.
+# GHL-Portfolio/ has its own .git, so `git add -A` would commit it as a broken
+# gitlink. Keep it ignored rather than relying on remembering.
+GHL-Portfolio/
+Clients/
+
+# Local-only Claude Code config (settings.json and launch.json can be committed)
+.claude/settings.local.json
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
