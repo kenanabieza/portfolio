@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Añabieza | Intro Video</title>
+    <meta name="description" content="A quick video intro from Ken Reymart A&ntilde;abieza, AI Automation, AI Agents &amp; Full-Stack Developer.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233b82f6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Inter,sans-serif' font-size='52' font-weight='800' fill='white'%3EKA%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="https://kenanabieza.github.io/portfolio/intro/">
+    <meta property="og:title" content="Ken A&ntilde;abieza | Intro Video">
+    <meta property="og:description" content="A quick video intro from Ken, AI Automation, AI Agents &amp; Full-Stack Developer.">
+    <meta property="og:image" content="https://kenanabieza.github.io/portfolio/assets/video/intro-poster.jpg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:video" content="https://kenanabieza.github.io/portfolio/assets/video/intro.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ken A&ntilde;abieza | Intro Video">
+    <meta name="twitter:image" content="https://kenanabieza.github.io/portfolio/assets/video/intro-poster.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0a0a1a;
+            --bg-card: #111127;
+            --primary: #3b82f6;
+            --text-white: #ffffff;
+            --text-light: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border: #1e293b;
+            --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            background-image: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.12), transparent 60%);
+            color: var(--text-white);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 56px 16px 64px;
+        }
+        header { text-align: center; margin-bottom: 32px; }
+        .label {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            color: var(--primary);
+            font-size: 0.78em;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        h1 {
+            font-size: clamp(1.9em, 5vw, 2.8em);
+            font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 1.15;
+        }
+        .role {
+            margin-top: 10px;
+            color: var(--text-light);
+            font-size: 1.05em;
+        }
+        .role strong {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        .video-frame {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            box-shadow: var(--shadow-lg);
+        }
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            background: #000;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 32px;
+        }
+        .btn {
+            padding: 13px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.98em;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+        .btn-primary { background: var(--gradient-1); color: white; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.35); }
+        .btn-secondary { border: 1px solid var(--border); color: var(--text-white); }
+        .btn-secondary:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 22px;
+            margin-top: 28px;
+            font-size: 0.92em;
+        }
+        .contact a { color: var(--text-muted); text-decoration: none; }
+        .contact a:hover { color: var(--text-white); }
+        @media (max-width: 480px) {
+            main { padding-top: 40px; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <div class="label">Intro Video</div>
+        <h1>Ken Reymart A&ntilde;abieza</h1>
+        <p class="role"><strong>AI Automation, AI Agents &amp; Full-Stack Developer</strong></p>
+    </header>
+
+    <div class="video-frame">
+        <video controls playsinline preload="metadata" poster="../assets/video/intro-poster.jpg?v=1" aria-label="Intro video from Ken A&ntilde;abieza">
+            <source src="../assets/video/intro.mp4?v=1" type="video/mp4">
+            Your browser can't play this video. <a href="../assets/video/intro.mp4">Download the intro video</a>.
+        </video>
+    </div>
+
+    <div class="actions">
+        <a href="../" class="btn btn-primary">View My Portfolio</a>
+        <a href="https://wa.me/639289346203" class="btn btn-secondary" target="_blank" rel="noopener">Message Me on WhatsApp</a>
+    </div>
+
+    <nav class="contact" aria-label="Contact">
+        <a href="mailto:anabieza.acc@gmail.com">anabieza.acc@gmail.com</a>
+        <a href="https://www.linkedin.com/in/kenanabieza" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/kenanabieza" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+</main>
+</body>
+</html>
